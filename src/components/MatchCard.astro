@@ -25,7 +25,13 @@ const cardClass = [
 const meta = [match.round, match.venue?.city].filter(Boolean).join(" · ");
 ---
 
-<a href={href(`spiel/${match.slug}`)} class={cardClass}>
+<a
+  href={href(`spiel/${match.slug}`)}
+  class={cardClass}
+  data-match
+  data-de={String(match.isDE)}
+  data-phase={match.phase}
+>
   <div class="flex gap-3 items-start">
     <!-- Zeit-/Status-Spalte -->
     <div class="w-14 shrink-0 font-display tabular leading-none pt-0.5">

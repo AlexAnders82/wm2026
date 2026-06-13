@@ -13,7 +13,7 @@ const count = group.matches.length;
 ---
 
 {isPast ? (
-  <details class="mt-6">
+  <details class="mt-6" data-day>
     <summary class="cursor-pointer list-none text-xs uppercase tracking-[0.08em] text-text-secondary py-2 border-b border-border">
       ✓ {group.header} — {count} {count === 1 ? "Spiel" : "Spiele"}, Ergebnisse anzeigen
     </summary>
@@ -22,7 +22,7 @@ const count = group.matches.length;
     </div>
   </details>
 ) : (
-  <section class="mt-10">
+  <section class="mt-10" data-day>
     <h3 class="day-header sticky top-14 z-10 bg-night/90 backdrop-blur text-xs uppercase tracking-[0.08em] text-text-secondary py-2 border-b border-border">
       {group.header}
     </h3>
