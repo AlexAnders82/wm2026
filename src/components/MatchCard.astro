@@ -18,6 +18,7 @@ const hasMagenta = (match.tv?.stream ?? []).includes("MagentaTV");
 
 const cardClass = [
   "match-card",
+  "reveal",
   match.isDE ? "match-card--de" : "",
   status === "finished" ? "match-card--finished" : "",
 ].filter(Boolean).join(" ");

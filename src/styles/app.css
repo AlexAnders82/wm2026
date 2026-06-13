@@ -330,6 +330,45 @@
 }
 
 /* =========================================================================
+   Scroll-Reveal & Hero-Einstieg (DS 13, Motion #2/#3)
+   Progressive Enhancement: nur mit JS (.js) wird etwas versteckt — ohne JS
+   und für Crawler ist alles sofort sichtbar.
+   ========================================================================= */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+}
+.js .reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+.js .reveal--slow {
+  transition-duration: var(--dur-slow);
+}
+
+/* Reduced Motion: 1–3 + 6 abschalten (DS 13 Pflicht) */
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .live-dot {
+    animation: none !important;
+  }
+  .match-card:hover,
+  .match-card:focus-visible,
+  .btn:hover {
+    transform: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* =========================================================================
    Skip-Link (Accessibility, DS Header)
    ========================================================================= */
 .skip-link {

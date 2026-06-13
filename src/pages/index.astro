@@ -87,7 +87,7 @@ const groups = groupByDay(matches);
       {heroCaption && (
         <p class="text-xs uppercase tracking-[0.08em] text-text-secondary">{heroCaption}</p>
       )}
-      <h1 class="text-hero uppercase mt-1">{heroHeading}</h1>
+      <h1 class="text-hero uppercase mt-1 reveal reveal--slow">{heroHeading}</h1>
 
       <div class="flex flex-col gap-[var(--space-card-gap)] mt-6">
         {heroMatches.map((m) => <MatchCard match={m} />)}
@@ -216,7 +216,8 @@ const groups = groupByDay(matches);
 </Base>
 
 <script>
-  // Spielplan-Filter (DS 6): Karten ein-/ausblenden, leere Tage verstecken.
+  // Spielplan-Filter (DS 6) + Kalender-Kopieren. Init bei jedem astro:page-load.
+  function initHome() {
   const chips = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-filter]"));
   const scope = document.getElementById("spielplan-list");
 
@@ -267,4 +268,6 @@ const groups = groupByDay(matches);
       showToast(url);
     }
   });
+  }
+  initHome();
 </script>

@@ -38,6 +38,10 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0B1120" />
+    <!-- Progressive Enhancement: markiert JS-Verfügbarkeit, bevor gerendert wird -->
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -63,5 +67,29 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
       <slot />
     </main>
     <Footer />
+
+    <script>
+      // Scroll-Reveal (DS 13, Motion #2) — IntersectionObserver, einmalig, gestaffelt.
+      function initReveal() {
+        const els = document.querySelectorAll<HTMLElement>(".reveal:not(.is-in)");
+        if (!els.length) return;
+        const io = new IntersectionObserver(
+          (entries, obs) => {
+            for (const e of entries) {
+              if (!e.isIntersecting) continue;
+              const el = e.target as HTMLElement;
+              const siblings = el.parentElement ? Array.from(el.parentElement.children) : [];
+              const i = Math.max(0, siblings.indexOf(el));
+              el.style.transitionDelay = Math.min(i * 60, 300) + "ms";
+              el.classList.add("is-in");
+              obs.unobserve(el);
+            }
+          },
+          { rootMargin: "0px 0px -10% 0px" }
+        );
+        els.forEach((el) => io.observe(el));
+      }
+      initReveal();
+    </script>
   </body>
 </html>
