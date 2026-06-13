@@ -1,0 +1,62 @@
+---
+// Base.astro — gemeinsames Gerüst aller Seiten.
+// Meta/OG/Canonical, self-hosted Fonts (DSGVO, kein Google-CDN), Skip-Link,
+// JSON-LD-Slot, Footer. Header kommt aus Task 6.
+import "../styles/app.css";
+
+// Self-hosted Schriften (DESIGN_SYSTEM.md 4) — nur benötigte Gewichte.
+import "@fontsource/barlow/400.css";
+import "@fontsource/barlow/500.css";
+import "@fontsource/barlow/600.css";
+import "@fontsource/barlow-condensed/600.css";
+import "@fontsource/barlow-condensed/700.css";
+
+import Footer from "../components/Footer.astro";
+import { absUrl } from "../lib/paths.js";
+
+interface Props {
+  title: string;
+  description: string;
+  jsonLd?: object | object[];
+  ogType?: string;
+}
+
+const { title, description, jsonLd, ogType = "website" } = Astro.props;
+const site = Astro.site!;
+const canonical = new URL(Astro.url.pathname, site).toString();
+const ogImage = absUrl("og.png", site);
+const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B1120" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Anstoß '26" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {ldBlocks.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
