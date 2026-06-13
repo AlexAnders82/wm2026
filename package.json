@@ -1,0 +1,14 @@
+{
+  "name": "anstoss-26",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Anstoß '26 – mobile-first Spielplan- und TV-Guide-Seite zur Fußball-WM 2026",
+  "scripts": {
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "build-ics": "node scripts/build-ics.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

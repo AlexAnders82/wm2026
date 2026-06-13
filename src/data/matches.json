@@ -1,0 +1,36 @@
+{
+  "_note": "Start-Schnappschuss (Fallback). Wird vom GitHub-Actions-Build per scripts/fetch-data.mjs durch alle 104 Spiele ersetzt. Enthaelt vorerst die verifizierten deutschen Gruppenspiele (PLAN.md 3.3, Gruppe E).",
+  "updatedAt": "2026-06-13T00:00:00Z",
+  "matches": [
+    {
+      "id": "m-de-1",
+      "slug": "deutschland-curacao",
+      "round": "Gruppe E",
+      "kickoffUtc": "2026-06-14T17:00:00Z",
+      "home": { "name": "Deutschland", "code": "de" },
+      "away": { "name": "Curaçao", "code": "cw" },
+      "venue": { "stadium": "", "city": "", "country": "" },
+      "score": { "home": null, "away": null, "status": "scheduled" }
+    },
+    {
+      "id": "m-de-2",
+      "slug": "deutschland-elfenbeinkueste",
+      "round": "Gruppe E",
+      "kickoffUtc": "2026-06-20T20:00:00Z",
+      "home": { "name": "Deutschland", "code": "de" },
+      "away": { "name": "Elfenbeinküste", "code": "ci" },
+      "venue": { "stadium": "", "city": "", "country": "" },
+      "score": { "home": null, "away": null, "status": "scheduled" }
+    },
+    {
+      "id": "m-de-3",
+      "slug": "ecuador-deutschland",
+      "round": "Gruppe E",
+      "kickoffUtc": "2026-06-25T20:00:00Z",
+      "home": { "name": "Ecuador", "code": "ec" },
+      "away": { "name": "Deutschland", "code": "de" },
+      "venue": { "stadium": "", "city": "", "country": "" },
+      "score": { "home": null, "away": null, "status": "scheduled" }
+    }
+  ]
+}
