@@ -1,0 +1,72 @@
+---
+// Lineups — offizielle Aufstellungen (API-Football), DESIGN_SYSTEM-konform.
+// Ohne Daten: dezenter Hinweis (Aufstellungen kommen kurz vor Anpfiff).
+import Flag from "./Flag.astro";
+
+interface Props {
+  match: any;
+}
+const { match } = Astro.props;
+const lu = match.lineup;
+const upcoming = match.score?.status !== "finished";
+
+const sides = lu
+  ? [
+      { data: lu.home, name: match.home?.name, code: match.home?.code },
+      { data: lu.away, name: match.away?.name, code: match.away?.code },
+    ]
+  : [];
+---
+
+<section class="mt-10">
+  <h2 class="text-lg uppercase mb-3">Aufstellungen</h2>
+
+  {!lu && (
+    <p class="text-sm text-text-secondary">
+      {upcoming
+        ? "Die offiziellen Aufstellungen werden in der Regel rund eine Stunde vor Anpfiff veröffentlicht."
+        : "Für dieses Spiel liegen keine Aufstellungsdaten vor."}
+    </p>
+  )}
+
+  {lu && (
+    <div class="grid gap-4 sm:grid-cols-2">
+      {sides.map(({ data, name, code }) => (
+        <div class="rounded-xl bg-card border border-border p-4">
+          <div class="flex items-center gap-2">
+            <Flag code={code} name={name} size={20} />
+            <span class="font-display font-bold text-text-primary">{name}</span>
+            {data.formation && <span class="ml-auto text-xs text-text-secondary tabular">{data.formation}</span>}
+          </div>
+          {data.coach && <p class="text-xs text-text-secondary mt-1">Trainer: {data.coach}</p>}
+
+          <ul class="mt-3 flex flex-col gap-1">
+            {data.xi.map((p: any) => (
+              <li class="flex items-center gap-2 text-sm">
+                <span class="w-6 text-right tabular text-text-secondary">{p.n ?? ""}</span>
+                <span class="text-text-primary truncate">{p.name}</span>
+                {p.pos && <span class="ml-auto text-xs text-text-secondary">{p.pos}</span>}
+              </li>
+            ))}
+          </ul>
+
+          {data.subs?.length > 0 && (
+            <details class="mt-3">
+              <summary class="cursor-pointer text-xs uppercase tracking-[0.08em] text-text-secondary">
+                Ersatzbank ({data.subs.length})
+              </summary>
+              <ul class="mt-2 flex flex-col gap-1">
+                {data.subs.map((p: any) => (
+                  <li class="flex items-center gap-2 text-sm text-text-secondary">
+                    <span class="w-6 text-right tabular">{p.n ?? ""}</span>
+                    <span class="truncate">{p.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      ))}
+    </div>
+  )}
+</section>

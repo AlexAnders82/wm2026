@@ -37,9 +37,11 @@ jobs:
       - name: Abhängigkeiten
         run: npm ci
 
-      # prebuild holt Daten (fetch-data) + erzeugt die .ics (build-ics),
+      # prebuild holt Daten + Stadien/Aufstellungen (API-Football) + Wetter + .ics,
       # danach Astro-Build. Bei API-Fehlern bleibt der committete Snapshot.
       - name: Build
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
         run: npm run build
 
       # Frisch geholten Snapshot zurück ins Repo (PLAN.md 3.4). [skip ci]
@@ -49,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/matches.json
+          git add src/data/matches.json src/data/live.json src/data/weather.json
           git commit -m "chore: Daten-Snapshot aktualisiert [skip ci]" || echo "Keine Änderung"
           git push || echo "Push übersprungen"
 
