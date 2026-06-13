@@ -8,7 +8,44 @@ import Countdown from "../components/Countdown.astro";
 import Flag from "../components/Flag.astro";
 import { getMatches, groupByDay } from "../lib/data.js";
 import { dayKey, fullDate } from "../lib/datetime.js";
-import { href } from "../lib/paths.js";
+import { href, absUrl } from "../lib/paths.js";
+import { linkFor } from "../lib/links.js";
+
+const site = Astro.site!;
+const magenta = linkFor("MagentaTV");
+const icsHttps = absUrl("wm2026.ics", site);
+const icsWebcal = icsHttps.replace(/^https?:/, "webcal:");
+
+// FAQ (DS 8.9) — echte Suchfragen, auch als FAQPage-JSON-LD (PLAN 6).
+const faq = [
+  { q: "Wo läuft das Finale der WM 2026?", a: "Das Finale am 19. Juli läuft im Free-TV im ZDF und zusätzlich bei MagentaTV." },
+  { q: "Was kostet MagentaTV?", a: "Das MagentaTV-Flex-Abo kostet 11 € pro Monat und ist monatlich kündbar." },
+  { q: "Welche Spiele laufen nicht im Free-TV?", a: "44 der 104 Spiele zeigt ausschließlich MagentaTV. Die übrigen 60 laufen bei ARD oder ZDF." },
+  { q: "Wann spielt Deutschland?", a: "Sa 14.6. 19:00 gegen Curaçao (ARD), Sa 20.6. 22:00 gegen Elfenbeinküste (ZDF), Do 25.6. 22:00 gegen Ecuador (ARD). Alle Spiele auch bei MagentaTV." },
+  { q: "In welcher Zeitzone stehen die Anstoßzeiten?", a: "Alle Zeiten auf dieser Seite sind deutsche Zeit (MESZ)." },
+  { q: "Brauche ich für das Kalender-Abo eine App?", a: "Nein. Das Abo funktioniert mit dem Standard-Kalender auf iPhone und Android." },
+  { q: "Kostet diese Seite etwas oder hat sie Werbung?", a: "Die Seite ist kostenlos, werbefrei und ohne Cookies. Einzelne Links sind mit * als Werbelink gekennzeichnet." },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Anstoß '26",
+    url: absUrl("", site),
+    inLanguage: "de",
+    description: "Spielplan, Ergebnisse und Sender (ARD, ZDF, MagentaTV) aller 104 Spiele der WM 2026 mit deutschen Anstoßzeiten.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
 
 const matches = getMatches();
 const now = Date.now();
@@ -42,6 +79,7 @@ const groups = groupByDay(matches);
 <Base
   title="Anstoß '26 — WM 2026 Spielplan, Ergebnisse & wo läuft's?"
   description="Alle 104 Spiele der WM 2026 mit deutschen Anstoßzeiten, Ergebnissen und Sender (ARD, ZDF, MagentaTV). Mobil, werbefrei, ohne Cookies."
+  jsonLd={jsonLd}
 >
   <!-- 2 · Hero "Matchday" -->
   <section id="heute" class="hero">
@@ -96,6 +134,85 @@ const groups = groupByDay(matches);
       </div>
     </div>
   </section>
+
+  <!-- 4 · TV-Guide + MagentaTV-CTA (DS 8.6) -->
+  <section id="tv-guide" class="section">
+    <div class="container-read">
+      <h2 class="text-2xl uppercase">Wo läuft die WM?</h2>
+      <p class="text-md text-text-secondary mt-2">
+        <span class="font-display text-text-primary">60</span> Spiele laufen im Free-TV bei
+        ARD oder ZDF. <span class="font-display text-text-primary">44</span> Spiele zeigt nur
+        MagentaTV. Alle <span class="font-display text-text-primary">104</span> Spiele gibt es
+        bei MagentaTV.
+      </p>
+
+      <div class="mt-6 rounded-xl bg-card p-5" style="border:1px solid var(--color-magenta)">
+        <h3 class="text-xl">44 Spiele laufen nur bei MagentaTV</h3>
+        <p class="text-sm text-text-secondary mt-1">Flex-Abo · 11 €/Monat · monatlich kündbar</p>
+        {magenta && (
+          <a
+            href={magenta.url}
+            target="_blank"
+            rel={magenta.rel}
+            class="btn btn-magenta mt-4"
+          >
+            Zum Angebot{magenta.star ? "*" : ""}
+          </a>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Kalender (DS 8.7) -->
+  <section id="kalender" class="section">
+    <div class="container-read">
+      <h2 class="text-2xl uppercase">Alle Spiele in deinem Kalender</h2>
+      <p class="text-md text-text-secondary mt-2">
+        Einmal abonnieren — jedes Spiel steht in deinem Kalender, Ergebnisse inklusive.
+      </p>
+
+      <div class="flex flex-wrap gap-3 mt-5">
+        <a href={icsWebcal} class="btn btn-pitch">📅 Kalender abonnieren</a>
+        <button type="button" class="btn btn-outline" id="copy-ics" data-ics={icsHttps}>
+          Link kopieren
+        </button>
+      </div>
+
+      <div class="mt-5 flex flex-col gap-2">
+        <details class="rounded-xl bg-card p-4">
+          <summary class="cursor-pointer font-display font-semibold">iPhone</summary>
+          <ol class="text-sm text-text-secondary mt-2 list-decimal pl-5 space-y-1">
+            <li>Auf „Kalender abonnieren" tippen.</li>
+            <li>Im Hinweis „Abonnieren" und dann „Fertig" bestätigen.</li>
+          </ol>
+        </details>
+        <details class="rounded-xl bg-card p-4">
+          <summary class="cursor-pointer font-display font-semibold">Android</summary>
+          <ol class="text-sm text-text-secondary mt-2 list-decimal pl-5 space-y-1">
+            <li>Auf „Link kopieren" tippen.</li>
+            <li>In Google Kalender (Web) unter „Weitere Kalender → Per URL" einfügen.</li>
+          </ol>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · FAQ (DS 8.9) -->
+  <section id="faq" class="section">
+    <div class="container-read">
+      <h2 class="text-2xl uppercase">Häufige Fragen</h2>
+      <div class="mt-5 flex flex-col gap-2">
+        {faq.map((f) => (
+          <details class="rounded-xl bg-card p-4">
+            <summary class="cursor-pointer font-display font-semibold">{f.q}</summary>
+            <p class="text-sm text-text-secondary mt-2">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </Base>
 
 <script>
@@ -126,5 +243,28 @@ const groups = groupByDay(matches);
       chips.forEach((c) => c.setAttribute("aria-pressed", c === chip ? "true" : "false"));
       apply(chip.getAttribute("data-filter") || "all");
     });
+  });
+
+  // Kalender-Link kopieren + Toast (DS 8.7)
+  const copyBtn = document.getElementById("copy-ics");
+  const toast = document.getElementById("toast");
+  let toastTimer: ReturnType<typeof setTimeout> | undefined;
+
+  function showToast(msg: string) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("is-visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2600);
+  }
+
+  copyBtn?.addEventListener("click", async () => {
+    const url = copyBtn.getAttribute("data-ics") || "";
+    try {
+      await navigator.clipboard.writeText(url);
+      showToast("Kopiert — ab in die WhatsApp-Gruppe");
+    } catch {
+      showToast(url);
+    }
   });
 </script>

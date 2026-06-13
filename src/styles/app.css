@@ -218,6 +218,62 @@
 }
 
 /* =========================================================================
+   Buttons (Touch-Target >= 44px, DS 2/3) + Toast
+   ========================================================================= */
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding-inline: 1.25rem;
+    border-radius: 0.75rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    transition: transform var(--dur-fast) var(--ease-out),
+      filter var(--dur-fast) var(--ease-out);
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
+  .btn-pitch {
+    background: var(--color-pitch);
+    color: var(--color-night);
+  }
+  .btn-magenta {
+    background: var(--color-magenta);
+    color: #fff;
+  }
+  .btn-outline {
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+  }
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%) translateY(1rem);
+  background: var(--color-pitch);
+  color: var(--color-night);
+  padding: 0.75rem 1.125rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+  z-index: 50;
+}
+.toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================================================================
    Hero-Flutlicht (DS 7): grafisch per CSS, kein Bild, nicht animiert
    ========================================================================= */
 .hero {
