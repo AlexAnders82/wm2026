@@ -1,21 +1,21 @@
 {
   "katar-schweiz": {
     "tempC": 15,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "San Francisco"
   },
   "brasilien-marokko": {
-    "tempC": 26,
+    "tempC": 27,
     "text": "klar",
     "city": "New York/New Jersey"
   },
   "haiti-schottland": {
-    "tempC": 25,
+    "tempC": 26,
     "text": "klar",
     "city": "Boston"
   },
   "australien-turkei": {
-    "tempC": 15,
+    "tempC": 16,
     "text": "klar",
     "city": "Vancouver"
   },
@@ -35,7 +35,7 @@
     "city": "Philadelphia"
   },
   "schweden-tunesien": {
-    "tempC": 25,
+    "tempC": 26,
     "text": "klar",
     "city": "Monterrey"
   },
