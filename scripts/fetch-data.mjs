@@ -95,11 +95,35 @@ const CODE_BY_NAME = {
   wales: "gb-wls",
   haiti: "ht",
   albanien: "al", albania: "al",
+  ghana: "gh",
+  algerien: "dz", algeria: "dz",
+  jordanien: "jo", jordan: "jo",
+  usbekistan: "uz", uzbekistan: "uz",
+  "dr kongo": "cd", "dr-kongo": "cd", kongo: "cd",
+  "bosnien und herzegowina": "ba",
 };
+
+// Namen robust normalisieren: Umlaute -> ae/oe/ue, Akzente weg, nur a-z0-9.
+// So matcht z. B. "Südafrika" (API) auf den Schlüssel "suedafrika".
+function norm(s) {
+  return String(s)
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+const NORM_CODE = Object.fromEntries(
+  Object.entries(CODE_BY_NAME).map(([k, v]) => [norm(k), v])
+);
 
 function codeFor(name) {
   if (!name) return null;
-  return CODE_BY_NAME[String(name).trim().toLowerCase()] ?? null;
+  return NORM_CODE[norm(name)] ?? null;
 }
 
 /** fetch mit Timeout, damit ein hängender Host den CI-Build nicht blockiert. */

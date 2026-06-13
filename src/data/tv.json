@@ -3,7 +3,7 @@
   "fallback": { "free": null, "stream": ["MagentaTV"] },
   "bySlug": {
     "deutschland-curacao": { "free": "ARD", "stream": ["MagentaTV"] },
-    "deutschland-elfenbeinkueste": { "free": "ZDF", "stream": ["MagentaTV"] },
+    "deutschland-elfenbeinkuste": { "free": "ZDF", "stream": ["MagentaTV"] },
     "ecuador-deutschland": { "free": "ARD", "stream": ["MagentaTV"] }
   }
 }
