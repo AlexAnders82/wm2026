@@ -1,0 +1,152 @@
+---
+// Spielseite — 104× programmatisch (DESIGN_SYSTEM.md 8.8, PLAN.md 4.2).
+// Long-tail-SEO-Lander: eine Frage, eine Antwort. SportsEvent + BroadcastEvent.
+import Base from "../../layouts/Base.astro";
+import Flag from "../../components/Flag.astro";
+import SenderBadge from "../../components/SenderBadge.astro";
+import MatchCard from "../../components/MatchCard.astro";
+import { getMatches, sameDayMatches } from "../../lib/data.js";
+import { dateTimeLabel, shortDate, timeLabel } from "../../lib/datetime.js";
+import { href, absUrl } from "../../lib/paths.js";
+
+export function getStaticPaths() {
+  return getMatches().map((match) => ({
+    params: { slug: match.slug },
+    props: { match },
+  }));
+}
+
+const { match } = Astro.props;
+const site = Astro.site!;
+const home = match.home?.name ?? "";
+const away = match.away?.name ?? "";
+const matchName = `${home} – ${away}`;
+
+const freeSender = match.tv?.free && match.tv.free !== "none" ? match.tv.free : null;
+const hasMagenta = (match.tv?.stream ?? []).includes("MagentaTV");
+const senders = [
+  ...(freeSender && freeSender !== "tbd" ? [freeSender] : []),
+  ...(hasMagenta ? ["MagentaTV"] : []),
+];
+const hasScore = match.score?.home != null && match.score?.away != null;
+
+// SEO (PLAN 4.2 / DS 10)
+const title = `${matchName} live: Übertragung, Anstoßzeit & Ergebnis | WM 2026`;
+const senderPhrase = freeSender && freeSender !== "tbd" ? `im ${freeSender}` : "bei MagentaTV";
+const description = `${matchName} am ${shortDate(match.kickoffUtc)} um ${timeLabel(match.kickoffUtc)} Uhr: Übertragung live ${senderPhrase}. Anstoßzeit, Stadion & Ergebnis.`;
+const canonical = absUrl(`spiel/${match.slug}`, site);
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: matchName,
+    sport: "Soccer",
+    startDate: match.kickoffUtc,
+    url: canonical,
+    eventStatus:
+      match.score?.status === "finished"
+        ? "https://schema.org/EventScheduled"
+        : "https://schema.org/EventScheduled",
+    homeTeam: { "@type": "SportsTeam", name: home },
+    awayTeam: { "@type": "SportsTeam", name: away },
+    ...(match.venue?.stadium || match.venue?.city
+      ? {
+          location: {
+            "@type": "Place",
+            name: match.venue?.stadium || match.venue?.city,
+            address: [match.venue?.city, match.venue?.country].filter(Boolean).join(", "),
+          },
+        }
+      : {}),
+  },
+  ...(senders.length
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "BroadcastEvent",
+          name: `${matchName} live`,
+          isLiveBroadcast: true,
+          startDate: match.kickoffUtc,
+          publishedOn: senders.map((s) => ({ "@type": "BroadcastService", name: s })),
+        },
+      ]
+    : []),
+];
+
+const others = sameDayMatches(match, 3);
+const meta = [match.round, match.venue?.stadium, match.venue?.city].filter(Boolean).join(" · ");
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} ogType="article">
+  <div class="container-read section">
+    <!-- Breadcrumb -->
+    <nav class="text-xs uppercase tracking-[0.08em] text-text-secondary" aria-label="Brotkrumen">
+      <a href={href("#spielplan")} class="hover:text-text-primary">Spielplan</a>
+      <span aria-hidden="true"> › </span>
+      <span>{matchName}</span>
+    </nav>
+
+    <h1 class="text-2xl uppercase mt-3">{matchName}</h1>
+
+    <!-- Teams -->
+    <div class="mt-4 flex flex-col gap-2">
+      <div class="flex items-center gap-3">
+        <Flag code={match.home?.code} name={home} size={28} />
+        <span class="text-md text-text-primary">{home}</span>
+        {hasScore && <span class="ml-auto font-display tabular text-xl font-bold">{match.score.home}</span>}
+      </div>
+      <div class="flex items-center gap-3">
+        <Flag code={match.away?.code} name={away} size={28} />
+        <span class="text-md text-text-primary">{away}</span>
+        {hasScore && <span class="ml-auto font-display tabular text-xl font-bold">{match.score.away}</span>}
+      </div>
+    </div>
+
+    <!-- Anstoß -->
+    <div class="mt-6">
+      <p class="text-xs uppercase tracking-[0.08em] text-text-secondary">Anstoß</p>
+      <p class={`font-display tabular text-xl mt-1 ${match.isDE ? "text-gold" : "text-text-primary"}`}>
+        {dateTimeLabel(match.kickoffUtc)}
+      </p>
+    </div>
+
+    <!-- Sender -->
+    <div class="mt-6">
+      <p class="text-xs uppercase tracking-[0.08em] text-text-secondary mb-2">Übertragung</p>
+      <div class="flex flex-wrap items-center gap-2">
+        {freeSender && <SenderBadge sender={freeSender} />}
+        {hasMagenta && <SenderBadge sender="MagentaTV" />}
+        {!senders.length && <span class="text-sm text-text-secondary">Sender wird noch bekanntgegeben.</span>}
+      </div>
+      {match.isExclusive && hasMagenta && (
+        <p class="text-magenta text-xs font-medium mt-2">Nur bei MagentaTV</p>
+      )}
+    </div>
+
+    {meta && (
+      <p class="text-sm text-text-secondary mt-6">{meta}</p>
+    )}
+
+    <!-- MagentaTV-CTA nur bei Exklusivspielen (DS 8.8) -->
+    {match.isExclusive && hasMagenta && (
+      <div class="mt-6 rounded-xl bg-card p-5" style="border:1px solid var(--color-magenta)">
+        <h2 class="text-lg">Dieses Spiel läuft nur bei MagentaTV</h2>
+        <p class="text-sm text-text-secondary mt-1">Flex-Abo · 11 €/Monat · monatlich kündbar</p>
+      </div>
+    )}
+
+    {others.length > 0 && (
+      <section class="mt-10">
+        <h2 class="text-lg uppercase">Weitere Spiele an diesem Tag</h2>
+        <div class="flex flex-col gap-[var(--space-card-gap)] mt-3">
+          {others.map((m) => <MatchCard match={m} />)}
+        </div>
+      </section>
+    )}
+
+    <p class="mt-10">
+      <a href={href("#spielplan")} class="text-pitch">← Zum Spielplan</a>
+    </p>
+  </div>
+</Base>

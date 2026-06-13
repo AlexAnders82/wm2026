@@ -71,6 +71,13 @@ export function dateTimeLabel(iso) {
   return `${cap(wd)}, ${p.day}. ${p.month} · ${p.hour}:${p.minute} Uhr`;
 }
 
+/** Kurzes Datum ohne Wochentag: "14. Juni 2026". */
+export function shortDate(iso) {
+  if (!iso) return "";
+  const p = parts(iso);
+  return `${p.day}. ${p.month} ${p.year}`;
+}
+
 /** Datenstand für Footer: "13.06.2026, 02:00". */
 export function stampLabel(iso) {
   if (!iso) return "";
