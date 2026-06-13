@@ -1,36 +1,1733 @@
 {
-  "_note": "Start-Schnappschuss (Fallback). Wird vom GitHub-Actions-Build per scripts/fetch-data.mjs durch alle 104 Spiele ersetzt. Enthaelt vorerst die verifizierten deutschen Gruppenspiele (PLAN.md 3.3, Gruppe E).",
-  "updatedAt": "2026-06-13T00:00:00Z",
+  "updatedAt": "2026-06-13T10:59:11.887Z",
   "matches": [
     {
-      "id": "m-de-1",
+      "id": "m80099",
+      "slug": "mexiko-sudafrika",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-11T19:00:00Z",
+      "home": {
+        "name": "Mexiko",
+        "code": "mx"
+      },
+      "away": {
+        "name": "Südafrika",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "status": "finished"
+      }
+    },
+    {
+      "id": "m80100",
+      "slug": "sudkorea-tschechien",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-12T02:00:00Z",
+      "home": {
+        "name": "Südkorea",
+        "code": null
+      },
+      "away": {
+        "name": "Tschechien",
+        "code": "cz"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "status": "finished"
+      }
+    },
+    {
+      "id": "m80101",
+      "slug": "kanada-bosnien-und-herzegowina",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-12T19:00:00Z",
+      "home": {
+        "name": "Kanada",
+        "code": "ca"
+      },
+      "away": {
+        "name": "Bosnien und Herzegowina",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "status": "finished"
+      }
+    },
+    {
+      "id": "m80102",
+      "slug": "usa-paraguay",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-13T01:00:00Z",
+      "home": {
+        "name": "USA",
+        "code": "us"
+      },
+      "away": {
+        "name": "Paraguay",
+        "code": "py"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": 4,
+        "away": 1,
+        "status": "finished"
+      }
+    },
+    {
+      "id": "m80104",
+      "slug": "katar-schweiz",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-13T19:00:00Z",
+      "home": {
+        "name": "Katar",
+        "code": "qa"
+      },
+      "away": {
+        "name": "Schweiz",
+        "code": "ch"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80105",
+      "slug": "brasilien-marokko",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-13T22:00:00Z",
+      "home": {
+        "name": "Brasilien",
+        "code": "br"
+      },
+      "away": {
+        "name": "Marokko",
+        "code": "ma"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80106",
+      "slug": "haiti-schottland",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-14T01:00:00Z",
+      "home": {
+        "name": "Haiti",
+        "code": "ht"
+      },
+      "away": {
+        "name": "Schottland",
+        "code": "gb-sct"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80103",
+      "slug": "australien-turkei",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-14T04:00:00Z",
+      "home": {
+        "name": "Australien",
+        "code": "au"
+      },
+      "away": {
+        "name": "Türkei",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80107",
       "slug": "deutschland-curacao",
-      "round": "Gruppe E",
+      "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T17:00:00Z",
-      "home": { "name": "Deutschland", "code": "de" },
-      "away": { "name": "Curaçao", "code": "cw" },
-      "venue": { "stadium": "", "city": "", "country": "" },
-      "score": { "home": null, "away": null, "status": "scheduled" }
+      "home": {
+        "name": "Deutschland",
+        "code": "de"
+      },
+      "away": {
+        "name": "Curaçao",
+        "code": "cw"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
     },
     {
-      "id": "m-de-2",
-      "slug": "deutschland-elfenbeinkueste",
-      "round": "Gruppe E",
+      "id": "m80108",
+      "slug": "niederlande-japan",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-14T20:00:00Z",
+      "home": {
+        "name": "Niederlande",
+        "code": "nl"
+      },
+      "away": {
+        "name": "Japan",
+        "code": "jp"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80109",
+      "slug": "elfenbeinkuste-ecuador",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-14T23:00:00Z",
+      "home": {
+        "name": "Elfenbeinküste",
+        "code": null
+      },
+      "away": {
+        "name": "Ecuador",
+        "code": "ec"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80110",
+      "slug": "schweden-tunesien",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-15T02:00:00Z",
+      "home": {
+        "name": "Schweden",
+        "code": "se"
+      },
+      "away": {
+        "name": "Tunesien",
+        "code": "tn"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80111",
+      "slug": "spanien-kap-verde",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-15T16:00:00Z",
+      "home": {
+        "name": "Spanien",
+        "code": "es"
+      },
+      "away": {
+        "name": "Kap Verde",
+        "code": "cv"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80112",
+      "slug": "belgien-agypten",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-15T19:00:00Z",
+      "home": {
+        "name": "Belgien",
+        "code": "be"
+      },
+      "away": {
+        "name": "Ägypten",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80113",
+      "slug": "saudi-arabien-uruguay",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-15T22:00:00Z",
+      "home": {
+        "name": "Saudi Arabien",
+        "code": null
+      },
+      "away": {
+        "name": "Uruguay",
+        "code": "uy"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80114",
+      "slug": "iran-neuseeland",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-16T01:00:00Z",
+      "home": {
+        "name": "Iran",
+        "code": "ir"
+      },
+      "away": {
+        "name": "Neuseeland",
+        "code": "nz"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80116",
+      "slug": "frankreich-senegal",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-16T19:00:00Z",
+      "home": {
+        "name": "Frankreich",
+        "code": "fr"
+      },
+      "away": {
+        "name": "Senegal",
+        "code": "sn"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80117",
+      "slug": "irak-norwegen",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-16T22:00:00Z",
+      "home": {
+        "name": "Irak",
+        "code": "iq"
+      },
+      "away": {
+        "name": "Norwegen",
+        "code": "no"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80118",
+      "slug": "argentinien-algerien",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-17T01:00:00Z",
+      "home": {
+        "name": "Argentinien",
+        "code": "ar"
+      },
+      "away": {
+        "name": "Algerien",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80115",
+      "slug": "osterreich-jordanien",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-17T04:00:00Z",
+      "home": {
+        "name": "Österreich",
+        "code": null
+      },
+      "away": {
+        "name": "Jordanien",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80119",
+      "slug": "portugal-dr-kongo",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-17T17:00:00Z",
+      "home": {
+        "name": "Portugal",
+        "code": "pt"
+      },
+      "away": {
+        "name": "DR Kongo",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80120",
+      "slug": "england-kroatien",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-17T20:00:00Z",
+      "home": {
+        "name": "England",
+        "code": "gb-eng"
+      },
+      "away": {
+        "name": "Kroatien",
+        "code": "hr"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80121",
+      "slug": "ghana-panama",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-17T23:00:00Z",
+      "home": {
+        "name": "Ghana",
+        "code": null
+      },
+      "away": {
+        "name": "Panama",
+        "code": "pa"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80122",
+      "slug": "usbekistan-kolumbien",
+      "round": "Gruppenphase 1",
+      "kickoffUtc": "2026-06-18T02:00:00Z",
+      "home": {
+        "name": "Usbekistan",
+        "code": null
+      },
+      "away": {
+        "name": "Kolumbien",
+        "code": "co"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80124",
+      "slug": "tschechien-sudafrika",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-18T16:00:00Z",
+      "home": {
+        "name": "Tschechien",
+        "code": "cz"
+      },
+      "away": {
+        "name": "Südafrika",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80125",
+      "slug": "schweiz-bosnien-und-herzegowina",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-18T19:00:00Z",
+      "home": {
+        "name": "Schweiz",
+        "code": "ch"
+      },
+      "away": {
+        "name": "Bosnien und Herzegowina",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80126",
+      "slug": "kanada-katar",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-18T22:00:00Z",
+      "home": {
+        "name": "Kanada",
+        "code": "ca"
+      },
+      "away": {
+        "name": "Katar",
+        "code": "qa"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80127",
+      "slug": "mexiko-sudkorea",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-19T01:00:00Z",
+      "home": {
+        "name": "Mexiko",
+        "code": "mx"
+      },
+      "away": {
+        "name": "Südkorea",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80129",
+      "slug": "usa-australien",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-19T19:00:00Z",
+      "home": {
+        "name": "USA",
+        "code": "us"
+      },
+      "away": {
+        "name": "Australien",
+        "code": "au"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80130",
+      "slug": "schottland-marokko",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-19T22:00:00Z",
+      "home": {
+        "name": "Schottland",
+        "code": "gb-sct"
+      },
+      "away": {
+        "name": "Marokko",
+        "code": "ma"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80131",
+      "slug": "brasilien-haiti",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-20T00:30:00Z",
+      "home": {
+        "name": "Brasilien",
+        "code": "br"
+      },
+      "away": {
+        "name": "Haiti",
+        "code": "ht"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80128",
+      "slug": "turkei-paraguay",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-20T03:00:00Z",
+      "home": {
+        "name": "Türkei",
+        "code": null
+      },
+      "away": {
+        "name": "Paraguay",
+        "code": "py"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80133",
+      "slug": "niederlande-schweden",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-20T17:00:00Z",
+      "home": {
+        "name": "Niederlande",
+        "code": "nl"
+      },
+      "away": {
+        "name": "Schweden",
+        "code": "se"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80134",
+      "slug": "deutschland-elfenbeinkuste",
+      "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T20:00:00Z",
-      "home": { "name": "Deutschland", "code": "de" },
-      "away": { "name": "Elfenbeinküste", "code": "ci" },
-      "venue": { "stadium": "", "city": "", "country": "" },
-      "score": { "home": null, "away": null, "status": "scheduled" }
+      "home": {
+        "name": "Deutschland",
+        "code": "de"
+      },
+      "away": {
+        "name": "Elfenbeinküste",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
     },
     {
-      "id": "m-de-3",
-      "slug": "ecuador-deutschland",
-      "round": "Gruppe E",
+      "id": "m80135",
+      "slug": "ecuador-curacao",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-21T00:00:00Z",
+      "home": {
+        "name": "Ecuador",
+        "code": "ec"
+      },
+      "away": {
+        "name": "Curaçao",
+        "code": "cw"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80132",
+      "slug": "tunesien-japan",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-21T04:00:00Z",
+      "home": {
+        "name": "Tunesien",
+        "code": "tn"
+      },
+      "away": {
+        "name": "Japan",
+        "code": "jp"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80136",
+      "slug": "spanien-saudi-arabien",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-21T16:00:00Z",
+      "home": {
+        "name": "Spanien",
+        "code": "es"
+      },
+      "away": {
+        "name": "Saudi Arabien",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80137",
+      "slug": "belgien-iran",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-21T19:00:00Z",
+      "home": {
+        "name": "Belgien",
+        "code": "be"
+      },
+      "away": {
+        "name": "Iran",
+        "code": "ir"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80138",
+      "slug": "uruguay-kap-verde",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-21T22:00:00Z",
+      "home": {
+        "name": "Uruguay",
+        "code": "uy"
+      },
+      "away": {
+        "name": "Kap Verde",
+        "code": "cv"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80139",
+      "slug": "neuseeland-agypten",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-22T01:00:00Z",
+      "home": {
+        "name": "Neuseeland",
+        "code": "nz"
+      },
+      "away": {
+        "name": "Ägypten",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80140",
+      "slug": "argentinien-osterreich",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-22T17:00:00Z",
+      "home": {
+        "name": "Argentinien",
+        "code": "ar"
+      },
+      "away": {
+        "name": "Österreich",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80141",
+      "slug": "frankreich-irak",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-22T21:00:00Z",
+      "home": {
+        "name": "Frankreich",
+        "code": "fr"
+      },
+      "away": {
+        "name": "Irak",
+        "code": "iq"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80142",
+      "slug": "norwegen-senegal",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-23T00:00:00Z",
+      "home": {
+        "name": "Norwegen",
+        "code": "no"
+      },
+      "away": {
+        "name": "Senegal",
+        "code": "sn"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80143",
+      "slug": "jordanien-algerien",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-23T03:00:00Z",
+      "home": {
+        "name": "Jordanien",
+        "code": null
+      },
+      "away": {
+        "name": "Algerien",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80144",
+      "slug": "portugal-usbekistan",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-23T17:00:00Z",
+      "home": {
+        "name": "Portugal",
+        "code": "pt"
+      },
+      "away": {
+        "name": "Usbekistan",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80145",
+      "slug": "england-ghana",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-23T20:00:00Z",
+      "home": {
+        "name": "England",
+        "code": "gb-eng"
+      },
+      "away": {
+        "name": "Ghana",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80146",
+      "slug": "panama-kroatien",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-23T23:00:00Z",
+      "home": {
+        "name": "Panama",
+        "code": "pa"
+      },
+      "away": {
+        "name": "Kroatien",
+        "code": "hr"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80147",
+      "slug": "kolumbien-dr-kongo",
+      "round": "Gruppenphase 2",
+      "kickoffUtc": "2026-06-24T02:00:00Z",
+      "home": {
+        "name": "Kolumbien",
+        "code": "co"
+      },
+      "away": {
+        "name": "DR Kongo",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80148",
+      "slug": "schweiz-kanada",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-24T19:00:00Z",
+      "home": {
+        "name": "Schweiz",
+        "code": "ch"
+      },
+      "away": {
+        "name": "Kanada",
+        "code": "ca"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80149",
+      "slug": "bosnien-und-herzegowina-katar",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-24T19:00:00Z",
+      "home": {
+        "name": "Bosnien und Herzegowina",
+        "code": null
+      },
+      "away": {
+        "name": "Katar",
+        "code": "qa"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80150",
+      "slug": "marokko-haiti",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-24T22:00:00Z",
+      "home": {
+        "name": "Marokko",
+        "code": "ma"
+      },
+      "away": {
+        "name": "Haiti",
+        "code": "ht"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80151",
+      "slug": "schottland-brasilien",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-24T22:00:00Z",
+      "home": {
+        "name": "Schottland",
+        "code": "gb-sct"
+      },
+      "away": {
+        "name": "Brasilien",
+        "code": "br"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80152",
+      "slug": "sudafrika-sudkorea",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-25T01:00:00Z",
+      "home": {
+        "name": "Südafrika",
+        "code": null
+      },
+      "away": {
+        "name": "Südkorea",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80153",
+      "slug": "tschechien-mexiko",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-25T01:00:00Z",
+      "home": {
+        "name": "Tschechien",
+        "code": "cz"
+      },
+      "away": {
+        "name": "Mexiko",
+        "code": "mx"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80154",
+      "slug": "curacao-elfenbeinkuste",
+      "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T20:00:00Z",
-      "home": { "name": "Ecuador", "code": "ec" },
-      "away": { "name": "Deutschland", "code": "de" },
-      "venue": { "stadium": "", "city": "", "country": "" },
-      "score": { "home": null, "away": null, "status": "scheduled" }
+      "home": {
+        "name": "Curaçao",
+        "code": "cw"
+      },
+      "away": {
+        "name": "Elfenbeinküste",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80155",
+      "slug": "ecuador-deutschland",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-25T20:00:00Z",
+      "home": {
+        "name": "Ecuador",
+        "code": "ec"
+      },
+      "away": {
+        "name": "Deutschland",
+        "code": "de"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80156",
+      "slug": "tunesien-niederlande",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-25T23:00:00Z",
+      "home": {
+        "name": "Tunesien",
+        "code": "tn"
+      },
+      "away": {
+        "name": "Niederlande",
+        "code": "nl"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80157",
+      "slug": "japan-schweden",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-25T23:00:00Z",
+      "home": {
+        "name": "Japan",
+        "code": "jp"
+      },
+      "away": {
+        "name": "Schweden",
+        "code": "se"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80158",
+      "slug": "turkei-usa",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-26T02:00:00Z",
+      "home": {
+        "name": "Türkei",
+        "code": null
+      },
+      "away": {
+        "name": "USA",
+        "code": "us"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80159",
+      "slug": "paraguay-australien",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-26T02:00:00Z",
+      "home": {
+        "name": "Paraguay",
+        "code": "py"
+      },
+      "away": {
+        "name": "Australien",
+        "code": "au"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80160",
+      "slug": "norwegen-frankreich",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-26T19:00:00Z",
+      "home": {
+        "name": "Norwegen",
+        "code": "no"
+      },
+      "away": {
+        "name": "Frankreich",
+        "code": "fr"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80161",
+      "slug": "senegal-irak",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-26T19:00:00Z",
+      "home": {
+        "name": "Senegal",
+        "code": "sn"
+      },
+      "away": {
+        "name": "Irak",
+        "code": "iq"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80162",
+      "slug": "kap-verde-saudi-arabien",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T00:00:00Z",
+      "home": {
+        "name": "Kap Verde",
+        "code": "cv"
+      },
+      "away": {
+        "name": "Saudi Arabien",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80163",
+      "slug": "uruguay-spanien",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T00:00:00Z",
+      "home": {
+        "name": "Uruguay",
+        "code": "uy"
+      },
+      "away": {
+        "name": "Spanien",
+        "code": "es"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80164",
+      "slug": "neuseeland-belgien",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T03:00:00Z",
+      "home": {
+        "name": "Neuseeland",
+        "code": "nz"
+      },
+      "away": {
+        "name": "Belgien",
+        "code": "be"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80165",
+      "slug": "agypten-iran",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T03:00:00Z",
+      "home": {
+        "name": "Ägypten",
+        "code": null
+      },
+      "away": {
+        "name": "Iran",
+        "code": "ir"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80166",
+      "slug": "panama-england",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T21:00:00Z",
+      "home": {
+        "name": "Panama",
+        "code": "pa"
+      },
+      "away": {
+        "name": "England",
+        "code": "gb-eng"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80167",
+      "slug": "kroatien-ghana",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T21:00:00Z",
+      "home": {
+        "name": "Kroatien",
+        "code": "hr"
+      },
+      "away": {
+        "name": "Ghana",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80168",
+      "slug": "kolumbien-portugal",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T23:30:00Z",
+      "home": {
+        "name": "Kolumbien",
+        "code": "co"
+      },
+      "away": {
+        "name": "Portugal",
+        "code": "pt"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80169",
+      "slug": "dr-kongo-usbekistan",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-27T23:30:00Z",
+      "home": {
+        "name": "DR Kongo",
+        "code": null
+      },
+      "away": {
+        "name": "Usbekistan",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80170",
+      "slug": "algerien-osterreich",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-28T02:00:00Z",
+      "home": {
+        "name": "Algerien",
+        "code": null
+      },
+      "away": {
+        "name": "Österreich",
+        "code": null
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
+    },
+    {
+      "id": "m80171",
+      "slug": "jordanien-argentinien",
+      "round": "Gruppenphase 3",
+      "kickoffUtc": "2026-06-28T02:00:00Z",
+      "home": {
+        "name": "Jordanien",
+        "code": null
+      },
+      "away": {
+        "name": "Argentinien",
+        "code": "ar"
+      },
+      "venue": {
+        "stadium": "",
+        "city": "",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      }
     }
   ]
 }
