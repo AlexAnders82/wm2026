@@ -1,0 +1,6 @@
+{
+  "_note": "ALLE externen/Affiliate-Links zentral (PLAN.md 5.1). Sobald ein Awin/Telekom-Affiliate-Link da ist: nur 'url' tauschen und 'affiliate': true setzen -> Komponenten setzen automatisch rel='sponsored noopener' und das Sternchen '*Werbelink'.",
+  "magentatv": { "url": "https://www.telekom.de/magenta-tv/fussball-wm", "affiliate": false, "label": "MagentaTV" },
+  "ard": { "url": "https://www.ardmediathek.de/live", "affiliate": false, "label": "ARD" },
+  "zdf": { "url": "https://www.zdf.de/live-tv", "affiliate": false, "label": "ZDF" }
+}

@@ -87,6 +87,20 @@ export function stampLabel(iso) {
   return fmt.format(d).replace(",", ",");
 }
 
+/** Restzeit als Anzeigetafel-String: "2 T 04:12:33" bzw. "04:12:33". */
+export function fmtRemaining(ms) {
+  if (!Number.isFinite(ms) || ms <= 0) return "Anpfiff!";
+  const total = Math.floor(ms / 1000);
+  const days = Math.floor(total / 86400);
+  const h = Math.floor((total % 86400) / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  const p = (n) => String(n).padStart(2, "0");
+  return days > 0
+    ? `${days} T ${p(h)}:${p(m)}:${p(s)}`
+    : `${p(h)}:${p(m)}:${p(s)}`;
+}
+
 function cap(s) {
   return s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
 }

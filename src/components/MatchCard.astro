@@ -1,0 +1,75 @@
+---
+// MatchCard — Kernkomponente, DESIGN_SYSTEM.md 8.3. Drei Zustände:
+// scheduled (Zeit groß) · live (Puls-Dot + LIVE, Stand fett) · finished (Endstand, 80 %).
+import Flag from "./Flag.astro";
+import SenderBadge from "./SenderBadge.astro";
+import { href } from "../lib/paths.js";
+import { timeLabel } from "../lib/datetime.js";
+
+interface Props {
+  match: any;
+}
+const { match } = Astro.props;
+const status = match.score?.status ?? "scheduled";
+const hasScore = match.score?.home != null && match.score?.away != null;
+
+const freeSender = match.tv?.free && match.tv.free !== "none" ? match.tv.free : null;
+const hasMagenta = (match.tv?.stream ?? []).includes("MagentaTV");
+
+const cardClass = [
+  "match-card",
+  match.isDE ? "match-card--de" : "",
+  status === "finished" ? "match-card--finished" : "",
+].filter(Boolean).join(" ");
+
+const meta = [match.round, match.venue?.city].filter(Boolean).join(" · ");
+---
+
+<a href={href(`spiel/${match.slug}`)} class={cardClass}>
+  <div class="flex gap-3 items-start">
+    <!-- Zeit-/Status-Spalte -->
+    <div class="w-14 shrink-0 font-display tabular leading-none pt-0.5">
+      {status === "live" ? (
+        <span class="flex items-center gap-1.5 text-pitch text-sm font-semibold">
+          <span class="live-dot"></span>LIVE
+        </span>
+      ) : status === "finished" ? (
+        <span class="text-text-secondary text-sm font-semibold uppercase tracking-wide">Beendet</span>
+      ) : (
+        <span class="block">
+          <span class="text-lg text-text-primary font-semibold block">{timeLabel(match.kickoffUtc)}</span>
+          <span class="text-xs text-text-secondary">Uhr</span>
+        </span>
+      )}
+    </div>
+
+    <!-- Teams + Stand -->
+    <div class="flex-1 min-w-0">
+      <div class="flex items-center gap-2">
+        <Flag code={match.home?.code} name={match.home?.name} />
+        <span class="truncate text-text-primary">{match.home?.name}</span>
+        {hasScore && (
+          <span class="ml-auto font-display tabular text-text-primary font-bold">{match.score.home}</span>
+        )}
+      </div>
+      <div class="flex items-center gap-2 mt-1">
+        <Flag code={match.away?.code} name={match.away?.name} />
+        <span class="truncate text-text-primary">{match.away?.name}</span>
+        {hasScore && (
+          <span class="ml-auto font-display tabular text-text-primary font-bold">{match.score.away}</span>
+        )}
+      </div>
+
+      <!-- Sender-Badges (max. 2, DS 8.5) -->
+      <div class="flex flex-wrap items-center gap-1.5 mt-2">
+        {freeSender && <SenderBadge sender={freeSender} />}
+        {hasMagenta && <SenderBadge sender="MagentaTV" />}
+        {!freeSender && hasMagenta && (
+          <span class="text-magenta text-xs font-medium">nur MagentaTV</span>
+        )}
+      </div>
+
+      {meta && <p class="text-xs text-text-secondary uppercase tracking-[0.08em] mt-2">{meta}</p>}
+    </div>
+  </div>
+</a>

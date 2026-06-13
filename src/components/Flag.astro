@@ -1,0 +1,17 @@
+---
+// Flag — runde SVG-Flagge (flag-icons), DESIGN_SYSTEM.md 7.
+// code = ISO-3166-alpha-2 bzw. flag-icons-Subcode (gb-eng …); null -> Platzhalter.
+interface Props {
+  code?: string | null;
+  name: string;
+  size?: number;
+}
+const { code, name, size = 20 } = Astro.props;
+const style = `--flag-size:${size}px`;
+---
+
+{code ? (
+  <span class={`fi fi-${code} fis flag`} role="img" aria-label={name} style={style}></span>
+) : (
+  <span class="flag flag--unknown" role="img" aria-label={name} style={style}></span>
+)}

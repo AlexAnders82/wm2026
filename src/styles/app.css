@@ -144,6 +144,21 @@
     padding-block: calc(var(--space-section) / 2);
   }
 
+  /* Runde Flaggen (DS 7): flag-icons als Fläche, Kreis, dezente Border */
+  .flag {
+    display: inline-block;
+    width: var(--flag-size, 20px);
+    height: var(--flag-size, 20px);
+    border-radius: 9999px;
+    border: 1px solid var(--color-border);
+    background-size: cover;
+    background-position: center;
+    flex: none;
+  }
+  .flag--unknown {
+    background: var(--color-chalk-line);
+  }
+
   /* Filter-Chips horizontal scrollbar ohne sichtbare Scrollbar (DS 6) */
   .scroll-x {
     overflow-x: auto;
@@ -152,6 +167,53 @@
   }
   .scroll-x::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* =========================================================================
+   MatchCard (DS 8.3) + Live-Puls (DS 13, Motion #1)
+   ========================================================================= */
+@layer components {
+  .match-card {
+    display: block;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: var(--space-card-padding);
+    transition: transform var(--dur-fast) var(--ease-out),
+      border-color var(--dur-fast) var(--ease-out);
+  }
+  .match-card:hover,
+  .match-card:focus-visible {
+    border-color: var(--color-steel);
+    transform: translateY(-1px);
+  }
+  .match-card--de {
+    border-left: 2px solid var(--color-gold);
+  }
+  .match-card--finished {
+    opacity: 0.8;
+  }
+
+  .live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: var(--color-pitch);
+    animation: live-ping 2s var(--ease-out) infinite;
+  }
+}
+
+@keyframes live-ping {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--color-pitch) 70%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 7px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
   }
 }
 
