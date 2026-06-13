@@ -20,17 +20,17 @@
     "city": "Vancouver"
   },
   "deutschland-curacao": {
-    "tempC": 30,
-    "text": "klar",
+    "tempC": 31,
+    "text": "überwiegend klar",
     "city": "Houston"
   },
   "niederlande-japan": {
     "tempC": 28,
-    "text": "überwiegend klar",
+    "text": "klar",
     "city": "Dallas"
   },
   "elfenbeinkuste-ecuador": {
-    "tempC": 27,
+    "tempC": 28,
     "text": "klar",
     "city": "Philadelphia"
   },
