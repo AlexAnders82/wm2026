@@ -11,7 +11,7 @@
 import { writeFile, readFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { slugify, codeFor } from "../src/lib/teamcodes.mjs";
+import { slugify, codeFor, pairKey } from "../src/lib/teamcodes.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, "../src/data/matches.json");
@@ -117,6 +117,33 @@ async function main() {
     if (!b.kickoffUtc) return -1;
     return a.kickoffUtc.localeCompare(b.kickoffUtc);
   });
+
+  // Stadien aus fixturedownload ergänzen (kostenlos), falls Quelle keine liefert.
+  if (matches.some((m) => !m.venue?.stadium && !m.venue?.city)) {
+    try {
+      const fd = await getJson("https://fixturedownload.com/feed/json/fifa-world-cup-2026");
+      const idx = new Map();
+      for (const r of fd) {
+        const k = pairKey(codeFor(r.HomeTeam), codeFor(r.AwayTeam));
+        if (k && r.Location) idx.set(k, r.Location);
+      }
+      let n = 0;
+      for (const m of matches) {
+        const k = pairKey(m.home?.code, m.away?.code);
+        const loc = k ? idx.get(k) : null;
+        if (loc && !m.venue.stadium && !m.venue.city) {
+          // Location ist oft "Stadion, Stadt" — Stadt separat ablegen.
+          const parts = String(loc).split(",").map((s) => s.trim());
+          m.venue.stadium = parts[0] || loc;
+          m.venue.city = parts.length > 1 ? parts[parts.length - 1] : "";
+          n++;
+        }
+      }
+      console.log(`✓ ${n} Stadien aus fixturedownload ergänzt`);
+    } catch (e) {
+      console.warn("… Stadien-Anreicherung fehlgeschlagen:", e.message);
+    }
+  }
 
   const payload = { updatedAt: new Date().toISOString(), matches };
   await mkdir(dirname(OUT), { recursive: true });

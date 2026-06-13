@@ -17,13 +17,13 @@ const BASE = "https://v3.football.api-sports.io";
 const LEAGUE = 1; // FIFA World Cup
 const SEASON = 2026;
 
+let lastErrors = null;
 async function api(path) {
   const res = await fetch(`${BASE}${path}`, { headers: { "x-apisports-key": KEY } });
   if (!res.ok) throw new Error(`HTTP ${res.status} für ${path}`);
   const json = await res.json();
-  if (json.errors && Object.keys(json.errors).length) {
-    console.warn("API-Football meldet:", JSON.stringify(json.errors));
-  }
+  lastErrors = json.errors && Object.keys(json.errors).length ? json.errors : null;
+  if (lastErrors) console.warn("API-Football meldet:", JSON.stringify(lastErrors));
   return json.response ?? [];
 }
 
@@ -50,16 +50,19 @@ async function main() {
   if (!Object.keys(live.venues).length || ageH > 18) {
     try {
       const fixtures = await api(`/fixtures?league=${LEAGUE}&season=${SEASON}`);
-      let n = 0;
+      let n = 0, mapped = 0;
       for (const f of fixtures) {
+        n++;
         const k = pairKey(codeFor(f.teams?.home?.name), codeFor(f.teams?.away?.name));
         if (!k) continue;
         live.venues[k] = { stadium: f.fixture?.venue?.name ?? "", city: f.fixture?.venue?.city ?? "" };
         live.fixtures[k] = f.fixture?.id ?? null;
-        n++;
+        mapped++;
       }
-      console.log(`✓ ${n} Stadien/Fixtures von API-Football`);
+      live._diag = { keyPresent: true, fixturesReturned: n, mapped, errors: lastErrors, at: new Date().toISOString() };
+      console.log(`✓ API-Football: ${n} Fixtures, ${mapped} zugeordnet`);
     } catch (e) {
+      live._diag = { keyPresent: true, error: e.message, at: new Date().toISOString() };
       console.warn("… Fixtures-Abruf fehlgeschlagen:", e.message);
     }
   } else {
