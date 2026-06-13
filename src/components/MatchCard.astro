@@ -1,6 +1,6 @@
 ---
 // MatchCard — Kernkomponente, DESIGN_SYSTEM.md 8.3. Drei Zustände:
-// scheduled (Zeit groß) · live (Puls-Dot + LIVE, Stand fett) · finished (Endstand, 80 %).
+// scheduled (Zeit groß) · live (Puls-Dot) · finished (Endstand, 80 %).
 import Flag from "./Flag.astro";
 import SenderBadge from "./SenderBadge.astro";
 import { href } from "../lib/paths.js";
@@ -18,12 +18,15 @@ const hasMagenta = (match.tv?.stream ?? []).includes("MagentaTV");
 
 const cardClass = [
   "match-card",
-  "reveal",
   match.isDE ? "match-card--de" : "",
   status === "finished" ? "match-card--finished" : "",
 ].filter(Boolean).join(" ");
 
-const meta = [match.round, match.venue?.city].filter(Boolean).join(" · ");
+// Meta: Gruppe + Spieltag (oder Runde bei K.o.), plus Stadt falls vorhanden.
+const phaseLabel = match.group
+  ? `Gruppe ${match.group}${match.matchday ? ` · Spieltag ${match.matchday}` : ""}`
+  : match.round || "";
+const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
 ---
 
 <a
@@ -33,15 +36,15 @@ const meta = [match.round, match.venue?.city].filter(Boolean).join(" · ");
   data-de={String(match.isDE)}
   data-phase={match.phase}
 >
-  <div class="flex gap-3 items-start">
+  <div class="flex gap-3 items-center">
     <!-- Zeit-/Status-Spalte -->
-    <div class="w-14 shrink-0 font-display tabular leading-none pt-0.5">
+    <div class="w-14 shrink-0 font-display tabular leading-none text-center">
       {status === "live" ? (
-        <span class="flex items-center gap-1.5 text-pitch text-sm font-semibold">
+        <span class="flex items-center justify-center gap-1.5 text-pitch text-sm font-semibold">
           <span class="live-dot"></span>LIVE
         </span>
       ) : status === "finished" ? (
-        <span class="text-text-secondary text-sm font-semibold uppercase tracking-wide">Beendet</span>
+        <span class="text-text-secondary text-xs font-semibold uppercase tracking-wide">Beendet</span>
       ) : (
         <span class="block">
           <span class="text-lg text-text-primary font-semibold block">{timeLabel(match.kickoffUtc)}</span>
@@ -67,16 +70,13 @@ const meta = [match.round, match.venue?.city].filter(Boolean).join(" · ");
         )}
       </div>
 
-      <!-- Sender-Badges (max. 2, DS 8.5) -->
-      <div class="flex flex-wrap items-center gap-1.5 mt-2">
-        {freeSender && <SenderBadge sender={freeSender} />}
-        {hasMagenta && <SenderBadge sender="MagentaTV" />}
-        {!freeSender && hasMagenta && (
-          <span class="text-magenta text-xs font-medium">nur MagentaTV</span>
-        )}
-      </div>
+      {meta && <p class="text-xs text-text-secondary uppercase tracking-[0.08em] mt-1.5">{meta}</p>}
+    </div>
 
-      {meta && <p class="text-xs text-text-secondary uppercase tracking-[0.08em] mt-2">{meta}</p>}
+    <!-- Sender (kompakt, rechts) -->
+    <div class="shrink-0 flex flex-col items-end gap-1">
+      {freeSender && <SenderBadge sender={freeSender} />}
+      {hasMagenta && <SenderBadge sender="MagentaTV" />}
     </div>
   </div>
 </a>
