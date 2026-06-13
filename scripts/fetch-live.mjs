@@ -1,7 +1,7 @@
-// fetch-live.mjs — API-Football (v3): Stadien (für Wetter/Ort) + Aufstellungen.
-// Braucht den GitHub-Secret FOOTBALL_API_KEY. Ohne Schlüssel: No-Op.
-// Tageslimit-schonend: Spielplan/Stadien nur ~1x/Tag, Aufstellungen nur für
-// Spiele im Fenster [-2h, +3h] um den Anpfiff (max. 10 Abrufe/Lauf).
+// fetch-live.mjs — Aufstellungen via TheSportsDB (kostenlos, community-gepflegt).
+// Stadien kommen bereits aus fetch-data (fixturedownload). Hier nur Lineups,
+// best-effort: was verfügbar ist, wird gezeigt; sonst ehrlicher Hinweis im UI.
+// Nur für Spiele im Fenster [-2h, +4h] um den Anpfiff.
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
@@ -12,100 +12,92 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, "../src/data/live.json");
 const MATCHES = resolve(__dirname, "../src/data/matches.json");
 
-const KEY = process.env.FOOTBALL_API_KEY;
-const BASE = "https://v3.football.api-sports.io";
-const LEAGUE = 1; // FIFA World Cup
-const SEASON = 2026;
-
-let lastErrors = null;
-async function api(path) {
-  const res = await fetch(`${BASE}${path}`, { headers: { "x-apisports-key": KEY } });
-  if (!res.ok) throw new Error(`HTTP ${res.status} für ${path}`);
-  const json = await res.json();
-  lastErrors = json.errors && Object.keys(json.errors).length ? json.errors : null;
-  if (lastErrors) console.warn("API-Football meldet:", JSON.stringify(lastErrors));
-  return json.response ?? [];
-}
+// Öffentlicher Test-Key von TheSportsDB. Optional per Env überschreibbar.
+const KEY = process.env.SPORTSDB_KEY || "123";
+const BASE = `https://www.thesportsdb.com/api/v1/json/${KEY}`;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
+async function getJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
 async function loadJson(file, fallback) {
   try { return JSON.parse(await readFile(file, "utf8")); } catch { return fallback; }
 }
 
+function dateUTC(iso) {
+  return new Date(iso).toISOString().slice(0, 10);
+}
+
+/** TheSportsDB-Lineup-Array -> {home, away} oder null. */
+function parseLineup(rows, homeName, awayName) {
+  const side = (isHome) => {
+    const items = rows.filter((r) => (r.strHome === "Yes") === isHome);
+    const players = items.filter((r) => r.strSubstitute !== "Yes");
+    const subs = items.filter((r) => r.strSubstitute === "Yes");
+    const map = (r) => ({ n: r.intSquadNumber ? Number(r.intSquadNumber) : null, name: r.strPlayer ?? "", pos: r.strPosition ?? "" });
+    return {
+      team: isHome ? homeName : awayName,
+      formation: items[0]?.strFormation ?? "",
+      coach: "",
+      xi: players.map(map),
+      subs: subs.map(map),
+    };
+  };
+  const home = side(true), away = side(false);
+  if (!home.xi.length && !away.xi.length) return null;
+  return { home, away, fetchedAt: new Date().toISOString() };
+}
+
 async function main() {
-  if (!KEY) {
-    console.log("ℹ FOOTBALL_API_KEY nicht gesetzt — überspringe Live-Daten.");
-    process.exit(0);
-  }
-
   const live = await loadJson(OUT, { updatedAt: null, venues: {}, fixtures: {}, lineups: {} });
-  live.venues ??= {}; live.fixtures ??= {}; live.lineups ??= {};
-
+  live.lineups ??= {};
   const matchesData = await loadJson(MATCHES, { matches: [] });
   const matches = matchesData.matches ?? [];
 
-  // 1) Stadien/Fixture-IDs nur holen, wenn leer oder älter als 18h.
-  const ageH = live.updatedAt ? (Date.now() - new Date(live.updatedAt).getTime()) / 3.6e6 : Infinity;
-  if (!Object.keys(live.venues).length || ageH > 18) {
-    try {
-      const fixtures = await api(`/fixtures?league=${LEAGUE}&season=${SEASON}`);
-      let n = 0, mapped = 0;
-      for (const f of fixtures) {
-        n++;
-        const k = pairKey(codeFor(f.teams?.home?.name), codeFor(f.teams?.away?.name));
-        if (!k) continue;
-        live.venues[k] = { stadium: f.fixture?.venue?.name ?? "", city: f.fixture?.venue?.city ?? "" };
-        live.fixtures[k] = f.fixture?.id ?? null;
-        mapped++;
-      }
-      live._diag = { keyPresent: true, fixturesReturned: n, mapped, errors: lastErrors, at: new Date().toISOString() };
-      console.log(`✓ API-Football: ${n} Fixtures, ${mapped} zugeordnet`);
-    } catch (e) {
-      live._diag = { keyPresent: true, error: e.message, at: new Date().toISOString() };
-      console.warn("… Fixtures-Abruf fehlgeschlagen:", e.message);
-    }
-  } else {
-    console.log(`ℹ Stadien noch frisch (${ageH.toFixed(1)}h) — kein erneuter Abruf.`);
-  }
-
-  // 2) Aufstellungen für Spiele kurz vor/nach Anpfiff.
   const now = Date.now();
-  const candidates = matches
-    .filter((m) => m.kickoffUtc)
-    .map((m) => ({ m, t: new Date(m.kickoffUtc).getTime(), k: pairKey(m.home?.code, m.away?.code) }))
-    .filter(({ t, k }) => k && t >= now - 2 * 3.6e6 && t <= now + 3 * 3.6e6)
-    .sort((a, b) => a.t - b.t)
-    .slice(0, 10);
+  const windowMatches = matches.filter((m) => {
+    if (!m.kickoffUtc) return false;
+    const t = new Date(m.kickoffUtc).getTime();
+    return t >= now - 2 * 3.6e6 && t <= now + 4 * 3.6e6;
+  });
 
-  let got = 0;
-  for (const { m, k } of candidates) {
-    const fid = live.fixtures[k];
-    if (!fid) continue;
+  let checked = 0, got = 0, lastError = null;
+  const eventCache = new Map();
+
+  for (const m of windowMatches.slice(0, 8)) {
+    const pk = pairKey(m.home?.code, m.away?.code);
+    if (!pk) continue;
+    checked++;
     try {
-      const rows = await api(`/fixtures/lineups?fixture=${fid}`);
-      if (rows.length >= 2) {
-        const conv = (r) => ({
-          team: r.team?.name ?? "",
-          formation: r.formation ?? "",
-          coach: r.coach?.name ?? "",
-          xi: (r.startXI ?? []).map((p) => ({ n: p.player?.number ?? null, name: p.player?.name ?? "", pos: p.player?.pos ?? "" })),
-          subs: (r.substitutes ?? []).map((p) => ({ n: p.player?.number ?? null, name: p.player?.name ?? "", pos: p.player?.pos ?? "" })),
-        });
-        live.lineups[m.slug] = { home: conv(rows[0]), away: conv(rows[1]), fetchedAt: new Date().toISOString() };
-        got++;
+      const d = dateUTC(m.kickoffUtc);
+      if (!eventCache.has(d)) {
+        const j = await getJson(`${BASE}/eventsday.php?d=${d}&s=Soccer`);
+        eventCache.set(d, j.events ?? []);
+        await sleep(400);
       }
-      await sleep(300);
+      const ev = (eventCache.get(d) || []).find((e) => {
+        if (!/world cup/i.test(e.strLeague ?? "")) return false;
+        const k = pairKey(codeFor(e.strHomeTeam), codeFor(e.strAwayTeam));
+        return k === pk;
+      });
+      if (!ev?.idEvent) continue;
+      const lj = await getJson(`${BASE}/lookuplineup.php?id=${ev.idEvent}`);
+      await sleep(400);
+      const parsed = parseLineup(lj.lineup ?? [], m.home?.name, m.away?.name);
+      if (parsed) { live.lineups[m.slug] = parsed; got++; }
     } catch (e) {
-      console.warn(`… Aufstellung ${m.slug} fehlgeschlagen:`, e.message);
+      lastError = e.message;
+      console.warn(`… Lineup ${m.slug}:`, e.message);
     }
   }
-  console.log(`✓ ${got} Aufstellungen aktualisiert`);
 
+  live._diag = { source: "thesportsdb", windowMatches: windowMatches.length, checked, got, lastError, at: new Date().toISOString() };
   live.updatedAt = new Date().toISOString();
   await mkdir(dirname(OUT), { recursive: true });
   await writeFile(OUT, JSON.stringify(live, null, 2) + "\n", "utf8");
-  console.log(`✓ live.json geschrieben`);
+  console.log(`✓ TheSportsDB: ${got}/${checked} Aufstellungen (Fenster: ${windowMatches.length})`);
 }
 
 main().catch((e) => { console.error("fetch-live Fehler:", e); process.exit(0); });
