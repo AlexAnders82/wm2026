@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   Anstoß '26 — Design-Tokens (DESIGN_SYSTEM.md Sektion 3, 4, 5, 13)
+   Tailwind v4 CSS-first. KEIN tailwind.config.js, KEIN @tailwind base.
+   ========================================================================= */
+
+@theme {
+  /* --- Farben (DS 3) --- */
+  --color-night: oklch(16% 0.03 262);
+  --color-pitchbox: oklch(21% 0.035 262);
+  --color-chalk-line: oklch(30% 0.04 262);
+  --color-floodlight: oklch(95% 0.01 262);
+  --color-steel: oklch(72% 0.025 262);
+  --color-pitch: oklch(73% 0.17 152);
+  --color-gold: oklch(80% 0.14 80);
+  --color-magenta: oklch(55% 0.24 356);
+  --color-ard: oklch(55% 0.18 262);
+  --color-zdf: oklch(70% 0.17 50);
+
+  /* Semantische Aliase */
+  --color-bg-primary: var(--color-night);
+  --color-bg-card: var(--color-pitchbox);
+  --color-border: var(--color-chalk-line);
+  --color-text-primary: var(--color-floodlight);
+  --color-text-secondary: var(--color-steel);
+  --color-accent-live: var(--color-pitch);
+  --color-accent-de: var(--color-gold);
+
+  /* --- Typografie (DS 4) --- */
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", system-ui, sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.5rem;
+  --text-hero: clamp(2.5rem, 10vw, 4.5rem);
+
+  --leading-hero: 1;
+  --leading-heading: 1.1;
+  --leading-body: 1.6;
+  --tracking-caption: 0.08em;
+}
+
+/* =========================================================================
+   Spacing- & Motion-Tokens als CSS-Variablen (DS 5 + 13)
+   Mobile zuerst; Desktop skaliert per Media-Query hoch.
+   ========================================================================= */
+:root {
+  --space-section: 4rem;
+  --space-block: 2rem;
+  --space-card-gap: 0.75rem;
+  --space-card-padding: 1rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-base: 300ms;
+  --dur-slow: 600ms;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --space-section: 7rem;
+    --space-block: 3rem;
+    --space-card-gap: 1rem;
+    --space-card-padding: 1.25rem;
+  }
+}
+
+/* =========================================================================
+   Basis-Layer
+   ========================================================================= */
+@layer base {
+  html {
+    background-color: var(--color-night);
+    color: var(--color-floodlight);
+    font-family: var(--font-body);
+    line-height: var(--leading-body);
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    line-height: var(--leading-heading);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Fokus immer sichtbar in Rasengrün (DS 3: pitch = Fokus-Ring) */
+  :focus-visible {
+    outline: 2px solid var(--color-pitch);
+    outline-offset: 2px;
+    border-radius: 0.25rem;
+  }
+
+  ::selection {
+    background: var(--color-pitch);
+    color: var(--color-night);
+  }
+
+  /* Anstoßzeiten/Ergebnisse/Countdown: Anzeigetafel ohne Zappeln (DS 4) */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* =========================================================================
+   Layout-Helfer
+   ========================================================================= */
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: 64rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  /* Inhaltslisten (Spielplan) schmaler — Lesbarkeit vor Flächenfüllung (DS 5) */
+  .container-read {
+    width: 100%;
+    max-width: 42rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  .section {
+    padding-block: calc(var(--space-section) / 2);
+  }
+
+  /* Filter-Chips horizontal scrollbar ohne sichtbare Scrollbar (DS 6) */
+  .scroll-x {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scroll-x::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* =========================================================================
+   Skip-Link (Accessibility, DS Header)
+   ========================================================================= */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--color-pitch);
+  color: var(--color-night);
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  transition: top var(--dur-fast) var(--ease-out);
+}
+.skip-link:focus {
+  top: 0.5rem;
+}
