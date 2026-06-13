@@ -1,6 +1,15 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-06-13T14:07:12.258Z",
   "venues": {},
   "fixtures": {},
-  "lineups": {}
+  "lineups": {},
+  "_diag": {
+    "keyPresent": true,
+    "fixturesReturned": 0,
+    "mapped": 0,
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "at": "2026-06-13T14:07:12.257Z"
+  }
 }

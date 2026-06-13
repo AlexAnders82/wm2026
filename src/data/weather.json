@@ -1,1 +1,52 @@
-{}
+{
+  "katar-schweiz": {
+    "tempC": 15,
+    "text": "überwiegend klar",
+    "city": "San Francisco"
+  },
+  "brasilien-marokko": {
+    "tempC": 26,
+    "text": "klar",
+    "city": "New York/New Jersey"
+  },
+  "haiti-schottland": {
+    "tempC": 25,
+    "text": "klar",
+    "city": "Boston"
+  },
+  "australien-turkei": {
+    "tempC": 15,
+    "text": "klar",
+    "city": "Vancouver"
+  },
+  "deutschland-curacao": {
+    "tempC": 30,
+    "text": "klar",
+    "city": "Houston"
+  },
+  "niederlande-japan": {
+    "tempC": 28,
+    "text": "überwiegend klar",
+    "city": "Dallas"
+  },
+  "elfenbeinkuste-ecuador": {
+    "tempC": 27,
+    "text": "klar",
+    "city": "Philadelphia"
+  },
+  "schweden-tunesien": {
+    "tempC": 25,
+    "text": "klar",
+    "city": "Monterrey"
+  },
+  "belgien-agypten": {
+    "tempC": 15,
+    "text": "klar",
+    "city": "Seattle"
+  },
+  "saudi-arabien-uruguay": {
+    "tempC": 29,
+    "text": "bewölkt",
+    "city": "Miami"
+  }
+}
