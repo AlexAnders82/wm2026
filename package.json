@@ -6,8 +6,10 @@
   "description": "Anstoß '26 – mobile-first Spielplan- und TV-Guide-Seite zur Fußball-WM 2026",
   "scripts": {
     "fetch-data": "node scripts/fetch-data.mjs",
+    "fetch-live": "node scripts/fetch-live.mjs",
+    "fetch-weather": "node scripts/fetch-weather.mjs",
     "build-ics": "node scripts/build-ics.mjs",
-    "prebuild": "node scripts/fetch-data.mjs && node scripts/build-ics.mjs",
+    "prebuild": "node scripts/fetch-data.mjs && node scripts/fetch-live.mjs && node scripts/fetch-weather.mjs && node scripts/build-ics.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"

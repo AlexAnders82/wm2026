@@ -4,7 +4,10 @@
 
 import matchesData from "../data/matches.json";
 import tvData from "../data/tv.json";
+import liveData from "../data/live.json";
+import weatherData from "../data/weather.json";
 import { dayKey, dayHeader } from "./datetime.js";
+import { pairKey } from "./teamcodes.mjs";
 
 /** Sender-Info für einen Slug; fehlt er, gilt der Fallback. */
 export function tvFor(slug) {
@@ -117,8 +120,15 @@ export function getGroup(letter) {
 
 function enrich(m) {
   const e = baseEnrich(m);
-  const g = computeGroupInfo().groupOf.get(e.home?.name) ?? computeGroupInfo().groupOf.get(e.away?.name) ?? null;
-  return { ...e, group: g };
+  const info = computeGroupInfo();
+  const g = info.groupOf.get(e.home?.name) ?? info.groupOf.get(e.away?.name) ?? null;
+  // Stadion aus Live-Daten (API-Football) ergänzen, wenn vorhanden.
+  const pk = pairKey(e.home?.code, e.away?.code);
+  const lv = pk ? liveData.venues?.[pk] : null;
+  const venue = lv && (lv.stadium || lv.city) ? { ...e.venue, ...lv } : e.venue;
+  const lineup = liveData.lineups?.[m.slug] ?? null;
+  const weather = weatherData?.[m.slug] ?? null;
+  return { ...e, group: g, venue, lineup, weather };
 }
 
 /** Alle Spiele, chronologisch (Spiele ohne Datum ans Ende). */

@@ -71,6 +71,9 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
       </div>
 
       {meta && <p class="text-xs text-text-secondary uppercase tracking-[0.08em] mt-1.5">{meta}</p>}
+      {match.weather && (
+        <p class="text-xs text-text-secondary tabular mt-0.5">{match.weather.tempC}°C · {match.weather.text}</p>
+      )}
     </div>
 
     <!-- Sender (kompakt, rechts) -->

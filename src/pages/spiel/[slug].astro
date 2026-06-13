@@ -6,6 +6,7 @@ import Flag from "../../components/Flag.astro";
 import SenderBadge from "../../components/SenderBadge.astro";
 import MatchCard from "../../components/MatchCard.astro";
 import GroupTable from "../../components/GroupTable.astro";
+import Lineups from "../../components/Lineups.astro";
 import { getMatches, sameDayMatches, getGroup } from "../../lib/data.js";
 import { dateTimeLabel, shortDate, timeLabel } from "../../lib/datetime.js";
 import { href, absUrl } from "../../lib/paths.js";
@@ -144,6 +145,12 @@ const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).joi
             <dd class="text-text-primary">{venueLabel}</dd>
           </div>
         )}
+        {match.weather && (
+          <div class="flex gap-2 py-1 border-t border-border">
+            <dt class="w-24 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Wetter</dt>
+            <dd class="text-text-primary tabular">{match.weather.tempC}°C · {match.weather.text}</dd>
+          </div>
+        )}
       </dl>
     )}
 
@@ -154,6 +161,9 @@ const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).joi
         <p class="text-sm text-text-secondary mt-1">Flex-Abo · 11 €/Monat · monatlich kündbar</p>
       </div>
     )}
+
+    <!-- Aufstellungen -->
+    <Lineups match={match} />
 
     <!-- Gruppentabelle -->
     {group && (
