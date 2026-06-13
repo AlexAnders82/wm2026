@@ -3,7 +3,7 @@ name: Build & Deploy
 # Zwei Trigger (PLAN.md 3.4): bei Push auf main + stündlich (Minute 17).
 on:
   push:
-    branches: [main, claude/tender-hypatia-p3kyyh]
+    branches: [main]
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
