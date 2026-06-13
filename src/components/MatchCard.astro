@@ -76,10 +76,10 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
       )}
     </div>
 
-    <!-- Sender (kompakt, rechts) -->
+    <!-- Sender (kompakt, rechts) — als Beschriftung, da die Karte selbst ein Link ist -->
     <div class="shrink-0 flex flex-col items-end gap-1">
-      {freeSender && <SenderBadge sender={freeSender} />}
-      {hasMagenta && <SenderBadge sender="MagentaTV" />}
+      {freeSender && <SenderBadge sender={freeSender} link={false} />}
+      {hasMagenta && <SenderBadge sender="MagentaTV" link={false} />}
     </div>
   </div>
 </a>
