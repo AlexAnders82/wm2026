@@ -1,0 +1,12 @@
+# Build & Abhängigkeiten
+node_modules/
+dist/
+.astro/
+
+# Logs & OS
+*.log
+.DS_Store
+npm-debug.log*
+
+# Generierte Artefakte (per prebuild)
+public/wm2026.ics

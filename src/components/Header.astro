@@ -1,0 +1,19 @@
+---
+// Header — DESIGN_SYSTEM.md 8.1. Logo + 4 Anker-Links, sticky, schlank.
+// Kein Burger, kein CTA, keine Schatten.
+import { href } from "../lib/paths.js";
+---
+
+<header class="sticky top-0 z-30 bg-night/90 backdrop-blur border-b border-border">
+  <div class="container-page h-14 flex items-center justify-between gap-4">
+    <a href={href("")} class="font-display text-md font-bold tracking-wide whitespace-nowrap">
+      ANSTOSS <span class="text-pitch">'</span>26
+    </a>
+    <nav class="flex items-center gap-4 text-sm text-text-secondary">
+      <a href={href("#heute")} class="hover:text-text-primary">Heute</a>
+      <a href={href("#spielplan")} class="hover:text-text-primary">Plan</a>
+      <a href={href("#tv-guide")} class="hover:text-text-primary">TV</a>
+      <a href={href("#kalender")} class="hover:text-text-primary text-base" aria-label="Kalender">📅</a>
+    </nav>
+  </div>
+</header>

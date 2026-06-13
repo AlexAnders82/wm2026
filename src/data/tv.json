@@ -1,0 +1,9 @@
+{
+  "_note": "Sender-Zuordnung WM 2026 (manuell kuratiert, PLAN.md 3.3). Schluessel = Spiel-Slug (stabil, im Gegensatz zu API-IDs). 'free' = Free-TV-Sender (ARD/ZDF) oder 'tbd' (noch nicht final verteilt) oder null (nur Pay). 'stream' = Streaming-Anbieter. MagentaTV zeigt ALLE 104 Spiele; fehlt ein Slug, gilt 'fallback' (nur MagentaTV = faktisch immer korrekt). Quellen: sport1.de, t-online.de, spox.com (Stand 13.06.2026).",
+  "fallback": { "free": null, "stream": ["MagentaTV"] },
+  "bySlug": {
+    "deutschland-curacao": { "free": "ARD", "stream": ["MagentaTV"] },
+    "deutschland-elfenbeinkueste": { "free": "ZDF", "stream": ["MagentaTV"] },
+    "ecuador-deutschland": { "free": "ARD", "stream": ["MagentaTV"] }
+  }
+}

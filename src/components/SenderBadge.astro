@@ -1,0 +1,41 @@
+---
+// SenderBadge — DESIGN_SYSTEM.md 8.5. Pill in Senderfarbe, weißer Text.
+// 'tbd' -> Outline-Pill "ARD/ZDF". Link + Affiliate-Handling aus links.json.
+import { linkFor } from "../lib/links.js";
+
+interface Props {
+  sender: string; // "ARD" | "ZDF" | "MagentaTV" | "tbd"
+}
+const { sender } = Astro.props;
+
+const COLORS = {
+  ARD: "bg-ard",
+  ZDF: "bg-zdf",
+  MagentaTV: "bg-magenta",
+};
+
+const base =
+  "inline-flex items-center h-6 px-2 rounded-full font-display font-semibold text-xs leading-none";
+
+if (sender === "tbd") {
+  // Noch nicht final verteilt (DS 8.5): Outline statt Fläche.
+}
+const link = sender === "tbd" ? null : linkFor(sender);
+const colorClass = COLORS[sender] ?? "bg-pitchbox";
+---
+
+{sender === "tbd" ? (
+  <span class={`${base} border border-border text-text-secondary`}>ARD/ZDF</span>
+) : link ? (
+  <a
+    href={link.url}
+    target="_blank"
+    rel={link.rel}
+    class={`${base} ${colorClass} text-white`}
+    aria-label={`${sender}${link.star ? " (Werbelink)" : ""} – zum Stream`}
+  >
+    {sender}{link.star ? "*" : ""}
+  </a>
+) : (
+  <span class={`${base} ${colorClass} text-white`}>{sender}</span>
+)}

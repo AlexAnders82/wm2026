@@ -1,0 +1,27 @@
+---
+// Countdown — DESIGN_SYSTEM.md 8.2 / 13 (Motion #4: tabular-nums, kein Zappeln,
+// keine Ziffern-Animation). Server rendert Startwert, Skript tickt sekündlich.
+import { fmtRemaining } from "../lib/datetime.js";
+
+interface Props {
+  target: string; // ISO (UTC)
+  class?: string;
+}
+const { target, class: cls = "" } = Astro.props;
+const initial = fmtRemaining(new Date(target).getTime() - Date.now());
+---
+
+<span class={`tabular ${cls}`} data-countdown={target}>{initial}</span>
+
+<script>
+  import { fmtRemaining } from "../lib/datetime.js";
+  function tick() {
+    document.querySelectorAll("[data-countdown]").forEach((el) => {
+      const target = el.getAttribute("data-countdown");
+      if (!target) return;
+      el.textContent = fmtRemaining(new Date(target).getTime() - Date.now());
+    });
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>

@@ -1,0 +1,11 @@
+# Anstoß '26 — WM 2026 Spielplan & TV-Guide
+
+Mobile-first, werbefreie Fan-Seite zur Fußball-WM 2026 (11.6.–19.7.2026, USA/Mexiko/Kanada).
+Beantwortet zwei Fragen: Wer spielt wann (deutsche Zeit) — und wo läuft's (ARD/ZDF/MagentaTV)?
+
+- Alle 104 Spiele mit Anstoßzeiten in deutscher Zeit (MESZ), Ergebnissen und Sender.
+- Free-TV: 60 Spiele bei ARD oder ZDF. Exklusiv: 44 Spiele nur bei MagentaTV. MagentaTV zeigt alle 104.
+- Deutschland-Spiele, Eröffnung, Halbfinals und Finale laufen immer im Free-TV.
+- Kalender-Abo (.ics) für iPhone/Android: https://alexanders82.github.io/wm2026/wm2026.ics
+- Jede Partie hat eine eigene Seite: https://alexanders82.github.io/wm2026/spiel/{heim}-{gast}/
+- Inoffizielle Fan-Seite, kein Bezug zur FIFA. Keine Cookies, keine Tracker, Schriften self-hosted.

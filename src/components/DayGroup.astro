@@ -1,0 +1,33 @@
+---
+// DayGroup — DESIGN_SYSTEM.md 8.4. Tagesweise Gruppierung (deutsche Zeit).
+// Aktuelle/künftige Tage: Sticky-Date-Header + Karten.
+// Vergangene Tage: eingeklappt als <details>.
+import MatchCard from "./MatchCard.astro";
+
+interface Props {
+  group: { header: string; matches: any[]; iso: string };
+  isPast?: boolean;
+}
+const { group, isPast = false } = Astro.props;
+const count = group.matches.length;
+---
+
+{isPast ? (
+  <details class="mt-6" data-day>
+    <summary class="cursor-pointer list-none text-xs uppercase tracking-[0.08em] text-text-secondary py-2 border-b border-border">
+      ✓ {group.header} — {count} {count === 1 ? "Spiel" : "Spiele"}, Ergebnisse anzeigen
+    </summary>
+    <div class="flex flex-col gap-[var(--space-card-gap)] mt-3">
+      {group.matches.map((m) => <MatchCard match={m} />)}
+    </div>
+  </details>
+) : (
+  <section class="mt-10" data-day>
+    <h3 class="day-header sticky top-14 z-10 bg-night/90 backdrop-blur text-xs uppercase tracking-[0.08em] text-text-secondary py-2 border-b border-border">
+      {group.header}
+    </h3>
+    <div class="flex flex-col gap-[var(--space-card-gap)] mt-3">
+      {group.matches.map((m) => <MatchCard match={m} />)}
+    </div>
+  </section>
+)}
