@@ -21,6 +21,7 @@
   /* Semantische Aliase */
   --color-bg-primary: var(--color-night);
   --color-bg-card: var(--color-pitchbox);
+  --color-card: var(--color-pitchbox); /* erzeugt die Utility bg-card */
   --color-border: var(--color-chalk-line);
   --color-text-primary: var(--color-floodlight);
   --color-text-secondary: var(--color-steel);

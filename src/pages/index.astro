@@ -4,9 +4,10 @@
 import Base from "../layouts/Base.astro";
 import MatchCard from "../components/MatchCard.astro";
 import DayGroup from "../components/DayGroup.astro";
+import GroupTable from "../components/GroupTable.astro";
 import Countdown from "../components/Countdown.astro";
 import Flag from "../components/Flag.astro";
-import { getMatches, groupByDay } from "../lib/data.js";
+import { getMatches, groupByDay, getGroups } from "../lib/data.js";
 import { dayKey, fullDate } from "../lib/datetime.js";
 import { href, absUrl } from "../lib/paths.js";
 import { linkFor } from "../lib/links.js";
@@ -74,6 +75,9 @@ const nextDE = upcoming.find((m) => m.isDE);
 
 // --- Spielplan ---
 const groups = groupByDay(matches);
+
+// --- Gruppen-Tabellen ---
+const standings = getGroups();
 ---
 
 <Base
@@ -87,7 +91,7 @@ const groups = groupByDay(matches);
       {heroCaption && (
         <p class="text-xs uppercase tracking-[0.08em] text-text-secondary">{heroCaption}</p>
       )}
-      <h1 class="text-hero uppercase mt-1 reveal reveal--slow">{heroHeading}</h1>
+      <h1 class="text-hero uppercase mt-1">{heroHeading}</h1>
 
       <div class="flex flex-col gap-[var(--space-card-gap)] mt-6">
         {heroMatches.map((m) => <MatchCard match={m} />)}
@@ -134,6 +138,22 @@ const groups = groupByDay(matches);
       </div>
     </div>
   </section>
+
+  <!-- 3b · Gruppen-Tabellen -->
+  {standings.length > 0 && (
+    <section id="gruppen" class="section">
+      <div class="container-read">
+        <h2 class="text-2xl uppercase">Gruppen</h2>
+        <p class="text-md text-text-secondary mt-2">
+          Tabelle nach jedem Spiel automatisch aktualisiert. Die ersten Zwei jeder Gruppe sind im
+          Achtelfinale, dazu die acht besten Gruppendritten.
+        </p>
+        <div class="grid gap-3 mt-6 sm:grid-cols-2">
+          {standings.map((g) => <GroupTable group={g} />)}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- 4 · TV-Guide + MagentaTV-CTA (DS 8.6) -->
   <section id="tv-guide" class="section">

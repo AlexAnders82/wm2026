@@ -5,7 +5,8 @@ import Base from "../../layouts/Base.astro";
 import Flag from "../../components/Flag.astro";
 import SenderBadge from "../../components/SenderBadge.astro";
 import MatchCard from "../../components/MatchCard.astro";
-import { getMatches, sameDayMatches } from "../../lib/data.js";
+import GroupTable from "../../components/GroupTable.astro";
+import { getMatches, sameDayMatches, getGroup } from "../../lib/data.js";
 import { dateTimeLabel, shortDate, timeLabel } from "../../lib/datetime.js";
 import { href, absUrl } from "../../lib/paths.js";
 
@@ -75,7 +76,11 @@ const jsonLd = [
 ];
 
 const others = sameDayMatches(match, 3);
-const meta = [match.round, match.venue?.stadium, match.venue?.city].filter(Boolean).join(" · ");
+const group = match.group ? getGroup(match.group) : null;
+const phaseLabel = match.group
+  ? `Gruppe ${match.group}${match.matchday ? ` · Spieltag ${match.matchday}` : ""}`
+  : match.round || "";
+const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).join(", ");
 ---
 
 <Base title={title} description={description} jsonLd={jsonLd} ogType="article">
@@ -124,8 +129,22 @@ const meta = [match.round, match.venue?.stadium, match.venue?.city].filter(Boole
       )}
     </div>
 
-    {meta && (
-      <p class="text-sm text-text-secondary mt-6">{meta}</p>
+    <!-- Eckdaten -->
+    {(phaseLabel || venueLabel) && (
+      <dl class="mt-6 text-sm">
+        {phaseLabel && (
+          <div class="flex gap-2 py-1 border-t border-border">
+            <dt class="w-24 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Runde</dt>
+            <dd class="text-text-primary">{phaseLabel}</dd>
+          </div>
+        )}
+        {venueLabel && (
+          <div class="flex gap-2 py-1 border-t border-border">
+            <dt class="w-24 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Ort</dt>
+            <dd class="text-text-primary">{venueLabel}</dd>
+          </div>
+        )}
+      </dl>
     )}
 
     <!-- MagentaTV-CTA nur bei Exklusivspielen (DS 8.8) -->
@@ -134,6 +153,14 @@ const meta = [match.round, match.venue?.stadium, match.venue?.city].filter(Boole
         <h2 class="text-lg">Dieses Spiel läuft nur bei MagentaTV</h2>
         <p class="text-sm text-text-secondary mt-1">Flex-Abo · 11 €/Monat · monatlich kündbar</p>
       </div>
+    )}
+
+    <!-- Gruppentabelle -->
+    {group && (
+      <section class="mt-10">
+        <h2 class="text-lg uppercase mb-3">Tabelle Gruppe {group.letter}</h2>
+        <GroupTable group={group} />
+      </section>
     )}
 
     {others.length > 0 && (
