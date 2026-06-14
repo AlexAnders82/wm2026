@@ -1,14 +1,59 @@
 {
-  "updatedAt": "2026-06-14T14:32:26.496Z",
+  "updatedAt": "2026-06-14T16:46:54.537Z",
   "venues": {},
   "fixtures": {},
-  "lineups": {},
+  "lineups": {
+    "deutschland-curacao": {
+      "home": {
+        "team": "Deutschland",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 1,
+            "name": "Manuel Neuer",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 4,
+            "name": "Jonathan Tah",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 19,
+            "name": "Leroy Sané",
+            "pos": "Left Wing"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Curaçao",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 10,
+            "name": "Leandro Bacuna",
+            "pos": "Right-Back"
+          },
+          {
+            "n": 23,
+            "name": "Riechedly Bazoer",
+            "pos": "Centre-Back"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-14T16:46:54.537Z"
+    }
+  },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 1,
-    "checked": 1,
-    "got": 0,
+    "windowMatches": 2,
+    "checked": 2,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-14T14:32:26.496Z"
+    "at": "2026-06-14T16:46:54.537Z"
   }
 }
