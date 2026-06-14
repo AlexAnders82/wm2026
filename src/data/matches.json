@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-13T22:19:33.058Z",
+  "updatedAt": "2026-06-14T00:21:34.711Z",
   "matches": [
     {
       "id": "m80099",
@@ -15,8 +15,8 @@
         "code": "za"
       },
       "venue": {
-        "stadium": "Mexico City Stadium",
-        "city": "",
+        "stadium": "Azteca",
+        "city": "Mexico City",
         "country": ""
       },
       "score": {
@@ -39,8 +39,8 @@
         "code": "cz"
       },
       "venue": {
-        "stadium": "Guadalajara Stadium",
-        "city": "",
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara (Zapopan)",
         "country": ""
       },
       "score": {
@@ -63,8 +63,8 @@
         "code": "ba"
       },
       "venue": {
-        "stadium": "Toronto Stadium",
-        "city": "",
+        "stadium": "BMO Field",
+        "city": "Toronto",
         "country": ""
       },
       "score": {
@@ -87,8 +87,8 @@
         "code": "py"
       },
       "venue": {
-        "stadium": "Los Angeles Stadium",
-        "city": "",
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
         "country": ""
       },
       "score": {
@@ -111,8 +111,8 @@
         "code": "ch"
       },
       "venue": {
-        "stadium": "San Francisco Bay Area Stadium",
-        "city": "",
+        "stadium": "Levi's Stadium",
+        "city": "San Francisco (Santa Clara)",
         "country": ""
       },
       "score": {
@@ -135,14 +135,14 @@
         "code": "ma"
       },
       "venue": {
-        "stadium": "New York/New Jersey Stadium",
-        "city": "",
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 1,
+        "away": 1,
+        "status": "finished"
       }
     },
     {
@@ -159,8 +159,8 @@
         "code": "gb-sct"
       },
       "venue": {
-        "stadium": "Boston Stadium",
-        "city": "",
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
         "country": ""
       },
       "score": {
@@ -183,8 +183,8 @@
         "code": "tr"
       },
       "venue": {
-        "stadium": "BC Place Vancouver",
-        "city": "",
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
         "country": ""
       },
       "score": {
@@ -207,8 +207,8 @@
         "code": "cw"
       },
       "venue": {
-        "stadium": "Houston Stadium",
-        "city": "",
+        "stadium": "NRG Stadium",
+        "city": "Houston",
         "country": ""
       },
       "score": {
@@ -231,8 +231,8 @@
         "code": "jp"
       },
       "venue": {
-        "stadium": "Dallas Stadium",
-        "city": "",
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
         "country": ""
       },
       "score": {
@@ -255,8 +255,8 @@
         "code": "ec"
       },
       "venue": {
-        "stadium": "Philadelphia Stadium",
-        "city": "",
+        "stadium": "Lincoln Financial Field",
+        "city": "Philadelphia",
         "country": ""
       },
       "score": {
@@ -279,8 +279,8 @@
         "code": "tn"
       },
       "venue": {
-        "stadium": "Monterrey Stadium",
-        "city": "",
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey (Guadalupe)",
         "country": ""
       },
       "score": {
@@ -303,8 +303,8 @@
         "code": "cv"
       },
       "venue": {
-        "stadium": "",
-        "city": "",
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
         "country": ""
       },
       "score": {
@@ -327,8 +327,8 @@
         "code": "eg"
       },
       "venue": {
-        "stadium": "Seattle Stadium",
-        "city": "",
+        "stadium": "Lumen Field",
+        "city": "Seattle",
         "country": ""
       },
       "score": {
@@ -351,8 +351,8 @@
         "code": "uy"
       },
       "venue": {
-        "stadium": "Miami Stadium",
-        "city": "",
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
         "country": ""
       },
       "score": {
@@ -375,8 +375,8 @@
         "code": "nz"
       },
       "venue": {
-        "stadium": "",
-        "city": "",
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
         "country": ""
       },
       "score": {
@@ -399,8 +399,8 @@
         "code": "sn"
       },
       "venue": {
-        "stadium": "New York/New Jersey Stadium",
-        "city": "",
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
         "country": ""
       },
       "score": {
@@ -423,8 +423,8 @@
         "code": "no"
       },
       "venue": {
-        "stadium": "Boston Stadium",
-        "city": "",
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
         "country": ""
       },
       "score": {
@@ -447,8 +447,8 @@
         "code": "dz"
       },
       "venue": {
-        "stadium": "Kansas City Stadium",
-        "city": "",
+        "stadium": "Arrowhead Stadium",
+        "city": "Kansas City",
         "country": ""
       },
       "score": {
@@ -471,8 +471,8 @@
         "code": "jo"
       },
       "venue": {
-        "stadium": "San Francisco Bay Area Stadium",
-        "city": "",
+        "stadium": "Levi's Stadium",
+        "city": "San Francisco (Santa Clara)",
         "country": ""
       },
       "score": {
@@ -495,8 +495,8 @@
         "code": "cd"
       },
       "venue": {
-        "stadium": "Houston Stadium",
-        "city": "",
+        "stadium": "NRG Stadium",
+        "city": "Houston",
         "country": ""
       },
       "score": {
@@ -519,8 +519,8 @@
         "code": "hr"
       },
       "venue": {
-        "stadium": "Dallas Stadium",
-        "city": "",
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
         "country": ""
       },
       "score": {
@@ -543,8 +543,8 @@
         "code": "pa"
       },
       "venue": {
-        "stadium": "Toronto Stadium",
-        "city": "",
+        "stadium": "BMO Field",
+        "city": "Toronto",
         "country": ""
       },
       "score": {
@@ -567,8 +567,8 @@
         "code": "co"
       },
       "venue": {
-        "stadium": "Mexico City Stadium",
-        "city": "",
+        "stadium": "Azteca",
+        "city": "Mexico City",
         "country": ""
       },
       "score": {
@@ -591,8 +591,8 @@
         "code": "za"
       },
       "venue": {
-        "stadium": "Atlanta Stadium",
-        "city": "",
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
         "country": ""
       },
       "score": {
@@ -615,8 +615,8 @@
         "code": "ba"
       },
       "venue": {
-        "stadium": "Los Angeles Stadium",
-        "city": "",
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
         "country": ""
       },
       "score": {
@@ -639,8 +639,8 @@
         "code": "qa"
       },
       "venue": {
-        "stadium": "BC Place Vancouver",
-        "city": "",
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
         "country": ""
       },
       "score": {
@@ -663,8 +663,8 @@
         "code": "kr"
       },
       "venue": {
-        "stadium": "Guadalajara Stadium",
-        "city": "",
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara (Zapopan)",
         "country": ""
       },
       "score": {
@@ -687,8 +687,8 @@
         "code": "au"
       },
       "venue": {
-        "stadium": "Seattle Stadium",
-        "city": "",
+        "stadium": "Lumen Field",
+        "city": "Seattle",
         "country": ""
       },
       "score": {
@@ -711,8 +711,8 @@
         "code": "ma"
       },
       "venue": {
-        "stadium": "Boston Stadium",
-        "city": "",
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
         "country": ""
       },
       "score": {
@@ -735,8 +735,8 @@
         "code": "ht"
       },
       "venue": {
-        "stadium": "Philadelphia Stadium",
-        "city": "",
+        "stadium": "Lincoln Financial Field",
+        "city": "Philadelphia",
         "country": ""
       },
       "score": {
@@ -759,8 +759,8 @@
         "code": "py"
       },
       "venue": {
-        "stadium": "San Francisco Bay Area Stadium",
-        "city": "",
+        "stadium": "Levi's Stadium",
+        "city": "San Francisco (Santa Clara)",
         "country": ""
       },
       "score": {
@@ -783,8 +783,8 @@
         "code": "se"
       },
       "venue": {
-        "stadium": "Houston Stadium",
-        "city": "",
+        "stadium": "NRG Stadium",
+        "city": "Houston",
         "country": ""
       },
       "score": {
@@ -807,8 +807,8 @@
         "code": "ci"
       },
       "venue": {
-        "stadium": "Toronto Stadium",
-        "city": "",
+        "stadium": "BMO Field",
+        "city": "Toronto",
         "country": ""
       },
       "score": {
@@ -831,8 +831,8 @@
         "code": "cw"
       },
       "venue": {
-        "stadium": "Kansas City Stadium",
-        "city": "",
+        "stadium": "Arrowhead Stadium",
+        "city": "Kansas City",
         "country": ""
       },
       "score": {
@@ -855,8 +855,8 @@
         "code": "jp"
       },
       "venue": {
-        "stadium": "Monterrey Stadium",
-        "city": "",
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey (Guadalupe)",
         "country": ""
       },
       "score": {
@@ -879,8 +879,8 @@
         "code": "sa"
       },
       "venue": {
-        "stadium": "Atlanta Stadium",
-        "city": "",
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
         "country": ""
       },
       "score": {
@@ -903,8 +903,8 @@
         "code": "ir"
       },
       "venue": {
-        "stadium": "",
-        "city": "",
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
         "country": ""
       },
       "score": {
@@ -927,8 +927,8 @@
         "code": "cv"
       },
       "venue": {
-        "stadium": "",
-        "city": "",
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
         "country": ""
       },
       "score": {
@@ -951,8 +951,8 @@
         "code": "eg"
       },
       "venue": {
-        "stadium": "BC Place Vancouver",
-        "city": "",
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
         "country": ""
       },
       "score": {
@@ -975,8 +975,8 @@
         "code": "at"
       },
       "venue": {
-        "stadium": "Dallas Stadium",
-        "city": "",
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
         "country": ""
       },
       "score": {
@@ -999,8 +999,8 @@
         "code": "iq"
       },
       "venue": {
-        "stadium": "Philadelphia Stadium",
-        "city": "",
+        "stadium": "Lincoln Financial Field",
+        "city": "Philadelphia",
         "country": ""
       },
       "score": {
@@ -1023,8 +1023,8 @@
         "code": "sn"
       },
       "venue": {
-        "stadium": "New York/New Jersey Stadium",
-        "city": "",
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
         "country": ""
       },
       "score": {
@@ -1047,8 +1047,8 @@
         "code": "dz"
       },
       "venue": {
-        "stadium": "San Francisco Bay Area Stadium",
-        "city": "",
+        "stadium": "Levi's Stadium",
+        "city": "San Francisco (Santa Clara)",
         "country": ""
       },
       "score": {
@@ -1071,8 +1071,8 @@
         "code": "uz"
       },
       "venue": {
-        "stadium": "Houston Stadium",
-        "city": "",
+        "stadium": "NRG Stadium",
+        "city": "Houston",
         "country": ""
       },
       "score": {
@@ -1095,8 +1095,8 @@
         "code": "gh"
       },
       "venue": {
-        "stadium": "Boston Stadium",
-        "city": "",
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
         "country": ""
       },
       "score": {
@@ -1119,8 +1119,8 @@
         "code": "hr"
       },
       "venue": {
-        "stadium": "Toronto Stadium",
-        "city": "",
+        "stadium": "BMO Field",
+        "city": "Toronto",
         "country": ""
       },
       "score": {
@@ -1143,8 +1143,8 @@
         "code": "cd"
       },
       "venue": {
-        "stadium": "Guadalajara Stadium",
-        "city": "",
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara (Zapopan)",
         "country": ""
       },
       "score": {
@@ -1167,8 +1167,8 @@
         "code": "ca"
       },
       "venue": {
-        "stadium": "BC Place Vancouver",
-        "city": "",
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
         "country": ""
       },
       "score": {
@@ -1191,8 +1191,8 @@
         "code": "qa"
       },
       "venue": {
-        "stadium": "Seattle Stadium",
-        "city": "",
+        "stadium": "Lumen Field",
+        "city": "Seattle",
         "country": ""
       },
       "score": {
@@ -1215,8 +1215,8 @@
         "code": "ht"
       },
       "venue": {
-        "stadium": "Atlanta Stadium",
-        "city": "",
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
         "country": ""
       },
       "score": {
@@ -1239,8 +1239,8 @@
         "code": "br"
       },
       "venue": {
-        "stadium": "Miami Stadium",
-        "city": "",
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
         "country": ""
       },
       "score": {
@@ -1263,8 +1263,8 @@
         "code": "kr"
       },
       "venue": {
-        "stadium": "Monterrey Stadium",
-        "city": "",
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey (Guadalupe)",
         "country": ""
       },
       "score": {
@@ -1287,8 +1287,8 @@
         "code": "mx"
       },
       "venue": {
-        "stadium": "Mexico City Stadium",
-        "city": "",
+        "stadium": "Azteca",
+        "city": "Mexico City",
         "country": ""
       },
       "score": {
@@ -1311,8 +1311,8 @@
         "code": "ci"
       },
       "venue": {
-        "stadium": "Philadelphia Stadium",
-        "city": "",
+        "stadium": "Lincoln Financial Field",
+        "city": "Philadelphia",
         "country": ""
       },
       "score": {
@@ -1335,8 +1335,8 @@
         "code": "de"
       },
       "venue": {
-        "stadium": "New York/New Jersey Stadium",
-        "city": "",
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
         "country": ""
       },
       "score": {
@@ -1359,8 +1359,8 @@
         "code": "nl"
       },
       "venue": {
-        "stadium": "Kansas City Stadium",
-        "city": "",
+        "stadium": "Arrowhead Stadium",
+        "city": "Kansas City",
         "country": ""
       },
       "score": {
@@ -1383,8 +1383,8 @@
         "code": "se"
       },
       "venue": {
-        "stadium": "Dallas Stadium",
-        "city": "",
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
         "country": ""
       },
       "score": {
@@ -1407,8 +1407,8 @@
         "code": "us"
       },
       "venue": {
-        "stadium": "Los Angeles Stadium",
-        "city": "",
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
         "country": ""
       },
       "score": {
@@ -1431,8 +1431,8 @@
         "code": "au"
       },
       "venue": {
-        "stadium": "San Francisco Bay Area Stadium",
-        "city": "",
+        "stadium": "Levi's Stadium",
+        "city": "San Francisco (Santa Clara)",
         "country": ""
       },
       "score": {
@@ -1455,8 +1455,8 @@
         "code": "fr"
       },
       "venue": {
-        "stadium": "Boston Stadium",
-        "city": "",
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
         "country": ""
       },
       "score": {
@@ -1479,8 +1479,8 @@
         "code": "iq"
       },
       "venue": {
-        "stadium": "Toronto Stadium",
-        "city": "",
+        "stadium": "BMO Field",
+        "city": "Toronto",
         "country": ""
       },
       "score": {
@@ -1503,8 +1503,8 @@
         "code": "sa"
       },
       "venue": {
-        "stadium": "",
-        "city": "",
+        "stadium": "NRG Stadium",
+        "city": "Houston",
         "country": ""
       },
       "score": {
@@ -1527,8 +1527,8 @@
         "code": "es"
       },
       "venue": {
-        "stadium": "Guadalajara Stadium",
-        "city": "",
+        "stadium": "Estadio Akron",
+        "city": "Guadalajara (Zapopan)",
         "country": ""
       },
       "score": {
@@ -1551,8 +1551,8 @@
         "code": "be"
       },
       "venue": {
-        "stadium": "BC Place Vancouver",
-        "city": "",
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
         "country": ""
       },
       "score": {
@@ -1575,8 +1575,8 @@
         "code": "ir"
       },
       "venue": {
-        "stadium": "",
-        "city": "",
+        "stadium": "Lumen Field",
+        "city": "Seattle",
         "country": ""
       },
       "score": {
@@ -1599,8 +1599,8 @@
         "code": "gb-eng"
       },
       "venue": {
-        "stadium": "New York/New Jersey Stadium",
-        "city": "",
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
         "country": ""
       },
       "score": {
@@ -1623,8 +1623,8 @@
         "code": "gh"
       },
       "venue": {
-        "stadium": "Philadelphia Stadium",
-        "city": "",
+        "stadium": "Lincoln Financial Field",
+        "city": "Philadelphia",
         "country": ""
       },
       "score": {
@@ -1647,8 +1647,8 @@
         "code": "pt"
       },
       "venue": {
-        "stadium": "Miami Stadium",
-        "city": "",
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
         "country": ""
       },
       "score": {
@@ -1671,8 +1671,8 @@
         "code": "uz"
       },
       "venue": {
-        "stadium": "Atlanta Stadium",
-        "city": "",
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
         "country": ""
       },
       "score": {
@@ -1695,8 +1695,8 @@
         "code": "at"
       },
       "venue": {
-        "stadium": "Kansas City Stadium",
-        "city": "",
+        "stadium": "Arrowhead Stadium",
+        "city": "Kansas City",
         "country": ""
       },
       "score": {
@@ -1719,8 +1719,8 @@
         "code": "ar"
       },
       "venue": {
-        "stadium": "Dallas Stadium",
-        "city": "",
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
         "country": ""
       },
       "score": {
