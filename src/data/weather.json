@@ -1,6 +1,6 @@
 {
   "deutschland-curacao": {
-    "tempC": 27,
+    "tempC": 28,
     "text": "klar",
     "city": "Houston"
   },
@@ -10,7 +10,7 @@
     "city": "Dallas"
   },
   "elfenbeinkuste-ecuador": {
-    "tempC": 20,
+    "tempC": 25,
     "text": "bewölkt",
     "city": "Philadelphia"
   },
@@ -20,28 +20,33 @@
     "city": "Monterrey"
   },
   "spanien-kap-verde": {
-    "tempC": 24,
-    "text": "bewölkt",
+    "tempC": 26,
+    "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "belgien-agypten": {
-    "tempC": 17,
-    "text": "teils bewölkt",
+    "tempC": 16,
+    "text": "klar",
     "city": "Seattle"
   },
   "saudi-arabien-uruguay": {
-    "tempC": 26,
-    "text": "klar",
+    "tempC": 28,
+    "text": "überwiegend klar",
     "city": "Miami"
   },
   "iran-neuseeland": {
-    "tempC": 16,
-    "text": "Nebel",
+    "tempC": 17,
+    "text": "bewölkt",
     "city": "Los Angeles"
   },
   "frankreich-senegal": {
-    "tempC": 20,
+    "tempC": 26,
     "text": "bewölkt",
     "city": "New York/New Jersey"
+  },
+  "irak-norwegen": {
+    "tempC": 24,
+    "text": "klar",
+    "city": "Boston"
   }
 }
