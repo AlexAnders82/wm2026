@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T19:09:12.352Z",
+  "updatedAt": "2026-06-15T21:49:58.415Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -90,6 +90,49 @@
         "subs": []
       },
       "fetchedAt": "2026-06-15T19:09:11.848Z"
+    },
+    "saudi-arabien-uruguay": {
+      "home": {
+        "team": "Saudi Arabien",
+        "formation": "",
+        "coach": "",
+        "xi": [],
+        "subs": []
+      },
+      "away": {
+        "team": "Uruguay",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 13,
+            "name": "Guillermo Varela",
+            "pos": "Right-Back"
+          },
+          {
+            "n": 23,
+            "name": "Fernando Muslera",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 6,
+            "name": "Rodrigo Bentancur",
+            "pos": "Defensive Midfield"
+          },
+          {
+            "n": 8,
+            "name": "Federico Valverde",
+            "pos": "Central Midfield"
+          },
+          {
+            "n": 16,
+            "name": "Mathías Olivera",
+            "pos": "Left-Back"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-15T21:49:57.412Z"
     }
   },
   "_diag": {
@@ -98,6 +141,6 @@
     "checked": 2,
     "got": 1,
     "lastError": null,
-    "at": "2026-06-15T19:09:12.352Z"
+    "at": "2026-06-15T21:49:58.415Z"
   }
 }

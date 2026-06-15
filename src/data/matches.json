@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T19:09:10.597Z",
+  "updatedAt": "2026-06-15T21:49:56.227Z",
   "matches": [
     {
       "id": "m80099",
@@ -332,9 +332,9 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 1,
+        "away": 1,
+        "status": "finished"
       }
     },
     {
