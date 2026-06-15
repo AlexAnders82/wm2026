@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T14:35:39.621Z",
+  "updatedAt": "2026-06-15T19:09:12.352Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -46,14 +46,58 @@
         "subs": []
       },
       "fetchedAt": "2026-06-14T18:44:45.750Z"
+    },
+    "belgien-agypten": {
+      "home": {
+        "team": "Belgien",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 1,
+            "name": "Thibaut Courtois",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 4,
+            "name": "Brandon Mechele",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 15,
+            "name": "Thomas Meunier",
+            "pos": "Right-Back"
+          },
+          {
+            "n": 21,
+            "name": "Timothy Castagne",
+            "pos": "Right-Back"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Ägypten",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 10,
+            "name": "Mohamed Salah",
+            "pos": "Right Winger"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-15T19:09:11.848Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 1,
-    "checked": 1,
-    "got": 0,
+    "windowMatches": 2,
+    "checked": 2,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-15T14:35:39.621Z"
+    "at": "2026-06-15T19:09:12.352Z"
   }
 }
