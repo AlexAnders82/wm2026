@@ -1,52 +1,47 @@
 {
-  "elfenbeinkuste-ecuador": {
-    "tempC": 26,
-    "text": "bewölkt",
-    "city": "Philadelphia"
-  },
-  "schweden-tunesien": {
-    "tempC": 30,
-    "text": "klar",
-    "city": "Monterrey"
-  },
   "spanien-kap-verde": {
-    "tempC": 23,
-    "text": "Regen",
+    "tempC": 21,
+    "text": "klar",
     "city": "Atlanta"
   },
   "belgien-agypten": {
-    "tempC": 30,
-    "text": "klar",
+    "tempC": 21,
+    "text": "bewölkt",
     "city": "Seattle"
   },
   "saudi-arabien-uruguay": {
     "tempC": 26,
-    "text": "teils bewölkt",
+    "text": "klar",
     "city": "Miami"
   },
   "iran-neuseeland": {
-    "tempC": 20,
-    "text": "klar",
+    "tempC": 17,
+    "text": "überwiegend klar",
     "city": "Los Angeles"
   },
   "frankreich-senegal": {
-    "tempC": 26,
-    "text": "bewölkt",
+    "tempC": 21,
+    "text": "teils bewölkt",
     "city": "New York/New Jersey"
   },
   "irak-norwegen": {
-    "tempC": 22,
-    "text": "bewölkt",
+    "tempC": 20,
+    "text": "leichter Niesel",
     "city": "Boston"
   },
   "argentinien-algerien": {
-    "tempC": 22,
+    "tempC": 17,
     "text": "klar",
     "city": "Kansas City"
   },
   "osterreich-jordanien": {
-    "tempC": 19,
-    "text": "klar",
+    "tempC": 15,
+    "text": "teils bewölkt",
     "city": "San Francisco"
+  },
+  "portugal-dr-kongo": {
+    "tempC": 28,
+    "text": "teils bewölkt",
+    "city": "Houston"
   }
 }
