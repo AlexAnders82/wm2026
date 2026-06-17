@@ -1,11 +1,11 @@
 {
   "england-kroatien": {
-    "tempC": 33,
+    "tempC": 32,
     "text": "Gewitter",
     "city": "Dallas"
   },
   "ghana-panama": {
-    "tempC": 20,
+    "tempC": 18,
     "text": "bewölkt",
     "city": "Toronto"
   },
@@ -15,42 +15,42 @@
     "city": "Mexiko-Stadt"
   },
   "tschechien-sudafrika": {
-    "tempC": 30,
+    "tempC": 28,
     "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "schweiz-bosnien-und-herzegowina": {
-    "tempC": 23,
-    "text": "klar",
+    "tempC": 21,
+    "text": "überwiegend klar",
     "city": "Los Angeles"
   },
   "kanada-katar": {
-    "tempC": 20,
+    "tempC": 21,
     "text": "klar",
     "city": "Vancouver"
   },
   "mexiko-sudkorea": {
     "tempC": 24,
-    "text": "bewölkt",
+    "text": "leichter Niesel",
     "city": "Guadalajara"
   },
   "usa-australien": {
-    "tempC": 19,
+    "tempC": 22,
     "text": "klar",
     "city": "Seattle"
   },
   "schottland-marokko": {
-    "tempC": 25,
-    "text": "teils bewölkt",
+    "tempC": 22,
+    "text": "klar",
     "city": "Boston"
   },
   "brasilien-haiti": {
-    "tempC": 29,
-    "text": "teils bewölkt",
+    "tempC": 28,
+    "text": "klar",
     "city": "Philadelphia"
   },
   "turkei-paraguay": {
-    "tempC": 21,
+    "tempC": 22,
     "text": "klar",
     "city": "San Francisco"
   }
