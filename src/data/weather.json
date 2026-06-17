@@ -1,57 +1,62 @@
 {
   "portugal-dr-kongo": {
-    "tempC": 25,
-    "text": "überwiegend klar",
+    "tempC": 26,
+    "text": "bewölkt",
     "city": "Houston"
   },
   "england-kroatien": {
-    "tempC": 27,
+    "tempC": 30,
     "text": "klar",
     "city": "Dallas"
   },
   "ghana-panama": {
-    "tempC": 15,
+    "tempC": 18,
     "text": "teils bewölkt",
     "city": "Toronto"
   },
   "usbekistan-kolumbien": {
-    "tempC": 17,
-    "text": "bewölkt",
+    "tempC": 21,
+    "text": "Gewitter",
     "city": "Mexiko-Stadt"
   },
   "tschechien-sudafrika": {
-    "tempC": 22,
-    "text": "bewölkt",
+    "tempC": 27,
+    "text": "klar",
     "city": "Atlanta"
   },
   "schweiz-bosnien-und-herzegowina": {
-    "tempC": 17,
-    "text": "bewölkt",
+    "tempC": 21,
+    "text": "überwiegend klar",
     "city": "Los Angeles"
   },
   "kanada-katar": {
-    "tempC": 15,
-    "text": "klar",
+    "tempC": 17,
+    "text": "teils bewölkt",
     "city": "Vancouver"
   },
   "mexiko-sudkorea": {
-    "tempC": 18,
+    "tempC": 22,
     "text": "bewölkt",
     "city": "Guadalajara"
   },
   "usa-australien": {
-    "tempC": 13,
-    "text": "klar",
+    "tempC": 15,
+    "text": "bewölkt",
     "city": "Seattle"
   },
   "schottland-marokko": {
-    "tempC": 23,
-    "text": "bewölkt",
+    "tempC": 25,
+    "text": "überwiegend klar",
     "city": "Boston"
   },
   "brasilien-haiti": {
-    "tempC": 23,
-    "text": "klar",
+    "tempC": 29,
+    "text": "überwiegend klar",
     "city": "Philadelphia"
+  },
+  "turkei-paraguay": {
+    "tempC": 19,
+    "text": "klar",
+    "city": "San Francisco"
   }
 }
