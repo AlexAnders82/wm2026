@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T23:48:37.310Z",
+  "updatedAt": "2026-06-17T05:17:14.965Z",
   "matches": [
     {
       "id": "m80099",
@@ -429,8 +429,8 @@
       },
       "score": {
         "home": 1,
-        "away": 3,
-        "status": "scheduled"
+        "away": 4,
+        "status": "finished"
       }
     },
     {
@@ -452,9 +452,9 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 3,
+        "away": 0,
+        "status": "finished"
       }
     },
     {
@@ -476,8 +476,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       }
     },
