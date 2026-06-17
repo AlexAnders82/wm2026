@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-17T17:24:27.754Z",
+  "updatedAt": "2026-06-17T20:31:11.689Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -176,14 +176,58 @@
         "subs": []
       },
       "fetchedAt": "2026-06-17T05:17:16.143Z"
+    },
+    "england-kroatien": {
+      "home": {
+        "team": "England",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 5,
+            "name": "John Stones",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 1,
+            "name": "Jordan Pickford",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 9,
+            "name": "Harry Kane",
+            "pos": "Centre-Forward"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Kroatien",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 15,
+            "name": "Mario Pašalić",
+            "pos": "Central Midfield"
+          },
+          {
+            "n": 10,
+            "name": "Luka Modrić",
+            "pos": "Central Midfield"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-17T20:31:11.689Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
     "windowMatches": 2,
     "checked": 2,
-    "got": 0,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-17T17:24:27.754Z"
+    "at": "2026-06-17T20:31:11.689Z"
   }
 }
