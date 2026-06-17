@@ -1,41 +1,36 @@
 {
-  "osterreich-jordanien": {
-    "tempC": 15,
-    "text": "klar",
-    "city": "San Francisco"
-  },
   "portugal-dr-kongo": {
-    "tempC": 26,
-    "text": "bewölkt",
+    "tempC": 25,
+    "text": "starker Niesel",
     "city": "Houston"
   },
   "england-kroatien": {
-    "tempC": 27,
+    "tempC": 24,
     "text": "klar",
     "city": "Dallas"
   },
   "ghana-panama": {
-    "tempC": 14,
+    "tempC": 12,
     "text": "bewölkt",
     "city": "Toronto"
   },
   "usbekistan-kolumbien": {
-    "tempC": 17,
+    "tempC": 16,
     "text": "bewölkt",
     "city": "Mexiko-Stadt"
   },
   "tschechien-sudafrika": {
     "tempC": 21,
-    "text": "Niesel",
+    "text": "Regen",
     "city": "Atlanta"
   },
   "schweiz-bosnien-und-herzegowina": {
-    "tempC": 17,
+    "tempC": 16,
     "text": "Nebel",
     "city": "Los Angeles"
   },
   "kanada-katar": {
-    "tempC": 18,
+    "tempC": 15,
     "text": "klar",
     "city": "Vancouver"
   },
@@ -43,5 +38,15 @@
     "tempC": 17,
     "text": "bewölkt",
     "city": "Guadalajara"
+  },
+  "usa-australien": {
+    "tempC": 12,
+    "text": "klar",
+    "city": "Seattle"
+  },
+  "schottland-marokko": {
+    "tempC": 13,
+    "text": "bewölkt",
+    "city": "Boston"
   }
 }
