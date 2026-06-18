@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18T18:36:22.173Z",
+  "updatedAt": "2026-06-18T21:29:05.760Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -220,14 +220,57 @@
         "subs": []
       },
       "fetchedAt": "2026-06-17T20:31:11.689Z"
+    },
+    "kanada-katar": {
+      "home": {
+        "team": "Kanada",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 9,
+            "name": "Cyle Larin",
+            "pos": "Centre-Forward"
+          },
+          {
+            "n": 7,
+            "name": "Stephen Eustáquio",
+            "pos": "Central Midfield"
+          },
+          {
+            "n": 16,
+            "name": "Maxime Crépeau",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 10,
+            "name": "Jonathan David",
+            "pos": "Centre-Forward"
+          },
+          {
+            "n": 17,
+            "name": "Tajon Buchanan",
+            "pos": "Right Winger"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Katar",
+        "formation": "",
+        "coach": "",
+        "xi": [],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-18T21:29:04.805Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
     "windowMatches": 2,
     "checked": 2,
-    "got": 0,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-18T18:36:22.173Z"
+    "at": "2026-06-18T21:29:05.760Z"
   }
 }
