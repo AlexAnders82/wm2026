@@ -1,31 +1,26 @@
 {
-  "schweiz-bosnien-und-herzegowina": {
-    "tempC": 21,
-    "text": "teils bewölkt",
-    "city": "Los Angeles"
-  },
   "kanada-katar": {
-    "tempC": 21,
-    "text": "klar",
+    "tempC": 23,
+    "text": "überwiegend klar",
     "city": "Vancouver"
   },
   "mexiko-sudkorea": {
-    "tempC": 26,
-    "text": "Gewitter mit Hagel",
+    "tempC": 20,
+    "text": "Regenschauer",
     "city": "Guadalajara"
   },
   "usa-australien": {
-    "tempC": 24,
+    "tempC": 25,
     "text": "klar",
     "city": "Seattle"
   },
   "schottland-marokko": {
-    "tempC": 24,
+    "tempC": 21,
     "text": "bewölkt",
     "city": "Boston"
   },
   "brasilien-haiti": {
-    "tempC": 32,
+    "tempC": 28,
     "text": "klar",
     "city": "Philadelphia"
   },
@@ -35,23 +30,23 @@
     "city": "San Francisco"
   },
   "niederlande-schweden": {
-    "tempC": 35,
+    "tempC": 33,
     "text": "Gewitter",
     "city": "Houston"
   },
   "deutschland-elfenbeinkuste": {
-    "tempC": 19,
+    "tempC": 16,
     "text": "klar",
     "city": "Toronto"
   },
   "ecuador-curacao": {
     "tempC": 24,
-    "text": "bewölkt",
+    "text": "überwiegend klar",
     "city": "Kansas City"
   },
   "tunesien-japan": {
-    "tempC": 39,
-    "text": "bewölkt",
+    "tempC": 40,
+    "text": "Gewitter",
     "city": "Monterrey"
   }
 }
