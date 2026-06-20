@@ -1,52 +1,57 @@
 {
-  "katar-schweiz": {
-    "tempC": 15,
+  "deutschland-elfenbeinkuste": {
+    "tempC": 19,
+    "text": "teils bewölkt",
+    "city": "Toronto"
+  },
+  "ecuador-curacao": {
+    "tempC": 29,
+    "text": "teils bewölkt",
+    "city": "Kansas City"
+  },
+  "tunesien-japan": {
+    "tempC": 29,
     "text": "überwiegend klar",
-    "city": "San Francisco"
+    "city": "Monterrey"
   },
-  "brasilien-marokko": {
-    "tempC": 26,
+  "spanien-saudi-arabien": {
+    "tempC": 28,
+    "text": "bewölkt",
+    "city": "Atlanta"
+  },
+  "belgien-iran": {
+    "tempC": 21,
     "text": "klar",
-    "city": "New York/New Jersey"
+    "city": "Los Angeles"
   },
-  "haiti-schottland": {
-    "tempC": 25,
-    "text": "klar",
-    "city": "Boston"
+  "uruguay-kap-verde": {
+    "tempC": 31,
+    "text": "bewölkt",
+    "city": "Miami"
   },
-  "australien-turkei": {
-    "tempC": 15,
+  "neuseeland-agypten": {
+    "tempC": 21,
     "text": "klar",
     "city": "Vancouver"
   },
-  "deutschland-curacao": {
-    "tempC": 30,
-    "text": "klar",
-    "city": "Houston"
-  },
-  "niederlande-japan": {
-    "tempC": 28,
-    "text": "überwiegend klar",
+  "argentinien-osterreich": {
+    "tempC": 33,
+    "text": "Gewitter",
     "city": "Dallas"
   },
-  "elfenbeinkuste-ecuador": {
-    "tempC": 27,
+  "frankreich-irak": {
+    "tempC": 28,
     "text": "klar",
     "city": "Philadelphia"
   },
-  "schweden-tunesien": {
-    "tempC": 25,
-    "text": "klar",
-    "city": "Monterrey"
+  "norwegen-senegal": {
+    "tempC": 27,
+    "text": "überwiegend klar",
+    "city": "New York/New Jersey"
   },
-  "belgien-agypten": {
-    "tempC": 15,
+  "jordanien-algerien": {
+    "tempC": 20,
     "text": "klar",
-    "city": "Seattle"
-  },
-  "saudi-arabien-uruguay": {
-    "tempC": 29,
-    "text": "bewölkt",
-    "city": "Miami"
+    "city": "San Francisco"
   }
 }
