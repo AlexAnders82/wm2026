@@ -17,6 +17,7 @@ import "flag-icons/css/flag-icons.min.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { absUrl } from "../lib/paths.js";
+import { liveSource } from "../lib/data.js";
 
 interface Props {
   title: string;
@@ -60,7 +61,7 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
       <script type="application/ld+json" set:html={JSON.stringify(block)} />
     ))}
   </head>
-  <body>
+  <body data-oldb-source={liveSource ? `${liveSource.shortcut}|${liveSource.season}` : ""}>
     <a href="#main" class="skip-link">Zum Inhalt springen</a>
     <Header />
     <main id="main">
@@ -90,6 +91,69 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
         els.forEach((el) => io.observe(el));
       }
       initReveal();
+    </script>
+
+    <script>
+      // Live-Updates direkt im Browser: holt Ergebnisse + Tore von OpenLigaDB
+      // (kein Warten auf den Build). Aktualisiert Karten/Spielseiten mit data-oldb-id.
+      const src = document.body.dataset.oldbSource || "";
+      if (src && document.querySelector("[data-oldb-id]")) {
+        const [shortcut, season] = src.split("|");
+        const url = `https://api.openligadb.de/getmatchdata/${shortcut}/${season}`;
+
+        function goalsHtml(goals: any[]) {
+          let p1 = 0, p2 = 0;
+          const items: string[] = [];
+          for (const g of (goals || []).slice().sort((a, b) => (a.matchMinute || 0) - (b.matchMinute || 0))) {
+            const s1 = g.scoreTeam1 ?? p1, s2 = g.scoreTeam2 ?? p2;
+            const side = s1 > p1 ? "home" : s2 > p2 ? "away" : "";
+            p1 = s1; p2 = s2;
+            if (!g.goalGetterName) continue;
+            const cls = side === "away" ? "col-start-2 text-right" : "col-start-1";
+            items.push(`<li class="${cls}"><span class="tabular text-text-primary">${g.matchMinute}'</span> ${g.goalGetterName}${g.isOwnGoal ? " (ET)" : ""}${g.isPenalty ? " (FE)" : ""}</li>`);
+          }
+          return items.length ? `<ul class="mt-2 grid grid-cols-2 gap-x-3 gap-y-0.5 text-xs text-text-secondary">${items.join("")}</ul>` : "";
+        }
+
+        async function poll() {
+          let data;
+          try {
+            const r = await fetch(url, { cache: "no-store" });
+            if (!r.ok) return false;
+            data = await r.json();
+          } catch { return false; }
+          const byId = new Map((data || []).map((m: any) => [String(m.matchID), m]));
+          let anyLive = false;
+          document.querySelectorAll<HTMLElement>("[data-oldb-id]").forEach((card) => {
+            const id = card.getAttribute("data-oldb-id");
+            if (!id) return;
+            const m: any = byId.get(id);
+            if (!m) return;
+            const res = (m.matchResults || []).slice().sort((a: any, b: any) => (b.resultTypeID || 0) - (a.resultTypeID || 0))[0];
+            const ko = new Date(m.matchDateTimeUTC).getTime();
+            const now = Date.now();
+            const finished = !!m.matchIsFinished;
+            const live = !finished && now >= ko && now < ko + 150 * 60000;
+            const state = finished ? "finished" : live ? "live" : "scheduled";
+            const sh = res ? res.pointsTeam1 : null, sa = res ? res.pointsTeam2 : null;
+            const eh = card.querySelector('[data-role="score-home"]');
+            const ea = card.querySelector('[data-role="score-away"]');
+            if (eh && sh != null) eh.textContent = String(sh);
+            if (ea && sa != null) ea.textContent = String(sa);
+            const st = card.querySelector('[data-role="status"]');
+            if (st) {
+              if (state === "live") { st.innerHTML = '<span class="flex items-center justify-center gap-1.5 text-pitch text-sm font-semibold"><span class="live-dot"></span>LIVE</span>'; anyLive = true; }
+              else if (state === "finished") { st.innerHTML = '<span class="text-text-secondary text-xs font-semibold uppercase tracking-wide">Beendet</span>'; }
+            }
+            card.setAttribute("data-state", state);
+            if (state === "finished") card.classList.add("match-card--finished");
+            const gc = card.querySelector('[data-role="goals"]');
+            if (gc) gc.innerHTML = goalsHtml(m.goals);
+          });
+          return anyLive;
+        }
+        poll().then((live) => setInterval(poll, live ? 45000 : 120000));
+      }
     </script>
   </body>
 </html>

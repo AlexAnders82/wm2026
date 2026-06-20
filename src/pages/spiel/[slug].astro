@@ -7,9 +7,11 @@ import SenderBadge from "../../components/SenderBadge.astro";
 import MatchCard from "../../components/MatchCard.astro";
 import GroupTable from "../../components/GroupTable.astro";
 import Lineups from "../../components/Lineups.astro";
+import Goals from "../../components/Goals.astro";
 import { getMatches, sameDayMatches, getGroup } from "../../lib/data.js";
 import { dateTimeLabel, shortDate, timeLabel } from "../../lib/datetime.js";
 import { href, absUrl } from "../../lib/paths.js";
+import { matchCity } from "../../lib/venues.mjs";
 
 export function getStaticPaths() {
   return getMatches().map((match) => ({
@@ -82,10 +84,34 @@ const phaseLabel = match.group
   ? `Gruppe ${match.group}${match.matchday ? ` · Spieltag ${match.matchday}` : ""}`
   : match.round || "";
 const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).join(", ");
+const venueTz = matchCity(match.venue?.stadium || match.venue?.city || "")?.tz || null;
+
+const state = match.state ?? "scheduled";
+const showScore = state === "live" || state === "finished";
+
+// Letzte 3 Ergebnisse je Team (Form), aus Sicht des jeweiligen Teams.
+const all = getMatches();
+function formFor(code) {
+  if (!code) return [];
+  return all
+    .filter((m) => m.state === "finished" && m.score?.home != null && (m.home?.code === code || m.away?.code === code))
+    .sort((a, b) => b.kickoffUtc.localeCompare(a.kickoffUtc))
+    .slice(0, 3)
+    .map((m) => {
+      const isHome = m.home?.code === code;
+      const gf = isHome ? m.score.home : m.score.away;
+      const ga = isHome ? m.score.away : m.score.home;
+      const opp = isHome ? m.away : m.home;
+      return { r: gf > ga ? "S" : gf < ga ? "N" : "U", gf, ga, opp: opp?.name ?? "" };
+    });
+}
+const homeForm = formFor(match.home?.code);
+const awayForm = formFor(match.away?.code);
+const rColor = (r) => (r === "S" ? "text-pitch" : r === "N" ? "text-magenta" : "text-text-secondary");
 ---
 
 <Base title={title} description={description} jsonLd={jsonLd} ogType="article">
-  <div class="container-read section">
+  <div class="container-read section" data-oldb-id={match.oldbId ?? ""} data-state={state}>
     <!-- Breadcrumb -->
     <nav class="text-xs uppercase tracking-[0.08em] text-text-secondary" aria-label="Brotkrumen">
       <a href={href("#spielplan")} class="hover:text-text-primary">Spielplan</a>
@@ -95,19 +121,32 @@ const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).joi
 
     <h1 class="text-2xl uppercase mt-3">{matchName}</h1>
 
+    <!-- Live-/Beendet-Status -->
+    <p class="mt-1" data-role="status">
+      {state === "live" && (
+        <span class="inline-flex items-center gap-1.5 text-pitch text-sm font-semibold"><span class="live-dot"></span>LIVE</span>
+      )}
+      {state === "finished" && (
+        <span class="text-text-secondary text-xs font-semibold uppercase tracking-wide">Beendet</span>
+      )}
+    </p>
+
     <!-- Teams -->
     <div class="mt-4 flex flex-col gap-2">
       <div class="flex items-center gap-3">
         <Flag code={match.home?.code} name={home} size={28} />
         <span class="text-md text-text-primary">{home}</span>
-        {hasScore && <span class="ml-auto font-display tabular text-xl font-bold">{match.score.home}</span>}
+        <span class="ml-auto font-display tabular text-xl font-bold" data-role="score-home">{showScore && match.score?.home != null ? match.score.home : ""}</span>
       </div>
       <div class="flex items-center gap-3">
         <Flag code={match.away?.code} name={away} size={28} />
         <span class="text-md text-text-primary">{away}</span>
-        {hasScore && <span class="ml-auto font-display tabular text-xl font-bold">{match.score.away}</span>}
+        <span class="ml-auto font-display tabular text-xl font-bold" data-role="score-away">{showScore && match.score?.away != null ? match.score.away : ""}</span>
       </div>
     </div>
+
+    <!-- Torschützen -->
+    <div data-role="goals"><Goals goals={match.goals} /></div>
 
     <!-- Anstoß -->
     <div class="mt-6">
@@ -151,7 +190,43 @@ const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).joi
             <dd class="text-text-primary tabular">{match.weather.tempC}°C · {match.weather.text}</dd>
           </div>
         )}
+        {venueTz && (
+          <div class="flex gap-2 py-1 border-t border-border">
+            <dt class="w-24 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Ortszeit</dt>
+            <dd class="text-text-primary tabular" data-localclock data-tz={venueTz}>–</dd>
+          </div>
+        )}
       </dl>
+    )}
+
+    <!-- Aktuelle Form (letzte 3 Spiele) -->
+    {(homeForm.length > 0 || awayForm.length > 0) && (
+      <section class="mt-8">
+        <h2 class="text-lg uppercase mb-3">Aktuelle Form</h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          {[{ name: home, code: match.home?.code, form: homeForm }, { name: away, code: match.away?.code, form: awayForm }].map((t) => (
+            <div class="rounded-xl bg-card border border-border p-4">
+              <div class="flex items-center gap-2">
+                <Flag code={t.code} name={t.name} size={18} />
+                <span class="font-display font-bold text-text-primary">{t.name}</span>
+              </div>
+              {t.form.length > 0 ? (
+                <ul class="mt-2 flex flex-col gap-1 text-sm">
+                  {t.form.map((f) => (
+                    <li class="flex items-center gap-2">
+                      <span class={`font-display font-bold w-4 ${rColor(f.r)}`}>{f.r}</span>
+                      <span class="tabular text-text-secondary">{f.gf}:{f.ga}</span>
+                      <span class="text-text-secondary truncate">{f.opp}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="text-sm text-text-secondary mt-2">Noch keine Spiele.</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
     )}
 
     <!-- MagentaTV-CTA nur bei Exklusivspielen (DS 8.8) -->
@@ -186,4 +261,19 @@ const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).joi
       <a href={href("#spielplan")} class="text-pitch">← Zum Spielplan</a>
     </p>
   </div>
+
+  <script>
+    // Aktuelle Ortszeit am Spielort, sekündlich.
+    function tickClock() {
+      document.querySelectorAll<HTMLElement>("[data-localclock]").forEach((el) => {
+        const tz = el.dataset.tz;
+        if (!tz) return;
+        try {
+          el.textContent = new Intl.DateTimeFormat("de-DE", { timeZone: tz, hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }).format(new Date()) + " Uhr";
+        } catch {}
+      });
+    }
+    tickClock();
+    setInterval(tickClock, 1000);
+  </script>
 </Base>
