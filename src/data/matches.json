@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T22:47:25.781Z",
+  "updatedAt": "2026-06-20T23:24:05.124Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1485,7 +1485,7 @@
           "pen": false
         },
         {
-          "minute": 48,
+          "minute": 45,
           "scorer": "Vinicius Junior",
           "side": "home",
           "own": false,
@@ -1636,7 +1636,7 @@
           "pen": false
         },
         {
-          "minute": 94,
+          "minute": 90,
           "scorer": "Deniz Undav",
           "side": "home",
           "own": false,
