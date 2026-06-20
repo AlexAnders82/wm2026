@@ -1,8 +1,14 @@
 {
-  "updatedAt": "2026-06-20T22:35:23.097Z",
+  "updatedAt": "2026-06-20T22:47:25.781Z",
+  "source": {
+    "provider": "openligadb",
+    "shortcut": "wm26",
+    "season": "2026"
+  },
   "matches": [
     {
       "id": "m80099",
+      "oldbId": 80099,
       "slug": "mexiko-sudafrika",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-11T19:00:00Z",
@@ -23,10 +29,27 @@
         "home": 2,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 9,
+          "scorer": "Julián Quiñones",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 67,
+          "scorer": "Raúl Jiménez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80100",
+      "oldbId": 80100,
       "slug": "sudkorea-tschechien",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-12T02:00:00Z",
@@ -47,10 +70,34 @@
         "home": 2,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 59,
+          "scorer": "Ladislav Krejcí",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 67,
+          "scorer": "In-beom Hwang",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 80,
+          "scorer": "Hyeon-gyu Oh",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80101",
+      "oldbId": 80101,
       "slug": "kanada-bosnien-und-herzegowina",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-12T19:00:00Z",
@@ -71,10 +118,27 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 21,
+          "scorer": "Jovo Lukic",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 79,
+          "scorer": "Cyle Larin",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80102",
+      "oldbId": 80102,
       "slug": "usa-paraguay",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-13T01:00:00Z",
@@ -95,10 +159,48 @@
         "home": 4,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 7,
+          "scorer": "Damián Bobadilla",
+          "side": "home",
+          "own": true,
+          "pen": false
+        },
+        {
+          "minute": 31,
+          "scorer": "Folarin Balogun",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 45,
+          "scorer": "Folarin Balogun",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 73,
+          "scorer": "Mauricio Prado",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Giovanni Reyna",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80104",
+      "oldbId": 80104,
       "slug": "katar-schweiz",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-13T19:00:00Z",
@@ -119,10 +221,27 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 17,
+          "scorer": "Breel Embolo",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 90,
+          "scorer": "Boualem Khoukhi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80105",
+      "oldbId": 80105,
       "slug": "brasilien-marokko",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-13T22:00:00Z",
@@ -143,10 +262,27 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 21,
+          "scorer": "Ismael Saibari",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 32,
+          "scorer": "Vinicius Junior",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80106",
+      "oldbId": 80106,
       "slug": "haiti-schottland",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T01:00:00Z",
@@ -167,10 +303,20 @@
         "home": 0,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 28,
+          "scorer": "John McGinn",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80103",
+      "oldbId": 80103,
       "slug": "australien-turkei",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T04:00:00Z",
@@ -191,10 +337,27 @@
         "home": 2,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 27,
+          "scorer": "Nestory Irankunda",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 75,
+          "scorer": "Connor Metcalfe",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80107",
+      "oldbId": 80107,
       "slug": "deutschland-curacao",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T17:00:00Z",
@@ -215,10 +378,69 @@
         "home": 7,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 6,
+          "scorer": "Felix Nmecha",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 21,
+          "scorer": "Livano Comenencia",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 38,
+          "scorer": "Nico Schlotterbeck",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 45,
+          "scorer": "Kai Havertz\r\n",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 47,
+          "scorer": "Jamal Musiala",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 68,
+          "scorer": "Nathaniel Brown",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 78,
+          "scorer": "Deniz Undav",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 89,
+          "scorer": "Kai Havertz\r\n",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80108",
+      "oldbId": 80108,
       "slug": "niederlande-japan",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T20:00:00Z",
@@ -239,10 +461,41 @@
         "home": 2,
         "away": 2,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 51,
+          "scorer": "Virgil van Dijk",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 57,
+          "scorer": "Keito Nakamuro",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 64,
+          "scorer": "Cyrensio Summerville",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 88,
+          "scorer": "Daichi Kamada",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80109",
+      "oldbId": 80109,
       "slug": "elfenbeinkuste-ecuador",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T23:00:00Z",
@@ -263,10 +516,20 @@
         "home": 1,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 90,
+          "scorer": "Amad Diallo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80110",
+      "oldbId": 80110,
       "slug": "schweden-tunesien",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-15T02:00:00Z",
@@ -287,10 +550,55 @@
         "home": 5,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 7,
+          "scorer": "Yasin Ayari",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 30,
+          "scorer": "Alexander Isak",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 43,
+          "scorer": "Omar Rekik",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 59,
+          "scorer": "Viktor Gyökeres",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 86,
+          "scorer": "Mattias Svanberg",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Yasin Ayari",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80111",
+      "oldbId": 80111,
       "slug": "spanien-kap-verde",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-15T16:00:00Z",
@@ -311,10 +619,12 @@
         "home": 0,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80112",
+      "oldbId": 80112,
       "slug": "belgien-agypten",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-15T19:00:00Z",
@@ -335,10 +645,20 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 19,
+          "scorer": "Emam Ashour",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80113",
+      "oldbId": 80113,
       "slug": "saudi-arabien-uruguay",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-15T22:00:00Z",
@@ -359,10 +679,27 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 41,
+          "scorer": "Abdulelah Al-Amri",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 80,
+          "scorer": "Maximiliano Araújo",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80114",
+      "oldbId": 80114,
       "slug": "iran-neuseeland",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-16T01:00:00Z",
@@ -383,10 +720,41 @@
         "home": 2,
         "away": 2,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 7,
+          "scorer": "Elijah Just",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 32,
+          "scorer": "Ramin Rezaeian",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 55,
+          "scorer": "Elijah Just",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 64,
+          "scorer": "Mohammed Mohebi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80116",
+      "oldbId": 80116,
       "slug": "frankreich-senegal",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-16T19:00:00Z",
@@ -407,10 +775,41 @@
         "home": 3,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 66,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 82,
+          "scorer": "Bradley Barcola",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80117",
+      "oldbId": 80117,
       "slug": "irak-norwegen",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-16T22:00:00Z",
@@ -431,10 +830,48 @@
         "home": 1,
         "away": 4,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 29,
+          "scorer": "Erling Haaland",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 39,
+          "scorer": "Ayman Hussein",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 43,
+          "scorer": "Erling Haaland",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 76,
+          "scorer": "Leo Østigård",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Kristian Thorstvedt",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80118",
+      "oldbId": 80118,
       "slug": "argentinien-algerien",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-17T01:00:00Z",
@@ -455,10 +892,34 @@
         "home": 3,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 17,
+          "scorer": "Lionel Messi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 60,
+          "scorer": "Lionel Messi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 76,
+          "scorer": "Lionel Messi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80115",
+      "oldbId": 80115,
       "slug": "osterreich-jordanien",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-17T04:00:00Z",
@@ -479,10 +940,41 @@
         "home": 3,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 21,
+          "scorer": "Romano Schmid",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 50,
+          "scorer": "Ali Olwan",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 76,
+          "scorer": "Yazan Al-Arab",
+          "side": "home",
+          "own": true,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Marko Arnautovic",
+          "side": "home",
+          "own": false,
+          "pen": true
+        }
+      ]
     },
     {
       "id": "m80119",
+      "oldbId": 80119,
       "slug": "portugal-dr-kongo",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-17T17:00:00Z",
@@ -503,10 +995,27 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 6,
+          "scorer": "João Neves",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 50,
+          "scorer": "Yoane Wissa",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80120",
+      "oldbId": 80120,
       "slug": "england-kroatien",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-17T20:00:00Z",
@@ -527,10 +1036,55 @@
         "home": 4,
         "away": 2,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 12,
+          "scorer": "Harry Kane",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 36,
+          "scorer": "Martin Baturina",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 42,
+          "scorer": "Harry Kane",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 47,
+          "scorer": "Jude Bellingham",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 50,
+          "scorer": "Petar Musa",
+          "side": null,
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 85,
+          "scorer": "Marcus Rashford",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80121",
+      "oldbId": 80121,
       "slug": "ghana-panama",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-17T23:00:00Z",
@@ -551,10 +1105,20 @@
         "home": 1,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 90,
+          "scorer": "Samuel Yirenkyi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80122",
+      "oldbId": 80122,
       "slug": "usbekistan-kolumbien",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-18T02:00:00Z",
@@ -575,10 +1139,34 @@
         "home": 1,
         "away": 3,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 41,
+          "scorer": "Daniel Muñoz",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 65,
+          "scorer": "Luis Díaz",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 99,
+          "scorer": "Jaminton Campaz",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80124",
+      "oldbId": 80124,
       "slug": "tschechien-sudafrika",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-18T16:00:00Z",
@@ -599,10 +1187,27 @@
         "home": 1,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 6,
+          "scorer": "Michal Sadilek",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 83,
+          "scorer": "Teboho Mokoena",
+          "side": "away",
+          "own": false,
+          "pen": true
+        }
+      ]
     },
     {
       "id": "m80125",
+      "oldbId": 80125,
       "slug": "schweiz-bosnien-und-herzegowina",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-18T19:00:00Z",
@@ -623,10 +1228,48 @@
         "home": 4,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 74,
+          "scorer": "Johan Manzambi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 84,
+          "scorer": "Ruben Vargas",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Johan Manzambi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Ermin Mahmic",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Granit Xhaka",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80126",
+      "oldbId": 80126,
       "slug": "kanada-katar",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-18T22:00:00Z",
@@ -647,10 +1290,55 @@
         "home": 6,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 16,
+          "scorer": "Cyle Larin",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 29,
+          "scorer": "Jonathan David",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 48,
+          "scorer": "Jonathan David",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 64,
+          "scorer": "Nathan Saliba",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 75,
+          "scorer": "Mohammed Al Mannai",
+          "side": "home",
+          "own": true,
+          "pen": false
+        },
+        {
+          "minute": 92,
+          "scorer": "Jonathan David",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80127",
+      "oldbId": 80127,
       "slug": "mexiko-sudkorea",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-19T01:00:00Z",
@@ -671,10 +1359,20 @@
         "home": 1,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 50,
+          "scorer": "Luis Romo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80129",
+      "oldbId": 80129,
       "slug": "usa-australien",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-19T19:00:00Z",
@@ -695,10 +1393,27 @@
         "home": 2,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 11,
+          "scorer": "Cameron Burgess",
+          "side": "home",
+          "own": true,
+          "pen": false
+        },
+        {
+          "minute": 43,
+          "scorer": "Alexander Freeman",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80130",
+      "oldbId": 80130,
       "slug": "schottland-marokko",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-19T22:00:00Z",
@@ -719,10 +1434,20 @@
         "home": 0,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 2,
+          "scorer": "Ismael Saibari",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80131",
+      "oldbId": 80131,
       "slug": "brasilien-haiti",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T00:30:00Z",
@@ -743,10 +1468,34 @@
         "home": 3,
         "away": 0,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 24,
+          "scorer": "Matheus Cunha",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 36,
+          "scorer": "Matheus Cunha",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 48,
+          "scorer": "Vinicius Junior",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80128",
+      "oldbId": 80128,
       "slug": "turkei-paraguay",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T03:00:00Z",
@@ -767,10 +1516,20 @@
         "home": 0,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 2,
+          "scorer": "Matias Galarza",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80133",
+      "oldbId": 80133,
       "slug": "niederlande-schweden",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T17:00:00Z",
@@ -791,10 +1550,55 @@
         "home": 5,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 5,
+          "scorer": " Brian Brobbey ",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 17,
+          "scorer": " Brian Brobbey ",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 47,
+          "scorer": "Cody Gakpo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 54,
+          "scorer": "Cody Gakpo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 58,
+          "scorer": "Anthony Elanga",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 89,
+          "scorer": "Cyrensio Summerville",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80134",
+      "oldbId": 80134,
       "slug": "deutschland-elfenbeinkuste",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T20:00:00Z",
@@ -815,10 +1619,34 @@
         "home": 2,
         "away": 1,
         "status": "finished"
-      }
+      },
+      "goals": [
+        {
+          "minute": 30,
+          "scorer": "Franck Kessié",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 68,
+          "scorer": "Deniz Undav",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 94,
+          "scorer": "Deniz Undav",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80135",
+      "oldbId": 80135,
       "slug": "ecuador-curacao",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-21T00:00:00Z",
@@ -839,10 +1667,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80132",
+      "oldbId": 80132,
       "slug": "tunesien-japan",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-21T04:00:00Z",
@@ -863,10 +1693,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80136",
+      "oldbId": 80136,
       "slug": "spanien-saudi-arabien",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-21T16:00:00Z",
@@ -887,10 +1719,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80137",
+      "oldbId": 80137,
       "slug": "belgien-iran",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-21T19:00:00Z",
@@ -911,10 +1745,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80138",
+      "oldbId": 80138,
       "slug": "uruguay-kap-verde",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-21T22:00:00Z",
@@ -935,10 +1771,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80139",
+      "oldbId": 80139,
       "slug": "neuseeland-agypten",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-22T01:00:00Z",
@@ -959,10 +1797,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80140",
+      "oldbId": 80140,
       "slug": "argentinien-osterreich",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-22T17:00:00Z",
@@ -983,10 +1823,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80141",
+      "oldbId": 80141,
       "slug": "frankreich-irak",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-22T21:00:00Z",
@@ -1007,10 +1849,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80142",
+      "oldbId": 80142,
       "slug": "norwegen-senegal",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-23T00:00:00Z",
@@ -1031,10 +1875,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80143",
+      "oldbId": 80143,
       "slug": "jordanien-algerien",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-23T03:00:00Z",
@@ -1055,10 +1901,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80144",
+      "oldbId": 80144,
       "slug": "portugal-usbekistan",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-23T17:00:00Z",
@@ -1079,10 +1927,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80145",
+      "oldbId": 80145,
       "slug": "england-ghana",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-23T20:00:00Z",
@@ -1103,10 +1953,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80146",
+      "oldbId": 80146,
       "slug": "panama-kroatien",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-23T23:00:00Z",
@@ -1127,10 +1979,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80147",
+      "oldbId": 80147,
       "slug": "kolumbien-dr-kongo",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-24T02:00:00Z",
@@ -1151,10 +2005,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80148",
+      "oldbId": 80148,
       "slug": "schweiz-kanada",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-24T19:00:00Z",
@@ -1175,10 +2031,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80149",
+      "oldbId": 80149,
       "slug": "bosnien-und-herzegowina-katar",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-24T19:00:00Z",
@@ -1199,10 +2057,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80150",
+      "oldbId": 80150,
       "slug": "marokko-haiti",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-24T22:00:00Z",
@@ -1223,10 +2083,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80151",
+      "oldbId": 80151,
       "slug": "schottland-brasilien",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-24T22:00:00Z",
@@ -1247,10 +2109,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80152",
+      "oldbId": 80152,
       "slug": "sudafrika-sudkorea",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T01:00:00Z",
@@ -1271,10 +2135,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80153",
+      "oldbId": 80153,
       "slug": "tschechien-mexiko",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T01:00:00Z",
@@ -1295,10 +2161,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80154",
+      "oldbId": 80154,
       "slug": "curacao-elfenbeinkuste",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T20:00:00Z",
@@ -1319,10 +2187,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80155",
+      "oldbId": 80155,
       "slug": "ecuador-deutschland",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T20:00:00Z",
@@ -1343,10 +2213,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80156",
+      "oldbId": 80156,
       "slug": "tunesien-niederlande",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T23:00:00Z",
@@ -1367,10 +2239,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80157",
+      "oldbId": 80157,
       "slug": "japan-schweden",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T23:00:00Z",
@@ -1391,10 +2265,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80158",
+      "oldbId": 80158,
       "slug": "turkei-usa",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-26T02:00:00Z",
@@ -1415,10 +2291,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80159",
+      "oldbId": 80159,
       "slug": "paraguay-australien",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-26T02:00:00Z",
@@ -1439,10 +2317,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80160",
+      "oldbId": 80160,
       "slug": "norwegen-frankreich",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-26T19:00:00Z",
@@ -1463,10 +2343,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80161",
+      "oldbId": 80161,
       "slug": "senegal-irak",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-26T19:00:00Z",
@@ -1487,10 +2369,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80162",
+      "oldbId": 80162,
       "slug": "kap-verde-saudi-arabien",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T00:00:00Z",
@@ -1511,10 +2395,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80163",
+      "oldbId": 80163,
       "slug": "uruguay-spanien",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T00:00:00Z",
@@ -1535,10 +2421,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80164",
+      "oldbId": 80164,
       "slug": "neuseeland-belgien",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T03:00:00Z",
@@ -1559,10 +2447,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80165",
+      "oldbId": 80165,
       "slug": "agypten-iran",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T03:00:00Z",
@@ -1583,10 +2473,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80166",
+      "oldbId": 80166,
       "slug": "panama-england",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T21:00:00Z",
@@ -1607,10 +2499,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80167",
+      "oldbId": 80167,
       "slug": "kroatien-ghana",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T21:00:00Z",
@@ -1631,10 +2525,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80168",
+      "oldbId": 80168,
       "slug": "kolumbien-portugal",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T23:30:00Z",
@@ -1655,10 +2551,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80169",
+      "oldbId": 80169,
       "slug": "dr-kongo-usbekistan",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-27T23:30:00Z",
@@ -1679,10 +2577,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80170",
+      "oldbId": 80170,
       "slug": "algerien-osterreich",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-28T02:00:00Z",
@@ -1703,10 +2603,12 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     },
     {
       "id": "m80171",
+      "oldbId": 80171,
       "slug": "jordanien-argentinien",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-28T02:00:00Z",
@@ -1727,7 +2629,8 @@
         "home": null,
         "away": null,
         "status": "scheduled"
-      }
+      },
+      "goals": []
     }
   ]
 }
