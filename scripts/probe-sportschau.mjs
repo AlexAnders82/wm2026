@@ -1,18 +1,22 @@
-// probe-sportschau.mjs — einmaliger Test, ob die Sportschau-Spielplanseite vom
-// CI-Runner aus lesbar ist (anderes Netz, Browser-User-Agent). Nur Diagnose.
+// probe-sportschau.mjs — testet das Parsen der Sender aus dem Sportschau-Spielplan.
 const URL = "https://www.sportschau.de/fussball/fifa-wm-2026/der-spielplan-der-fussball-wm-2026,fifawm-spielplan-100.html";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
 
-try {
-  const res = await fetch(URL, { headers: { "user-agent": UA, "accept-language": "de-DE,de;q=0.9", "accept": "text/html" } });
-  console.log("STATUS:", res.status);
-  const t = await res.text();
-  console.log("LENGTH:", t.length);
-  for (const k of ["MagentaTV", "ZDF", "ARD", "__NEXT_DATA__", "__APOLLO", "application/json", "broadcast", "sender", "Spielplan"]) {
-    console.log(`HAS ${k}:`, t.includes(k));
-  }
-  const i = t.indexOf("ZDF");
-  if (i >= 0) console.log("SNIPPET:", JSON.stringify(t.slice(i - 80, i + 160)));
-} catch (e) {
-  console.log("ERROR:", e.message);
+const res = await fetch(URL, { headers: { "user-agent": UA, "accept-language": "de-DE,de;q=0.9", "accept": "text/html" } });
+console.log("STATUS:", res.status);
+let t = await res.text();
+// Sichtbaren Text extrahieren (Tags entfernen).
+t = t.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, "");
+t = t.replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/&#x27;|&#39;/g, "'");
+console.log("TEXTLEN:", t.length);
+
+// Muster: DD.MM.HH:MM Heim - Gast {Sender|Score}
+const re = /(\d{2})\.(\d{2})\.(\d{2}):(\d{2})([A-Za-zÀ-ÿ .'’\-]+?) - ([A-Za-zÀ-ÿ .'’\-]+?)(ARD\/ZDF|ZDF\/ARD|ARD|ZDF|Magenta)/g;
+let m, n = 0;
+const seen = [];
+while ((m = re.exec(t)) && n < 200) {
+  n++;
+  if (seen.length < 45) seen.push(`${m[1]}.${m[2]} ${m[5].trim()} - ${m[6].trim()} => ${m[7]}`);
 }
+console.log("MATCHES:", n);
+console.log(seen.join("\n"));
