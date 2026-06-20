@@ -1,17 +1,20 @@
 ---
-// MatchCard — Kernkomponente, DESIGN_SYSTEM.md 8.3. Drei Zustände:
-// scheduled (Zeit groß) · live (Puls-Dot) · finished (Endstand, 80 %).
+// MatchCard — Kernkomponente (DESIGN_SYSTEM.md 8.3). Zustände scheduled/live/finished.
+// data-oldb-id + data-role-Hooks ermöglichen Live-Updates im Browser (live.js).
 import Flag from "./Flag.astro";
 import SenderBadge from "./SenderBadge.astro";
+import Goals from "./Goals.astro";
 import { href } from "../lib/paths.js";
 import { timeLabel } from "../lib/datetime.js";
 
 interface Props {
   match: any;
+  showGoals?: boolean;
 }
-const { match } = Astro.props;
-const status = match.score?.status ?? "scheduled";
-const hasScore = match.score?.home != null && match.score?.away != null;
+const { match, showGoals = false } = Astro.props;
+const state = match.state ?? "scheduled";
+const showScore = state === "live" || state === "finished";
+const sh = match.score?.home, sa = match.score?.away;
 
 const freeSender = match.tv?.free && match.tv.free !== "none" ? match.tv.free : null;
 const hasMagenta = (match.tv?.stream ?? []).includes("MagentaTV");
@@ -19,10 +22,9 @@ const hasMagenta = (match.tv?.stream ?? []).includes("MagentaTV");
 const cardClass = [
   "match-card",
   match.isDE ? "match-card--de" : "",
-  status === "finished" ? "match-card--finished" : "",
+  state === "finished" ? "match-card--finished" : "",
 ].filter(Boolean).join(" ");
 
-// Meta: Gruppe + Spieltag (oder Runde bei K.o.), plus Stadt falls vorhanden.
 const phaseLabel = match.group
   ? `Gruppe ${match.group}${match.matchday ? ` · Spieltag ${match.matchday}` : ""}`
   : match.round || "";
@@ -33,17 +35,19 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
   href={href(`spiel/${match.slug}`)}
   class={cardClass}
   data-match
+  data-oldb-id={match.oldbId ?? ""}
   data-de={String(match.isDE)}
   data-phase={match.phase}
+  data-state={state}
 >
   <div class="flex gap-3 items-center">
     <!-- Zeit-/Status-Spalte -->
-    <div class="w-14 shrink-0 font-display tabular leading-none text-center">
-      {status === "live" ? (
+    <div class="w-14 shrink-0 font-display tabular leading-none text-center" data-role="status">
+      {state === "live" ? (
         <span class="flex items-center justify-center gap-1.5 text-pitch text-sm font-semibold">
           <span class="live-dot"></span>LIVE
         </span>
-      ) : status === "finished" ? (
+      ) : state === "finished" ? (
         <span class="text-text-secondary text-xs font-semibold uppercase tracking-wide">Beendet</span>
       ) : (
         <span class="block">
@@ -58,25 +62,24 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
       <div class="flex items-center gap-2">
         <Flag code={match.home?.code} name={match.home?.name} />
         <span class="truncate text-text-primary">{match.home?.name}</span>
-        {hasScore && (
-          <span class="ml-auto font-display tabular text-text-primary font-bold">{match.score.home}</span>
-        )}
+        <span class="ml-auto font-display tabular text-text-primary font-bold" data-role="score-home">{showScore && sh != null ? sh : ""}</span>
       </div>
       <div class="flex items-center gap-2 mt-1">
         <Flag code={match.away?.code} name={match.away?.name} />
         <span class="truncate text-text-primary">{match.away?.name}</span>
-        {hasScore && (
-          <span class="ml-auto font-display tabular text-text-primary font-bold">{match.score.away}</span>
-        )}
+        <span class="ml-auto font-display tabular text-text-primary font-bold" data-role="score-away">{showScore && sa != null ? sa : ""}</span>
       </div>
 
       {meta && <p class="text-xs text-text-secondary uppercase tracking-[0.08em] mt-1.5">{meta}</p>}
       {match.weather && (
         <p class="text-xs text-text-secondary tabular mt-0.5">{match.weather.tempC}°C · {match.weather.text}</p>
       )}
+      {showGoals && (
+        <div data-role="goals"><Goals goals={match.goals} /></div>
+      )}
     </div>
 
-    <!-- Sender (kompakt, rechts) — als Beschriftung, da die Karte selbst ein Link ist -->
+    <!-- Sender (kompakt, rechts) — Beschriftung, da die Karte selbst ein Link ist -->
     <div class="shrink-0 flex flex-col items-end gap-1">
       {freeSender && <SenderBadge sender={freeSender} link={false} />}
       {hasMagenta && <SenderBadge sender="MagentaTV" link={false} />}

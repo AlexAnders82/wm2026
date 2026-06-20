@@ -52,25 +52,20 @@ const matches = getMatches();
 const now = Date.now();
 const todayKey = dayKey(new Date().toISOString());
 
-// --- Hero-Logik (DS 8.2) ---
-const live = matches.filter((m) => m.score?.status === "live");
-const upcoming = matches.filter(
-  (m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now
-);
-
+// --- Tagesübersicht: ALLE Spiele von heute (sonst nächster Spieltag) ---
+const todayMatches = matches.filter((m) => m.kickoffUtc && dayKey(m.kickoffUtc) === todayKey);
 let heroMatches, heroHeading;
-if (live.length) {
-  heroMatches = live;
-  heroHeading = "Heute live";
-} else if (upcoming.length) {
-  const nextKey = dayKey(upcoming[0].kickoffUtc);
-  heroMatches = upcoming.filter((m) => dayKey(m.kickoffUtc) === nextKey).slice(0, 4);
-  heroHeading = nextKey === todayKey ? "Heute" : "Nächster Spieltag";
+if (todayMatches.length) {
+  heroMatches = todayMatches;
+  heroHeading = heroMatches.some((m) => m.state === "live") ? "Heute live" : "Heute";
 } else {
-  heroMatches = [];
-  heroHeading = "Spielplan";
+  const future = matches.filter((m) => m.kickoffUtc && dayKey(m.kickoffUtc) > todayKey);
+  const nextKey = future.length ? dayKey(future[0].kickoffUtc) : null;
+  heroMatches = nextKey ? matches.filter((m) => m.kickoffUtc && dayKey(m.kickoffUtc) === nextKey) : [];
+  heroHeading = nextKey ? "Nächster Spieltag" : "Spielplan";
 }
 const heroCaption = heroMatches.length ? fullDate(heroMatches[0].kickoffUtc) : "";
+const upcoming = matches.filter((m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now);
 const nextDE = upcoming.find((m) => m.isDE);
 
 // --- Spielplan ---
@@ -94,7 +89,7 @@ const standings = getGroups();
       <h1 class="text-hero uppercase mt-1">{heroHeading}</h1>
 
       <div class="flex flex-col gap-[var(--space-card-gap)] mt-6">
-        {heroMatches.map((m) => <MatchCard match={m} />)}
+        {heroMatches.map((m) => <MatchCard match={m} showGoals={true} />)}
       </div>
 
       {nextDE && (

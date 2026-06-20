@@ -20,6 +20,16 @@ function matchdayOf(round) {
   return m ? Number(m[1]) : null;
 }
 
+/** Live-Status aus Zeit + Ergebnis ableiten: scheduled | live | finished. */
+function stateOf(m) {
+  if (m.score?.status === "finished") return "finished";
+  if (!m.kickoffUtc) return "scheduled";
+  const t = new Date(m.kickoffUtc).getTime();
+  const now = Date.now();
+  if (now >= t && now < t + 150 * 60 * 1000) return "live";
+  return "scheduled";
+}
+
 /** Basis-Anreicherung ohne Gruppen-Zuordnung. */
 function baseEnrich(m) {
   const tv = tvFor(m.slug);
@@ -27,7 +37,7 @@ function baseEnrich(m) {
   const phase = /^gruppe/i.test(m.round ?? "") ? "group" : "ko";
   // Exklusiv nur, wenn ausdrücklich so markiert — keine Annahme bei fehlender Info.
   const isExclusive = tv.exclusive === true;
-  return { ...m, tv, isDE, phase, isExclusive, matchday: phase === "group" ? matchdayOf(m.round) : null };
+  return { ...m, tv, isDE, phase, isExclusive, state: stateOf(m), goals: m.goals ?? [], matchday: phase === "group" ? matchdayOf(m.round) : null };
 }
 
 // ---------------------------------------------------------------------------
@@ -171,3 +181,4 @@ export function sameDayMatches(match, limit = 3) {
 }
 
 export const updatedAt = matchesData.updatedAt;
+export const liveSource = matchesData.source ?? null;

@@ -16,6 +16,9 @@ import { slugify, codeFor, pairKey } from "../src/lib/teamcodes.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, "../src/data/matches.json");
 
+// Wird von fromOpenLigaDB gesetzt (für Live-Updates im Browser).
+let oldbSource = null;
+
 /** fetch mit Timeout, damit ein hängender Host den CI-Build nicht blockiert. */
 async function getJson(url, { headers = {}, timeoutMs = 20000 } = {}) {
   const ctrl = new AbortController();
@@ -37,6 +40,7 @@ async function fromOpenLigaDB() {
     return /world ?cup|weltmeister|wm|fifa/.test(hay) && String(l.leagueSeason ?? "").includes("2026");
   });
   if (!wm) throw new Error("OpenLigaDB: keine WM-2026-Liga gefunden");
+  oldbSource = { provider: "openligadb", shortcut: wm.leagueShortcut, season: String(wm.leagueSeason) };
 
   const data = await getJson(
     `https://api.openligadb.de/getmatchdata/${wm.leagueShortcut}/${wm.leagueSeason}`
@@ -47,8 +51,21 @@ async function fromOpenLigaDB() {
     )[0];
     const homeName = m.team1?.teamName ?? "";
     const awayName = m.team2?.teamName ?? "";
+    // Torschützen extrahieren (Seite über Spielstand-Differenz bestimmen).
+    let p1 = 0, p2 = 0;
+    const goals = (m.goals ?? [])
+      .slice()
+      .sort((a, b) => (a.matchMinute ?? 0) - (b.matchMinute ?? 0))
+      .map((g) => {
+        const s1 = g.scoreTeam1 ?? p1, s2 = g.scoreTeam2 ?? p2;
+        const side = s1 > p1 ? "home" : s2 > p2 ? "away" : null;
+        p1 = s1; p2 = s2;
+        return { minute: g.matchMinute ?? null, scorer: g.goalGetterName ?? "", side, own: !!g.isOwnGoal, pen: !!g.isPenalty };
+      })
+      .filter((g) => g.scorer);
     return {
       id: `m${m.matchID}`,
+      oldbId: m.matchID,
       slug: `${slugify(homeName)}-${slugify(awayName)}`,
       round: m.group?.groupName ?? "",
       kickoffUtc: m.matchDateTimeUTC ?? null,
@@ -60,6 +77,7 @@ async function fromOpenLigaDB() {
         away: result?.pointsTeam2 ?? null,
         status: m.matchIsFinished ? "finished" : "scheduled",
       },
+      goals,
     };
   });
 }
@@ -145,7 +163,7 @@ async function main() {
     }
   }
 
-  const payload = { updatedAt: new Date().toISOString(), matches };
+  const payload = { updatedAt: new Date().toISOString(), source: oldbSource, matches };
   await mkdir(dirname(OUT), { recursive: true });
   await writeFile(OUT, JSON.stringify(payload, null, 2) + "\n", "utf8");
   console.log(`✓ ${matches.length} Spiele geschrieben → ${OUT}`);
