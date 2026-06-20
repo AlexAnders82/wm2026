@@ -1,32 +1,401 @@
 {
-  "_note": "Sender-Zuordnung WM 2026 (manuell kuratiert, PLAN.md 3.3). Schluessel = Spiel-Slug. 'free' = bestaetigter Free-TV-Sender (ARD/ZDF). 1. Spieltag aus dem offiziellen ZDF-Spielplan (orange=ZDF, blau=ARD). MagentaTV zeigt ALLE 104 Spiele. Fehlt ein Slug, wird nur MagentaTV gezeigt, bis Free-TV bestaetigt ist.",
-  "fallback": { "free": null, "stream": ["MagentaTV"] },
+  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-06-20T23:33:10.496Z",
+  "fallback": {
+    "free": null,
+    "stream": [
+      "MagentaTV"
+    ]
+  },
   "bySlug": {
-    "mexiko-sudafrika": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "sudkorea-tschechien": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "kanada-bosnien-und-herzegowina": { "free": "ARD", "stream": ["MagentaTV"] },
-    "usa-paraguay": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "katar-schweiz": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "brasilien-marokko": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "haiti-schottland": { "free": "ARD", "stream": ["MagentaTV"] },
-    "australien-turkei": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "deutschland-curacao": { "free": "ARD", "stream": ["MagentaTV"] },
-    "niederlande-japan": { "free": "ARD", "stream": ["MagentaTV"] },
-    "elfenbeinkuste-ecuador": { "free": "ARD", "stream": ["MagentaTV"] },
-    "schweden-tunesien": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "spanien-kap-verde": { "free": "ARD", "stream": ["MagentaTV"] },
-    "belgien-agypten": { "free": "ARD", "stream": ["MagentaTV"] },
-    "saudi-arabien-uruguay": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "iran-neuseeland": { "free": "ARD", "stream": ["MagentaTV"] },
-    "frankreich-senegal": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "irak-norwegen": { "free": "ARD", "stream": ["MagentaTV"] },
-    "argentinien-algerien": { "free": "ARD", "stream": ["MagentaTV"] },
-    "osterreich-jordanien": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "portugal-dr-kongo": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "england-kroatien": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "ghana-panama": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "usbekistan-kolumbien": { "free": "ARD", "stream": ["MagentaTV"] },
-    "deutschland-elfenbeinkuste": { "free": "ZDF", "stream": ["MagentaTV"] },
-    "ecuador-deutschland": { "free": "ARD", "stream": ["MagentaTV"] }
+    "mexiko-sudafrika": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "sudkorea-tschechien": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "kanada-bosnien-und-herzegowina": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "usa-paraguay": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "katar-schweiz": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "brasilien-marokko": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "haiti-schottland": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "australien-turkei": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "deutschland-curacao": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "niederlande-japan": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "elfenbeinkuste-ecuador": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "schweden-tunesien": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "spanien-kap-verde": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "belgien-agypten": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "saudi-arabien-uruguay": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "iran-neuseeland": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "frankreich-senegal": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "irak-norwegen": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "argentinien-algerien": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "osterreich-jordanien": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "portugal-dr-kongo": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "england-kroatien": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "ghana-panama": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "usbekistan-kolumbien": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "deutschland-elfenbeinkuste": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "ecuador-deutschland": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "ecuador-curacao": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "tunesien-japan": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "spanien-saudi-arabien": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "belgien-iran": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "uruguay-kap-verde": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "neuseeland-agypten": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "argentinien-osterreich": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "frankreich-irak": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "norwegen-senegal": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "jordanien-algerien": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "portugal-usbekistan": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "england-ghana": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "panama-kroatien": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "kolumbien-dr-kongo": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "schweiz-kanada": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "bosnien-und-herzegowina-katar": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "schottland-brasilien": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "marokko-haiti": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "tschechien-mexiko": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "sudafrika-sudkorea": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "curacao-elfenbeinkuste": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "japan-schweden": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "tunesien-niederlande": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "turkei-usa": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "paraguay-australien": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "norwegen-frankreich": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "senegal-irak": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "kap-verde-saudi-arabien": {
+      "free": "ARD",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "uruguay-spanien": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "agypten-iran": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "neuseeland-belgien": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "panama-england": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "kolumbien-portugal": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "dr-kongo-usbekistan": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    },
+    "algerien-osterreich": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "jordanien-argentinien": {
+      "free": null,
+      "stream": [
+        "MagentaTV"
+      ],
+      "exclusive": true
+    }
   }
 }
