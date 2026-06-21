@@ -16,7 +16,7 @@ import "flag-icons/css/flag-icons.min.css";
 
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { absUrl } from "../lib/paths.js";
+import { absUrl, href } from "../lib/paths.js";
 import { liveSource } from "../lib/data.js";
 
 interface Props {
@@ -46,6 +46,13 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+
+    <!-- Favicon / App-Icons (Logo-Paket „Anstoß '26") -->
+    <link rel="icon" href={href("favicon.ico")} sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href={href("favicon-32.png")} />
+    <link rel="icon" type="image/png" sizes="16x16" href={href("favicon-16.png")} />
+    <link rel="apple-touch-icon" href={href("apple-touch-icon.png")} />
+    <link rel="manifest" href={href("site.webmanifest")} />
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />

@@ -1,6 +1,8 @@
 ---
-// Logo — "Anstoß '26" mit buntem WM-Ball (Swirl in Rot/Grün/Blau, angelehnt an
-// den aktuellen WM-Ball) + dynamischer Kick-Andeutung. Inline-SVG, skaliert scharf.
+// Logo — offizielles „Anstoß '26"-Badge (Spielerfigur + bunter WM-Ball + Wortmarke).
+// Vom Nutzer geliefertes Artwork; ausdrücklicher Nutzerwunsch schlägt das reine
+// Typo-Logo des Design-Systems. Quadratisch, daher width = height.
+import { href } from "../lib/paths.js";
 interface Props {
   height?: number;
   class?: string;
@@ -8,39 +10,11 @@ interface Props {
 const { height = 30, class: cls = "" } = Astro.props;
 ---
 
-<svg
-  class={cls}
+<img
+  src={href("anstoss26-logo-512.webp")}
+  alt="Anstoß '26"
+  width={height}
   height={height}
-  viewBox="0 0 220 48"
-  role="img"
-  aria-label="Anstoß '26"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <defs>
-    <clipPath id="logoball"><circle cx="24" cy="24" r="21" /></clipPath>
-  </defs>
-
-  <!-- Ball -->
-  <circle cx="24" cy="24" r="21" fill="#ffffff" stroke="#0B1120" stroke-width="2" />
-  <g clip-path="url(#logoball)">
-    <!-- bunte Swirl-Panels (Pinwheel, 120° gedreht) -->
-    <g transform="translate(24 24)" stroke-linecap="round" fill="none" stroke-width="9.5">
-      <path d="M-1,2 C 4,-13 16,-16 21,-6" stroke="#E2342E" transform="rotate(0)" />
-      <path d="M-1,2 C 4,-13 16,-16 21,-6" stroke="#2FCB6E" transform="rotate(120)" />
-      <path d="M-1,2 C 4,-13 16,-16 21,-6" stroke="#2C6BE0" transform="rotate(240)" />
-    </g>
-    <circle cx="24" cy="24" r="3.2" fill="#0B1120" />
-  </g>
-
-  <!-- Wortmarke -->
-  <text
-    x="55"
-    y="34"
-    font-family="'Barlow Condensed','Arial Narrow',sans-serif"
-    font-weight="700"
-    font-size="31"
-    letter-spacing="0.5"
-  >
-    <tspan fill="#EDF1F8">ANSTOSS</tspan><tspan fill="#2FCB6E"> '</tspan><tspan fill="#F0B429">26</tspan>
-  </text>
-</svg>
+  class={cls}
+  decoding="async"
+/>
