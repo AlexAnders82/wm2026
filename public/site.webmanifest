@@ -1,0 +1,21 @@
+{
+  "name": "Anstoß '26",
+  "short_name": "Anstoß 26",
+  "start_url": "/wm2026/",
+  "scope": "/wm2026/",
+  "icons": [
+    {
+      "src": "/wm2026/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/wm2026/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0B1120",
+  "background_color": "#0B1120",
+  "display": "standalone"
+}
