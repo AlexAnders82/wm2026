@@ -1,0 +1,7 @@
+<!-- Beispiel-Einbindung für deine Website -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<img src="/anstoss26-logo.svg" alt="Anstoss 26 Logo" width="240" height="240">
