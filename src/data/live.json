@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T17:52:41.597Z",
+  "updatedAt": "2026-06-21T20:02:57.246Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -350,14 +350,57 @@
         "subs": []
       },
       "fetchedAt": "2026-06-20T20:41:58.853Z"
+    },
+    "belgien-iran": {
+      "home": {
+        "team": "Belgien",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 1,
+            "name": "Thibaut Courtois",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 9,
+            "name": "Romelu Lukaku",
+            "pos": "Centre-Forward"
+          },
+          {
+            "n": 4,
+            "name": "Brandon Mechele",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 15,
+            "name": "Thomas Meunier",
+            "pos": "Right-Back"
+          },
+          {
+            "n": 10,
+            "name": "Leandro Trossard",
+            "pos": "Left Wing"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Iran",
+        "formation": "",
+        "coach": "",
+        "xi": [],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-21T20:02:57.246Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
     "windowMatches": 2,
     "checked": 2,
-    "got": 0,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-21T17:52:41.597Z"
+    "at": "2026-06-21T20:02:57.246Z"
   }
 }
