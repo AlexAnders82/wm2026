@@ -26,7 +26,7 @@
   },
   "norwegen-senegal": {
     "tempC": 28,
-    "text": "bewölkt",
+    "text": "teils bewölkt",
     "city": "New York/New Jersey"
   },
   "jordanien-algerien": {
@@ -35,7 +35,7 @@
     "city": "San Francisco"
   },
   "portugal-usbekistan": {
-    "tempC": 29,
+    "tempC": 30,
     "text": "Gewitter",
     "city": "Houston"
   },
@@ -50,8 +50,8 @@
     "city": "Toronto"
   },
   "kolumbien-dr-kongo": {
-    "tempC": 23,
-    "text": "bewölkt",
+    "tempC": 21,
+    "text": "Gewitter mit Hagel",
     "city": "Guadalajara"
   }
 }
