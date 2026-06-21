@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T21:42:42.503Z",
+  "updatedAt": "2026-06-21T23:44:52.483Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1753,7 +1753,7 @@
         {
           "minute": 10,
           "scorer": "Lamine Yamal",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -1826,11 +1826,33 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 2,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 21,
+          "scorer": "K. Pina",
+          "side": null,
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 44,
+          "scorer": "M. Araujo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 51,
+          "scorer": "A. Canobbio",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80139",
