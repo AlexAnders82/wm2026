@@ -1,0 +1,28 @@
+---
+// TeamLink — Flagge + Name als Link zur Mannschafts-Seite (/team/<code>).
+// Ohne Code (z. B. noch offene K.-o.-Paarung) wird nur dargestellt, nicht verlinkt.
+import Flag from "./Flag.astro";
+import { href } from "../lib/paths.js";
+
+interface Props {
+  code?: string | null;
+  name: string;
+  size?: number;
+  flag?: boolean; // Flagge mitzeigen (Standard: ja)
+  class?: string;
+}
+const { code, name, size = 20, flag = true, class: cls = "" } = Astro.props;
+const cleanName = name ?? "";
+---
+
+{code ? (
+  <a href={href(`team/${code}`)} class={`team-link ${cls}`}>
+    {flag && <Flag code={code} name={cleanName} size={size} />}
+    <span class="truncate">{cleanName}</span>
+  </a>
+) : (
+  <span class={`team-link team-link--plain ${cls}`}>
+    {flag && <Flag code={code} name={cleanName} size={size} />}
+    <span class="truncate">{cleanName}</span>
+  </span>
+)}

@@ -1,7 +1,7 @@
 ---
 // GroupTable — Gruppentabelle (aus Ergebnissen berechnet). Top 2 = Achtelfinale,
 // plus beste Gruppendritte (deshalb Platz 3 dezent markiert).
-import Flag from "./Flag.astro";
+import TeamLink from "./TeamLink.astro";
 
 interface Props {
   group: { letter: string; standings: any[] };
@@ -32,10 +32,7 @@ const { group, compact = false } = Astro.props;
             <span class={i < 2 ? "text-pitch font-semibold" : i === 2 ? "text-gold" : ""}>{i + 1}</span>
           </td>
           <td class="py-2">
-            <span class="flex items-center gap-2 min-w-0">
-              <Flag code={r.code} name={r.team} size={18} />
-              <span class="truncate text-text-primary">{r.team}</span>
-            </span>
+            <TeamLink code={r.code} name={r.team} size={18} class="text-text-primary" />
           </td>
           <td class="text-center px-1 text-text-secondary">{r.p}</td>
           {!compact && <td class="text-center px-1 text-text-secondary">{r.gf}:{r.ga}</td>}

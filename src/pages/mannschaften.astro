@@ -1,0 +1,55 @@
+---
+// Mannschaften — Übersicht aller Teams, nach Gruppe sortiert. Jede Zeile verlinkt
+// auf die Team-Seite (/team/<code>).
+import Base from "../layouts/Base.astro";
+import TeamLink from "../components/TeamLink.astro";
+import { getGroups } from "../lib/data.js";
+import { absUrl } from "../lib/paths.js";
+
+const site = Astro.site!;
+const groups = getGroups();
+const teamCount = groups.reduce((n, g) => n + g.standings.length, 0);
+
+const title = "Alle Mannschaften der WM 2026: Teams nach Gruppen | Anstoß '26";
+const description = `Die ${teamCount} Mannschaften der Fußball-WM 2026 nach Gruppen sortiert. Klick auf ein Team für alle Spiele, Anstoßzeiten und die Gruppentabelle.`;
+const canonical = absUrl("mannschaften", site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Mannschaften der WM 2026",
+  url: canonical,
+};
+
+// Teams je Gruppe alphabetisch für eine stabile Übersicht.
+const blocks = groups.map((g) => ({
+  letter: g.letter,
+  teams: [...g.standings].sort((a, b) => a.team.localeCompare(b.team)),
+}));
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-read section">
+    <h1 class="text-2xl uppercase">Mannschaften</h1>
+    <p class="text-md text-text-secondary mt-2">
+      Alle Teams der WM 2026 nach Gruppen. Tippe auf eine Mannschaft für alle Spiele und die Tabelle.
+    </p>
+
+    <div class="grid gap-3 mt-6 sm:grid-cols-2">
+      {blocks.map((b) => (
+        <div class="rounded-xl bg-card border border-border overflow-hidden">
+          <div class="px-3 py-2 border-b border-border">
+            <h2 class="font-display font-bold uppercase tracking-wide">Gruppe {b.letter}</h2>
+          </div>
+          <ul>
+            {b.teams.map((t) => (
+              <li class="border-t border-border first:border-t-0 px-3 py-2">
+                <TeamLink code={t.code} name={t.team} size={20} class="text-text-primary" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

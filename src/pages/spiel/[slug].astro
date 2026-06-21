@@ -3,6 +3,7 @@
 // Long-tail-SEO-Lander: eine Frage, eine Antwort. SportsEvent + BroadcastEvent.
 import Base from "../../layouts/Base.astro";
 import Flag from "../../components/Flag.astro";
+import TeamLink from "../../components/TeamLink.astro";
 import SenderBadge from "../../components/SenderBadge.astro";
 import MatchCard from "../../components/MatchCard.astro";
 import GroupTable from "../../components/GroupTable.astro";
@@ -134,13 +135,11 @@ const rColor = (r) => (r === "S" ? "text-pitch" : r === "N" ? "text-magenta" : "
     <!-- Teams -->
     <div class="mt-4 flex flex-col gap-2">
       <div class="flex items-center gap-3">
-        <Flag code={match.home?.code} name={home} size={28} />
-        <span class="text-md text-text-primary">{home}</span>
+        <TeamLink code={match.home?.code} name={home} size={28} class="text-md text-text-primary" />
         <span class="ml-auto font-display tabular text-xl font-bold" data-role="score-home">{showScore && match.score?.home != null ? match.score.home : ""}</span>
       </div>
       <div class="flex items-center gap-3">
-        <Flag code={match.away?.code} name={away} size={28} />
-        <span class="text-md text-text-primary">{away}</span>
+        <TeamLink code={match.away?.code} name={away} size={28} class="text-md text-text-primary" />
         <span class="ml-auto font-display tabular text-xl font-bold" data-role="score-away">{showScore && match.score?.away != null ? match.score.away : ""}</span>
       </div>
     </div>

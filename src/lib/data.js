@@ -128,6 +128,30 @@ export function getGroup(letter) {
   return computeGroupInfo().groups.find((g) => g.letter === letter) ?? null;
 }
 
+/** Alle Mannschaften [{ code, name, group }], aus den Gruppen abgeleitet. */
+export function getTeams() {
+  const seen = new Map();
+  for (const g of computeGroupInfo().groups) {
+    for (const r of g.standings) {
+      if (r.code && !seen.has(r.code)) {
+        seen.set(r.code, { code: r.code, name: r.team, group: g.letter });
+      }
+    }
+  }
+  return [...seen.values()];
+}
+
+/** Eine Mannschaft per ISO-Code oder null. */
+export function getTeamByCode(code) {
+  return getTeams().find((t) => t.code === code) ?? null;
+}
+
+/** Alle Spiele einer Mannschaft (chronologisch). */
+export function getTeamMatches(code) {
+  if (!code) return [];
+  return getMatches().filter((m) => m.home?.code === code || m.away?.code === code);
+}
+
 function enrich(m) {
   const e = baseEnrich(m);
   const info = computeGroupInfo();

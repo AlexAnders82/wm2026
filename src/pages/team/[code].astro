@@ -1,0 +1,106 @@
+---
+// Mannschafts-Seite — alle Spiele + Gruppe eines Teams. Long-tail-SEO ("<Team> WM 2026").
+import Base from "../../layouts/Base.astro";
+import Flag from "../../components/Flag.astro";
+import MatchCard from "../../components/MatchCard.astro";
+import GroupTable from "../../components/GroupTable.astro";
+import { getTeams, getTeamMatches, getGroup } from "../../lib/data.js";
+import { href, absUrl } from "../../lib/paths.js";
+
+export function getStaticPaths() {
+  return getTeams().map((team) => ({
+    params: { code: team.code },
+    props: { team },
+  }));
+}
+
+const { team } = Astro.props;
+const site = Astro.site!;
+const matches = getTeamMatches(team.code);
+const group = team.group ? getGroup(team.group) : null;
+
+const finished = matches.filter((m) => m.state === "finished");
+const upcoming = matches.filter((m) => m.state !== "finished");
+
+// Kleine Bilanz aus beendeten Spielen.
+let w = 0, d = 0, l = 0;
+for (const m of finished) {
+  const isHome = m.home?.code === team.code;
+  const gf = isHome ? m.score?.home : m.score?.away;
+  const ga = isHome ? m.score?.away : m.score?.home;
+  if (gf == null || ga == null) continue;
+  if (gf > ga) w++; else if (gf < ga) l++; else d++;
+}
+
+const title = `${team.name} bei der WM 2026: Spiele, Gruppe & Ergebnisse`;
+const description = `Alle Spiele von ${team.name} bei der Fußball-WM 2026${
+  group ? ` (Gruppe ${group.letter})` : ""
+}: Anstoßzeiten, Übertragung, Ergebnisse und die Gruppentabelle.`;
+const canonical = absUrl(`team/${team.code}`, site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  name: team.name,
+  sport: "Soccer",
+  url: canonical,
+};
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-read section">
+    <!-- Breadcrumb -->
+    <nav class="text-xs uppercase tracking-[0.08em] text-text-secondary" aria-label="Brotkrumen">
+      <a href={href("mannschaften")} class="hover:text-text-primary">Mannschaften</a>
+      <span aria-hidden="true"> › </span>
+      <span>{team.name}</span>
+    </nav>
+
+    <!-- Kopf -->
+    <div class="mt-3 flex items-center gap-4">
+      <Flag code={team.code} name={team.name} size={48} />
+      <div>
+        <h1 class="text-2xl uppercase leading-none">{team.name}</h1>
+        {group && (
+          <a href={href(`team/${team.code}#gruppe`)} class="text-sm text-text-secondary hover:text-text-primary">
+            Gruppe {group.letter}
+          </a>
+        )}
+      </div>
+    </div>
+
+    {finished.length > 0 && (
+      <p class="mt-3 text-sm text-text-secondary tabular">
+        Bilanz: {w} S · {d} U · {l} N
+      </p>
+    )}
+
+    <!-- Kommende Spiele -->
+    {upcoming.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-lg uppercase mb-3">Kommende Spiele</h2>
+        <div class="grid gap-3">
+          {upcoming.map((m) => <MatchCard match={m} />)}
+        </div>
+      </section>
+    )}
+
+    <!-- Ergebnisse -->
+    {finished.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-lg uppercase mb-3">Ergebnisse</h2>
+        <div class="grid gap-3">
+          {finished.map((m) => <MatchCard match={m} showGoals={true} />)}
+        </div>
+      </section>
+    )}
+
+    <!-- Gruppentabelle -->
+    {group && (
+      <section id="gruppe" class="mt-10">
+        <h2 class="text-lg uppercase mb-3">Tabelle Gruppe {group.letter}</h2>
+        <GroupTable group={group} />
+      </section>
+    )}
+  </div>
+</Base>

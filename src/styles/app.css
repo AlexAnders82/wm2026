@@ -176,6 +176,7 @@
    ========================================================================= */
 @layer components {
   .match-card {
+    position: relative; /* Stretched-Link-Anker */
     display: block;
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
@@ -185,12 +186,38 @@
       border-color var(--dur-fast) var(--ease-out);
   }
   .match-card:hover,
-  .match-card:focus-visible {
+  .match-card:has(.match-card__link:focus-visible) {
     border-color: var(--color-steel);
     transform: translateY(-1px);
   }
+  /* Unsichtbarer Link über der ganzen Karte (öffnet das Spiel). */
+  .match-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+  }
+  /* Interaktive Kinder (Team-Links) liegen über dem Stretched-Link. */
+  .match-card .team-link {
+    position: relative;
+    z-index: 2;
+  }
   .match-card--de {
     border-left: 2px solid var(--color-gold);
+  }
+
+  /* Mannschafts-Link (Flagge + Name) — überall klickbar. */
+  .team-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    color: inherit;
+  }
+  a.team-link:hover > .truncate,
+  a.team-link:focus-visible > .truncate {
+    text-decoration: underline;
   }
   .match-card--finished {
     opacity: 0.8;
