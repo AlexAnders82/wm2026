@@ -129,7 +129,7 @@ const standings = getGroups();
       </div>
 
       <div id="spielplan-list">
-        {groups.map((g) => <DayGroup group={g} isPast={g.key < todayKey} />)}
+        {groups.filter((g) => g.key >= todayKey).map((g) => <DayGroup group={g} isPast={false} />)}
       </div>
     </div>
   </section>

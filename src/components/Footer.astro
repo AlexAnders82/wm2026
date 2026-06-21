@@ -3,13 +3,12 @@
 import { href } from "../lib/paths.js";
 import { stampLabel } from "../lib/datetime.js";
 import { updatedAt } from "../lib/data.js";
+import Logo from "./Logo.astro";
 ---
 
 <footer class="border-t border-border mt-[var(--space-section)]">
   <div class="container-read py-10 flex flex-col gap-4 text-text-secondary text-sm">
-    <p class="font-display text-md text-text-primary tracking-wide">
-      ANSTOSS <span class="text-pitch">'</span>26
-    </p>
+    <Logo height={28} />
     <p>Inoffizielle Fan-Seite. Kein Bezug zur FIFA. Alle Markennamen gehören ihren Eigentümern.</p>
     <nav class="flex flex-wrap gap-x-5 gap-y-2">
       <a href={href("impressum")} class="hover:text-text-primary">Impressum</a>
