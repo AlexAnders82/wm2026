@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T01:39:57.779Z",
+  "updatedAt": "2026-06-21T07:08:18.369Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -793,15 +793,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -1666,7 +1666,7 @@
       "score": {
         "home": 0,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": []
     },
@@ -1690,11 +1690,40 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 0,
+        "away": 4,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 4,
+          "scorer": "Daichi Kamada",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 31,
+          "scorer": "Ayase Ueda",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 69,
+          "scorer": "Jun'ya Ito",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 83,
+          "scorer": "Ayase Ueda",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80136",
