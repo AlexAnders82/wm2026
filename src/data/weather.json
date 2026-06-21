@@ -6,7 +6,7 @@
   },
   "belgien-iran": {
     "tempC": 13,
-    "text": "bewölkt",
+    "text": "klar",
     "city": "Los Angeles"
   },
   "uruguay-kap-verde": {
@@ -21,16 +21,16 @@
   },
   "argentinien-osterreich": {
     "tempC": 24,
-    "text": "klar",
+    "text": "bewölkt",
     "city": "Dallas"
   },
   "frankreich-irak": {
-    "tempC": 22,
+    "tempC": 23,
     "text": "klar",
     "city": "Philadelphia"
   },
   "norwegen-senegal": {
-    "tempC": 23,
+    "tempC": 24,
     "text": "klar",
     "city": "New York/New Jersey"
   },
@@ -41,11 +41,11 @@
   },
   "portugal-usbekistan": {
     "tempC": 26,
-    "text": "bewölkt",
+    "text": "starke Schauer",
     "city": "Houston"
   },
   "england-ghana": {
-    "tempC": 20,
+    "tempC": 21,
     "text": "klar",
     "city": "Boston"
   },
