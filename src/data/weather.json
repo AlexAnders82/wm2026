@@ -1,17 +1,17 @@
 {
   "spanien-saudi-arabien": {
     "tempC": 22,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "Atlanta"
   },
   "belgien-iran": {
-    "tempC": 15,
+    "tempC": 14,
     "text": "klar",
     "city": "Los Angeles"
   },
   "uruguay-kap-verde": {
     "tempC": 24,
-    "text": "überwiegend klar",
+    "text": "klar",
     "city": "Miami"
   },
   "neuseeland-agypten": {
@@ -41,7 +41,12 @@
   },
   "portugal-usbekistan": {
     "tempC": 25,
-    "text": "teils bewölkt",
+    "text": "bewölkt",
     "city": "Houston"
+  },
+  "england-ghana": {
+    "tempC": 15,
+    "text": "klar",
+    "city": "Boston"
   }
 }
