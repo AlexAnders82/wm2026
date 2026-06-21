@@ -1,7 +1,7 @@
 {
   "spanien-saudi-arabien": {
     "tempC": 22,
-    "text": "klar",
+    "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "belgien-iran": {
@@ -11,7 +11,7 @@
   },
   "uruguay-kap-verde": {
     "tempC": 24,
-    "text": "teils bewölkt",
+    "text": "überwiegend klar",
     "city": "Miami"
   },
   "neuseeland-agypten": {
@@ -20,13 +20,13 @@
     "city": "Vancouver"
   },
   "argentinien-osterreich": {
-    "tempC": 26,
+    "tempC": 25,
     "text": "klar",
     "city": "Dallas"
   },
   "frankreich-irak": {
     "tempC": 20,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "Philadelphia"
   },
   "norwegen-senegal": {
@@ -35,8 +35,8 @@
     "city": "New York/New Jersey"
   },
   "jordanien-algerien": {
-    "tempC": 15,
-    "text": "überwiegend klar",
+    "tempC": 14,
+    "text": "klar",
     "city": "San Francisco"
   },
   "portugal-usbekistan": {
