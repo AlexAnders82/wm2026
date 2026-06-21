@@ -1,5 +1,5 @@
 {
-  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-06-21T08:05:23.381Z",
+  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-06-21T10:46:52.637Z",
   "fallback": {
     "free": null,
     "stream": [
@@ -300,10 +300,11 @@
       "exclusive": true
     },
     "japan-schweden": {
-      "free": "ARD",
+      "free": null,
       "stream": [
         "MagentaTV"
-      ]
+      ],
+      "exclusive": true
     },
     "tunesien-niederlande": {
       "free": "ARD",
