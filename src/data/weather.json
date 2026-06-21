@@ -1,47 +1,47 @@
 {
   "spanien-saudi-arabien": {
-    "tempC": 25,
+    "tempC": 28,
     "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "belgien-iran": {
-    "tempC": 19,
-    "text": "bewölkt",
+    "tempC": 21,
+    "text": "teils bewölkt",
     "city": "Los Angeles"
   },
   "uruguay-kap-verde": {
-    "tempC": 31,
-    "text": "Gewitter",
+    "tempC": 32,
+    "text": "klar",
     "city": "Miami"
   },
   "neuseeland-agypten": {
-    "tempC": 18,
+    "tempC": 20,
     "text": "klar",
     "city": "Vancouver"
   },
   "argentinien-osterreich": {
-    "tempC": 29,
+    "tempC": 30,
     "text": "Gewitter",
     "city": "Dallas"
   },
   "frankreich-irak": {
-    "tempC": 27,
-    "text": "klar",
+    "tempC": 28,
+    "text": "überwiegend klar",
     "city": "Philadelphia"
   },
   "norwegen-senegal": {
-    "tempC": 27,
+    "tempC": 28,
     "text": "überwiegend klar",
     "city": "New York/New Jersey"
   },
   "jordanien-algerien": {
-    "tempC": 16,
+    "tempC": 18,
     "text": "teils bewölkt",
     "city": "San Francisco"
   },
   "portugal-usbekistan": {
-    "tempC": 27,
-    "text": "bewölkt",
+    "tempC": 29,
+    "text": "Gewitter",
     "city": "Houston"
   },
   "england-ghana": {
@@ -50,12 +50,12 @@
     "city": "Boston"
   },
   "panama-kroatien": {
-    "tempC": 18,
+    "tempC": 19,
     "text": "klar",
     "city": "Toronto"
   },
   "kolumbien-dr-kongo": {
-    "tempC": 20,
+    "tempC": 22,
     "text": "bewölkt",
     "city": "Guadalajara"
   }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T16:11:46.128Z",
+  "updatedAt": "2026-06-21T17:52:39.764Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1745,11 +1745,40 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 4,
         "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 10,
+          "scorer": "Lamine Yamal",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 21,
+          "scorer": "Mikel Oyarzabal",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 24,
+          "scorer": "Mikel Oyarzabal",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 49,
+          "scorer": "Hassan Tambakti",
+          "side": "home",
+          "own": true,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80137",
