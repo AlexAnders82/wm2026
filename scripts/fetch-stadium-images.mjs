@@ -40,7 +40,7 @@ async function fetchOne(venue) {
       const fileName = page?.pageimage;
       if (!thumb || !fileName) continue;
 
-      // 2) Lizenz/Autor des Files von Commons.
+      // 2) Lizenz/Autor des Files von Commons (Pflicht: nur mit Nachweis verwenden).
       let author = "", license = "", licenseUrl = "", descUrl = "";
       try {
         const info = await api("commons.wikimedia.org", {
@@ -53,6 +53,9 @@ async function fetchOne(venue) {
         licenseUrl = em.LicenseUrl?.value || "";
         descUrl = ii?.descriptionurl || "";
       } catch { /* Lizenzinfo best effort */ }
+
+      // Ohne Lizenz/Autor lieber den Platzhalter behalten (CC verlangt Nachweis).
+      if (!license && !author) continue;
 
       // 3) Bild herunterladen.
       const ext = (thumb.split("?")[0].match(/\.(jpe?g|png)$/i)?.[1] || "jpg").toLowerCase().replace("jpeg", "jpg");
