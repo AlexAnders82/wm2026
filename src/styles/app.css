@@ -465,12 +465,25 @@
   isolation: isolate;
   overflow: hidden;
 }
+/* Hero-Hintergrundbild (abgedunkelt, damit Text lesbar bleibt). */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.7;
+  pointer-events: none;
+}
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -2;
   background:
+    linear-gradient(180deg, color-mix(in srgb, var(--color-night) 45%, transparent) 0%, color-mix(in srgb, var(--color-night) 30%, transparent) 35%, var(--color-night) 90%),
     radial-gradient(60% 55% at 18% -5%, color-mix(in oklch, var(--color-pitch) 7%, transparent), transparent 70%),
     radial-gradient(55% 45% at 95% 0%, color-mix(in oklch, var(--color-gold) 6%, transparent), transparent 70%);
   pointer-events: none;

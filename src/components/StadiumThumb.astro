@@ -10,23 +10,21 @@ interface Props {
 }
 const { venue, showName = true } = Astro.props;
 const credit = credits[venue.slug];
-const src = credit?.file ? href(`stadien/${credit.file}`) : null;
+// Echtes Foto, sonst generischer Stadion-Platzhalter (kein echtes Bauwerk).
+const src = credit?.file ? href(`stadien/${credit.file}`) : href("bilder/stadion-fallback.webp");
+const alt = credit?.file ? `${venue.name}, ${venue.city}` : "";
 ---
 
 <div class="stadium-thumb-wrap">
-  {src ? (
-    <img
-      src={src}
-      alt={`${venue.name}, ${venue.city}`}
-      width="1280"
-      height="720"
-      loading="lazy"
-      decoding="async"
-      class="stadium-thumb-img"
-    />
-  ) : (
-    <div class="stadium-thumb-fallback"></div>
-  )}
+  <img
+    src={src}
+    alt={alt}
+    width="1280"
+    height="720"
+    loading="lazy"
+    decoding="async"
+    class="stadium-thumb-img"
+  />
   {showName && (
     <span class="stadium-thumb-name font-display font-bold uppercase tracking-wide">{venue.name}</span>
   )}
