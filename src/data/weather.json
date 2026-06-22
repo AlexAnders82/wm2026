@@ -1,42 +1,62 @@
 {
   "argentinien-osterreich": {
-    "tempC": 28,
-    "text": "klar",
+    "tempC": 27,
+    "text": "Gewitter",
     "city": "Dallas"
   },
   "frankreich-irak": {
-    "tempC": 20,
-    "text": "überwiegend klar",
+    "tempC": 22,
+    "text": "bewölkt",
     "city": "Philadelphia"
   },
   "norwegen-senegal": {
-    "tempC": 18,
-    "text": "teils bewölkt",
+    "tempC": 23,
+    "text": "bewölkt",
     "city": "New York/New Jersey"
   },
   "jordanien-algerien": {
-    "tempC": 15,
-    "text": "überwiegend klar",
+    "tempC": 14,
+    "text": "bewölkt",
     "city": "San Francisco"
   },
   "portugal-usbekistan": {
-    "tempC": 27,
+    "tempC": 28,
     "text": "Gewitter",
     "city": "Houston"
   },
   "england-ghana": {
-    "tempC": 15,
-    "text": "überwiegend klar",
+    "tempC": 20,
+    "text": "teils bewölkt",
     "city": "Boston"
   },
   "panama-kroatien": {
-    "tempC": 14,
-    "text": "bewölkt",
+    "tempC": 15,
+    "text": "starker Niesel",
     "city": "Toronto"
   },
   "kolumbien-dr-kongo": {
-    "tempC": 17,
-    "text": "bewölkt",
+    "tempC": 16,
+    "text": "teils bewölkt",
     "city": "Guadalajara"
+  },
+  "schweiz-kanada": {
+    "tempC": 14,
+    "text": "klar",
+    "city": "Vancouver"
+  },
+  "bosnien-und-herzegowina-katar": {
+    "tempC": 13,
+    "text": "klar",
+    "city": "Seattle"
+  },
+  "marokko-haiti": {
+    "tempC": 24,
+    "text": "bewölkt",
+    "city": "Atlanta"
+  },
+  "schottland-brasilien": {
+    "tempC": 29,
+    "text": "Gewitter",
+    "city": "Miami"
   }
 }
