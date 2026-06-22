@@ -9,6 +9,7 @@ import MatchCard from "../../components/MatchCard.astro";
 import GroupTable from "../../components/GroupTable.astro";
 import Lineups from "../../components/Lineups.astro";
 import Goals from "../../components/Goals.astro";
+import GoalTimeline from "../../components/GoalTimeline.astro";
 import { getMatches, sameDayMatches, getGroup } from "../../lib/data.js";
 import { dateTimeLabel, shortDate, timeLabel } from "../../lib/datetime.js";
 import { href, absUrl } from "../../lib/paths.js";
@@ -144,6 +145,9 @@ const rColor = (r) => (r === "S" ? "text-pitch" : r === "N" ? "text-magenta" : "
         <span class="ml-auto font-display tabular text-xl font-bold" data-role="score-away">{showScore && match.score?.away != null ? match.score.away : ""}</span>
       </div>
     </div>
+
+    <!-- Spielverlauf (Tor-Zeitstrahl) -->
+    <GoalTimeline match={match} />
 
     <!-- Torschützen -->
     <div data-role="goals"><Goals goals={match.goals} /></div>
