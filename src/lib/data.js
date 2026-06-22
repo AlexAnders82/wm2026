@@ -152,6 +152,21 @@ export function getTeamMatches(code) {
   return getMatches().filter((m) => m.home?.code === code || m.away?.code === code);
 }
 
+/** Label des aktuellen Spieltags, z. B. "Spieltag 2 · Gruppenphase" (oder Runde). */
+export function currentMatchdayLabel() {
+  const all = getMatches();
+  if (!all.length) return null;
+  const now = Date.now();
+  const live = all.find((m) => m.state === "live");
+  const next = all.find((m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now);
+  const started = all.filter((m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() <= now);
+  const past = started.length ? started[started.length - 1] : null;
+  const m = live || next || past;
+  if (!m) return null;
+  if (m.phase === "group" && m.matchday) return `Spieltag ${m.matchday} · Gruppenphase`;
+  return m.round || null;
+}
+
 function enrich(m) {
   const e = baseEnrich(m);
   const info = computeGroupInfo();
