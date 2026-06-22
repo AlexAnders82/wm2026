@@ -39,6 +39,8 @@ async function fetchOne(venue) {
       const thumb = page?.thumbnail?.source;
       const fileName = page?.pageimage;
       if (!thumb || !fileName) continue;
+      // Logos/Wappen/SVG-Renderings überspringen (kein echtes Stadionfoto).
+      if (/\.svg$/i.test(fileName) || /(logo|crest|wordmark|emblem|seal)/i.test(fileName)) continue;
 
       // 2) Lizenz/Autor des Files von Commons (Pflicht: nur mit Nachweis verwenden).
       let author = "", license = "", licenseUrl = "", descUrl = "";
