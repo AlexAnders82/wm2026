@@ -3,9 +3,11 @@
 import Base from "../../layouts/Base.astro";
 import MatchCard from "../../components/MatchCard.astro";
 import StadiumMap from "../../components/StadiumMap.astro";
+import StadiumThumb from "../../components/StadiumThumb.astro";
 import { getMatches } from "../../lib/data.js";
 import { VENUES, matchCity } from "../../lib/venues.mjs";
 import { href, absUrl } from "../../lib/paths.js";
+import credits from "../../data/stadium-credits.json";
 
 export function getStaticPaths() {
   return VENUES.map((venue) => ({ params: { slug: venue.slug }, props: { venue } }));
@@ -18,6 +20,7 @@ const matches = getMatches().filter(
 );
 
 const nf = new Intl.NumberFormat("de-DE");
+const credit = credits[venue.slug];
 const title = `${venue.name}, ${venue.city}: WM-2026-Spiele & Daten | Anstoß '26`;
 const description = `${venue.name} in ${venue.city} (${venue.country}): ${nf.format(
   venue.capacity
@@ -46,6 +49,19 @@ const jsonLd = {
 
     <h1 class="text-2xl uppercase mt-3">{venue.name}</h1>
     <p class="text-md text-text-secondary mt-1">{venue.city} · {venue.country}</p>
+
+    <!-- Foto (echtes Bild, sonst Platzhalter) + Bildnachweis -->
+    <div class="mt-4 rounded-xl overflow-hidden border border-border">
+      <StadiumThumb venue={venue} showName={false} />
+    </div>
+    {credit?.author && (
+      <p class="text-xs text-text-secondary mt-1.5">
+        Foto: {credit.author}{credit.license ? ` · ${credit.license}` : ""} ·
+        {credit.sourceUrl ? (
+          <a href={credit.sourceUrl} target="_blank" rel="noopener" class="hover:text-text-primary"> Quelle (Wikimedia)</a>
+        ) : " via Wikimedia Commons"}
+      </p>
+    )}
 
     <!-- Eckdaten -->
     <dl class="mt-5 text-sm">

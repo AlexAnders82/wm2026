@@ -1,0 +1,33 @@
+---
+// StadiumThumb — Stadion-Vorschaubild: echtes Foto (wenn vorhanden) mit Namens-Overlay,
+// sonst gebrandeter Farbverlauf-Platzhalter. 16:9.
+import { href } from "../lib/paths.js";
+import credits from "../data/stadium-credits.json";
+
+interface Props {
+  venue: any;
+  showName?: boolean;
+}
+const { venue, showName = true } = Astro.props;
+const credit = credits[venue.slug];
+const src = credit?.file ? href(`stadien/${credit.file}`) : null;
+---
+
+<div class="stadium-thumb-wrap">
+  {src ? (
+    <img
+      src={src}
+      alt={`${venue.name}, ${venue.city}`}
+      width="1280"
+      height="720"
+      loading="lazy"
+      decoding="async"
+      class="stadium-thumb-img"
+    />
+  ) : (
+    <div class="stadium-thumb-fallback"></div>
+  )}
+  {showName && (
+    <span class="stadium-thumb-name font-display font-bold uppercase tracking-wide">{venue.name}</span>
+  )}
+</div>

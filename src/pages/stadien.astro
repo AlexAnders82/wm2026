@@ -2,6 +2,7 @@
 // Stadien — Übersicht aller 16 WM-2026-Stadien, nach Land gruppiert. Jede Karte
 // verlinkt auf die Stadion-Detailseite (Infos, Karte auf Klick, Spiele).
 import Base from "../layouts/Base.astro";
+import StadiumThumb from "../components/StadiumThumb.astro";
 import { getMatches } from "../lib/data.js";
 import { VENUES, matchCity } from "../lib/venues.mjs";
 import { href, absUrl } from "../lib/paths.js";
@@ -51,9 +52,7 @@ const jsonLd = {
         <div class="grid gap-3 sm:grid-cols-2">
           {block.venues.map((v) => (
             <a href={href(`stadion/${v.slug}`)} class="block rounded-xl bg-card border border-border overflow-hidden hover:border-steel transition-colors">
-              <div class="stadium-thumb">
-                <span class="font-display font-bold uppercase tracking-wide text-lg leading-tight">{v.name}</span>
-              </div>
+              <StadiumThumb venue={v} />
               <div class="p-3">
                 <p class="text-text-primary font-medium">{v.city}</p>
                 <p class="text-xs text-text-secondary tabular mt-1">
