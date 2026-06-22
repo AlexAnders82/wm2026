@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T17:50:36.845Z",
+  "updatedAt": "2026-06-22T21:14:06.231Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -232,9 +232,9 @@
         },
         {
           "minute": 90,
-          "scorer": "Boualem Khoukhi",
+          "scorer": "Miro Muheim",
           "side": "home",
-          "own": false,
+          "own": true,
           "pen": false
         }
       ]
@@ -793,15 +793,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -906,7 +906,7 @@
           "scorer": "Lionel Messi",
           "side": "home",
           "own": false,
-          "pen": false
+          "pen": true
         },
         {
           "minute": 76,
@@ -1263,7 +1263,7 @@
           "scorer": "Granit Xhaka",
           "side": "home",
           "own": false,
-          "pen": false
+          "pen": true
         }
       ]
     },
@@ -1936,13 +1936,20 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 38,
+          "scorer": "Lionel Messi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
           "scorer": "Lionel Messi",
           "side": "home",
           "own": false,
@@ -1970,8 +1977,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
