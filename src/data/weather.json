@@ -1,52 +1,42 @@
 {
-  "uruguay-kap-verde": {
-    "tempC": 31,
-    "text": "bewölkt",
-    "city": "Miami"
-  },
-  "neuseeland-agypten": {
-    "tempC": 24,
-    "text": "klar",
-    "city": "Vancouver"
-  },
   "argentinien-osterreich": {
-    "tempC": 32,
-    "text": "Gewitter",
+    "tempC": 28,
+    "text": "klar",
     "city": "Dallas"
   },
   "frankreich-irak": {
-    "tempC": 27,
-    "text": "überwiegend klar",
+    "tempC": 21,
+    "text": "bewölkt",
     "city": "Philadelphia"
   },
   "norwegen-senegal": {
-    "tempC": 27,
-    "text": "bewölkt",
+    "tempC": 19,
+    "text": "überwiegend klar",
     "city": "New York/New Jersey"
   },
   "jordanien-algerien": {
-    "tempC": 21,
-    "text": "klar",
+    "tempC": 15,
+    "text": "überwiegend klar",
     "city": "San Francisco"
   },
   "portugal-usbekistan": {
-    "tempC": 30,
+    "tempC": 27,
     "text": "Gewitter",
     "city": "Houston"
   },
   "england-ghana": {
-    "tempC": 22,
-    "text": "überwiegend klar",
+    "tempC": 15,
+    "text": "klar",
     "city": "Boston"
   },
   "panama-kroatien": {
-    "tempC": 18,
+    "tempC": 14,
     "text": "bewölkt",
     "city": "Toronto"
   },
   "kolumbien-dr-kongo": {
-    "tempC": 19,
-    "text": "starker Niesel",
+    "tempC": 17,
+    "text": "bewölkt",
     "city": "Guadalajara"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T23:44:52.483Z",
+  "updatedAt": "2026-06-22T05:31:19.021Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -793,15 +793,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -1827,14 +1827,14 @@
       },
       "score": {
         "home": 2,
-        "away": 1,
-        "status": "scheduled"
+        "away": 2,
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 21,
           "scorer": "K. Pina",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": false
         },
@@ -1849,6 +1849,13 @@
           "minute": 51,
           "scorer": "A. Canobbio",
           "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 61,
+          "scorer": "H. Varela",
+          "side": "away",
           "own": false,
           "pen": false
         }
@@ -1874,11 +1881,40 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 15,
+          "scorer": "Finn Surman",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 59,
+          "scorer": "Mostafa Ziko",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 68,
+          "scorer": "Mohamed Salah",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 82,
+          "scorer": "Trézéguet",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80140",
