@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T12:52:20.300Z",
+  "updatedAt": "2026-06-22T17:50:38.999Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -393,14 +393,58 @@
         "subs": []
       },
       "fetchedAt": "2026-06-21T20:02:57.246Z"
+    },
+    "argentinien-osterreich": {
+      "home": {
+        "team": "Argentinien",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 23,
+            "name": "Emiliano Martinez",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 10,
+            "name": "Lionel Messi",
+            "pos": "Right Winger"
+          },
+          {
+            "n": 7,
+            "name": "Rodrigo de Paul",
+            "pos": "Central Midfield"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Österreich",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 8,
+            "name": "David Alaba",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 11,
+            "name": "Michael Gregoritsch",
+            "pos": "Centre-Forward"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-22T17:50:38.999Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 0,
-    "checked": 0,
-    "got": 0,
+    "windowMatches": 2,
+    "checked": 2,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-22T12:52:20.299Z"
+    "at": "2026-06-22T17:50:38.999Z"
   }
 }
