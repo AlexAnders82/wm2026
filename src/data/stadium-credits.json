@@ -1,1 +1,114 @@
-{}
+{
+  "estadio-azteca": {
+    "file": "estadio-azteca.jpg",
+    "author": "ProtoplasmaKid",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_nocturna_del_Estadio_Azteca.jpg"
+  },
+  "estadio-akron": {
+    "file": "estadio-akron.jpg",
+    "author": "HugoGN12",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EstadioAkronGDL.jpg"
+  },
+  "estadio-bbva": {
+    "file": "estadio-bbva.jpg",
+    "author": "Arne Müseler",
+    "license": "CC BY-SA 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG"
+  },
+  "bmo-field": {
+    "file": "bmo-field.png",
+    "author": "Pablopicassotoronto",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMO_Field_in_2016.png"
+  },
+  "bc-place": {
+    "file": "bc-place.jpg",
+    "author": "Quintin Soloviev",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_(Vancouver).jpg"
+  },
+  "mercedes-benz-stadium": {
+    "file": "mercedes-benz-stadium.jpg",
+    "author": "Atlanta Falcons",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg"
+  },
+  "gillette-stadium": {
+    "file": "gillette-stadium.jpg",
+    "author": "Art N.",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg"
+  },
+  "att-stadium": {
+    "file": "att-stadium.png",
+    "author": "AT&amp;T Stadium",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:AT%26T_Stadium_logo.svg"
+  },
+  "nrg-stadium": {
+    "file": "nrg-stadium.jpg",
+    "author": "Carlos.dkfi",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg"
+  },
+  "arrowhead-stadium": {
+    "file": "arrowhead-stadium.jpg",
+    "author": "Ichabod",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg"
+  },
+  "sofi-stadium": {
+    "file": "sofi-stadium.jpg",
+    "author": "Troutfarm27",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2021.jpg"
+  },
+  "hard-rock-stadium": {
+    "file": "hard-rock-stadium.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_rock_stadium_florida_logo.svg"
+  },
+  "metlife-stadium": {
+    "file": "metlife-stadium.jpg",
+    "author": "Anthony Quintano from Hillsborough, NJ, United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg"
+  },
+  "lincoln-financial-field": {
+    "file": "lincoln-financial-field.jpg",
+    "author": "Ron Reiring",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg"
+  },
+  "levis-stadium": {
+    "file": "levis-stadium.jpg",
+    "author": "U.S. Customs and Border Protection",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg"
+  },
+  "lumen-field": {
+    "file": "lumen-field.jpg",
+    "author": "Jelson25",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_CenturyLink_Field_November_2011.jpg"
+  }
+}

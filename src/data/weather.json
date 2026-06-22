@@ -5,13 +5,13 @@
     "city": "Dallas"
   },
   "frankreich-irak": {
-    "tempC": 21,
-    "text": "bewölkt",
+    "tempC": 20,
+    "text": "überwiegend klar",
     "city": "Philadelphia"
   },
   "norwegen-senegal": {
-    "tempC": 19,
-    "text": "überwiegend klar",
+    "tempC": 18,
+    "text": "teils bewölkt",
     "city": "New York/New Jersey"
   },
   "jordanien-algerien": {
@@ -26,7 +26,7 @@
   },
   "england-ghana": {
     "tempC": 15,
-    "text": "klar",
+    "text": "überwiegend klar",
     "city": "Boston"
   },
   "panama-kroatien": {

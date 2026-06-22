@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T05:31:19.021Z",
+  "updatedAt": "2026-06-22T06:37:59.060Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -793,15 +793,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -1753,7 +1753,7 @@
         {
           "minute": 10,
           "scorer": "Lamine Yamal",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": false
         },
