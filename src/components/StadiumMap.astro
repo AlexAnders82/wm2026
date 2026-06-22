@@ -1,0 +1,42 @@
+---
+// StadiumMap — datenschutzfreundliche Karte: lädt OpenStreetMap erst auf Klick.
+// Vorher kein Fremdzugriff (kein Cookie-Banner nötig). Ohne JS: Link zu OSM.
+interface Props {
+  lat: number;
+  lon: number;
+  name: string;
+  zoom?: number;
+}
+const { lat, lon, name, zoom = 15 } = Astro.props;
+const d = 0.015;
+const bbox = `${(lon - d).toFixed(4)},${(lat - d).toFixed(4)},${(lon + d).toFixed(4)},${(lat + d).toFixed(4)}`;
+const embed = `https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(bbox)}&layer=mapnik&marker=${lat},${lon}`;
+const osmLink = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=${zoom}/${lat}/${lon}`;
+---
+
+<div class="stadium-map" data-osm-src={embed}>
+  <button type="button" class="stadium-map__btn" data-map-load aria-label={`Karte von ${name} laden`}>
+    <span class="font-semibold">Karte laden</span>
+    <span class="text-text-secondary text-xs">Lädt erst auf Klick Daten von OpenStreetMap — vorher kein Fremdzugriff.</span>
+  </button>
+  <noscript>
+    <a href={osmLink} target="_blank" rel="noopener" class="stadium-map__btn">Auf OpenStreetMap ansehen</a>
+  </noscript>
+</div>
+
+<script>
+  document.querySelectorAll("[data-map-load]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const box = btn.closest(".stadium-map");
+      if (!box) return;
+      const src = box.getAttribute("data-osm-src");
+      if (!src) return;
+      const frame = document.createElement("iframe");
+      frame.src = src;
+      frame.title = "OpenStreetMap";
+      frame.loading = "lazy";
+      frame.className = "stadium-map__frame";
+      box.replaceChildren(frame);
+    });
+  });
+</script>

@@ -85,7 +85,8 @@ const phaseLabel = match.group
   ? `Gruppe ${match.group}${match.matchday ? ` · Spieltag ${match.matchday}` : ""}`
   : match.round || "";
 const venueLabel = [match.venue?.stadium, match.venue?.city].filter(Boolean).join(", ");
-const venueTz = matchCity(match.venue?.stadium || match.venue?.city || "")?.tz || null;
+const venueVenue = matchCity(match.venue?.stadium || match.venue?.city || "");
+const venueTz = venueVenue?.tz || null;
 
 const state = match.state ?? "scheduled";
 const showScore = state === "live" || state === "finished";
@@ -180,7 +181,11 @@ const rColor = (r) => (r === "S" ? "text-pitch" : r === "N" ? "text-magenta" : "
         {venueLabel && (
           <div class="flex gap-2 py-1 border-t border-border">
             <dt class="w-24 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Ort</dt>
-            <dd class="text-text-primary">{venueLabel}</dd>
+            <dd class="text-text-primary">
+              {venueVenue ? (
+                <a href={href(`stadion/${venueVenue.slug}`)} class="hover:underline">{venueLabel}</a>
+              ) : venueLabel}
+            </dd>
           </div>
         )}
         {match.weather && (

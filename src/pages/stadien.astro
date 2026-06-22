@@ -1,0 +1,70 @@
+---
+// Stadien — Übersicht aller 16 WM-2026-Stadien, nach Land gruppiert. Jede Karte
+// verlinkt auf die Stadion-Detailseite (Infos, Karte auf Klick, Spiele).
+import Base from "../layouts/Base.astro";
+import { getMatches } from "../lib/data.js";
+import { VENUES, matchCity } from "../lib/venues.mjs";
+import { href, absUrl } from "../lib/paths.js";
+
+const site = Astro.site!;
+const matches = getMatches();
+
+// Spiele je Stadion zählen.
+const countBySlug = {};
+for (const m of matches) {
+  const v = matchCity(m.venue?.stadium || m.venue?.city || "");
+  if (v) countBySlug[v.slug] = (countBySlug[v.slug] || 0) + 1;
+}
+
+const nf = new Intl.NumberFormat("de-DE");
+const countryOrder = ["USA", "Mexiko", "Kanada"];
+const byCountry = countryOrder.map((country) => ({
+  country,
+  venues: VENUES.filter((v) => v.country === country),
+}));
+
+const title = "Die 16 Stadien der WM 2026: Orte, Kapazität & Karte | Anstoß '26";
+const description =
+  "Alle 16 Stadien der Fußball-WM 2026 in den USA, Mexiko und Kanada: Kapazität, Rasen, Lage auf der Karte und die Spiele in jeder Stadt.";
+const canonical = absUrl("stadien", site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Stadien der WM 2026",
+  url: canonical,
+};
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-read section">
+    <h1 class="text-2xl uppercase">Stadien</h1>
+    <p class="text-md text-text-secondary mt-2">
+      16 Stadien in drei Ländern. Tippe auf ein Stadion für Lage, Daten und die Spiele dort.
+    </p>
+
+    {byCountry.map((block) => (
+      <section class="mt-8">
+        <h2 class="text-sm uppercase tracking-[0.08em] text-text-secondary mb-3">
+          {block.country} · {block.venues.length} Stadien
+        </h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          {block.venues.map((v) => (
+            <a href={href(`stadion/${v.slug}`)} class="block rounded-xl bg-card border border-border overflow-hidden hover:border-steel transition-colors">
+              <div class="stadium-thumb">
+                <span class="font-display font-bold uppercase tracking-wide text-lg leading-tight">{v.name}</span>
+              </div>
+              <div class="p-3">
+                <p class="text-text-primary font-medium">{v.city}</p>
+                <p class="text-xs text-text-secondary tabular mt-1">
+                  {nf.format(v.capacity)} Plätze · {v.surface}
+                  {countBySlug[v.slug] ? ` · ${countBySlug[v.slug]} Spiele` : ""}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
