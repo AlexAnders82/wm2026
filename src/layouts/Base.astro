@@ -122,6 +122,39 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
           return items.length ? `<ul class="mt-2 grid grid-cols-2 gap-x-3 gap-y-0.5 text-xs text-text-secondary">${items.join("")}</ul>` : "";
         }
 
+        // Baut den grafischen Tor-Zeitstrahl (identisch zu GoalTimeline.astro) neu,
+        // damit er beim Laden und während des Spiels immer aktuell ist.
+        function timelineHtml(goals: any[]) {
+          const INSET = 7;
+          const esc = (s: string) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c] as string));
+          const list = (goals || []).filter((g) => g.goalGetterName && g.matchMinute != null).slice().sort((a, b) => (a.matchMinute || 0) - (b.matchMinute || 0));
+          const maxMin = Math.max(90, ...list.map((g) => g.matchMinute || 0));
+          const pos = (m: number) => INSET + (Math.min(m, maxMin) / maxMin) * (100 - 2 * INSET);
+          const half = pos(45);
+          const parts = [
+            '<span class="goal-tl__axis"></span>',
+            '<span class="goal-tl__cap goal-tl__cap--start" title="Anpfiff"></span>',
+            '<span class="goal-tl__cap goal-tl__cap--end" title="Abpfiff"></span>',
+            `<span class="goal-tl__half" style="left:${half}%"></span>`,
+            `<span class="goal-tl__half-label" style="left:${half}%">HZ</span>`,
+          ];
+          let p1 = 0, p2 = 0;
+          for (const g of list) {
+            const s1 = g.scoreTeam1 ?? p1, s2 = g.scoreTeam2 ?? p2;
+            const side = s1 > p1 ? "home" : s2 > p2 ? "away" : "home";
+            p1 = s1; p2 = s2;
+            const tag = g.isOwnGoal ? '<span class="ev__tag">ET</span>' : g.isPenalty ? '<span class="ev__tag">FE</span>' : "";
+            const label = `<span class="ev__label"><span class="ev__min tabular">${g.matchMinute}'</span><span class="ev__score tabular">${s1}:${s2}</span>${tag}</span>`;
+            const stem = '<span class="ev__stem"></span>';
+            const dot = '<span class="ev__dot">⚽</span>';
+            const inner = side === "home" ? `${label}${stem}${dot}` : `${dot}${stem}${label}`;
+            const title = esc(`${g.matchMinute}' ${g.goalGetterName}${g.isOwnGoal ? " (Eigentor)" : ""}${g.isPenalty ? " (Elfmeter)" : ""} — ${s1}:${s2}`);
+            parts.push(`<span class="ev ev--${side} ev--goal" style="left:${pos(g.matchMinute)}%" title="${title}">${inner}</span>`);
+          }
+          if (!list.length) parts.push('<span class="goal-tl__empty">Noch keine Ereignisse</span>');
+          return parts.join("");
+        }
+
         async function poll() {
           let data;
           try {
@@ -156,6 +189,8 @@ const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
             if (state === "finished") card.classList.add("match-card--finished");
             const gc = card.querySelector('[data-role="goals"]');
             if (gc) gc.innerHTML = goalsHtml(m.goals);
+            const tc = card.querySelector('[data-role="timeline"]');
+            if (tc) tc.innerHTML = timelineHtml(m.goals);
           });
           return anyLive;
         }

@@ -1,43 +1,100 @@
 ---
-// GoalTimeline — grafischer Spielverlauf: Tore als Marker auf einer 0–90'-Achse.
-// Heim-Tore über der Linie, Gast-Tore darunter. Reine SVG/CSS, aus match.goals.
+// GoalTimeline — grafischer Spielverlauf: Tore (Ball) und Karten als Marker auf
+// einer 0–90'-Achse. Heim über der Linie (grün), Gast darunter (gold). Reines
+// CSS/HTML. Wird im Browser vom Live-Poll (Base.astro) identisch neu befüllt,
+// damit beim Laden & währenddessen immer der aktuelle Stand zu sehen ist.
 interface Props {
   match: any;
 }
 const { match } = Astro.props;
+
 const goals = (match.goals ?? []).filter((g) => g && g.minute != null);
+const cards = (match.cards ?? []).filter((c) => c && c.minute != null);
 const homeName = match.home?.name ?? "Heim";
 const awayName = match.away?.name ?? "Gast";
+const state = match.state ?? match.score?.status ?? "scheduled";
 
-const maxMin = Math.max(90, ...goals.map((g) => g.minute));
-const pos = (min) => Math.min(100, Math.max(0, (Math.min(min, maxMin) / maxMin) * 100));
-const halfPos = (45 / maxMin) * 100;
+// Tor-Ereignisse mit mitlaufendem Spielstand.
+let sh = 0;
+let sa = 0;
+const goalEvents = [...goals]
+  .sort((a, b) => a.minute - b.minute)
+  .map((g) => {
+    const side = g.side === "away" ? "away" : "home";
+    if (side === "home") sh++;
+    else sa++;
+    return { type: "goal", minute: g.minute, side, own: !!g.own, pen: !!g.pen, sh, sa, scorer: g.scorer ?? "" };
+  });
 
-// Seite je Tor robust bestimmen (side kann fehlen → über Torschützen-Team raten entfällt,
-// dann Standard "home").
-const sideOf = (g) => (g.side === "away" ? "away" : "home");
-const sorted = [...goals].sort((a, b) => a.minute - b.minute);
+// Karten-Ereignisse (sofern die Datenquelle welche liefert).
+const cardEvents = cards.map((c) => ({
+  type: "card",
+  minute: c.minute,
+  side: c.side === "away" ? "away" : "home",
+  card: c.card === "red" ? "red" : "yellow",
+  player: c.player ?? "",
+}));
+
+const events = [...goalEvents, ...cardEvents].sort((a, b) => a.minute - b.minute);
+
+// Position: kleiner Innenabstand, damit 0'- und 90'-Marker nicht abgeschnitten werden.
+const INSET = 7;
+const maxMin = Math.max(90, ...events.map((e) => e.minute));
+const pos = (m) => INSET + (Math.min(m, maxMin) / maxMin) * (100 - 2 * INSET);
+const halfPos = pos(45);
+
+const show = events.length > 0 || state === "live" || state === "finished";
+
+const goalTitle = (e) =>
+  `${e.minute}' ${e.scorer}${e.own ? " (Eigentor)" : ""}${e.pen ? " (Elfmeter)" : ""} — ${e.sh}:${e.sa}`;
+const cardTitle = (e) => `${e.minute}' ${e.card === "red" ? "Rote" : "Gelbe"} Karte${e.player ? ` — ${e.player}` : ""}`;
 ---
 
-{goals.length > 0 && (
-  <div class="goal-timeline">
-    <div class="goal-timeline__legend">
-      <span><i class="goal-dot goal-dot--home"></i>{homeName}</span>
-      <span><i class="goal-dot goal-dot--away"></i>{awayName}</span>
+{show && (
+  <div class="goal-tl">
+    <div class="goal-tl__legend">
+      <span><i class="goal-tl__chip goal-tl__chip--home"></i>{homeName}</span>
+      <span><i class="goal-tl__chip goal-tl__chip--away"></i>{awayName}</span>
+      <span><i class="goal-tl__chip goal-tl__chip--card"></i>Karte</span>
     </div>
-    <div class="goal-timeline__track">
-      <span class="goal-timeline__half" style={`left:${halfPos}%`} title="Halbzeit"></span>
-      {sorted.map((g) => (
-        <span
-          class={`goal-marker goal-marker--${sideOf(g)}`}
-          style={`left:${pos(g.minute)}%`}
-          title={`${g.minute}' ${g.scorer ?? ""}${g.own ? " (ET)" : ""}${g.pen ? " (FE)" : ""}`}
-        >
-          <span class="goal-marker__min tabular">{g.minute}'</span>
-        </span>
-      ))}
+
+    <div class="goal-tl__track" data-role="timeline">
+      <span class="goal-tl__axis"></span>
+      <span class="goal-tl__cap goal-tl__cap--start" title="Anpfiff"></span>
+      <span class="goal-tl__cap goal-tl__cap--end" title="Abpfiff"></span>
+      <span class="goal-tl__half" style={`left:${halfPos}%`}></span>
+      <span class="goal-tl__half-label" style={`left:${halfPos}%`}>HZ</span>
+
+      {events.map((e) => {
+        const dot = e.type === "goal" ? <span class="ev__dot">⚽</span> : <span class="ev__dot"></span>;
+        const stem = <span class="ev__stem"></span>;
+        const label =
+          e.type === "goal" ? (
+            <span class="ev__label">
+              <span class="ev__min tabular">{e.minute}'</span>
+              <span class="ev__score tabular">{e.sh}:{e.sa}</span>
+              {(e.own || e.pen) && <span class="ev__tag">{e.own ? "ET" : "FE"}</span>}
+            </span>
+          ) : (
+            <span class="ev__label"><span class="ev__min tabular">{e.minute}'</span></span>
+          );
+        const cls =
+          e.type === "goal"
+            ? `ev ev--${e.side} ev--goal`
+            : `ev ev--${e.side} ev--card ev--${e.card}`;
+        const title = e.type === "goal" ? goalTitle(e) : cardTitle(e);
+        return (
+          <span class={cls} style={`left:${pos(e.minute)}%`} title={title}>
+            {/* Heim: Label oben → Stiel → Punkt auf der Achse. Gast: umgekehrt. */}
+            {e.side === "home" ? (<>{label}{stem}{dot}</>) : (<>{dot}{stem}{label}</>)}
+          </span>
+        );
+      })}
+
+      {events.length === 0 && <span class="goal-tl__empty">Noch keine Ereignisse</span>}
     </div>
-    <div class="goal-timeline__scale tabular">
+
+    <div class="goal-tl__scale tabular">
       <span>0'</span><span>45'</span><span>90'</span>
     </div>
   </div>
