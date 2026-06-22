@@ -1,6 +1,6 @@
 {
   "argentinien-osterreich": {
-    "tempC": 27,
+    "tempC": 28,
     "text": "Gewitter",
     "city": "Dallas"
   },
@@ -25,17 +25,17 @@
     "city": "Houston"
   },
   "england-ghana": {
-    "tempC": 20,
-    "text": "teils bewölkt",
+    "tempC": 21,
+    "text": "bewölkt",
     "city": "Boston"
   },
   "panama-kroatien": {
-    "tempC": 15,
-    "text": "starker Niesel",
+    "tempC": 14,
+    "text": "leichter Regen",
     "city": "Toronto"
   },
   "kolumbien-dr-kongo": {
-    "tempC": 16,
+    "tempC": 17,
     "text": "teils bewölkt",
     "city": "Guadalajara"
   },
@@ -51,11 +51,11 @@
   },
   "marokko-haiti": {
     "tempC": 24,
-    "text": "bewölkt",
+    "text": "teils bewölkt",
     "city": "Atlanta"
   },
   "schottland-brasilien": {
-    "tempC": 29,
+    "tempC": 30,
     "text": "Gewitter",
     "city": "Miami"
   }

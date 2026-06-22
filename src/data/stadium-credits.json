@@ -96,5 +96,19 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_CenturyLink_Field_November_2011.jpg"
+  },
+  "att-stadium": {
+    "file": "att-stadium.jpg",
+    "author": "Michael Barera",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg"
+  },
+  "hard-rock-stadium": {
+    "file": "hard-rock-stadium.jpg",
+    "author": "elisfkc2",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg"
   }
 }
