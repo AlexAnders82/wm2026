@@ -9,8 +9,9 @@
     "fetch-tv": "node scripts/fetch-tv.mjs",
     "fetch-live": "node scripts/fetch-live.mjs",
     "fetch-weather": "node scripts/fetch-weather.mjs",
+    "fetch-stadium-images": "node scripts/fetch-stadium-images.mjs",
     "build-ics": "node scripts/build-ics.mjs",
-    "prebuild": "node scripts/fetch-data.mjs && node scripts/fetch-tv.mjs && node scripts/fetch-live.mjs && node scripts/fetch-weather.mjs && node scripts/build-ics.mjs",
+    "prebuild": "node scripts/fetch-data.mjs && node scripts/fetch-tv.mjs && node scripts/fetch-live.mjs && node scripts/fetch-weather.mjs && node scripts/fetch-stadium-images.mjs && node scripts/build-ics.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"

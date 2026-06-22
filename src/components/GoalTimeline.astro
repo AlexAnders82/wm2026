@@ -1,0 +1,44 @@
+---
+// GoalTimeline — grafischer Spielverlauf: Tore als Marker auf einer 0–90'-Achse.
+// Heim-Tore über der Linie, Gast-Tore darunter. Reine SVG/CSS, aus match.goals.
+interface Props {
+  match: any;
+}
+const { match } = Astro.props;
+const goals = (match.goals ?? []).filter((g) => g && g.minute != null);
+const homeName = match.home?.name ?? "Heim";
+const awayName = match.away?.name ?? "Gast";
+
+const maxMin = Math.max(90, ...goals.map((g) => g.minute));
+const pos = (min) => Math.min(100, Math.max(0, (Math.min(min, maxMin) / maxMin) * 100));
+const halfPos = (45 / maxMin) * 100;
+
+// Seite je Tor robust bestimmen (side kann fehlen → über Torschützen-Team raten entfällt,
+// dann Standard "home").
+const sideOf = (g) => (g.side === "away" ? "away" : "home");
+const sorted = [...goals].sort((a, b) => a.minute - b.minute);
+---
+
+{goals.length > 0 && (
+  <div class="goal-timeline">
+    <div class="goal-timeline__legend">
+      <span><i class="goal-dot goal-dot--home"></i>{homeName}</span>
+      <span><i class="goal-dot goal-dot--away"></i>{awayName}</span>
+    </div>
+    <div class="goal-timeline__track">
+      <span class="goal-timeline__half" style={`left:${halfPos}%`} title="Halbzeit"></span>
+      {sorted.map((g) => (
+        <span
+          class={`goal-marker goal-marker--${sideOf(g)}`}
+          style={`left:${pos(g.minute)}%`}
+          title={`${g.minute}' ${g.scorer ?? ""}${g.own ? " (ET)" : ""}${g.pen ? " (FE)" : ""}`}
+        >
+          <span class="goal-marker__min tabular">{g.minute}'</span>
+        </span>
+      ))}
+    </div>
+    <div class="goal-timeline__scale tabular">
+      <span>0'</span><span>45'</span><span>90'</span>
+    </div>
+  </div>
+)}

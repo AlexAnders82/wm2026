@@ -1,0 +1,82 @@
+---
+// Turnier — Gesamtübersicht: alle Gruppen + Tabellen und die K.-o.-Runde.
+// Die K.-o.-Spiele stehen erst nach der Gruppenphase fest; das Gerüst füllt sich
+// automatisch, sobald matches.json K.-o.-Runden enthält (phase === "ko").
+import Base from "../layouts/Base.astro";
+import GroupTable from "../components/GroupTable.astro";
+import MatchCard from "../components/MatchCard.astro";
+import { getMatches, getGroups } from "../lib/data.js";
+import { absUrl } from "../lib/paths.js";
+
+const site = Astro.site!;
+const standings = getGroups();
+const koMatches = getMatches().filter((m) => m.phase === "ko");
+
+// Erwartete K.-o.-Runden (48er-Format). Anzahl = geplante Spiele je Runde.
+const koRounds = [
+  { key: "Sechzehntelfinale", n: 16 },
+  { key: "Achtelfinale", n: 8 },
+  { key: "Viertelfinale", n: 4 },
+  { key: "Halbfinale", n: 2 },
+  { key: "Spiel um Platz 3", n: 1 },
+  { key: "Finale", n: 1 },
+];
+const matchesForRound = (key) =>
+  koMatches.filter((m) => (m.round || "").toLowerCase().includes(key.toLowerCase()));
+
+const title = "WM 2026 Turnier: Gruppen, Tabellen & K.-o.-Runde | Anstoß '26";
+const description =
+  "Die komplette WM 2026 im Überblick: alle 12 Gruppen mit aktuellen Tabellen und der Weg durch die K.-o.-Runde bis zum Finale.";
+const canonical = absUrl("turnier", site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "WM 2026 — Turnierübersicht",
+  url: canonical,
+};
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-read section">
+    <h1 class="text-2xl uppercase">Turnier</h1>
+    <p class="text-md text-text-secondary mt-2">
+      Alle Gruppen mit Tabellen und der Weg durch die K.-o.-Runde bis zum Finale.
+    </p>
+
+    <!-- Gruppen + Tabellen -->
+    <section id="gruppen" class="mt-8">
+      <h2 class="text-lg uppercase mb-3">Gruppenphase</h2>
+      <div class="grid gap-3 sm:grid-cols-2">
+        {standings.map((g) => <GroupTable group={g} />)}
+      </div>
+    </section>
+
+    <!-- K.-o.-Runde -->
+    <section id="ko" class="mt-10">
+      <h2 class="text-lg uppercase mb-3">K.-o.-Runde</h2>
+      <div class="flex flex-col gap-6">
+        {koRounds.map((round) => {
+          const ms = matchesForRound(round.key);
+          return (
+            <div>
+              <h3 class="font-display font-bold uppercase tracking-wide text-text-primary mb-2">
+                {round.key}
+                <span class="text-text-secondary text-xs font-medium ml-2">{round.n} {round.n === 1 ? "Spiel" : "Spiele"}</span>
+              </h3>
+              {ms.length > 0 ? (
+                <div class="grid gap-3">
+                  {ms.map((m) => <MatchCard match={m} />)}
+                </div>
+              ) : (
+                <p class="rounded-xl bg-card border border-border border-dashed px-3 py-3 text-sm text-text-secondary">
+                  Steht noch nicht fest — die Paarungen ergeben sich aus der Gruppenphase.
+                </p>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  </div>
+</Base>

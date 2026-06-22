@@ -7,7 +7,7 @@ import DayGroup from "../components/DayGroup.astro";
 import GroupTable from "../components/GroupTable.astro";
 import Countdown from "../components/Countdown.astro";
 import Flag from "../components/Flag.astro";
-import { getMatches, groupByDay, getGroups } from "../lib/data.js";
+import { getMatches, groupByDay, getGroups, currentMatchdayLabel } from "../lib/data.js";
 import { dayKey, fullDate } from "../lib/datetime.js";
 import { href, absUrl } from "../lib/paths.js";
 import { linkFor } from "../lib/links.js";
@@ -68,6 +68,10 @@ const heroCaption = heroMatches.length ? fullDate(heroMatches[0].kickoffUtc) : "
 const upcoming = matches.filter((m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now);
 const nextDE = upcoming.find((m) => m.isDE);
 
+// --- Live-Rubrik (#1) + aktueller Spieltag (#7) ---
+const liveMatches = matches.filter((m) => m.state === "live");
+const matchdayLabel = currentMatchdayLabel();
+
 // --- Spielplan ---
 const groups = groupByDay(matches);
 
@@ -80,12 +84,32 @@ const standings = getGroups();
   description="Alle 104 Spiele der WM 2026 mit deutschen Anstoßzeiten, Ergebnissen und Sender (ARD, ZDF, MagentaTV). Mobil, werbefrei, ohne Cookies."
   jsonLd={jsonLd}
 >
+  <!-- 1 · Live-Rubrik — nur wenn gerade ein Spiel läuft (oben, prominent) -->
+  {liveMatches.length > 0 && (
+    <section id="live" class="container-read pt-6">
+      <p class="flex items-center gap-2 text-sm font-semibold text-pitch uppercase tracking-[0.08em]">
+        <span class="live-dot"></span> Jetzt live
+      </p>
+      <div class="flex flex-col gap-[var(--space-card-gap)] mt-3">
+        {liveMatches.map((m) => <MatchCard match={m} showGoals={true} />)}
+      </div>
+    </section>
+  )}
+
   <!-- 2 · Hero "Matchday" -->
   <section id="heute" class="hero">
+    <img src={href("bilder/hero.webp")} alt="" class="hero-bg" width="1536" height="1024" />
     <div class="container-read pt-8 pb-2">
-      {heroCaption && (
-        <p class="text-xs uppercase tracking-[0.08em] text-text-secondary">{heroCaption}</p>
-      )}
+      <div class="flex items-center gap-2 flex-wrap">
+        {heroCaption && (
+          <p class="text-xs uppercase tracking-[0.08em] text-text-secondary">{heroCaption}</p>
+        )}
+        {matchdayLabel && (
+          <span class="inline-flex items-center rounded-full bg-pitch/10 text-pitch px-2.5 py-0.5 text-xs font-semibold uppercase tracking-[0.08em]">
+            {matchdayLabel}
+          </span>
+        )}
+      </div>
       <h1 class="text-hero uppercase mt-1">{heroHeading}</h1>
 
       <div class="flex flex-col gap-[var(--space-card-gap)] mt-6">

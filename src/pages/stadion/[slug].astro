@@ -1,0 +1,98 @@
+---
+// Stadion-Detailseite — Infos, Lage (Karte auf Klick) und alle Spiele im Stadion.
+import Base from "../../layouts/Base.astro";
+import MatchCard from "../../components/MatchCard.astro";
+import StadiumMap from "../../components/StadiumMap.astro";
+import StadiumThumb from "../../components/StadiumThumb.astro";
+import { getMatches } from "../../lib/data.js";
+import { VENUES, matchCity } from "../../lib/venues.mjs";
+import { href, absUrl } from "../../lib/paths.js";
+import credits from "../../data/stadium-credits.json";
+
+export function getStaticPaths() {
+  return VENUES.map((venue) => ({ params: { slug: venue.slug }, props: { venue } }));
+}
+
+const { venue } = Astro.props;
+const site = Astro.site!;
+const matches = getMatches().filter(
+  (m) => matchCity(m.venue?.stadium || m.venue?.city || "")?.slug === venue.slug
+);
+
+const nf = new Intl.NumberFormat("de-DE");
+const credit = credits[venue.slug];
+const title = `${venue.name}, ${venue.city}: WM-2026-Spiele & Daten | Anstoß '26`;
+const description = `${venue.name} in ${venue.city} (${venue.country}): ${nf.format(
+  venue.capacity
+)} Plätze, ${venue.surface}. Alle WM-2026-Spiele in diesem Stadion mit Anstoßzeiten.`;
+const canonical = absUrl(`stadion/${venue.slug}`, site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "StadiumOrArena",
+  name: venue.name,
+  url: canonical,
+  maximumAttendeeCapacity: venue.capacity,
+  address: { "@type": "PostalAddress", addressLocality: venue.city, addressCountry: venue.country },
+  geo: { "@type": "GeoCoordinates", latitude: venue.lat, longitude: venue.lon },
+};
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <div class="container-read section">
+    <!-- Breadcrumb -->
+    <nav class="text-xs uppercase tracking-[0.08em] text-text-secondary" aria-label="Brotkrumen">
+      <a href={href("stadien")} class="hover:text-text-primary">Stadien</a>
+      <span aria-hidden="true"> › </span>
+      <span>{venue.name}</span>
+    </nav>
+
+    <h1 class="text-2xl uppercase mt-3">{venue.name}</h1>
+    <p class="text-md text-text-secondary mt-1">{venue.city} · {venue.country}</p>
+
+    <!-- Foto (echtes Bild, sonst Platzhalter) + Bildnachweis -->
+    <div class="mt-4 rounded-xl overflow-hidden border border-border">
+      <StadiumThumb venue={venue} showName={false} />
+    </div>
+    {credit?.author && (
+      <p class="text-xs text-text-secondary mt-1.5">
+        Foto: {credit.author}{credit.license ? ` · ${credit.license}` : ""} ·
+        {credit.sourceUrl ? (
+          <a href={credit.sourceUrl} target="_blank" rel="noopener" class="hover:text-text-primary"> Quelle (Wikimedia)</a>
+        ) : " via Wikimedia Commons"}
+      </p>
+    )}
+
+    <!-- Eckdaten -->
+    <dl class="mt-5 text-sm">
+      <div class="flex gap-2 py-1 border-t border-border">
+        <dt class="w-28 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Kapazität</dt>
+        <dd class="text-text-primary tabular">{nf.format(venue.capacity)} Plätze</dd>
+      </div>
+      <div class="flex gap-2 py-1 border-t border-border">
+        <dt class="w-28 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Rasen</dt>
+        <dd class="text-text-primary">{venue.surface}</dd>
+      </div>
+      <div class="flex gap-2 py-1 border-t border-border">
+        <dt class="w-28 text-text-secondary uppercase text-xs tracking-[0.08em] pt-0.5">Land</dt>
+        <dd class="text-text-primary">{venue.country}</dd>
+      </div>
+    </dl>
+
+    <!-- Lage (Karte auf Klick) -->
+    <section class="mt-6">
+      <h2 class="text-lg uppercase mb-3">Lage</h2>
+      <StadiumMap lat={venue.lat} lon={venue.lon} name={venue.name} />
+    </section>
+
+    <!-- Spiele im Stadion -->
+    {matches.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-lg uppercase mb-3">Spiele in {venue.city}</h2>
+        <div class="grid gap-3">
+          {matches.map((m) => <MatchCard match={m} />)}
+        </div>
+      </section>
+    )}
+  </div>
+</Base>

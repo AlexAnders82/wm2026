@@ -1,7 +1,7 @@
 ---
 // MatchCard — Kernkomponente (DESIGN_SYSTEM.md 8.3). Zustände scheduled/live/finished.
 // data-oldb-id + data-role-Hooks ermöglichen Live-Updates im Browser (live.js).
-import Flag from "./Flag.astro";
+import TeamLink from "./TeamLink.astro";
 import SenderBadge from "./SenderBadge.astro";
 import Goals from "./Goals.astro";
 import { href } from "../lib/paths.js";
@@ -31,8 +31,7 @@ const phaseLabel = match.group
 const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
 ---
 
-<a
-  href={href(`spiel/${match.slug}`)}
+<div
   class={cardClass}
   data-match
   data-oldb-id={match.oldbId ?? ""}
@@ -40,6 +39,12 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
   data-phase={match.phase}
   data-state={state}
 >
+  <!-- Stretched-Link: ganze Karte öffnet das Spiel; Team-Links liegen darüber -->
+  <a
+    href={href(`spiel/${match.slug}`)}
+    class="match-card__link"
+    aria-label={`Spiel ${match.home?.name} gegen ${match.away?.name} öffnen`}
+  ></a>
   <div class="flex gap-3 items-center">
     <!-- Zeit-/Status-Spalte -->
     <div class="w-14 shrink-0 font-display tabular leading-none text-center" data-role="status">
@@ -60,13 +65,11 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
     <!-- Teams + Stand -->
     <div class="flex-1 min-w-0">
       <div class="flex items-center gap-2">
-        <Flag code={match.home?.code} name={match.home?.name} />
-        <span class="truncate text-text-primary">{match.home?.name}</span>
+        <TeamLink code={match.home?.code} name={match.home?.name} class="flex-1 min-w-0 text-text-primary" />
         <span class="ml-auto font-display tabular text-text-primary font-bold" data-role="score-home">{showScore && sh != null ? sh : ""}</span>
       </div>
       <div class="flex items-center gap-2 mt-1">
-        <Flag code={match.away?.code} name={match.away?.name} />
-        <span class="truncate text-text-primary">{match.away?.name}</span>
+        <TeamLink code={match.away?.code} name={match.away?.name} class="flex-1 min-w-0 text-text-primary" />
         <span class="ml-auto font-display tabular text-text-primary font-bold" data-role="score-away">{showScore && sa != null ? sa : ""}</span>
       </div>
 
@@ -85,4 +88,4 @@ const meta = [phaseLabel, match.venue?.city].filter(Boolean).join(" · ");
       {hasMagenta && <SenderBadge sender="MagentaTV" link={false} />}
     </div>
   </div>
-</a>
+</div>

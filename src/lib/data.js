@@ -128,6 +128,45 @@ export function getGroup(letter) {
   return computeGroupInfo().groups.find((g) => g.letter === letter) ?? null;
 }
 
+/** Alle Mannschaften [{ code, name, group }], aus den Gruppen abgeleitet. */
+export function getTeams() {
+  const seen = new Map();
+  for (const g of computeGroupInfo().groups) {
+    for (const r of g.standings) {
+      if (r.code && !seen.has(r.code)) {
+        seen.set(r.code, { code: r.code, name: r.team, group: g.letter });
+      }
+    }
+  }
+  return [...seen.values()];
+}
+
+/** Eine Mannschaft per ISO-Code oder null. */
+export function getTeamByCode(code) {
+  return getTeams().find((t) => t.code === code) ?? null;
+}
+
+/** Alle Spiele einer Mannschaft (chronologisch). */
+export function getTeamMatches(code) {
+  if (!code) return [];
+  return getMatches().filter((m) => m.home?.code === code || m.away?.code === code);
+}
+
+/** Label des aktuellen Spieltags, z. B. "Spieltag 2 · Gruppenphase" (oder Runde). */
+export function currentMatchdayLabel() {
+  const all = getMatches();
+  if (!all.length) return null;
+  const now = Date.now();
+  const live = all.find((m) => m.state === "live");
+  const next = all.find((m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now);
+  const started = all.filter((m) => m.kickoffUtc && new Date(m.kickoffUtc).getTime() <= now);
+  const past = started.length ? started[started.length - 1] : null;
+  const m = live || next || past;
+  if (!m) return null;
+  if (m.phase === "group" && m.matchday) return `Spieltag ${m.matchday} · Gruppenphase`;
+  return m.round || null;
+}
+
 function enrich(m) {
   const e = baseEnrich(m);
   const info = computeGroupInfo();

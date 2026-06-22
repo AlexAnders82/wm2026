@@ -10,10 +10,12 @@ import Logo from "./Logo.astro";
     <a href={href("")} aria-label="Anstoß '26 — Startseite" class="flex items-center">
       <Logo height={40} />
     </a>
-    <nav class="flex items-center gap-3.5 text-sm text-text-secondary">
+    <nav class="flex items-center gap-3.5 text-sm text-text-secondary overflow-x-auto whitespace-nowrap">
       <a href={href("#heute")} class="hover:text-text-primary">Heute</a>
       <a href={href("#spielplan")} class="hover:text-text-primary">Plan</a>
-      <a href={href("#gruppen")} class="hover:text-text-primary">Gruppen</a>
+      <a href={href("mannschaften")} class="hover:text-text-primary">Teams</a>
+      <a href={href("stadien")} class="hover:text-text-primary">Stadien</a>
+      <a href={href("turnier")} class="hover:text-text-primary">Turnier</a>
       <a href={href("#tv-guide")} class="hover:text-text-primary">TV</a>
     </nav>
   </div>
