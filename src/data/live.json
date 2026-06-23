@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T16:41:40.488Z",
+  "updatedAt": "2026-06-23T19:19:38.871Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -437,14 +437,58 @@
         "subs": []
       },
       "fetchedAt": "2026-06-22T17:50:38.999Z"
+    },
+    "england-ghana": {
+      "home": {
+        "team": "England",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 1,
+            "name": "Jordan Pickford",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 9,
+            "name": "Harry Kane",
+            "pos": "Centre-Forward"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Ghana",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 19,
+            "name": "Iñaki Williams",
+            "pos": "Right Winger"
+          },
+          {
+            "n": 9,
+            "name": "Jordan Ayew",
+            "pos": "Right Winger"
+          },
+          {
+            "n": 5,
+            "name": "Thomas Partey",
+            "pos": "Defensive Midfield"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-23T19:19:38.871Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
     "windowMatches": 2,
     "checked": 2,
-    "got": 0,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-23T16:41:40.488Z"
+    "at": "2026-06-23T19:19:38.871Z"
   }
 }
