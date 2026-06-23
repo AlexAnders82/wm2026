@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T22:56:03.168Z",
+  "updatedAt": "2026-06-23T01:23:39.625Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -793,15 +793,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -1977,14 +1977,28 @@
         "country": ""
       },
       "score": {
-        "home": 1,
+        "home": 3,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 14,
           "scorer": "Kylian Mbappé",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 54,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 66,
+          "scorer": "Ousmane Dembélé",
           "side": "home",
           "own": false,
           "pen": false
@@ -2011,8 +2025,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 3,
+        "away": 1,
         "status": "scheduled"
       },
       "goals": []
