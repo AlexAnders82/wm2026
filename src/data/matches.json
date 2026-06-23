@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T06:19:49.064Z",
+  "updatedAt": "2026-06-23T10:44:11.627Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -653,6 +653,13 @@
           "side": "away",
           "own": false,
           "pen": false
+        },
+        {
+          "minute": 66,
+          "scorer": "Mohamed Hany",
+          "side": "home",
+          "own": true,
+          "pen": false
         }
       ]
     },
@@ -793,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
