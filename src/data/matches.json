@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T10:44:11.627Z",
+  "updatedAt": "2026-06-23T13:47:06.071Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -2841,6 +2841,422 @@
       "venue": {
         "stadium": "AT&T Stadium",
         "city": "Dallas (Arlington)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82099",
+      "oldbId": 82099,
+      "slug": "2a-2b",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-06-28T19:00:00Z",
+      "home": {
+        "name": "2A",
+        "code": null
+      },
+      "away": {
+        "name": "2B",
+        "code": null
+      },
+      "venue": {
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82100",
+      "oldbId": 82100,
+      "slug": "1c-2f",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-06-29T17:00:00Z",
+      "home": {
+        "name": "1C",
+        "code": null
+      },
+      "away": {
+        "name": "2F",
+        "code": null
+      },
+      "venue": {
+        "stadium": "NRG Stadium",
+        "city": "Houston",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82101",
+      "oldbId": 82101,
+      "slug": "deutschland-3-a-b-c-d-f",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-06-29T20:30:00Z",
+      "home": {
+        "name": "Deutschland",
+        "code": "de"
+      },
+      "away": {
+        "name": "3 A/B/C/D/F",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82102",
+      "oldbId": 82102,
+      "slug": "1f-2c",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-06-30T01:00:00Z",
+      "home": {
+        "name": "1F",
+        "code": null
+      },
+      "away": {
+        "name": "2C",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Estadio BBVA",
+        "city": "Monterrey (Guadalupe)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82103",
+      "oldbId": 82103,
+      "slug": "2e-2i",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-06-30T17:00:00Z",
+      "home": {
+        "name": "2E",
+        "code": null
+      },
+      "away": {
+        "name": "2I",
+        "code": null
+      },
+      "venue": {
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82104",
+      "oldbId": 82104,
+      "slug": "1i-3-c-d-f-g-h",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-06-30T21:00:00Z",
+      "home": {
+        "name": "1I",
+        "code": null
+      },
+      "away": {
+        "name": "3 C/D/F/G/H",
+        "code": null
+      },
+      "venue": {
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82105",
+      "oldbId": 82105,
+      "slug": "mexiko-3-c-e-f-h-i",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-01T01:00:00Z",
+      "home": {
+        "name": "Mexiko",
+        "code": "mx"
+      },
+      "away": {
+        "name": "3 C/E/F/H/I",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Azteca",
+        "city": "Mexico City",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82106",
+      "oldbId": 82106,
+      "slug": "1l-3-e-h-i-j-k",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-01T16:00:00Z",
+      "home": {
+        "name": "1L",
+        "code": null
+      },
+      "away": {
+        "name": "3 E/H/I/J/K",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82107",
+      "oldbId": 82107,
+      "slug": "1g-3-a-e-h-i-j",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-01T20:00:00Z",
+      "home": {
+        "name": "1G",
+        "code": null
+      },
+      "away": {
+        "name": "3 A/E/H/I/J",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Lumen Field",
+        "city": "Seattle",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82108",
+      "oldbId": 82108,
+      "slug": "usa-3-b-e-f-i-j",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-02T00:00:00Z",
+      "home": {
+        "name": "USA",
+        "code": "us"
+      },
+      "away": {
+        "name": "3 B/E/F/I/J",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Levi's Stadium",
+        "city": "San Francisco (Santa Clara)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82109",
+      "oldbId": 82109,
+      "slug": "1h-2j",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-02T19:00:00Z",
+      "home": {
+        "name": "1H",
+        "code": null
+      },
+      "away": {
+        "name": "2J",
+        "code": null
+      },
+      "venue": {
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82110",
+      "oldbId": 82110,
+      "slug": "2k-2l",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-02T23:00:00Z",
+      "home": {
+        "name": "2K",
+        "code": null
+      },
+      "away": {
+        "name": "2L",
+        "code": null
+      },
+      "venue": {
+        "stadium": "BMO Field",
+        "city": "Toronto",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82111",
+      "oldbId": 82111,
+      "slug": "1b-3-e-f-g-i-j",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-03T03:00:00Z",
+      "home": {
+        "name": "1B",
+        "code": null
+      },
+      "away": {
+        "name": "3 E/F/G/I/J",
+        "code": null
+      },
+      "venue": {
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82112",
+      "oldbId": 82112,
+      "slug": "2d-2g",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-03T18:00:00Z",
+      "home": {
+        "name": "2D",
+        "code": null
+      },
+      "away": {
+        "name": "2G",
+        "code": null
+      },
+      "venue": {
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82113",
+      "oldbId": 82113,
+      "slug": "argentinien-2h",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-03T22:00:00Z",
+      "home": {
+        "name": "Argentinien",
+        "code": "ar"
+      },
+      "away": {
+        "name": "2H",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82114",
+      "oldbId": 82114,
+      "slug": "1k-3-d-e-i-j-l",
+      "round": "Sechzehntelfinale",
+      "kickoffUtc": "2026-07-04T01:30:00Z",
+      "home": {
+        "name": "1K",
+        "code": null
+      },
+      "away": {
+        "name": "3 D/E/I/J/L",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Arrowhead Stadium",
+        "city": "Kansas City",
         "country": ""
       },
       "score": {

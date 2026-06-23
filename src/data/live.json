@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T10:44:12.232Z",
+  "updatedAt": "2026-06-23T13:47:07.684Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -441,10 +441,10 @@
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 0,
-    "checked": 0,
+    "windowMatches": 1,
+    "checked": 1,
     "got": 0,
     "lastError": null,
-    "at": "2026-06-23T10:44:12.231Z"
+    "at": "2026-06-23T13:47:07.684Z"
   }
 }
