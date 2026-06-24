@@ -1,21 +1,21 @@
 {
   "schweiz-kanada": {
-    "tempC": 27,
-    "text": "klar",
+    "tempC": 28,
+    "text": "teils bewölkt",
     "city": "Vancouver"
   },
   "bosnien-und-herzegowina-katar": {
-    "tempC": 27,
+    "tempC": 29,
     "text": "klar",
     "city": "Seattle"
   },
   "marokko-haiti": {
     "tempC": 29,
-    "text": "teils bewölkt",
+    "text": "bewölkt",
     "city": "Atlanta"
   },
   "schottland-brasilien": {
-    "tempC": 32,
+    "tempC": 31,
     "text": "Gewitter",
     "city": "Miami"
   },
@@ -25,8 +25,8 @@
     "city": "Monterrey"
   },
   "tschechien-mexiko": {
-    "tempC": 22,
-    "text": "Gewitter",
+    "tempC": 19,
+    "text": "Niesel",
     "city": "Mexiko-Stadt"
   },
   "curacao-elfenbeinkuste": {
@@ -35,43 +35,43 @@
     "city": "Philadelphia"
   },
   "ecuador-deutschland": {
-    "tempC": 29,
+    "tempC": 28,
     "text": "klar",
     "city": "New York/New Jersey"
   },
   "tunesien-niederlande": {
-    "tempC": 28,
-    "text": "bewölkt",
+    "tempC": 30,
+    "text": "überwiegend klar",
     "city": "Kansas City"
   },
   "japan-schweden": {
-    "tempC": 35,
-    "text": "bewölkt",
+    "tempC": 34,
+    "text": "Gewitter",
     "city": "Dallas"
   },
   "turkei-usa": {
-    "tempC": 25,
+    "tempC": 22,
     "text": "klar",
     "city": "Los Angeles"
   },
   "paraguay-australien": {
-    "tempC": 19,
+    "tempC": 20,
     "text": "klar",
     "city": "San Francisco"
   },
   "norwegen-frankreich": {
-    "tempC": 26,
-    "text": "klar",
+    "tempC": 25,
+    "text": "überwiegend klar",
     "city": "Boston"
   },
   "senegal-irak": {
-    "tempC": 22,
+    "tempC": 20,
     "text": "bewölkt",
     "city": "Toronto"
   },
   "kap-verde-saudi-arabien": {
-    "tempC": 36,
-    "text": "klar",
+    "tempC": 35,
+    "text": "Gewitter",
     "city": "Houston"
   },
   "uruguay-spanien": {
@@ -80,12 +80,12 @@
     "city": "Guadalajara"
   },
   "neuseeland-belgien": {
-    "tempC": 27,
-    "text": "klar",
+    "tempC": 28,
+    "text": "teils bewölkt",
     "city": "Vancouver"
   },
   "agypten-iran": {
-    "tempC": 27,
+    "tempC": 29,
     "text": "klar",
     "city": "Seattle"
   }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T20:09:11.151Z",
+  "updatedAt": "2026-06-24T21:45:59.485Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1260,8 +1260,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
+          "scorer": "Granit Xhaka",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 90,
+          "scorer": "Johan Manzambi",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -1271,13 +1278,6 @@
           "side": "away",
           "own": false,
           "pen": false
-        },
-        {
-          "minute": 90,
-          "scorer": "Granit Xhaka",
-          "side": "home",
-          "own": false,
-          "pen": true
         }
       ]
     },
@@ -2305,15 +2305,29 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 2,
+        "away": 1,
+        "status": "finished"
       },
       "goals": [
         {
-          "minute": 48,
+          "minute": 46,
           "scorer": "Ruben Vargas",
           "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 57,
+          "scorer": "Johan Manzambi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 76,
+          "scorer": "Promise David",
+          "side": "away",
           "own": false,
           "pen": false
         }
@@ -2339,9 +2353,9 @@
         "country": ""
       },
       "score": {
-        "home": 2,
+        "home": 3,
         "away": 1,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -2362,6 +2376,13 @@
           "minute": 42,
           "scorer": "Hassan Al Haydos",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 81,
+          "scorer": "Ermin Mahmic",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -2942,7 +2963,7 @@
     {
       "id": "m82099",
       "oldbId": 82099,
-      "slug": "2a-2b",
+      "slug": "2a-kanada",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-28T19:00:00Z",
       "home": {
@@ -2950,8 +2971,8 @@
         "code": null
       },
       "away": {
-        "name": "2B",
-        "code": null
+        "name": "Kanada",
+        "code": "ca"
       },
       "venue": {
         "stadium": "SoFi Stadium",
@@ -3254,12 +3275,12 @@
     {
       "id": "m82111",
       "oldbId": 82111,
-      "slug": "1b-3-e-f-g-i-j",
+      "slug": "schweiz-3-e-f-g-i-j",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-03T03:00:00Z",
       "home": {
-        "name": "1B",
-        "code": null
+        "name": "Schweiz",
+        "code": "ch"
       },
       "away": {
         "name": "3 E/F/G/I/J",

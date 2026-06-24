@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T20:09:13.823Z",
+  "updatedAt": "2026-06-24T21:46:03.178Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -525,14 +525,102 @@
         "subs": []
       },
       "fetchedAt": "2026-06-24T20:09:12.832Z"
+    },
+    "marokko-haiti": {
+      "home": {
+        "team": "Marokko",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 10,
+            "name": "Brahim Díaz",
+            "pos": "Right Winger"
+          },
+          {
+            "n": 2,
+            "name": "Achraf Hakimi",
+            "pos": "Right-Back"
+          },
+          {
+            "n": 4,
+            "name": "Sofyan Amrabat",
+            "pos": "Defensive Midfield"
+          },
+          {
+            "n": 1,
+            "name": "Bono",
+            "pos": "Goalkeeper"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Haiti",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 1,
+            "name": "Johny Placide",
+            "pos": "Goalkeeper"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-24T21:46:01.626Z"
+    },
+    "schottland-brasilien": {
+      "home": {
+        "team": "Schottland",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 3,
+            "name": "Andrew Robertson",
+            "pos": "Left-Back"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Brasilien",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 5,
+            "name": "Casemiro",
+            "pos": "Defensive Midfield"
+          },
+          {
+            "n": 13,
+            "name": "Danilo",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 16,
+            "name": "Douglas Santos",
+            "pos": "Left-Back"
+          },
+          {
+            "n": 4,
+            "name": "Marquinhos",
+            "pos": "Centre-Back"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-24T21:46:02.188Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
     "windowMatches": 4,
     "checked": 4,
-    "got": 1,
+    "got": 2,
     "lastError": null,
-    "at": "2026-06-24T20:09:13.823Z"
+    "at": "2026-06-24T21:46:03.178Z"
   }
 }
