@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T17:18:34.643Z",
+  "updatedAt": "2026-06-24T20:09:13.823Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -481,14 +481,58 @@
         "subs": []
       },
       "fetchedAt": "2026-06-23T21:51:32.056Z"
+    },
+    "schweiz-kanada": {
+      "home": {
+        "team": "Schweiz",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 13,
+            "name": "Ricardo Rodriguez",
+            "pos": "Left-Back"
+          },
+          {
+            "n": 10,
+            "name": "Granit Xhaka",
+            "pos": "Defensive Midfield"
+          },
+          {
+            "n": 5,
+            "name": "Manuel Akanji",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 7,
+            "name": "Breel Embolo",
+            "pos": "Centre-Forward"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Kanada",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 9,
+            "name": "Cyle Larin",
+            "pos": "Centre-Forward"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-24T20:09:12.832Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 2,
-    "checked": 2,
-    "got": 0,
+    "windowMatches": 4,
+    "checked": 4,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-24T17:18:34.643Z"
+    "at": "2026-06-24T20:09:13.823Z"
   }
 }

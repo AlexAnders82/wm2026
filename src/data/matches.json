@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T17:18:31.516Z",
+  "updatedAt": "2026-06-24T20:09:11.151Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -2305,11 +2305,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 48,
+          "scorer": "Ruben Vargas",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80149",
@@ -2331,11 +2339,33 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 2,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 29,
+          "scorer": "Kerim Alajbegovic",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 34,
+          "scorer": "Sultan Al Brake",
+          "side": "home",
+          "own": true,
+          "pen": false
+        },
+        {
+          "minute": 42,
+          "scorer": "Hassan Al Haydos",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80150",
