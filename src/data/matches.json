@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T23:34:22.906Z",
+  "updatedAt": "2026-06-25T04:34:21.145Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -2408,9 +2408,9 @@
         "country": ""
       },
       "score": {
-        "home": 2,
+        "home": 4,
         "away": 2,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -2430,6 +2430,20 @@
         {
           "minute": 45,
           "scorer": "Ismael Saibari",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 78,
+          "scorer": "Rahimi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 89,
+          "scorer": "Gessime Yassine",
           "side": "home",
           "own": false,
           "pen": false
@@ -2458,7 +2472,7 @@
       "score": {
         "home": 0,
         "away": 3,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -2504,9 +2518,9 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 0,
+        "status": "finished"
       },
       "goals": []
     },
@@ -2530,9 +2544,9 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 0,
+        "away": 3,
+        "status": "finished"
       },
       "goals": []
     },
