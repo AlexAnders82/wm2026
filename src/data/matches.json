@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T04:34:21.145Z",
+  "updatedAt": "2026-06-25T08:31:47.368Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -2415,15 +2415,22 @@
       "goals": [
         {
           "minute": 10,
-          "scorer": "Lenny Joseph",
+          "scorer": "Yassine Bounou",
           "side": "away",
-          "own": false,
+          "own": true,
           "pen": false
         },
         {
           "minute": 39,
           "scorer": "Achraf Hakimi",
           "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 43,
+          "scorer": "Wilson Isidor",
+          "side": "away",
           "own": false,
           "pen": false
         },
@@ -2436,7 +2443,7 @@
         },
         {
           "minute": 78,
-          "scorer": "Rahimi",
+          "scorer": "Soufiane Rahimi",
           "side": "home",
           "own": false,
           "pen": false
@@ -2522,7 +2529,15 @@
         "away": 0,
         "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 63,
+          "scorer": "Thapelo Maseko",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80153",
@@ -2548,7 +2563,29 @@
         "away": 3,
         "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 55,
+          "scorer": "Mateo Chavez Garcia",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 61,
+          "scorer": "Julián Quiñones",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Alvaro Fidalgo",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80154",
@@ -3021,12 +3058,12 @@
     {
       "id": "m82099",
       "oldbId": 82099,
-      "slug": "2a-kanada",
+      "slug": "sudafrika-kanada",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-28T19:00:00Z",
       "home": {
-        "name": "2A",
-        "code": null
+        "name": "Südafrika",
+        "code": "za"
       },
       "away": {
         "name": "Kanada",
