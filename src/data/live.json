@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T17:23:50.829Z",
+  "updatedAt": "2026-06-25T20:22:40.191Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -613,14 +613,102 @@
         "subs": []
       },
       "fetchedAt": "2026-06-24T23:34:25.601Z"
+    },
+    "curacao-elfenbeinkuste": {
+      "home": {
+        "team": "Curaçao",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 10,
+            "name": "Leandro Bacuna",
+            "pos": "Right-Back"
+          },
+          {
+            "n": 1,
+            "name": "Eloy Room",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 21,
+            "name": "Tahith Chong",
+            "pos": "Attacking Midfield"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Elfenbeinküste",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 8,
+            "name": "Franck Kessié",
+            "pos": "Central Midfield"
+          },
+          {
+            "n": 19,
+            "name": "Nicolas Pépé",
+            "pos": "Right Winger"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-25T20:22:39.658Z"
+    },
+    "ecuador-deutschland": {
+      "home": {
+        "team": "Ecuador",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 13,
+            "name": "Enner Valencia",
+            "pos": "Centre-Forward"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Deutschland",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 1,
+            "name": "Manuel Neuer",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 4,
+            "name": "Jonathan Tah",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 2,
+            "name": "Antonio Rüdiger",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 19,
+            "name": "Leroy Sané",
+            "pos": "Left Wing"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-25T20:22:40.191Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 2,
-    "checked": 2,
-    "got": 0,
+    "windowMatches": 4,
+    "checked": 4,
+    "got": 2,
     "lastError": null,
-    "at": "2026-06-25T17:23:50.829Z"
+    "at": "2026-06-25T20:22:40.191Z"
   }
 }

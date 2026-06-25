@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T17:23:48.297Z",
+  "updatedAt": "2026-06-25T20:22:37.930Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -2607,11 +2607,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 7,
+          "scorer": "Nicolas Pépé",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80155",
@@ -2633,11 +2641,26 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 3,
+          "scorer": "Leroy Sané",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 9,
+          "scorer": "Nilson Angulo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80156",
