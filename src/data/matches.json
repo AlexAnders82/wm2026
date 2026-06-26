@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T01:30:09.279Z",
+  "updatedAt": "2026-06-26T06:21:01.700Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -2703,9 +2703,9 @@
       "goals": [
         {
           "minute": 3,
-          "scorer": "E. Skhiri",
+          "scorer": "Ellyes Skhiri",
           "side": "away",
-          "own": false,
+          "own": true,
           "pen": false
         },
         {
@@ -2758,7 +2758,7 @@
       "goals": [
         {
           "minute": 56,
-          "scorer": "D. Maeda",
+          "scorer": "Daizen Maeda",
           "side": "home",
           "own": false,
           "pen": false
@@ -2792,11 +2792,47 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 3,
+        "away": 2,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 3,
+          "scorer": "Auston Trusty",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 10,
+          "scorer": "Arda Güler",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 31,
+          "scorer": "Baris Yilmaz",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 49,
+          "scorer": "Sebastian Berhalter",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 98,
+          "scorer": "Kaan Ayhan",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80159",
@@ -2818,9 +2854,9 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 0,
+        "away": 0,
+        "status": "finished"
       },
       "goals": []
     },
