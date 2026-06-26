@@ -1,56 +1,46 @@
 {
-  "curacao-elfenbeinkuste": {
-    "tempC": 28,
-    "text": "klar",
-    "city": "Philadelphia"
-  },
-  "ecuador-deutschland": {
-    "tempC": 26,
-    "text": "bewölkt",
-    "city": "New York/New Jersey"
-  },
   "tunesien-niederlande": {
-    "tempC": 24,
-    "text": "bewölkt",
+    "tempC": 22,
+    "text": "leichter Regen",
     "city": "Kansas City"
   },
   "japan-schweden": {
-    "tempC": 33,
+    "tempC": 31,
     "text": "klar",
     "city": "Dallas"
   },
   "turkei-usa": {
-    "tempC": 22,
-    "text": "klar",
+    "tempC": 19,
+    "text": "überwiegend klar",
     "city": "Los Angeles"
   },
   "paraguay-australien": {
-    "tempC": 20,
+    "tempC": 17,
     "text": "klar",
     "city": "San Francisco"
   },
   "norwegen-frankreich": {
-    "tempC": 26,
+    "tempC": 21,
     "text": "bewölkt",
     "city": "Boston"
   },
   "senegal-irak": {
-    "tempC": 16,
-    "text": "bewölkt",
+    "tempC": 15,
+    "text": "teils bewölkt",
     "city": "Toronto"
   },
   "kap-verde-saudi-arabien": {
-    "tempC": 33,
-    "text": "klar",
+    "tempC": 29,
+    "text": "Gewitter",
     "city": "Houston"
   },
   "uruguay-spanien": {
-    "tempC": 21,
-    "text": "starker Niesel",
+    "tempC": 20,
+    "text": "überwiegend klar",
     "city": "Guadalajara"
   },
   "neuseeland-belgien": {
-    "tempC": 18,
+    "tempC": 19,
     "text": "bewölkt",
     "city": "Vancouver"
   },
@@ -60,32 +50,32 @@
     "city": "Seattle"
   },
   "panama-england": {
-    "tempC": 26,
-    "text": "bewölkt",
+    "tempC": 23,
+    "text": "überwiegend klar",
     "city": "New York/New Jersey"
   },
   "kroatien-ghana": {
-    "tempC": 28,
-    "text": "klar",
+    "tempC": 24,
+    "text": "teils bewölkt",
     "city": "Philadelphia"
   },
   "kolumbien-portugal": {
-    "tempC": 31,
-    "text": "teils bewölkt",
+    "tempC": 29,
+    "text": "Gewitter",
     "city": "Miami"
   },
   "dr-kongo-usbekistan": {
-    "tempC": 27,
-    "text": "teils bewölkt",
+    "tempC": 25,
+    "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "algerien-osterreich": {
-    "tempC": 24,
-    "text": "bewölkt",
+    "tempC": 22,
+    "text": "leichter Regen",
     "city": "Kansas City"
   },
   "jordanien-argentinien": {
-    "tempC": 33,
+    "tempC": 31,
     "text": "klar",
     "city": "Dallas"
   }

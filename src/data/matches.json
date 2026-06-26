@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T22:46:13.734Z",
+  "updatedAt": "2026-06-26T01:30:09.279Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -2696,11 +2696,40 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 3,
+          "scorer": "E. Skhiri",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 7,
+          "scorer": " Brian Brobbey ",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 54,
+          "scorer": "Hazem Mastouri",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 62,
+          "scorer": "Jan Paul van Hecke",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80157",
@@ -2722,11 +2751,26 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 56,
+          "scorer": "D. Maeda",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 62,
+          "scorer": "Anthony Elanga",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80158",
@@ -3121,7 +3165,7 @@
     {
       "id": "m82100",
       "oldbId": 82100,
-      "slug": "brasilien-2f",
+      "slug": "brasilien-japan",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-29T17:00:00Z",
       "home": {
@@ -3129,8 +3173,8 @@
         "code": "br"
       },
       "away": {
-        "name": "2F",
-        "code": null
+        "name": "Japan",
+        "code": "jp"
       },
       "venue": {
         "stadium": "NRG Stadium",
@@ -3173,12 +3217,12 @@
     {
       "id": "m82102",
       "oldbId": 82102,
-      "slug": "1f-marokko",
+      "slug": "niederlande-marokko",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-30T01:00:00Z",
       "home": {
-        "name": "1F",
-        "code": null
+        "name": "Niederlande",
+        "code": "nl"
       },
       "away": {
         "name": "Marokko",
