@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T19:03:41.380Z",
+  "updatedAt": "2026-06-26T20:59:02.212Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -2880,11 +2880,47 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 4,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 7,
+          "scorer": "Ousmane Dembélé",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 20,
+          "scorer": "Ousmane Dembélé",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 21,
+          "scorer": "Thelo Aasgaard",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 32,
+          "scorer": "Ousmane Dembélé",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 94,
+          "scorer": "Désiré Doué",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80161",
@@ -2906,11 +2942,47 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 5,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 4,
+          "scorer": "Diarra Mouhamadou",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 56,
+          "scorer": "Ismaïla Sarr",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 59,
+          "scorer": "Pape Gueye",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 71,
+          "scorer": "Pape Gueye",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 82,
+          "scorer": "Iliman Ndiaye",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80162",
@@ -3279,7 +3351,7 @@
     {
       "id": "m82103",
       "oldbId": 82103,
-      "slug": "elfenbeinkuste-2i",
+      "slug": "elfenbeinkuste-norwegen",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-30T17:00:00Z",
       "home": {
@@ -3287,8 +3359,8 @@
         "code": "ci"
       },
       "away": {
-        "name": "2I",
-        "code": null
+        "name": "Norwegen",
+        "code": "no"
       },
       "venue": {
         "stadium": "AT&T Stadium",
@@ -3305,12 +3377,12 @@
     {
       "id": "m82104",
       "oldbId": 82104,
-      "slug": "1i-3-c-d-f-g-h",
+      "slug": "frankreich-3-c-d-f-g-h",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-30T21:00:00Z",
       "home": {
-        "name": "1I",
-        "code": null
+        "name": "Frankreich",
+        "code": "fr"
       },
       "away": {
         "name": "3 C/D/F/G/H",

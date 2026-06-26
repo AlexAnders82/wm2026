@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T19:03:43.226Z",
+  "updatedAt": "2026-06-26T20:59:05.222Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -701,14 +701,57 @@
         "subs": []
       },
       "fetchedAt": "2026-06-25T20:22:40.191Z"
+    },
+    "norwegen-frankreich": {
+      "home": {
+        "team": "Norwegen",
+        "formation": "",
+        "coach": "",
+        "xi": [],
+        "subs": []
+      },
+      "away": {
+        "team": "Frankreich",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 16,
+            "name": "Mike Maignan",
+            "pos": "Goalkeeper"
+          },
+          {
+            "n": 7,
+            "name": "Ousmane Dembélé",
+            "pos": "Right Winger"
+          },
+          {
+            "n": 10,
+            "name": "Kylian Mbappé",
+            "pos": "Centre-Forward"
+          },
+          {
+            "n": 4,
+            "name": "Dayot Upamecano",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 5,
+            "name": "Jules Koundé",
+            "pos": "Centre-Back"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-26T20:59:04.260Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 2,
-    "checked": 2,
-    "got": 0,
+    "windowMatches": 4,
+    "checked": 4,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-26T19:03:43.226Z"
+    "at": "2026-06-26T20:59:05.222Z"
   }
 }
