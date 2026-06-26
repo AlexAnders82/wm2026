@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T06:21:01.700Z",
+  "updatedAt": "2026-06-26T10:29:08.609Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3513,12 +3513,12 @@
     {
       "id": "m82112",
       "oldbId": 82112,
-      "slug": "2d-2g",
+      "slug": "australien-2g",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-03T18:00:00Z",
       "home": {
-        "name": "2D",
-        "code": null
+        "name": "Australien",
+        "code": "au"
       },
       "away": {
         "name": "2G",
