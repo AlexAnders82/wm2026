@@ -1,41 +1,41 @@
 {
   "norwegen-frankreich": {
-    "tempC": 21,
+    "tempC": 22,
     "text": "bewölkt",
     "city": "Boston"
   },
   "senegal-irak": {
-    "tempC": 18,
-    "text": "teils bewölkt",
+    "tempC": 19,
+    "text": "bewölkt",
     "city": "Toronto"
   },
   "kap-verde-saudi-arabien": {
-    "tempC": 33,
-    "text": "klar",
+    "tempC": 35,
+    "text": "Gewitter",
     "city": "Houston"
   },
   "uruguay-spanien": {
-    "tempC": 21,
+    "tempC": 25,
     "text": "klar",
     "city": "Guadalajara"
   },
   "neuseeland-belgien": {
-    "tempC": 14,
-    "text": "bewölkt",
+    "tempC": 15,
+    "text": "teils bewölkt",
     "city": "Vancouver"
   },
   "agypten-iran": {
-    "tempC": 14,
+    "tempC": 17,
     "text": "bewölkt",
     "city": "Seattle"
   },
   "panama-england": {
-    "tempC": 25,
-    "text": "bewölkt",
+    "tempC": 28,
+    "text": "klar",
     "city": "New York/New Jersey"
   },
   "kroatien-ghana": {
-    "tempC": 29,
+    "tempC": 30,
     "text": "bewölkt",
     "city": "Philadelphia"
   },
@@ -45,23 +45,23 @@
     "city": "Miami"
   },
   "dr-kongo-usbekistan": {
-    "tempC": 29,
+    "tempC": 31,
     "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "algerien-osterreich": {
-    "tempC": 22,
-    "text": "starker Niesel",
+    "tempC": 24,
+    "text": "Schauer",
     "city": "Kansas City"
   },
   "jordanien-argentinien": {
-    "tempC": 31,
-    "text": "bewölkt",
+    "tempC": 34,
+    "text": "teils bewölkt",
     "city": "Dallas"
   },
   "sudafrika-kanada": {
-    "tempC": 19,
-    "text": "bewölkt",
+    "tempC": 23,
+    "text": "klar",
     "city": "Los Angeles"
   }
 }
