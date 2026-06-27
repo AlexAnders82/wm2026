@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T20:20:19.560Z",
+  "updatedAt": "2026-06-27T22:16:04.454Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -2826,7 +2826,7 @@
           "pen": false
         },
         {
-          "minute": 98,
+          "minute": 90,
           "scorer": "Kaan Ayhan",
           "side": "home",
           "own": false,
@@ -2914,7 +2914,7 @@
           "pen": false
         },
         {
-          "minute": 94,
+          "minute": 90,
           "scorer": "Désiré Doué",
           "side": "away",
           "own": false,
@@ -3105,7 +3105,7 @@
           "pen": false
         },
         {
-          "minute": 94,
+          "minute": 90,
           "scorer": "Alexis Saelemaekers",
           "side": "away",
           "own": false,
@@ -3174,8 +3174,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
@@ -3200,11 +3200,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 31,
+          "scorer": "Petar Sucic",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80168",
