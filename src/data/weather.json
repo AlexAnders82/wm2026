@@ -1,6 +1,6 @@
 {
   "panama-england": {
-    "tempC": 22,
+    "tempC": 21,
     "text": "bewölkt",
     "city": "New York/New Jersey"
   },
@@ -16,27 +16,32 @@
   },
   "dr-kongo-usbekistan": {
     "tempC": 23,
-    "text": "überwiegend klar",
+    "text": "klar",
     "city": "Atlanta"
   },
   "algerien-osterreich": {
     "tempC": 22,
-    "text": "bewölkt",
+    "text": "Nebel",
     "city": "Kansas City"
   },
   "jordanien-argentinien": {
-    "tempC": 27,
+    "tempC": 26,
     "text": "klar",
     "city": "Dallas"
   },
   "sudafrika-kanada": {
     "tempC": 17,
-    "text": "klar",
+    "text": "bewölkt",
     "city": "Los Angeles"
   },
   "brasilien-japan": {
-    "tempC": 27,
+    "tempC": 26,
     "text": "klar",
     "city": "Houston"
+  },
+  "deutschland-paraguay": {
+    "tempC": 19,
+    "text": "bewölkt",
+    "city": "Boston"
   }
 }
