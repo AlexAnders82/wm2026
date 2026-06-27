@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T22:36:37.413Z",
+  "updatedAt": "2026-06-27T00:20:38.951Z",
   "venues": {},
   "fixtures": {},
   "lineups": {
@@ -744,14 +744,58 @@
         "subs": []
       },
       "fetchedAt": "2026-06-26T20:59:04.260Z"
+    },
+    "kap-verde-saudi-arabien": {
+      "home": {
+        "team": "Kap Verde",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 14,
+            "name": "Deroy Duarte",
+            "pos": "Central Midfield"
+          },
+          {
+            "n": 17,
+            "name": "Willy Semedo",
+            "pos": "Left Wing"
+          },
+          {
+            "n": 10,
+            "name": "Jamiro Monteiro",
+            "pos": "Central Midfield"
+          }
+        ],
+        "subs": []
+      },
+      "away": {
+        "team": "Saudi Arabien",
+        "formation": "",
+        "coach": "",
+        "xi": [
+          {
+            "n": 4,
+            "name": "Abdulelah Al-Amri",
+            "pos": "Centre-Back"
+          },
+          {
+            "n": 12,
+            "name": "Saud Abdulhamid",
+            "pos": "Right-Back"
+          }
+        ],
+        "subs": []
+      },
+      "fetchedAt": "2026-06-27T00:20:37.859Z"
     }
   },
   "_diag": {
     "source": "thesportsdb",
-    "windowMatches": 2,
-    "checked": 2,
-    "got": 0,
+    "windowMatches": 4,
+    "checked": 4,
+    "got": 1,
     "lastError": null,
-    "at": "2026-06-26T22:36:37.413Z"
+    "at": "2026-06-27T00:20:38.951Z"
   }
 }
