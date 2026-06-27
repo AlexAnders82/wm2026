@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T10:23:44.562Z",
+  "updatedAt": "2026-06-27T12:19:02.602Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -913,7 +913,7 @@
           "scorer": "Lionel Messi",
           "side": "home",
           "own": false,
-          "pen": true
+          "pen": false
         },
         {
           "minute": 76,
