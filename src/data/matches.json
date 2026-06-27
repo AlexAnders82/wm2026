@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T05:04:04.045Z",
+  "updatedAt": "2026-06-27T08:06:43.834Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3365,7 +3365,7 @@
     {
       "id": "m82101",
       "oldbId": 82101,
-      "slug": "deutschland-3-a-b-c-d-f",
+      "slug": "deutschland-paraguay",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-29T20:30:00Z",
       "home": {
@@ -3373,8 +3373,8 @@
         "code": "de"
       },
       "away": {
-        "name": "3 A/B/C/D/F",
-        "code": null
+        "name": "Paraguay",
+        "code": "py"
       },
       "venue": {
         "stadium": "Gillette Stadium",
@@ -3443,7 +3443,7 @@
     {
       "id": "m82104",
       "oldbId": 82104,
-      "slug": "frankreich-3-c-d-f-g-h",
+      "slug": "frankreich-schweden",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-30T21:00:00Z",
       "home": {
@@ -3451,8 +3451,8 @@
         "code": "fr"
       },
       "away": {
-        "name": "3 C/D/F/G/H",
-        "code": null
+        "name": "Schweden",
+        "code": "se"
       },
       "venue": {
         "stadium": "MetLife Stadium",
@@ -3521,12 +3521,12 @@
     {
       "id": "m82107",
       "oldbId": 82107,
-      "slug": "1g-3-a-e-h-i-j",
+      "slug": "belgien-3-a-e-h-i-j",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-01T20:00:00Z",
       "home": {
-        "name": "1G",
-        "code": null
+        "name": "Belgien",
+        "code": "be"
       },
       "away": {
         "name": "3 A/E/H/I/J",
@@ -3547,7 +3547,7 @@
     {
       "id": "m82108",
       "oldbId": 82108,
-      "slug": "usa-3-b-e-f-i-j",
+      "slug": "usa-bosnien-und-herzegowina",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-02T00:00:00Z",
       "home": {
@@ -3555,8 +3555,8 @@
         "code": "us"
       },
       "away": {
-        "name": "3 B/E/F/I/J",
-        "code": null
+        "name": "Bosnien und Herzegowina",
+        "code": "ba"
       },
       "venue": {
         "stadium": "Levi's Stadium",
@@ -3651,7 +3651,7 @@
     {
       "id": "m82112",
       "oldbId": 82112,
-      "slug": "australien-2g",
+      "slug": "australien-agypten",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-03T18:00:00Z",
       "home": {
@@ -3659,8 +3659,8 @@
         "code": "au"
       },
       "away": {
-        "name": "2G",
-        "code": null
+        "name": "Ägypten",
+        "code": "eg"
       },
       "venue": {
         "stadium": "AT&T Stadium",
