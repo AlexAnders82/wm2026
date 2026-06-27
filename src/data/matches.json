@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T00:20:35.992Z",
+  "updatedAt": "2026-06-27T05:04:04.045Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3004,9 +3004,9 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 0,
+        "away": 0,
+        "status": "finished"
       },
       "goals": []
     },
@@ -3030,11 +3030,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 0,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 42,
+          "scorer": "Alex Baena",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80164",
@@ -3056,11 +3064,54 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 5,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 28,
+          "scorer": "Leandro Trossard",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 50,
+          "scorer": "Leandro Trossard",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 66,
+          "scorer": "Kevin De Bruyne",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 84,
+          "scorer": "Elijah Just",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 86,
+          "scorer": "Romelu Lukaku",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 94,
+          "scorer": "Alexis Saelemaekers",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80165",
@@ -3082,11 +3133,26 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 5,
+          "scorer": "Mahmoud Saber",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 14,
+          "scorer": "Ramin Rezaeian",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80166",
@@ -3507,12 +3573,12 @@
     {
       "id": "m82109",
       "oldbId": 82109,
-      "slug": "1h-2j",
+      "slug": "spanien-2j",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-02T19:00:00Z",
       "home": {
-        "name": "1H",
-        "code": null
+        "name": "Spanien",
+        "code": "es"
       },
       "away": {
         "name": "2J",
@@ -3611,7 +3677,7 @@
     {
       "id": "m82113",
       "oldbId": 82113,
-      "slug": "argentinien-2h",
+      "slug": "argentinien-kap-verde",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-03T22:00:00Z",
       "home": {
@@ -3619,8 +3685,8 @@
         "code": "ar"
       },
       "away": {
-        "name": "2H",
-        "code": null
+        "name": "Kap Verde",
+        "code": "cv"
       },
       "venue": {
         "stadium": "Hard Rock Stadium",
