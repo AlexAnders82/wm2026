@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T22:16:04.454Z",
+  "updatedAt": "2026-06-27T23:19:18.883Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3175,10 +3175,25 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "away": 2,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 62,
+          "scorer": "Jude Bellingham",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 67,
+          "scorer": "Harry Kane",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80167",
@@ -3200,14 +3215,28 @@
         "country": ""
       },
       "score": {
-        "home": 1,
-        "away": 0,
-        "status": "scheduled"
+        "home": 2,
+        "away": 1,
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 31,
           "scorer": "Petar Sucic",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 73,
+          "scorer": "Derrick Luckassen",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 83,
+          "scorer": "Nikola Vlašic",
           "side": "home",
           "own": false,
           "pen": false
