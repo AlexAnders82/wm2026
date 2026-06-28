@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T18:18:13.608Z",
+  "updatedAt": "2026-06-28T20:37:07.074Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -2901,7 +2901,7 @@
         },
         {
           "minute": 21,
-          "scorer": "Thelo Aasgaard",
+          "scorer": "Thelonious Gerard Aasgaard",
           "side": "home",
           "own": false,
           "pen": false
@@ -3358,7 +3358,7 @@
         },
         {
           "minute": 45,
-          "scorer": "R. Belghali",
+          "scorer": "Rafik Belghali",
           "side": "home",
           "own": false,
           "pen": false
@@ -3386,7 +3386,7 @@
         },
         {
           "minute": 96,
-          "scorer": "S. Kalajdzic",
+          "scorer": "Sasa Kalajdzic",
           "side": "away",
           "own": false,
           "pen": false
@@ -3468,8 +3468,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []

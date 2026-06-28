@@ -1,7 +1,7 @@
 {
   "sudafrika-kanada": {
-    "tempC": 21,
-    "text": "bewölkt",
+    "tempC": 23,
+    "text": "überwiegend klar",
     "city": "Los Angeles"
   },
   "brasilien-japan": {
@@ -10,13 +10,13 @@
     "city": "Houston"
   },
   "deutschland-paraguay": {
-    "tempC": 27,
-    "text": "klar",
+    "tempC": 26,
+    "text": "überwiegend klar",
     "city": "Boston"
   },
   "niederlande-marokko": {
-    "tempC": 34,
-    "text": "klar",
+    "tempC": 36,
+    "text": "Gewitter",
     "city": "Monterrey"
   },
   "elfenbeinkuste-norwegen": {
@@ -25,12 +25,12 @@
     "city": "Dallas"
   },
   "frankreich-schweden": {
-    "tempC": 29,
-    "text": "bewölkt",
+    "tempC": 28,
+    "text": "klar",
     "city": "New York/New Jersey"
   },
   "mexiko-ecuador": {
-    "tempC": 21,
+    "tempC": 22,
     "text": "überwiegend klar",
     "city": "Mexiko-Stadt"
   }
