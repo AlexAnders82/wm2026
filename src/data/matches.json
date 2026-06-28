@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T20:37:07.074Z",
+  "updatedAt": "2026-06-28T22:14:45.528Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3469,10 +3469,18 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 92,
+          "scorer": "Stephen Eustáquio",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82100",
@@ -3867,12 +3875,12 @@
     {
       "id": "m82127",
       "oldbId": 82127,
-      "slug": "rsa-can-ned-mar",
+      "slug": "kanada-ned-mar",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-04T17:00:00Z",
       "home": {
-        "name": "RSA/CAN",
-        "code": null
+        "name": "Kanada",
+        "code": "ca"
       },
       "away": {
         "name": "NED/MAR",
