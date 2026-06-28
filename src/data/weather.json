@@ -1,27 +1,32 @@
 {
   "sudafrika-kanada": {
-    "tempC": 18,
+    "tempC": 17,
     "text": "bewölkt",
     "city": "Los Angeles"
   },
   "brasilien-japan": {
-    "tempC": 27,
+    "tempC": 28,
     "text": "Gewitter",
     "city": "Houston"
   },
   "deutschland-paraguay": {
-    "tempC": 17,
+    "tempC": 20,
     "text": "teils bewölkt",
     "city": "Boston"
   },
   "niederlande-marokko": {
-    "tempC": 26,
+    "tempC": 23,
     "text": "klar",
     "city": "Monterrey"
   },
   "elfenbeinkuste-norwegen": {
-    "tempC": 27,
+    "tempC": 26,
     "text": "klar",
     "city": "Dallas"
+  },
+  "frankreich-schweden": {
+    "tempC": 22,
+    "text": "bewölkt",
+    "city": "New York/New Jersey"
   }
 }

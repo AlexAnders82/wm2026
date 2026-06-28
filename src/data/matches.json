@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T08:28:42.093Z",
+  "updatedAt": "2026-06-28T11:16:30.083Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3711,7 +3711,7 @@
     {
       "id": "m82109",
       "oldbId": 82109,
-      "slug": "spanien-2j",
+      "slug": "spanien-osterreich",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-02T19:00:00Z",
       "home": {
@@ -3719,8 +3719,8 @@
         "code": "es"
       },
       "away": {
-        "name": "2J",
-        "code": null
+        "name": "Österreich",
+        "code": "at"
       },
       "venue": {
         "stadium": "SoFi Stadium",
@@ -3763,7 +3763,7 @@
     {
       "id": "m82111",
       "oldbId": 82111,
-      "slug": "schweiz-3-e-f-g-i-j",
+      "slug": "schweiz-algerien",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-03T03:00:00Z",
       "home": {
@@ -3771,8 +3771,8 @@
         "code": "ch"
       },
       "away": {
-        "name": "3 E/F/G/I/J",
-        "code": null
+        "name": "Algerien",
+        "code": "dz"
       },
       "venue": {
         "stadium": "BC Place Stadium",
@@ -3855,6 +3855,214 @@
       "venue": {
         "stadium": "Arrowhead Stadium",
         "city": "Kansas City",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82127",
+      "oldbId": 82127,
+      "slug": "rsa-can-ned-mar",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-04T17:00:00Z",
+      "home": {
+        "name": "RSA/CAN",
+        "code": null
+      },
+      "away": {
+        "name": "NED/MAR",
+        "code": null
+      },
+      "venue": {
+        "stadium": "NRG Stadium",
+        "city": "Houston",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82128",
+      "oldbId": 82128,
+      "slug": "deu-par-fra-swe",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-04T21:00:00Z",
+      "home": {
+        "name": "DEU/PAR",
+        "code": null
+      },
+      "away": {
+        "name": "FRA/SWE",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Lincoln Financial Field",
+        "city": "Philadelphia",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82129",
+      "oldbId": 82129,
+      "slug": "bra-jpn-civ-nor",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-05T20:00:00Z",
+      "home": {
+        "name": "BRA/JPN",
+        "code": null
+      },
+      "away": {
+        "name": "CIV/NOR",
+        "code": null
+      },
+      "venue": {
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82130",
+      "oldbId": 82130,
+      "slug": "mex-ecu-eng-cod",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-06T00:00:00Z",
+      "home": {
+        "name": "MEX/ECU",
+        "code": null
+      },
+      "away": {
+        "name": "ENG/COD",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Azteca",
+        "city": "Mexico City",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82131",
+      "oldbId": 82131,
+      "slug": "por-cro-esp-aut",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-06T19:00:00Z",
+      "home": {
+        "name": "POR/CRO",
+        "code": null
+      },
+      "away": {
+        "name": "ESP/AUT",
+        "code": null
+      },
+      "venue": {
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82132",
+      "oldbId": 82132,
+      "slug": "usa-bih-bel-sen",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-07T00:00:00Z",
+      "home": {
+        "name": "USA/BIH",
+        "code": null
+      },
+      "away": {
+        "name": "BEL/SEN",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Lumen Field",
+        "city": "Seattle",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82133",
+      "oldbId": 82133,
+      "slug": "arg-cpv-aus-egy",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-07T16:00:00Z",
+      "home": {
+        "name": "ARG/CPV",
+        "code": null
+      },
+      "away": {
+        "name": "AUS/EGY",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m82134",
+      "oldbId": 82134,
+      "slug": "sui-alg-col-gha",
+      "round": "Achtelfinale",
+      "kickoffUtc": "2026-07-07T20:00:00Z",
+      "home": {
+        "name": "SUI/ALG",
+        "code": null
+      },
+      "away": {
+        "name": "COL/GHA",
+        "code": null
+      },
+      "venue": {
+        "stadium": "BC Place Stadium",
+        "city": "Vancouver",
         "country": ""
       },
       "score": {
