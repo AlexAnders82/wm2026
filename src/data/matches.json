@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T12:45:46.838Z",
+  "updatedAt": "2026-06-28T14:57:41.694Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1247,7 +1247,7 @@
         {
           "minute": 74,
           "scorer": "Johan Manzambi",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -1260,15 +1260,8 @@
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
-          "side": "home",
-          "own": false,
-          "pen": false
-        },
-        {
-          "minute": 90,
           "scorer": "Ermin Mahmic",
-          "side": "away",
+          "side": "home",
           "own": false,
           "pen": false
         },
@@ -1278,6 +1271,13 @@
           "side": "home",
           "own": false,
           "pen": true
+        },
+        {
+          "minute": 90,
+          "scorer": "Johan Manzambi",
+          "side": null,
+          "own": false,
+          "pen": false
         }
       ]
     },
