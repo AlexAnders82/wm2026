@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T23:19:18.883Z",
+  "updatedAt": "2026-06-28T04:51:39.744Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -1260,15 +1260,8 @@
         },
         {
           "minute": 90,
-          "scorer": "Granit Xhaka",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 90,
           "scorer": "Johan Manzambi",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": false
         },
@@ -1278,6 +1271,13 @@
           "side": "away",
           "own": false,
           "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Granit Xhaka",
+          "side": "home",
+          "own": false,
+          "pen": true
         }
       ]
     },
@@ -3263,9 +3263,9 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 0,
+        "away": 0,
+        "status": "finished"
       },
       "goals": []
     },
@@ -3289,11 +3289,40 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 3,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 10,
+          "scorer": "Eldor Shomurodov",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 68,
+          "scorer": "Yoane Wissa",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 78,
+          "scorer": "Fiston Mayele",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 91,
+          "scorer": "Yoane Wissa",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80170",
@@ -3315,11 +3344,54 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 3,
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 28,
+          "scorer": "Marko Arnautovic",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 45,
+          "scorer": "R. Belghali",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 55,
+          "scorer": "Marcel Sabitzer",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 60,
+          "scorer": "Riyad Mahrez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 94,
+          "scorer": "Riyad Mahrez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 96,
+          "scorer": "S. Kalajdzic",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m80171",
@@ -3341,11 +3413,40 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 1,
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 19,
+          "scorer": "Giovani Lo Celso",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 31,
+          "scorer": "Lautaro Martínez",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 55,
+          "scorer": "Musa Al-Taamari",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 80,
+          "scorer": "Lionel Messi",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82099",
@@ -3506,7 +3607,7 @@
     {
       "id": "m82105",
       "oldbId": 82105,
-      "slug": "mexiko-3-c-e-f-h-i",
+      "slug": "mexiko-ecuador",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-01T01:00:00Z",
       "home": {
@@ -3514,8 +3615,8 @@
         "code": "mx"
       },
       "away": {
-        "name": "3 C/E/F/H/I",
-        "code": null
+        "name": "Ecuador",
+        "code": "ec"
       },
       "venue": {
         "stadium": "Azteca",
@@ -3532,16 +3633,16 @@
     {
       "id": "m82106",
       "oldbId": 82106,
-      "slug": "1l-3-e-h-i-j-k",
+      "slug": "england-dr-kongo",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-01T16:00:00Z",
       "home": {
-        "name": "1L",
-        "code": null
+        "name": "England",
+        "code": "gb-eng"
       },
       "away": {
-        "name": "3 E/H/I/J/K",
-        "code": null
+        "name": "DR Kongo",
+        "code": "cd"
       },
       "venue": {
         "stadium": "Mercedes-Benz Stadium",
@@ -3558,7 +3659,7 @@
     {
       "id": "m82107",
       "oldbId": 82107,
-      "slug": "belgien-3-a-e-h-i-j",
+      "slug": "belgien-senegal",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-01T20:00:00Z",
       "home": {
@@ -3566,8 +3667,8 @@
         "code": "be"
       },
       "away": {
-        "name": "3 A/E/H/I/J",
-        "code": null
+        "name": "Senegal",
+        "code": "sn"
       },
       "venue": {
         "stadium": "Lumen Field",
@@ -3636,16 +3737,16 @@
     {
       "id": "m82110",
       "oldbId": 82110,
-      "slug": "2k-2l",
+      "slug": "portugal-kroatien",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-02T23:00:00Z",
       "home": {
-        "name": "2K",
-        "code": null
+        "name": "Portugal",
+        "code": "pt"
       },
       "away": {
-        "name": "2L",
-        "code": null
+        "name": "Kroatien",
+        "code": "hr"
       },
       "venue": {
         "stadium": "BMO Field",
@@ -3740,16 +3841,16 @@
     {
       "id": "m82114",
       "oldbId": 82114,
-      "slug": "1k-3-d-e-i-j-l",
+      "slug": "kolumbien-ghana",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-07-04T01:30:00Z",
       "home": {
-        "name": "1K",
-        "code": null
+        "name": "Kolumbien",
+        "code": "co"
       },
       "away": {
-        "name": "3 D/E/I/J/L",
-        "code": null
+        "name": "Ghana",
+        "code": "gh"
       },
       "venue": {
         "stadium": "Arrowhead Stadium",
