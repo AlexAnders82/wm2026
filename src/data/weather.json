@@ -1,36 +1,36 @@
 {
   "brasilien-japan": {
-    "tempC": 28,
+    "tempC": 31,
     "text": "Gewitter",
     "city": "Houston"
   },
   "deutschland-paraguay": {
-    "tempC": 17,
+    "tempC": 26,
     "text": "klar",
     "city": "Boston"
   },
   "niederlande-marokko": {
-    "tempC": 24,
+    "tempC": 26,
     "text": "klar",
     "city": "Monterrey"
   },
   "elfenbeinkuste-norwegen": {
-    "tempC": 27,
-    "text": "Gewitter",
+    "tempC": 29,
+    "text": "klar",
     "city": "Dallas"
   },
   "frankreich-schweden": {
-    "tempC": 19,
+    "tempC": 26,
     "text": "klar",
     "city": "New York/New Jersey"
   },
   "mexiko-ecuador": {
-    "tempC": 14,
+    "tempC": 15,
     "text": "teils bewölkt",
     "city": "Mexiko-Stadt"
   },
   "england-dr-kongo": {
-    "tempC": 24,
+    "tempC": 29,
     "text": "klar",
     "city": "Atlanta"
   },
@@ -38,5 +38,10 @@
     "tempC": 13,
     "text": "bewölkt",
     "city": "Seattle"
+  },
+  "usa-bosnien-und-herzegowina": {
+    "tempC": 14,
+    "text": "klar",
+    "city": "San Francisco"
   }
 }
