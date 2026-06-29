@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T21:45:41.913Z",
+  "updatedAt": "2026-06-29T23:16:23.057Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3550,7 +3550,7 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1,
         "status": "scheduled"
       },
@@ -3559,6 +3559,13 @@
           "minute": 42,
           "scorer": "Julio Enciso",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 54,
+          "scorer": "Kai Havertz\r\n",
+          "side": "home",
           "own": false,
           "pen": false
         }
