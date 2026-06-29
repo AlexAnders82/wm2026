@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T17:48:18.496Z",
+  "updatedAt": "2026-06-29T20:16:06.938Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1260,15 +1260,8 @@
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
-          "side": "home",
-          "own": false,
-          "pen": false
-        },
-        {
-          "minute": 90,
           "scorer": "Ermin Mahmic",
-          "side": "away",
+          "side": "home",
           "own": false,
           "pen": false
         },
@@ -1278,6 +1271,13 @@
           "side": "home",
           "own": false,
           "pen": true
+        },
+        {
+          "minute": 90,
+          "scorer": "Johan Manzambi",
+          "side": null,
+          "own": false,
+          "pen": false
         }
       ]
     },
@@ -3502,15 +3502,29 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 1,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 29,
           "scorer": "Kaishu Sano",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 56,
+          "scorer": "Casemiro",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 96,
+          "scorer": "G. Martinelli",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -3935,12 +3949,12 @@
     {
       "id": "m82129",
       "oldbId": 82129,
-      "slug": "bra-jpn-civ-nor",
+      "slug": "brasilien-civ-nor",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-05T20:00:00Z",
       "home": {
-        "name": "BRA/JPN",
-        "code": null
+        "name": "Brasilien",
+        "code": "br"
       },
       "away": {
         "name": "CIV/NOR",
