@@ -1,7 +1,7 @@
 {
   "deutschland-paraguay": {
-    "tempC": 29,
-    "text": "überwiegend klar",
+    "tempC": 27,
+    "text": "klar",
     "city": "Boston"
   },
   "niederlande-marokko": {
@@ -15,23 +15,23 @@
     "city": "Dallas"
   },
   "frankreich-schweden": {
-    "tempC": 31,
-    "text": "überwiegend klar",
+    "tempC": 30,
+    "text": "klar",
     "city": "New York/New Jersey"
   },
   "mexiko-ecuador": {
-    "tempC": 21,
-    "text": "Gewitter",
+    "tempC": 18,
+    "text": "Niesel",
     "city": "Mexiko-Stadt"
   },
   "england-dr-kongo": {
-    "tempC": 35,
+    "tempC": 34,
     "text": "klar",
     "city": "Atlanta"
   },
   "belgien-senegal": {
-    "tempC": 17,
-    "text": "teils bewölkt",
+    "tempC": 16,
+    "text": "bewölkt",
     "city": "Seattle"
   },
   "usa-bosnien-und-herzegowina": {

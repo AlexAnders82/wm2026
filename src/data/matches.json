@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:16:06.938Z",
+  "updatedAt": "2026-06-29T21:45:41.913Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3523,7 +3523,7 @@
         },
         {
           "minute": 96,
-          "scorer": "G. Martinelli",
+          "scorer": "Gabriel Martinelli",
           "side": "home",
           "own": false,
           "pen": false
@@ -3550,11 +3550,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 42,
+          "scorer": "Julio Enciso",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82102",
