@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T15:42:58.259Z",
+  "updatedAt": "2026-06-30T18:14:46.066Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -496,11 +496,11 @@
     {
       "id": "m80109",
       "oldbId": 80109,
-      "slug": "elfenbeinkuste-ecuador",
+      "slug": "cote-d-ivoire-ecuador",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T23:00:00Z",
       "home": {
-        "name": "Elfenbeinküste",
+        "name": "Côte d’Ivoire",
         "code": "ci"
       },
       "away": {
@@ -1613,7 +1613,7 @@
     {
       "id": "m80134",
       "oldbId": 80134,
-      "slug": "deutschland-elfenbeinkuste",
+      "slug": "deutschland-cote-d-ivoire",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T20:00:00Z",
       "home": {
@@ -1621,7 +1621,7 @@
         "code": "de"
       },
       "away": {
-        "name": "Elfenbeinküste",
+        "name": "Côte d’Ivoire",
         "code": "ci"
       },
       "venue": {
@@ -2590,7 +2590,7 @@
     {
       "id": "m80154",
       "oldbId": 80154,
-      "slug": "curacao-elfenbeinkuste",
+      "slug": "curacao-cote-d-ivoire",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T20:00:00Z",
       "home": {
@@ -2598,7 +2598,7 @@
         "code": "cw"
       },
       "away": {
-        "name": "Elfenbeinküste",
+        "name": "Côte d’Ivoire",
         "code": "ci"
       },
       "venue": {
@@ -3564,15 +3564,8 @@
         },
         {
           "minute": null,
-          "scorer": "J. Kimmich",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "N. Amiri",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3585,14 +3578,21 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "Mauricio",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
+          "scorer": "Gustavo Gómez",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Kimmich",
           "side": null,
           "own": false,
           "pen": true
@@ -3647,6 +3647,13 @@
         },
         {
           "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
           "own": false,
@@ -3656,13 +3663,6 @@
           "minute": null,
           "scorer": "Chemsdine Talbi",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -3692,11 +3692,11 @@
     {
       "id": "m82103",
       "oldbId": 82103,
-      "slug": "elfenbeinkuste-norwegen",
+      "slug": "cote-d-ivoire-norwegen",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-30T17:00:00Z",
       "home": {
-        "name": "Elfenbeinküste",
+        "name": "Côte d’Ivoire",
         "code": "ci"
       },
       "away": {
@@ -3709,11 +3709,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 39,
+          "scorer": "Antonio Nusa",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82104",
