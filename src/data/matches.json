@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T20:20:54.288Z",
+  "updatedAt": "2026-06-30T22:40:00.966Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -3564,14 +3564,7 @@
         },
         {
           "minute": null,
-          "scorer": "N. Amiri",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Musiala",
+          "scorer": "Gustavo Gómez",
           "side": null,
           "own": false,
           "pen": true
@@ -3585,14 +3578,21 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "J. Kimmich",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "J. Kimmich",
+          "scorer": "N. Amiri",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Musiala",
           "side": null,
           "own": false,
           "pen": true
@@ -3647,7 +3647,14 @@
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
+          "scorer": "Teun Koopmeiners",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Chemsdine Talbi",
           "side": "home",
           "own": false,
           "pen": true
@@ -3661,15 +3668,8 @@
         },
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
+          "scorer": "Ismael Saibari",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3757,11 +3757,33 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 3,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 45,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 53,
+          "scorer": "Bradley Barcola",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 74,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82105",
@@ -4078,7 +4100,7 @@
     {
       "id": "m82129",
       "oldbId": 82129,
-      "slug": "brasilien-civ-nor",
+      "slug": "brasilien-norwegen",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-05T20:00:00Z",
       "home": {
@@ -4086,8 +4108,8 @@
         "code": "br"
       },
       "away": {
-        "name": "CIV/NOR",
-        "code": null
+        "name": "Norwegen",
+        "code": "no"
       },
       "venue": {
         "stadium": "MetLife Stadium",
@@ -4222,6 +4244,32 @@
       "venue": {
         "stadium": "BC Place Stadium",
         "city": "Vancouver",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m83125",
+      "oldbId": 83125,
+      "slug": "par-fra-can-mar",
+      "round": "Viertelfinale",
+      "kickoffUtc": "2026-07-09T20:00:00Z",
+      "home": {
+        "name": "PAR/FRA",
+        "code": null
+      },
+      "away": {
+        "name": "CAN/MAR",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Gillette Stadium",
+        "city": "Boston (Foxborough)",
         "country": ""
       },
       "score": {
