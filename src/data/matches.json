@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T01:27:30.774Z",
+  "updatedAt": "2026-06-30T10:36:44.171Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3483,8 +3483,8 @@
       ]
     },
     {
-      "id": "m82100",
-      "oldbId": 82100,
+      "id": "m83124",
+      "oldbId": 83124,
       "slug": "brasilien-japan",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-29T17:00:00Z",
@@ -3502,33 +3502,11 @@
         "country": ""
       },
       "score": {
-        "home": 2,
-        "away": 1,
-        "status": "finished"
+        "home": null,
+        "away": null,
+        "status": "scheduled"
       },
-      "goals": [
-        {
-          "minute": 29,
-          "scorer": "Kaishu Sano",
-          "side": "away",
-          "own": false,
-          "pen": false
-        },
-        {
-          "minute": 56,
-          "scorer": "Casemiro",
-          "side": "home",
-          "own": false,
-          "pen": false
-        },
-        {
-          "minute": 96,
-          "scorer": "Gabriel Martinelli",
-          "side": "home",
-          "own": false,
-          "pen": false
-        }
-      ]
+      "goals": []
     },
     {
       "id": "m82101",
@@ -3550,15 +3528,64 @@
         "country": ""
       },
       "score": {
-        "home": 1,
-        "away": 1,
+        "home": 4,
+        "away": 5,
         "status": "finished"
       },
       "goals": [
         {
+          "minute": null,
+          "scorer": "Gustavo Gómez",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Kimmich",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "N. Amiri",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Musiala",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
           "minute": 42,
           "scorer": "Julio Enciso",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -3568,55 +3595,6 @@
           "side": "home",
           "own": false,
           "pen": false
-        },
-        {
-          "minute": 125,
-          "scorer": "N. Amiri",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 125,
-          "scorer": "J. Musiala",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 125,
-          "scorer": "Gustavo Gómez",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 125,
-          "scorer": "J. Kimmich",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 125,
-          "scorer": "Mauricio",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 125,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 125,
-          "scorer": "J. Canale",
-          "side": "home",
-          "own": false,
-          "pen": true
         }
       ]
     },
@@ -3640,11 +3618,61 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 3,
+        "away": 4,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 72,
+          "scorer": "Cody Gakpo",
+          "side": null,
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 91,
+          "scorer": "Issa Diop",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82103",
@@ -3961,7 +3989,7 @@
     {
       "id": "m82127",
       "oldbId": 82127,
-      "slug": "kanada-ned-mar",
+      "slug": "kanada-marokko",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-04T17:00:00Z",
       "home": {
@@ -3969,8 +3997,8 @@
         "code": "ca"
       },
       "away": {
-        "name": "NED/MAR",
-        "code": null
+        "name": "Marokko",
+        "code": "ma"
       },
       "venue": {
         "stadium": "NRG Stadium",
