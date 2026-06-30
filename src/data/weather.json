@@ -1,36 +1,31 @@
 {
-  "niederlande-marokko": {
-    "tempC": 32,
-    "text": "klar",
-    "city": "Monterrey"
-  },
   "elfenbeinkuste-norwegen": {
-    "tempC": 33,
-    "text": "Gewitter",
+    "tempC": 28,
+    "text": "klar",
     "city": "Dallas"
   },
   "frankreich-schweden": {
-    "tempC": 25,
+    "tempC": 22,
     "text": "klar",
     "city": "New York/New Jersey"
   },
   "mexiko-ecuador": {
-    "tempC": 17,
+    "tempC": 15,
     "text": "bewölkt",
     "city": "Mexiko-Stadt"
   },
   "england-dr-kongo": {
-    "tempC": 30,
+    "tempC": 25,
     "text": "klar",
     "city": "Atlanta"
   },
   "belgien-senegal": {
-    "tempC": 16,
-    "text": "bewölkt",
+    "tempC": 13,
+    "text": "teils bewölkt",
     "city": "Seattle"
   },
   "usa-bosnien-und-herzegowina": {
-    "tempC": 21,
+    "tempC": 16,
     "text": "klar",
     "city": "San Francisco"
   }
