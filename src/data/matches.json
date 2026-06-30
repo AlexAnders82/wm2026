@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T23:16:23.057Z",
+  "updatedAt": "2026-06-30T01:27:30.774Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -1260,17 +1260,17 @@
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
-          "side": "home",
-          "own": false,
-          "pen": false
-        },
-        {
-          "minute": 90,
           "scorer": "Granit Xhaka",
           "side": "home",
           "own": false,
           "pen": true
+        },
+        {
+          "minute": 90,
+          "scorer": "Ermin Mahmic",
+          "side": null,
+          "own": false,
+          "pen": false
         },
         {
           "minute": 90,
@@ -3552,7 +3552,7 @@
       "score": {
         "home": 1,
         "away": 1,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -3568,6 +3568,55 @@
           "side": "home",
           "own": false,
           "pen": false
+        },
+        {
+          "minute": 125,
+          "scorer": "N. Amiri",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 125,
+          "scorer": "J. Musiala",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 125,
+          "scorer": "Gustavo Gómez",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 125,
+          "scorer": "J. Kimmich",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 125,
+          "scorer": "Mauricio",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 125,
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 125,
+          "scorer": "J. Canale",
+          "side": "home",
+          "own": false,
+          "pen": true
         }
       ]
     },
@@ -3591,8 +3640,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
@@ -3938,12 +3987,12 @@
     {
       "id": "m82128",
       "oldbId": 82128,
-      "slug": "deu-par-fra-swe",
+      "slug": "paraguay-fra-swe",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-04T21:00:00Z",
       "home": {
-        "name": "DEU/PAR",
-        "code": null
+        "name": "Paraguay",
+        "code": "py"
       },
       "away": {
         "name": "FRA/SWE",
