@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T18:14:46.066Z",
+  "updatedAt": "2026-06-30T20:20:54.288Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -496,11 +496,11 @@
     {
       "id": "m80109",
       "oldbId": 80109,
-      "slug": "cote-d-ivoire-ecuador",
+      "slug": "elfenbeinkuste-ecuador",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T23:00:00Z",
       "home": {
-        "name": "Côte d’Ivoire",
+        "name": "Elfenbeinküste",
         "code": "ci"
       },
       "away": {
@@ -1613,7 +1613,7 @@
     {
       "id": "m80134",
       "oldbId": 80134,
-      "slug": "deutschland-cote-d-ivoire",
+      "slug": "deutschland-elfenbeinkuste",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T20:00:00Z",
       "home": {
@@ -1621,7 +1621,7 @@
         "code": "de"
       },
       "away": {
-        "name": "Côte d’Ivoire",
+        "name": "Elfenbeinküste",
         "code": "ci"
       },
       "venue": {
@@ -2590,7 +2590,7 @@
     {
       "id": "m80154",
       "oldbId": 80154,
-      "slug": "curacao-cote-d-ivoire",
+      "slug": "curacao-elfenbeinkuste",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T20:00:00Z",
       "home": {
@@ -2598,7 +2598,7 @@
         "code": "cw"
       },
       "away": {
-        "name": "Côte d’Ivoire",
+        "name": "Elfenbeinküste",
         "code": "ci"
       },
       "venue": {
@@ -3640,6 +3640,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
@@ -3667,13 +3674,6 @@
           "pen": true
         },
         {
-          "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
           "minute": 72,
           "scorer": "Cody Gakpo",
           "side": null,
@@ -3692,11 +3692,11 @@
     {
       "id": "m82103",
       "oldbId": 82103,
-      "slug": "cote-d-ivoire-norwegen",
+      "slug": "elfenbeinkuste-norwegen",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-30T17:00:00Z",
       "home": {
-        "name": "Côte d’Ivoire",
+        "name": "Elfenbeinküste",
         "code": "ci"
       },
       "away": {
@@ -3709,14 +3709,28 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 1,
-        "status": "scheduled"
+        "home": 1,
+        "away": 2,
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 39,
           "scorer": "Antonio Nusa",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 74,
+          "scorer": "Amad Diallo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 86,
+          "scorer": "Erling Haaland",
           "side": "away",
           "own": false,
           "pen": false

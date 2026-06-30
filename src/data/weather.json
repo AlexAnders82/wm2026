@@ -1,17 +1,12 @@
 {
-  "cote-d-ivoire-norwegen": {
-    "tempC": 33,
-    "text": "klar",
-    "city": "Dallas"
-  },
   "frankreich-schweden": {
-    "tempC": 33,
+    "tempC": 32,
     "text": "überwiegend klar",
     "city": "New York/New Jersey"
   },
   "mexiko-ecuador": {
-    "tempC": 20,
-    "text": "überwiegend klar",
+    "tempC": 22,
+    "text": "Regenschauer",
     "city": "Mexiko-Stadt"
   },
   "england-dr-kongo": {
@@ -20,27 +15,27 @@
     "city": "Atlanta"
   },
   "belgien-senegal": {
-    "tempC": 14,
-    "text": "bewölkt",
+    "tempC": 16,
+    "text": "teils bewölkt",
     "city": "Seattle"
   },
   "usa-bosnien-und-herzegowina": {
-    "tempC": 23,
+    "tempC": 22,
     "text": "klar",
     "city": "San Francisco"
   },
   "spanien-osterreich": {
     "tempC": 21,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "Los Angeles"
   },
   "portugal-kroatien": {
-    "tempC": 29,
-    "text": "Gewitter",
+    "tempC": 30,
+    "text": "klar",
     "city": "Toronto"
   },
   "schweiz-algerien": {
-    "tempC": 17,
+    "tempC": 18,
     "text": "überwiegend klar",
     "city": "Vancouver"
   }
