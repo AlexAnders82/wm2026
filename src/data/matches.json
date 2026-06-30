@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T10:36:44.171Z",
+  "updatedAt": "2026-06-30T13:16:06.160Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3502,11 +3502,26 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 2,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 56,
+          "scorer": "Casemiro",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 95,
+          "scorer": "G. Martinelli",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82101",
@@ -3535,7 +3550,14 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
           "side": "home",
           "own": false,
           "pen": true
@@ -3563,22 +3585,15 @@
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
+          "scorer": "Gustavo Gómez",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
-          "side": "home",
+          "scorer": "Mauricio",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3625,7 +3640,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
@@ -3639,8 +3654,15 @@
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
+          "scorer": "Chemsdine Talbi",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3648,13 +3670,6 @@
           "minute": null,
           "scorer": "Soufiane Rahimi",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
           "own": false,
           "pen": true
         },

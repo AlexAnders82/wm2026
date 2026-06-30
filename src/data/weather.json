@@ -1,11 +1,11 @@
 {
   "elfenbeinkuste-norwegen": {
-    "tempC": 25,
+    "tempC": 27,
     "text": "klar",
     "city": "Dallas"
   },
   "frankreich-schweden": {
-    "tempC": 22,
+    "tempC": 27,
     "text": "klar",
     "city": "New York/New Jersey"
   },
@@ -15,17 +15,17 @@
     "city": "Mexiko-Stadt"
   },
   "england-dr-kongo": {
-    "tempC": 24,
-    "text": "klar",
+    "tempC": 28,
+    "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "belgien-senegal": {
-    "tempC": 11,
-    "text": "teils bewölkt",
+    "tempC": 13,
+    "text": "bewölkt",
     "city": "Seattle"
   },
   "usa-bosnien-und-herzegowina": {
-    "tempC": 14,
+    "tempC": 13,
     "text": "klar",
     "city": "San Francisco"
   },
@@ -33,5 +33,10 @@
     "tempC": 18,
     "text": "bewölkt",
     "city": "Los Angeles"
+  },
+  "portugal-kroatien": {
+    "tempC": 21,
+    "text": "teils bewölkt",
+    "city": "Toronto"
   }
 }
