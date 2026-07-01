@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T06:45:11.276Z",
+  "updatedAt": "2026-07-01T10:49:04.462Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4141,12 +4141,12 @@
     {
       "id": "m82130",
       "oldbId": 82130,
-      "slug": "mex-ecu-eng-cod",
+      "slug": "mexiko-eng-cod",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-06T00:00:00Z",
       "home": {
-        "name": "MEX/ECU",
-        "code": null
+        "name": "Mexiko",
+        "code": "mx"
       },
       "away": {
         "name": "ENG/COD",
