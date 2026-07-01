@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T19:12:16.499Z",
+  "updatedAt": "2026-07-01T20:54:11.557Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3647,6 +3647,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
@@ -3670,13 +3677,6 @@
           "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3901,11 +3901,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 25,
+          "scorer": "Habib Diarra",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82108",
@@ -4170,7 +4178,7 @@
     {
       "id": "m82130",
       "oldbId": 82130,
-      "slug": "mexiko-eng-cod",
+      "slug": "mexiko-england",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-06T00:00:00Z",
       "home": {
@@ -4178,8 +4186,8 @@
         "code": "mx"
       },
       "away": {
-        "name": "ENG/COD",
-        "code": null
+        "name": "England",
+        "code": "gb-eng"
       },
       "venue": {
         "stadium": "Azteca",
@@ -4314,6 +4322,32 @@
       "venue": {
         "stadium": "Gillette Stadium",
         "city": "Boston (Foxborough)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m83126",
+      "oldbId": 83126,
+      "slug": "bra-nor-mex-eng",
+      "round": "Viertelfinale",
+      "kickoffUtc": "2026-07-11T21:00:00Z",
+      "home": {
+        "name": "BRA/NOR",
+        "code": null
+      },
+      "away": {
+        "name": "MEX/ENG",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
         "country": ""
       },
       "score": {
