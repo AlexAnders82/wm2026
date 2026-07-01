@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T20:54:11.557Z",
+  "updatedAt": "2026-07-01T22:40:04.822Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -3557,29 +3557,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Gustavo Gómez",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Mauricio",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3601,6 +3580,27 @@
           "minute": null,
           "scorer": "J. Musiala",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Gustavo Gómez",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,8 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
+          "scorer": "Wout Weghorst",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3668,14 +3675,7 @@
         },
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Teun Koopmeiners",
+          "scorer": "Soufiane Rahimi",
           "side": null,
           "own": false,
           "pen": true
@@ -3901,8 +3901,8 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 1,
+        "home": 2,
+        "away": 2,
         "status": "scheduled"
       },
       "goals": [
@@ -3910,6 +3910,27 @@
           "minute": 25,
           "scorer": "Habib Diarra",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 51,
+          "scorer": "Ismaïla Sarr",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 86,
+          "scorer": "Romelu Lukaku",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 89,
+          "scorer": "Youri Tielemans",
+          "side": "home",
           "own": false,
           "pen": false
         }
