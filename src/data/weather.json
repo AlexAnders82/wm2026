@@ -1,37 +1,37 @@
 {
-  "mexiko-ecuador": {
-    "tempC": 17,
-    "text": "Niesel",
-    "city": "Mexiko-Stadt"
-  },
   "england-dr-kongo": {
-    "tempC": 30,
+    "tempC": 27,
     "text": "Gewitter",
     "city": "Atlanta"
   },
   "belgien-senegal": {
-    "tempC": 16,
+    "tempC": 12,
     "text": "klar",
     "city": "Seattle"
   },
   "usa-bosnien-und-herzegowina": {
-    "tempC": 21,
+    "tempC": 14,
     "text": "klar",
     "city": "San Francisco"
   },
   "spanien-osterreich": {
-    "tempC": 19,
+    "tempC": 17,
     "text": "klar",
     "city": "Los Angeles"
   },
   "portugal-kroatien": {
-    "tempC": 24,
-    "text": "klar",
+    "tempC": 22,
+    "text": "Nebel",
     "city": "Toronto"
   },
   "schweiz-algerien": {
-    "tempC": 18,
-    "text": "überwiegend klar",
+    "tempC": 14,
+    "text": "klar",
     "city": "Vancouver"
+  },
+  "australien-agypten": {
+    "tempC": 28,
+    "text": "klar",
+    "city": "Dallas"
   }
 }
