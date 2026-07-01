@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T22:40:00.966Z",
+  "updatedAt": "2026-07-01T01:32:54.998Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3759,7 +3759,7 @@
       "score": {
         "home": 3,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -4074,7 +4074,7 @@
     {
       "id": "m82128",
       "oldbId": 82128,
-      "slug": "paraguay-fra-swe",
+      "slug": "paraguay-frankreich",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-04T21:00:00Z",
       "home": {
@@ -4082,8 +4082,8 @@
         "code": "py"
       },
       "away": {
-        "name": "FRA/SWE",
-        "code": null
+        "name": "Frankreich",
+        "code": "fr"
       },
       "venue": {
         "stadium": "Lincoln Financial Field",
