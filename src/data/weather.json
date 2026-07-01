@@ -1,16 +1,11 @@
 {
-  "england-dr-kongo": {
-    "tempC": 33,
-    "text": "überwiegend klar",
-    "city": "Atlanta"
-  },
   "belgien-senegal": {
-    "tempC": 13,
+    "tempC": 16,
     "text": "bewölkt",
     "city": "Seattle"
   },
   "usa-bosnien-und-herzegowina": {
-    "tempC": 17,
+    "tempC": 22,
     "text": "klar",
     "city": "San Francisco"
   },
@@ -20,27 +15,27 @@
     "city": "Los Angeles"
   },
   "portugal-kroatien": {
-    "tempC": 27,
+    "tempC": 29,
     "text": "klar",
     "city": "Toronto"
   },
   "schweiz-algerien": {
-    "tempC": 15,
-    "text": "bewölkt",
+    "tempC": 18,
+    "text": "klar",
     "city": "Vancouver"
   },
   "australien-agypten": {
-    "tempC": 32,
-    "text": "überwiegend klar",
+    "tempC": 34,
+    "text": "klar",
     "city": "Dallas"
   },
   "argentinien-kap-verde": {
     "tempC": 33,
-    "text": "teils bewölkt",
+    "text": "überwiegend klar",
     "city": "Miami"
   },
   "kolumbien-ghana": {
-    "tempC": 32,
+    "tempC": 35,
     "text": "klar",
     "city": "Kansas City"
   }

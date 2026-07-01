@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T16:40:00.623Z",
+  "updatedAt": "2026-07-01T19:12:16.499Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3508,6 +3508,13 @@
       },
       "goals": [
         {
+          "minute": 29,
+          "scorer": "Kaishu Sano",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
           "minute": 56,
           "scorer": "Casemiro",
           "side": "home",
@@ -3564,20 +3571,6 @@
         },
         {
           "minute": null,
-          "scorer": "N. Amiri",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Musiala",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Gustavo Gómez",
           "side": null,
           "own": false,
@@ -3594,6 +3587,20 @@
           "minute": null,
           "scorer": "J. Kimmich",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "N. Amiri",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Musiala",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3640,14 +3647,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
@@ -3655,21 +3655,28 @@
         {
           "minute": null,
           "scorer": "Chemsdine Talbi",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "away",
+          "scorer": "Wout Weghorst",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
           "scorer": "Soufiane Rahimi",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3846,15 +3853,29 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 1,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 7,
           "scorer": "Brian Cipenga",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 75,
+          "scorer": "Harry Kane",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 86,
+          "scorer": "Harry Kane",
+          "side": "home",
           "own": false,
           "pen": false
         }
