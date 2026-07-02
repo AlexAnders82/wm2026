@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T01:25:21.034Z",
+  "updatedAt": "2026-07-02T06:10:03.727Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3647,6 +3647,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Wout Weghorst",
           "side": "home",
           "own": false,
@@ -3654,22 +3661,8 @@
         },
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3677,6 +3670,13 @@
           "minute": null,
           "scorer": "Soufiane Rahimi",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3963,14 +3963,21 @@
         "country": ""
       },
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 45,
           "scorer": "Folarin Balogun",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 82,
+          "scorer": "M. Tillman",
           "side": "home",
           "own": false,
           "pen": false
@@ -4266,12 +4273,12 @@
     {
       "id": "m82132",
       "oldbId": 82132,
-      "slug": "usa-bih-belgien",
+      "slug": "usa-belgien",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-07T00:00:00Z",
       "home": {
-        "name": "USA/BIH",
-        "code": null
+        "name": "USA",
+        "code": "us"
       },
       "away": {
         "name": "Belgien",
