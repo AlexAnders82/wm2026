@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T22:40:04.822Z",
+  "updatedAt": "2026-07-02T01:25:21.034Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3901,9 +3901,9 @@
         "country": ""
       },
       "score": {
-        "home": 2,
+        "home": 3,
         "away": 2,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -3933,6 +3933,13 @@
           "side": "home",
           "own": false,
           "pen": false
+        },
+        {
+          "minute": 125,
+          "scorer": "Youri Tielemans",
+          "side": "home",
+          "own": false,
+          "pen": true
         }
       ]
     },
@@ -3956,11 +3963,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 45,
+          "scorer": "Folarin Balogun",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82109",
@@ -4251,7 +4266,7 @@
     {
       "id": "m82132",
       "oldbId": 82132,
-      "slug": "usa-bih-bel-sen",
+      "slug": "usa-bih-belgien",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-07T00:00:00Z",
       "home": {
@@ -4259,8 +4274,8 @@
         "code": null
       },
       "away": {
-        "name": "BEL/SEN",
-        "code": null
+        "name": "Belgien",
+        "code": "be"
       },
       "venue": {
         "stadium": "Lumen Field",

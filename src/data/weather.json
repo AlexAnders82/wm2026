@@ -1,1 +1,37 @@
-{}
+{
+  "usa-bosnien-und-herzegowina": {
+    "tempC": 20,
+    "text": "klar",
+    "city": "San Francisco"
+  },
+  "spanien-osterreich": {
+    "tempC": 19,
+    "text": "überwiegend klar",
+    "city": "Los Angeles"
+  },
+  "portugal-kroatien": {
+    "tempC": 23,
+    "text": "bewölkt",
+    "city": "Toronto"
+  },
+  "schweiz-algerien": {
+    "tempC": 20,
+    "text": "bewölkt",
+    "city": "Vancouver"
+  },
+  "australien-agypten": {
+    "tempC": 33,
+    "text": "klar",
+    "city": "Dallas"
+  },
+  "argentinien-kap-verde": {
+    "tempC": 27,
+    "text": "überwiegend klar",
+    "city": "Miami"
+  },
+  "kolumbien-ghana": {
+    "tempC": 30,
+    "text": "bewölkt",
+    "city": "Kansas City"
+  }
+}
