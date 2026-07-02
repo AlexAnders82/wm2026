@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T21:32:27.305Z",
+  "updatedAt": "2026-07-02T23:30:41.347Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4052,8 +4052,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
