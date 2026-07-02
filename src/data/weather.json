@@ -1,32 +1,32 @@
 {
   "spanien-osterreich": {
-    "tempC": 19,
-    "text": "bewölkt",
+    "tempC": 22,
+    "text": "teils bewölkt",
     "city": "Los Angeles"
   },
   "portugal-kroatien": {
-    "tempC": 27,
+    "tempC": 29,
     "text": "klar",
     "city": "Toronto"
   },
   "schweiz-algerien": {
-    "tempC": 15,
+    "tempC": 16,
     "text": "bewölkt",
     "city": "Vancouver"
   },
   "australien-agypten": {
-    "tempC": 32,
+    "tempC": 34,
     "text": "klar",
     "city": "Dallas"
   },
   "argentinien-kap-verde": {
-    "tempC": 31,
-    "text": "bewölkt",
+    "tempC": 26,
+    "text": "Schauer",
     "city": "Miami"
   },
   "kolumbien-ghana": {
-    "tempC": 31,
-    "text": "teils bewölkt",
+    "tempC": 33,
+    "text": "Gewitter",
     "city": "Kansas City"
   },
   "kanada-marokko": {
@@ -35,7 +35,7 @@
     "city": "Houston"
   },
   "paraguay-frankreich": {
-    "tempC": 36,
+    "tempC": 39,
     "text": "klar",
     "city": "Philadelphia"
   }

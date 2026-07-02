@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T15:30:41.581Z",
+  "updatedAt": "2026-07-02T18:01:55.173Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3523,7 +3523,7 @@
         },
         {
           "minute": 95,
-          "scorer": "G. Martinelli",
+          "scorer": "Gabriel Martinelli",
           "side": "home",
           "own": false,
           "pen": false
@@ -3555,13 +3555,6 @@
         "status": "finished"
       },
       "goals": [
-        {
-          "minute": null,
-          "scorer": "Mauricio",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
         {
           "minute": null,
           "scorer": "J. Kimmich",
@@ -3601,6 +3594,13 @@
           "minute": null,
           "scorer": "J. Canale",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3647,7 +3647,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
@@ -3655,20 +3655,13 @@
         {
           "minute": null,
           "scorer": "Wout Weghorst",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Soufiane Rahimi",
+          "scorer": "Teun Koopmeiners",
           "side": null,
           "own": false,
           "pen": true
@@ -3677,6 +3670,13 @@
           "minute": null,
           "scorer": "Chemsdine Talbi",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3977,7 +3977,7 @@
         },
         {
           "minute": 82,
-          "scorer": "M. Tillman",
+          "scorer": "Malik Tillman",
           "side": "home",
           "own": false,
           "pen": false
