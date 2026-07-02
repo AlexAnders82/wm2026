@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T18:01:55.173Z",
+  "updatedAt": "2026-07-02T19:51:55.081Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -3585,6 +3585,13 @@
         },
         {
           "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Matias Galarza",
           "side": "home",
           "own": false,
@@ -3594,13 +3601,6 @@
           "minute": null,
           "scorer": "J. Canale",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mauricio",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -3668,15 +3668,15 @@
         },
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
+          "scorer": "Soufiane Rahimi",
+          "side": "away",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4004,11 +4004,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 36,
+          "scorer": "Mikel Oyarzabal",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82110",
