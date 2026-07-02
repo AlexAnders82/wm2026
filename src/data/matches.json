@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T19:51:55.081Z",
+  "updatedAt": "2026-07-02T21:32:27.305Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3647,15 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Wout Weghorst",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3668,8 +3661,15 @@
         },
         {
           "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Soufiane Rahimi",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4004,13 +4004,27 @@
         "country": ""
       },
       "score": {
-        "home": 1,
+        "home": 3,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 36,
+          "scorer": "Mikel Oyarzabal",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 66,
+          "scorer": "Pedro Porro",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 89,
           "scorer": "Mikel Oyarzabal",
           "side": "home",
           "own": false,
@@ -4255,7 +4269,7 @@
     {
       "id": "m82131",
       "oldbId": 82131,
-      "slug": "por-cro-esp-aut",
+      "slug": "por-cro-spanien",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-06T19:00:00Z",
       "home": {
@@ -4263,8 +4277,8 @@
         "code": null
       },
       "away": {
-        "name": "ESP/AUT",
-        "code": null
+        "name": "Spanien",
+        "code": "es"
       },
       "venue": {
         "stadium": "AT&T Stadium",
