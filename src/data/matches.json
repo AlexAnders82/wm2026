@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T17:47:36.972Z",
+  "updatedAt": "2026-07-03T19:49:23.301Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3647,22 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Wout Weghorst",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3677,6 +3663,20 @@
           "minute": null,
           "scorer": "Chemsdine Talbi",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4141,11 +4141,26 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 13,
+          "scorer": "Emam Ashour",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 55,
+          "scorer": "Mohamed Hany",
+          "side": "home",
+          "own": true,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82113",

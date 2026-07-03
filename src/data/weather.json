@@ -1,12 +1,12 @@
 {
   "australien-agypten": {
-    "tempC": 35,
+    "tempC": 36,
     "text": "überwiegend klar",
     "city": "Dallas"
   },
   "argentinien-kap-verde": {
     "tempC": 32,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "Miami"
   },
   "kolumbien-ghana": {
@@ -15,12 +15,12 @@
     "city": "Kansas City"
   },
   "kanada-marokko": {
-    "tempC": 35,
-    "text": "klar",
+    "tempC": 27,
+    "text": "Regenschauer",
     "city": "Houston"
   },
   "paraguay-frankreich": {
-    "tempC": 38,
+    "tempC": 39,
     "text": "klar",
     "city": "Philadelphia"
   },
@@ -30,8 +30,8 @@
     "city": "New York/New Jersey"
   },
   "mexiko-england": {
-    "tempC": 21,
-    "text": "bewölkt",
+    "tempC": 23,
+    "text": "teils bewölkt",
     "city": "Mexiko-Stadt"
   }
 }
