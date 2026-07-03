@@ -1,32 +1,37 @@
 {
   "australien-agypten": {
-    "tempC": 25,
+    "tempC": 27,
     "text": "klar",
     "city": "Dallas"
   },
   "argentinien-kap-verde": {
-    "tempC": 26,
+    "tempC": 29,
     "text": "klar",
     "city": "Miami"
   },
   "kolumbien-ghana": {
-    "tempC": 25,
+    "tempC": 28,
     "text": "klar",
     "city": "Kansas City"
   },
   "kanada-marokko": {
-    "tempC": 26,
+    "tempC": 28,
     "text": "klar",
     "city": "Houston"
   },
   "paraguay-frankreich": {
-    "tempC": 28,
+    "tempC": 33,
     "text": "klar",
     "city": "Philadelphia"
   },
   "brasilien-norwegen": {
-    "tempC": 30,
+    "tempC": 33,
     "text": "klar",
     "city": "New York/New Jersey"
+  },
+  "mexiko-england": {
+    "tempC": 14,
+    "text": "bewölkt",
+    "city": "Mexiko-Stadt"
   }
 }

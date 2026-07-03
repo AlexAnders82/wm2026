@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T10:50:09.641Z",
+  "updatedAt": "2026-07-03T13:11:50.225Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4100,7 +4100,7 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 0,
         "status": "finished"
       },
@@ -4424,6 +4424,32 @@
       "venue": {
         "stadium": "Gillette Stadium",
         "city": "Boston (Foxborough)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m83462",
+      "oldbId": 83462,
+      "slug": "prt-esp-usa-bel",
+      "round": "Viertelfinale",
+      "kickoffUtc": "2026-07-10T19:00:00Z",
+      "home": {
+        "name": "PRT/ESP",
+        "code": null
+      },
+      "away": {
+        "name": "USA/BEL",
+        "code": null
+      },
+      "venue": {
+        "stadium": "SoFi Stadium",
+        "city": "Los Angeles (Inglewood)",
         "country": ""
       },
       "score": {
