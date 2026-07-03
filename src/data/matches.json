@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T19:49:23.301Z",
+  "updatedAt": "2026-07-03T21:31:49.081Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -3564,6 +3564,20 @@
         },
         {
           "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Gustavo Gómez",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3578,22 +3592,8 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mauricio",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Matias Galarza",
-          "side": "home",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3647,15 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Soufiane Rahimi",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3668,8 +3661,8 @@
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "away",
+          "scorer": "Wout Weghorst",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3677,6 +3670,13 @@
           "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4141,15 +4141,57 @@
         "country": ""
       },
       "score": {
-        "home": 1,
-        "away": 1,
-        "status": "scheduled"
+        "home": 3,
+        "away": 5,
+        "status": "finished"
       },
       "goals": [
         {
+          "minute": null,
+          "scorer": "Mahmoud Saber",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Jackson Irvine",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Rami Rabia",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Hossam Abdelmaguid",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mohamed Salah",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Awer Mabil",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
           "minute": 13,
           "scorer": "Emam Ashour",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -4373,7 +4415,7 @@
     {
       "id": "m82133",
       "oldbId": 82133,
-      "slug": "arg-cpv-aus-egy",
+      "slug": "arg-cpv-agypten",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-07T16:00:00Z",
       "home": {
@@ -4381,8 +4423,8 @@
         "code": null
       },
       "away": {
-        "name": "AUS/EGY",
-        "code": null
+        "name": "Ägypten",
+        "code": "eg"
       },
       "venue": {
         "stadium": "Mercedes-Benz Stadium",
