@@ -1,21 +1,21 @@
 {
   "australien-agypten": {
-    "tempC": 27,
+    "tempC": 25,
     "text": "klar",
     "city": "Dallas"
   },
   "argentinien-kap-verde": {
-    "tempC": 27,
+    "tempC": 26,
     "text": "klar",
     "city": "Miami"
   },
   "kolumbien-ghana": {
-    "tempC": 26,
+    "tempC": 25,
     "text": "klar",
     "city": "Kansas City"
   },
   "kanada-marokko": {
-    "tempC": 27,
+    "tempC": 26,
     "text": "klar",
     "city": "Houston"
   },
@@ -23,5 +23,10 @@
     "tempC": 28,
     "text": "klar",
     "city": "Philadelphia"
+  },
+  "brasilien-norwegen": {
+    "tempC": 30,
+    "text": "klar",
+    "city": "New York/New Jersey"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T04:08:47.432Z",
+  "updatedAt": "2026-07-03T10:50:09.641Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3578,15 +3578,15 @@
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
+          "scorer": "Gustavo Gómez",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
-          "side": "home",
+          "scorer": "Mauricio",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4102,12 +4102,19 @@
       "score": {
         "home": 0,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 10,
           "scorer": "Breel Embolo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 46,
+          "scorer": "Dan Ndoye",
           "side": "home",
           "own": false,
           "pen": false
@@ -4377,12 +4384,12 @@
     {
       "id": "m82134",
       "oldbId": 82134,
-      "slug": "sui-alg-col-gha",
+      "slug": "schweiz-col-gha",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-07T20:00:00Z",
       "home": {
-        "name": "SUI/ALG",
-        "code": null
+        "name": "Schweiz",
+        "code": "ch"
       },
       "away": {
         "name": "COL/GHA",
