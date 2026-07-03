@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T23:30:41.347Z",
+  "updatedAt": "2026-07-03T04:08:47.432Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3578,15 +3578,15 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "Mauricio",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
-          "side": null,
+          "scorer": "Gustavo Gómez",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,15 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Teun Koopmeiners",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3663,6 +3656,13 @@
           "minute": null,
           "scorer": "Ismael Saibari",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4052,11 +4052,33 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 2,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 53,
+          "scorer": "Ivan Perisic",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 68,
+          "scorer": "Cristiano Ronaldo",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 94,
+          "scorer": "Gonçalo Ramos",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82111",
@@ -4078,11 +4100,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 10,
+          "scorer": "Breel Embolo",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82112",
@@ -4269,12 +4299,12 @@
     {
       "id": "m82131",
       "oldbId": 82131,
-      "slug": "por-cro-spanien",
+      "slug": "portugal-spanien",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-06T19:00:00Z",
       "home": {
-        "name": "POR/CRO",
-        "code": null
+        "name": "Portugal",
+        "code": "pt"
       },
       "away": {
         "name": "Spanien",
