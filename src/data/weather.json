@@ -1,1 +1,32 @@
-{}
+{
+  "argentinien-kap-verde": {
+    "tempC": 25,
+    "text": "bewölkt",
+    "city": "Miami"
+  },
+  "kolumbien-ghana": {
+    "tempC": 34,
+    "text": "bewölkt",
+    "city": "Kansas City"
+  },
+  "kanada-marokko": {
+    "tempC": 34,
+    "text": "klar",
+    "city": "Houston"
+  },
+  "paraguay-frankreich": {
+    "tempC": 37,
+    "text": "klar",
+    "city": "Philadelphia"
+  },
+  "brasilien-norwegen": {
+    "tempC": 32,
+    "text": "teils bewölkt",
+    "city": "New York/New Jersey"
+  },
+  "mexiko-england": {
+    "tempC": 19,
+    "text": "leichter Niesel",
+    "city": "Mexiko-Stadt"
+  }
+}
