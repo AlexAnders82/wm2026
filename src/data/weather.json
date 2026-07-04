@@ -1,27 +1,27 @@
 {
-  "kolumbien-ghana": {
-    "tempC": 28,
-    "text": "bewölkt",
-    "city": "Kansas City"
-  },
   "kanada-marokko": {
-    "tempC": 28,
+    "tempC": 27,
     "text": "klar",
     "city": "Houston"
   },
   "paraguay-frankreich": {
-    "tempC": 31,
+    "tempC": 26,
     "text": "klar",
     "city": "Philadelphia"
   },
   "brasilien-norwegen": {
-    "tempC": 28,
-    "text": "bewölkt",
+    "tempC": 24,
+    "text": "klar",
     "city": "New York/New Jersey"
   },
   "mexiko-england": {
-    "tempC": 16,
-    "text": "überwiegend klar",
+    "tempC": 15,
+    "text": "bewölkt",
     "city": "Mexiko-Stadt"
+  },
+  "portugal-spanien": {
+    "tempC": 28,
+    "text": "klar",
+    "city": "Dallas"
   }
 }

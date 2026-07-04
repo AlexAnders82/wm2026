@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T04:01:54.271Z",
+  "updatedAt": "2026-07-04T07:14:48.819Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1260,8 +1260,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
+          "scorer": "Granit Xhaka",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 90,
+          "scorer": "Ermin Mahmic",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -1271,13 +1278,6 @@
           "side": null,
           "own": false,
           "pen": false
-        },
-        {
-          "minute": 90,
-          "scorer": "Granit Xhaka",
-          "side": "home",
-          "own": false,
-          "pen": true
         }
       ]
     },
@@ -3557,14 +3557,14 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Canale",
+          "scorer": "J. Kimmich",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "J. Kimmich",
+          "scorer": "Mauricio",
           "side": null,
           "own": false,
           "pen": true
@@ -3599,8 +3599,8 @@
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
-          "side": null,
+          "scorer": "J. Canale",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,22 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Teun Koopmeiners",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3675,8 +3661,22 @@
         },
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Chemsdine Talbi",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4288,9 +4288,17 @@
       "score": {
         "home": 1,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 14,
+          "scorer": "Jhon Arias",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82127",
@@ -4477,7 +4485,7 @@
     {
       "id": "m82134",
       "oldbId": 82134,
-      "slug": "schweiz-col-gha",
+      "slug": "schweiz-kolumbien",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-07T20:00:00Z",
       "home": {
@@ -4485,8 +4493,8 @@
         "code": "ch"
       },
       "away": {
-        "name": "COL/GHA",
-        "code": null
+        "name": "Kolumbien",
+        "code": "co"
       },
       "venue": {
         "stadium": "BC Place Stadium",
