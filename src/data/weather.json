@@ -1,21 +1,21 @@
 {
   "kanada-marokko": {
-    "tempC": 27,
+    "tempC": 26,
     "text": "klar",
     "city": "Houston"
   },
   "paraguay-frankreich": {
-    "tempC": 26,
+    "tempC": 25,
     "text": "klar",
     "city": "Philadelphia"
   },
   "brasilien-norwegen": {
-    "tempC": 24,
-    "text": "klar",
+    "tempC": 23,
+    "text": "überwiegend klar",
     "city": "New York/New Jersey"
   },
   "mexiko-england": {
-    "tempC": 15,
+    "tempC": 14,
     "text": "bewölkt",
     "city": "Mexiko-Stadt"
   },

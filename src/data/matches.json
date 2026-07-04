@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T07:14:48.819Z",
+  "updatedAt": "2026-07-04T09:32:04.086Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1267,15 +1267,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
+          "scorer": "Johan Manzambi",
           "side": null,
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
-          "side": null,
+          "scorer": "Ermin Mahmic",
+          "side": "away",
           "own": false,
           "pen": false
         }
@@ -3557,14 +3557,21 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Kimmich",
+          "scorer": "Matias Galarza",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
+          "scorer": "J. Canale",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Kimmich",
           "side": null,
           "own": false,
           "pen": true
@@ -3585,21 +3592,14 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "Mauricio",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
+          "scorer": "Gustavo Gómez",
           "side": "home",
           "own": false,
           "pen": true
@@ -3661,7 +3661,7 @@
         },
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
+          "scorer": "Wout Weghorst",
           "side": null,
           "own": false,
           "pen": true
@@ -3675,7 +3675,7 @@
         },
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Chemsdine Talbi",
           "side": "home",
           "own": false,
           "pen": true
@@ -3684,13 +3684,6 @@
           "minute": 72,
           "scorer": "Cody Gakpo",
           "side": null,
-          "own": false,
-          "pen": false
-        },
-        {
-          "minute": 91,
-          "scorer": "Issa Diop",
-          "side": "away",
           "own": false,
           "pen": false
         }
@@ -4148,8 +4141,22 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Mahmoud Saber",
+          "scorer": "Mohamed Salah",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Awer Mabil",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mahmoud Saber",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4171,20 +4178,6 @@
           "minute": null,
           "scorer": "Hossam Abdelmaguid",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mohamed Salah",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Awer Mabil",
-          "side": null,
           "own": false,
           "pen": true
         },
