@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T19:37:08.054Z",
+  "updatedAt": "2026-07-04T21:13:47.925Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4361,8 +4361,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
@@ -4526,7 +4526,7 @@
     {
       "id": "m83125",
       "oldbId": 83125,
-      "slug": "par-fra-can-mar",
+      "slug": "par-fra-marokko",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-09T20:00:00Z",
       "home": {
@@ -4534,8 +4534,8 @@
         "code": null
       },
       "away": {
-        "name": "CAN/MAR",
-        "code": null
+        "name": "Marokko",
+        "code": "ma"
       },
       "venue": {
         "stadium": "Gillette Stadium",
@@ -4592,6 +4592,32 @@
       "venue": {
         "stadium": "Hard Rock Stadium",
         "city": "Miami (Miami Gardens)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m84295",
+      "oldbId": 84295,
+      "slug": "arg-egy-sui-col",
+      "round": "Viertelfinale",
+      "kickoffUtc": "2026-07-12T01:00:00Z",
+      "home": {
+        "name": "ARG/EGY",
+        "code": null
+      },
+      "away": {
+        "name": "SUI/COL",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Arrowhead Stadium",
+        "city": "Kansas City",
         "country": ""
       },
       "score": {

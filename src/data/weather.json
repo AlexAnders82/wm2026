@@ -1,31 +1,26 @@
 {
-  "kanada-marokko": {
-    "tempC": 36,
-    "text": "überwiegend klar",
-    "city": "Houston"
-  },
   "paraguay-frankreich": {
     "tempC": 38,
     "text": "klar",
     "city": "Philadelphia"
   },
   "brasilien-norwegen": {
-    "tempC": 35,
+    "tempC": 36,
     "text": "klar",
     "city": "New York/New Jersey"
   },
   "mexiko-england": {
-    "tempC": 22,
+    "tempC": 24,
     "text": "bewölkt",
     "city": "Mexiko-Stadt"
   },
   "portugal-spanien": {
-    "tempC": 36,
-    "text": "teils bewölkt",
+    "tempC": 37,
+    "text": "überwiegend klar",
     "city": "Dallas"
   },
   "usa-belgien": {
-    "tempC": 17,
+    "tempC": 18,
     "text": "bewölkt",
     "city": "Seattle"
   }
