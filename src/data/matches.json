@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T17:19:05.543Z",
+  "updatedAt": "2026-07-04T19:37:08.054Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -3647,8 +3647,22 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
+          "scorer": "Soufiane Rahimi",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3663,20 +3677,6 @@
           "minute": null,
           "scorer": "Wout Weghorst",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4314,10 +4314,32 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 50,
+          "scorer": "Azzedine Ounahi",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 82,
+          "scorer": "Azzedine Ounahi",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 98,
+          "scorer": "Soufiane Rahimi",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82128",
