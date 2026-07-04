@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T23:18:16.899Z",
+  "updatedAt": "2026-07-04T04:01:54.271Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -1260,15 +1260,8 @@
         },
         {
           "minute": 90,
-          "scorer": "Granit Xhaka",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 90,
           "scorer": "Ermin Mahmic",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": false
         },
@@ -1278,6 +1271,13 @@
           "side": null,
           "own": false,
           "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Granit Xhaka",
+          "side": "home",
+          "own": false,
+          "pen": true
         }
       ]
     },
@@ -3557,22 +3557,15 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "J. Kimmich",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mauricio",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Gustavo Gómez",
-          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3592,15 +3585,22 @@
         },
         {
           "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "away",
+          "scorer": "Gustavo Gómez",
+          "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "J. Canale",
+          "scorer": "Matias Galarza",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3661,13 +3661,6 @@
         },
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
           "own": false,
@@ -3677,6 +3670,13 @@
           "minute": null,
           "scorer": "Ismael Saibari",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4224,9 +4224,9 @@
         "country": ""
       },
       "score": {
-        "home": 1,
-        "away": 0,
-        "status": "scheduled"
+        "home": 3,
+        "away": 2,
+        "status": "finished"
       },
       "goals": [
         {
@@ -4234,6 +4234,34 @@
           "scorer": "Lionel Messi",
           "side": "home",
           "own": false,
+          "pen": false
+        },
+        {
+          "minute": 59,
+          "scorer": "Deroy Duarte",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 93,
+          "scorer": "Lisandro Martínez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 103,
+          "scorer": "Sidny Lopes Cabral",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 111,
+          "scorer": "Diney Borges",
+          "side": "home",
+          "own": true,
           "pen": false
         }
       ]
@@ -4258,8 +4286,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
@@ -4423,12 +4451,12 @@
     {
       "id": "m82133",
       "oldbId": 82133,
-      "slug": "arg-cpv-agypten",
+      "slug": "argentinien-agypten",
       "round": "Achtelfinale",
       "kickoffUtc": "2026-07-07T16:00:00Z",
       "home": {
-        "name": "ARG/CPV",
-        "code": null
+        "name": "Argentinien",
+        "code": "ar"
       },
       "away": {
         "name": "Ägypten",
