@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T23:13:37.482Z",
+  "updatedAt": "2026-07-05T00:13:40.960Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4534,12 +4534,12 @@
     {
       "id": "m83125",
       "oldbId": 83125,
-      "slug": "par-fra-marokko",
+      "slug": "frankreich-marokko",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-09T20:00:00Z",
       "home": {
-        "name": "PAR/FRA",
-        "code": null
+        "name": "Frankreich",
+        "code": "fr"
       },
       "away": {
         "name": "Marokko",

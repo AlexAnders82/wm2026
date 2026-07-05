@@ -1,11 +1,6 @@
 {
-  "paraguay-frankreich": {
-    "tempC": 37,
-    "text": "klar",
-    "city": "Philadelphia"
-  },
   "brasilien-norwegen": {
-    "tempC": 34,
+    "tempC": 30,
     "text": "klar",
     "city": "New York/New Jersey"
   },
@@ -15,13 +10,13 @@
     "city": "Mexiko-Stadt"
   },
   "portugal-spanien": {
-    "tempC": 37,
-    "text": "überwiegend klar",
+    "tempC": 36,
+    "text": "klar",
     "city": "Dallas"
   },
   "usa-belgien": {
-    "tempC": 18,
-    "text": "überwiegend klar",
+    "tempC": 19,
+    "text": "bewölkt",
     "city": "Seattle"
   }
 }
