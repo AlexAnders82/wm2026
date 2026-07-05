@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T21:19:36.060Z",
+  "updatedAt": "2026-07-05T23:18:45.361Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1267,15 +1267,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
+          "scorer": "Johan Manzambi",
           "side": null,
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
-          "side": null,
+          "scorer": "Ermin Mahmic",
+          "side": "away",
           "own": false,
           "pen": false
         }
@@ -3578,15 +3578,15 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "Mauricio",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
-          "side": null,
+          "scorer": "Gustavo Gómez",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,14 +3647,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
+          "scorer": "Wout Weghorst",
           "side": "home",
           "own": false,
           "pen": true
@@ -3675,8 +3668,15 @@
         },
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Soufiane Rahimi",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4395,11 +4395,33 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 1,
+        "away": 2,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 79,
+          "scorer": "Erling Haaland",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Erling Haaland",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 100,
+          "scorer": "Neymar",
+          "side": "home",
+          "own": false,
+          "pen": true
+        }
+      ]
     },
     {
       "id": "m82130",
@@ -4586,12 +4608,12 @@
     {
       "id": "m83126",
       "oldbId": 83126,
-      "slug": "bra-nor-mex-eng",
+      "slug": "norwegen-mex-eng",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-11T21:00:00Z",
       "home": {
-        "name": "BRA/NOR",
-        "code": null
+        "name": "Norwegen",
+        "code": "no"
       },
       "away": {
         "name": "MEX/ENG",
