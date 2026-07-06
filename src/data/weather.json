@@ -1,21 +1,21 @@
 {
   "portugal-spanien": {
-    "tempC": 29,
-    "text": "teils bewölkt",
+    "tempC": 25,
+    "text": "klar",
     "city": "Dallas"
   },
   "usa-belgien": {
-    "tempC": 18,
+    "tempC": 14,
     "text": "klar",
     "city": "Seattle"
   },
   "argentinien-agypten": {
-    "tempC": 22,
+    "tempC": 21,
     "text": "klar",
     "city": "Atlanta"
   },
   "schweiz-kolumbien": {
-    "tempC": 18,
+    "tempC": 15,
     "text": "klar",
     "city": "Vancouver"
   }

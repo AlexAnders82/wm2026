@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T04:39:01.697Z",
+  "updatedAt": "2026-07-06T09:10:39.242Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3647,15 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Wout Weghorst",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3668,8 +3661,15 @@
         },
         {
           "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Soufiane Rahimi",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4450,14 +4450,14 @@
       "goals": [
         {
           "minute": 36,
-          "scorer": "J. Bellingham",
+          "scorer": "Jude Bellingham",
           "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 38,
-          "scorer": "J. Bellingham",
+          "scorer": "Jude Bellingham",
           "side": "away",
           "own": false,
           "pen": false
@@ -4471,7 +4471,7 @@
         },
         {
           "minute": 60,
-          "scorer": "H. Kane",
+          "scorer": "Harry Kane",
           "side": "away",
           "own": false,
           "pen": true
@@ -4481,7 +4481,7 @@
           "scorer": "Raúl Jiménez",
           "side": "home",
           "own": false,
-          "pen": false
+          "pen": true
         }
       ]
     },
@@ -4644,7 +4644,7 @@
     {
       "id": "m83126",
       "oldbId": 83126,
-      "slug": "norwegen-mex-eng",
+      "slug": "norwegen-england",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-11T21:00:00Z",
       "home": {
@@ -4652,8 +4652,8 @@
         "code": "no"
       },
       "away": {
-        "name": "MEX/ENG",
-        "code": null
+        "name": "England",
+        "code": "gb-eng"
       },
       "venue": {
         "stadium": "Hard Rock Stadium",
