@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T23:18:45.361Z",
+  "updatedAt": "2026-07-06T04:39:01.697Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": "away",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": null,
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -1267,15 +1267,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
+          "scorer": "Ermin Mahmic",
           "side": null,
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
-          "side": "away",
+          "scorer": "Johan Manzambi",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -3557,13 +3557,6 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Kimmich",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3578,7 +3571,7 @@
         },
         {
           "minute": null,
-          "scorer": "Mauricio",
+          "scorer": "J. Kimmich",
           "side": null,
           "own": false,
           "pen": true
@@ -3586,7 +3579,14 @@
         {
           "minute": null,
           "scorer": "Gustavo Gómez",
-          "side": "home",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3647,8 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Ismael Saibari",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3661,15 +3668,8 @@
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Soufiane Rahimi",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4443,11 +4443,47 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 2,
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 36,
+          "scorer": "J. Bellingham",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 38,
+          "scorer": "J. Bellingham",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 42,
+          "scorer": "Julián Quiñones",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 60,
+          "scorer": "H. Kane",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": 69,
+          "scorer": "Raúl Jiménez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82131",
