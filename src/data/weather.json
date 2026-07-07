@@ -1,16 +1,16 @@
 {
   "usa-belgien": {
-    "tempC": 26,
+    "tempC": 27,
     "text": "klar",
     "city": "Seattle"
   },
   "argentinien-agypten": {
-    "tempC": 32,
+    "tempC": 30,
     "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "schweiz-kolumbien": {
-    "tempC": 23,
+    "tempC": 24,
     "text": "klar",
     "city": "Vancouver"
   }
