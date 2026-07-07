@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T17:26:54.573Z",
+  "updatedAt": "2026-07-07T20:14:07.845Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3557,6 +3557,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "J. Kimmich",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3580,13 +3587,6 @@
           "minute": null,
           "scorer": "Mauricio",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Kimmich",
-          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,29 +3647,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Ismael Saibari",
-          "side": "away",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3677,6 +3656,27 @@
           "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4169,15 +4169,15 @@
         },
         {
           "minute": null,
-          "scorer": "Mohamed Salah",
+          "scorer": "Awer Mabil",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Awer Mabil",
-          "side": null,
+          "scorer": "Mohamed Salah",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4601,15 +4601,43 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 1,
-        "status": "scheduled"
+        "home": 3,
+        "away": 2,
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 15,
           "scorer": "Yasser Ibrahim",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 67,
+          "scorer": "Mostafa Ziko",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 79,
+          "scorer": "Cristian Romero",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 84,
+          "scorer": "Lionel Messi",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 92,
+          "scorer": "Enzo Fernandez",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -4635,8 +4663,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
@@ -4722,12 +4750,12 @@
     {
       "id": "m84295",
       "oldbId": 84295,
-      "slug": "arg-egy-sui-col",
+      "slug": "argentinien-sui-col",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-12T01:00:00Z",
       "home": {
-        "name": "ARG/EGY",
-        "code": null
+        "name": "Argentinien",
+        "code": "ar"
       },
       "away": {
         "name": "SUI/COL",
