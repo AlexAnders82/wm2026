@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T05:07:01.276Z",
+  "updatedAt": "2026-07-07T08:43:01.499Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3647,15 +3647,29 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
+          "scorer": "Chemsdine Talbi",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Soufiane Rahimi",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3663,20 +3677,6 @@
           "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4567,7 +4567,7 @@
         },
         {
           "minute": 57,
-          "scorer": "H. Vanaken",
+          "scorer": "Hans Vanaken",
           "side": "away",
           "own": false,
           "pen": false
@@ -4662,7 +4662,7 @@
     {
       "id": "m83462",
       "oldbId": 83462,
-      "slug": "spanien-usa-bel",
+      "slug": "spanien-belgien",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-10T19:00:00Z",
       "home": {
@@ -4670,8 +4670,8 @@
         "code": "es"
       },
       "away": {
-        "name": "USA/BEL",
-        "code": null
+        "name": "Belgien",
+        "code": "be"
       },
       "venue": {
         "stadium": "SoFi Stadium",
@@ -4728,6 +4728,32 @@
       "venue": {
         "stadium": "Arrowhead Stadium",
         "city": "Kansas City",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m84682",
+      "oldbId": 84682,
+      "slug": "fra-mar-esp-bel",
+      "round": "Halbfinale",
+      "kickoffUtc": "2026-07-14T19:00:00Z",
+      "home": {
+        "name": "FRA/MAR",
+        "code": null
+      },
+      "away": {
+        "name": "ESP/BEL",
+        "code": null
+      },
+      "venue": {
+        "stadium": "AT&T Stadium",
+        "city": "Dallas (Arlington)",
         "country": ""
       },
       "score": {
