@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T00:20:08.082Z",
+  "updatedAt": "2026-07-07T05:07:01.276Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3647,15 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "away",
+          "scorer": "Wout Weghorst",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3668,15 +3668,15 @@
         },
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
+          "scorer": "Soufiane Rahimi",
+          "side": "away",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4539,14 +4539,42 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 1,
-        "status": "scheduled"
+        "home": 1,
+        "away": 4,
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 9,
           "scorer": "Charles De Ketelaere",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 31,
+          "scorer": "Malik Tillman",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 33,
+          "scorer": "Charles De Ketelaere",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 57,
+          "scorer": "H. Vanaken",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 93,
+          "scorer": "Romelu Lukaku",
           "side": "away",
           "own": false,
           "pen": false
