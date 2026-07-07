@@ -1,17 +1,17 @@
 {
   "argentinien-agypten": {
-    "tempC": 29,
-    "text": "klar",
+    "tempC": 31,
+    "text": "überwiegend klar",
     "city": "Atlanta"
   },
   "schweiz-kolumbien": {
-    "tempC": 16,
-    "text": "überwiegend klar",
+    "tempC": 18,
+    "text": "klar",
     "city": "Vancouver"
   },
   "frankreich-marokko": {
-    "tempC": 18,
-    "text": "Regen",
+    "tempC": 19,
+    "text": "leichter Niesel",
     "city": "Boston"
   }
 }

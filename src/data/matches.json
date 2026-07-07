@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T15:15:14.793Z",
+  "updatedAt": "2026-07-07T17:26:54.573Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3557,13 +3557,6 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Kimmich",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3578,6 +3571,13 @@
         },
         {
           "minute": null,
+          "scorer": "Gustavo Gómez",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Mauricio",
           "side": null,
           "own": false,
@@ -3585,7 +3585,7 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
+          "scorer": "J. Kimmich",
           "side": "home",
           "own": false,
           "pen": true
@@ -3647,6 +3647,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Chemsdine Talbi",
           "side": "home",
           "own": false,
@@ -3654,15 +3661,8 @@
         },
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Wout Weghorst",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4169,15 +4169,15 @@
         },
         {
           "minute": null,
-          "scorer": "Awer Mabil",
+          "scorer": "Mohamed Salah",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Mohamed Salah",
-          "side": "away",
+          "scorer": "Awer Mabil",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4601,11 +4601,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 15,
+          "scorer": "Yasser Ibrahim",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m82134",
