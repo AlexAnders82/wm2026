@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T21:42:26.959Z",
+  "updatedAt": "2026-07-07T23:14:39.748Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1260,15 +1260,8 @@
         },
         {
           "minute": 90,
-          "scorer": "Granit Xhaka",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": 90,
           "scorer": "Ermin Mahmic",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": false
         },
@@ -1278,6 +1271,13 @@
           "side": null,
           "own": false,
           "pen": false
+        },
+        {
+          "minute": 90,
+          "scorer": "Granit Xhaka",
+          "side": "home",
+          "own": false,
+          "pen": true
         }
       ]
     },
@@ -3557,8 +3557,29 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Kimmich",
+          "scorer": "Mauricio",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Kimmich",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3580,27 +3601,6 @@
           "minute": null,
           "scorer": "Gustavo Gómez",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mauricio",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
-          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,20 +3647,6 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Teun Koopmeiners",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Wout Weghorst",
           "side": "home",
           "own": false,
@@ -3676,6 +3662,20 @@
         {
           "minute": null,
           "scorer": "Chemsdine Talbi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
@@ -4148,8 +4148,22 @@
         },
         {
           "minute": null,
-          "scorer": "Jackson Irvine",
+          "scorer": "Awer Mabil",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mohamed Salah",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Jackson Irvine",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4164,20 +4178,6 @@
           "minute": null,
           "scorer": "Hossam Abdelmaguid",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Awer Mabil",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mohamed Salah",
-          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4663,11 +4663,61 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 4,
+        "away": 3,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": null,
+          "scorer": "Ruben Vargas",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Juan Quintero",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Granit Xhaka",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Jaminton Campaz",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Zeki Amdouni",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Luis Díaz",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Cedric Itten",
+          "side": null,
+          "own": false,
+          "pen": true
+        }
+      ]
     },
     {
       "id": "m83125",
@@ -4750,7 +4800,7 @@
     {
       "id": "m84295",
       "oldbId": 84295,
-      "slug": "argentinien-sui-col",
+      "slug": "argentinien-schweiz",
       "round": "Viertelfinale",
       "kickoffUtc": "2026-07-12T01:00:00Z",
       "home": {
@@ -4758,8 +4808,8 @@
         "code": "ar"
       },
       "away": {
-        "name": "SUI/COL",
-        "code": null
+        "name": "Schweiz",
+        "code": "ch"
       },
       "venue": {
         "stadium": "Arrowhead Stadium",
@@ -4790,6 +4840,32 @@
       "venue": {
         "stadium": "AT&T Stadium",
         "city": "Dallas (Arlington)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m84684",
+      "oldbId": 84684,
+      "slug": "nor-eng-arg-sui",
+      "round": "Halbfinale",
+      "kickoffUtc": "2026-07-15T19:00:00Z",
+      "home": {
+        "name": "NOR/ENG",
+        "code": null
+      },
+      "away": {
+        "name": "ARG/SUI",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
         "country": ""
       },
       "score": {
