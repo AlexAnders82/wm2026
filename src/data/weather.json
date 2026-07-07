@@ -1,12 +1,12 @@
 {
   "schweiz-kolumbien": {
-    "tempC": 23,
+    "tempC": 24,
     "text": "klar",
     "city": "Vancouver"
   },
   "frankreich-marokko": {
-    "tempC": 18,
-    "text": "leichter Niesel",
+    "tempC": 17,
+    "text": "Nebel",
     "city": "Boston"
   }
 }
