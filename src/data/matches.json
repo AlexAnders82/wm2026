@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T11:57:33.963Z",
+  "updatedAt": "2026-07-08T14:40:49.603Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -800,15 +800,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ibrahim MBaye",
-          "side": "away",
+          "scorer": "Kylian Mbappé",
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Kylian Mbappé",
-          "side": "home",
+          "scorer": "Ibrahim MBaye",
+          "side": null,
           "own": false,
           "pen": false
         }
@@ -1247,7 +1247,7 @@
         {
           "minute": 74,
           "scorer": "Johan Manzambi",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": false
         },
@@ -3557,34 +3557,6 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Mauricio",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Kimmich",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3601,6 +3573,34 @@
           "minute": null,
           "scorer": "Gustavo Gómez",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mauricio",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Kimmich",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,7 +3647,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
@@ -3668,15 +3668,15 @@
         },
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
+          "scorer": "Wout Weghorst",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
+          "scorer": "Teun Koopmeiners",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4148,22 +4148,8 @@
         },
         {
           "minute": null,
-          "scorer": "Awer Mabil",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mohamed Salah",
-          "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Jackson Irvine",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4178,6 +4164,20 @@
           "minute": null,
           "scorer": "Hossam Abdelmaguid",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Awer Mabil",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mohamed Salah",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4670,15 +4670,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ruben Vargas",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Juan Quintero",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4714,6 +4707,13 @@
           "minute": null,
           "scorer": "Cedric Itten",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ruben Vargas",
+          "side": "home",
           "own": false,
           "pen": true
         }
