@@ -1,7 +1,12 @@
 {
   "frankreich-marokko": {
-    "tempC": 17,
-    "text": "bewölkt",
+    "tempC": 16,
+    "text": "klar",
     "city": "Boston"
+  },
+  "spanien-belgien": {
+    "tempC": 16,
+    "text": "klar",
+    "city": "Los Angeles"
   }
 }
