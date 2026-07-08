@@ -1,11 +1,11 @@
 {
   "frankreich-marokko": {
-    "tempC": 27,
+    "tempC": 25,
     "text": "klar",
     "city": "Boston"
   },
   "spanien-belgien": {
-    "tempC": 25,
+    "tempC": 24,
     "text": "klar",
     "city": "Los Angeles"
   }
