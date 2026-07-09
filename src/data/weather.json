@@ -1,17 +1,22 @@
 {
   "frankreich-marokko": {
-    "tempC": 22,
+    "tempC": 29,
     "text": "klar",
     "city": "Boston"
   },
   "spanien-belgien": {
-    "tempC": 17,
-    "text": "teils bewölkt",
+    "tempC": 21,
+    "text": "überwiegend klar",
     "city": "Los Angeles"
   },
   "norwegen-england": {
-    "tempC": 28,
-    "text": "klar",
+    "tempC": 33,
+    "text": "überwiegend klar",
     "city": "Miami"
+  },
+  "argentinien-schweiz": {
+    "tempC": 25,
+    "text": "teils bewölkt",
+    "city": "Kansas City"
   }
 }
