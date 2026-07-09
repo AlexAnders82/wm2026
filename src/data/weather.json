@@ -1,7 +1,7 @@
 {
   "frankreich-marokko": {
     "tempC": 31,
-    "text": "klar",
+    "text": "teils bewölkt",
     "city": "Boston"
   },
   "spanien-belgien": {
@@ -11,7 +11,7 @@
   },
   "norwegen-england": {
     "tempC": 33,
-    "text": "klar",
+    "text": "überwiegend klar",
     "city": "Miami"
   },
   "argentinien-schweiz": {
