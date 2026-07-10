@@ -1,16 +1,16 @@
 {
   "spanien-belgien": {
-    "tempC": 19,
+    "tempC": 18,
     "text": "bewölkt",
     "city": "Los Angeles"
   },
   "norwegen-england": {
-    "tempC": 29,
+    "tempC": 28,
     "text": "klar",
     "city": "Miami"
   },
   "argentinien-schweiz": {
-    "tempC": 26,
+    "tempC": 25,
     "text": "klar",
     "city": "Kansas City"
   }
