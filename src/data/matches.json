@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T20:43:02.566Z",
+  "updatedAt": "2026-07-10T22:15:34.859Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3571,6 +3571,20 @@
         },
         {
           "minute": null,
+          "scorer": "N. Amiri",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Musiala",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "J. Kimmich",
           "side": null,
           "own": false,
@@ -3580,20 +3594,6 @@
           "minute": null,
           "scorer": "Gustavo Gómez",
           "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "N. Amiri",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Musiala",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -3647,8 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
+          "scorer": "Chemsdine Talbi",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3661,21 +3668,14 @@
         },
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
+          "scorer": "Wout Weghorst",
           "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Wout Weghorst",
+          "scorer": "Teun Koopmeiners",
           "side": null,
           "own": false,
           "pen": true
@@ -4780,9 +4780,9 @@
         "country": ""
       },
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 1,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
@@ -4796,6 +4796,13 @@
           "minute": 41,
           "scorer": "Charles De Ketelaere",
           "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 88,
+          "scorer": "Mikel Merino",
+          "side": "home",
           "own": false,
           "pen": false
         }
@@ -4856,7 +4863,7 @@
     {
       "id": "m84682",
       "oldbId": 84682,
-      "slug": "frankreich-esp-bel",
+      "slug": "frankreich-spanien",
       "round": "Halbfinale",
       "kickoffUtc": "2026-07-14T19:00:00Z",
       "home": {
@@ -4864,8 +4871,8 @@
         "code": "fr"
       },
       "away": {
-        "name": "ESP/BEL",
-        "code": null
+        "name": "Spanien",
+        "code": "es"
       },
       "venue": {
         "stadium": "AT&T Stadium",
