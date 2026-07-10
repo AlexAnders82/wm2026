@@ -1,17 +1,17 @@
 {
   "spanien-belgien": {
-    "tempC": 22,
-    "text": "überwiegend klar",
+    "tempC": 26,
+    "text": "klar",
     "city": "Los Angeles"
   },
   "norwegen-england": {
-    "tempC": 34,
-    "text": "überwiegend klar",
+    "tempC": 33,
+    "text": "bewölkt",
     "city": "Miami"
   },
   "argentinien-schweiz": {
-    "tempC": 28,
-    "text": "teils bewölkt",
+    "tempC": 30,
+    "text": "überwiegend klar",
     "city": "Kansas City"
   }
 }
