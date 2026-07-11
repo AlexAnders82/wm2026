@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T21:06:38.041Z",
+  "updatedAt": "2026-07-11T22:08:31.780Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3571,20 +3571,6 @@
         },
         {
           "minute": null,
-          "scorer": "N. Amiri",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Musiala",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "J. Kimmich",
           "side": null,
           "own": false,
@@ -3594,6 +3580,20 @@
           "minute": null,
           "scorer": "Gustavo Gómez",
           "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "N. Amiri",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Musiala",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3647,7 +3647,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
@@ -3661,15 +3661,8 @@
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
+          "scorer": "Chemsdine Talbi",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Wout Weghorst",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -3677,6 +3670,13 @@
           "minute": null,
           "scorer": "Teun Koopmeiners",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Wout Weghorst",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4141,6 +4141,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Mahmoud Saber",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Awer Mabil",
           "side": "home",
           "own": false,
@@ -4171,13 +4178,6 @@
           "minute": null,
           "scorer": "Hossam Abdelmaguid",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mahmoud Saber",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -4670,8 +4670,15 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Ruben Vargas",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Juan Quintero",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4707,13 +4714,6 @@
           "minute": null,
           "scorer": "Cedric Itten",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Ruben Vargas",
-          "side": "home",
           "own": false,
           "pen": true
         }
@@ -4828,11 +4828,26 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
+        "home": 1,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 36,
+          "scorer": "Andreas Schjelderup",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 47,
+          "scorer": "Jude Bellingham",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m84295",
