@@ -1,12 +1,12 @@
 {
   "norwegen-england": {
-    "tempC": 24,
+    "tempC": 26,
     "text": "bewölkt",
     "city": "Miami"
   },
   "argentinien-schweiz": {
-    "tempC": 20,
-    "text": "klar",
+    "tempC": 21,
+    "text": "teils bewölkt",
     "city": "Kansas City"
   }
 }
