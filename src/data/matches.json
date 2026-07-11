@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T22:08:31.780Z",
+  "updatedAt": "2026-07-11T23:10:33.248Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3578,13 +3578,6 @@
         },
         {
           "minute": null,
-          "scorer": "Gustavo Gómez",
-          "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3593,6 +3586,13 @@
         {
           "minute": null,
           "scorer": "J. Musiala",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Gustavo Gómez",
           "side": null,
           "own": false,
           "pen": true
@@ -4141,7 +4141,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Mahmoud Saber",
+          "scorer": "Mohamed Salah",
           "side": "home",
           "own": false,
           "pen": true
@@ -4149,14 +4149,7 @@
         {
           "minute": null,
           "scorer": "Awer Mabil",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mohamed Salah",
-          "side": "away",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4178,6 +4171,13 @@
           "minute": null,
           "scorer": "Hossam Abdelmaguid",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Mahmoud Saber",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4670,15 +4670,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ruben Vargas",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Juan Quintero",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4714,6 +4707,13 @@
           "minute": null,
           "scorer": "Cedric Itten",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ruben Vargas",
+          "side": "home",
           "own": false,
           "pen": true
         }
@@ -4829,14 +4829,14 @@
       },
       "score": {
         "home": 1,
-        "away": 1,
+        "away": 2,
         "status": "scheduled"
       },
       "goals": [
         {
           "minute": 36,
           "scorer": "Andreas Schjelderup",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": false
         },
