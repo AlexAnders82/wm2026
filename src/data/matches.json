@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T23:10:33.248Z",
+  "updatedAt": "2026-07-12T00:11:02.800Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3654,15 +3654,8 @@
         },
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Chemsdine Talbi",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3677,6 +3670,13 @@
           "minute": null,
           "scorer": "Wout Weghorst",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Soufiane Rahimi",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4141,15 +4141,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Mohamed Salah",
+          "scorer": "Awer Mabil",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Awer Mabil",
-          "side": null,
+          "scorer": "Mohamed Salah",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4830,18 +4830,25 @@
       "score": {
         "home": 1,
         "away": 2,
-        "status": "scheduled"
+        "status": "finished"
       },
       "goals": [
         {
           "minute": 36,
           "scorer": "Andreas Schjelderup",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 47,
+          "scorer": "Jude Bellingham",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 93,
           "scorer": "Jude Bellingham",
           "side": "away",
           "own": false,
@@ -4904,12 +4911,12 @@
     {
       "id": "m84684",
       "oldbId": 84684,
-      "slug": "nor-eng-arg-sui",
+      "slug": "england-arg-sui",
       "round": "Halbfinale",
       "kickoffUtc": "2026-07-15T19:00:00Z",
       "home": {
-        "name": "NOR/ENG",
-        "code": null
+        "name": "England",
+        "code": "gb-eng"
       },
       "away": {
         "name": "ARG/SUI",
