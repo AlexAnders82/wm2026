@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T00:11:02.800Z",
+  "updatedAt": "2026-07-12T03:57:18.247Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3557,22 +3557,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "J. Kimmich",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3601,6 +3587,20 @@
           "minute": null,
           "scorer": "Mauricio",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Matias Galarza",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,15 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
+          "scorer": "Soufiane Rahimi",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3675,8 +3675,8 @@
         },
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -4141,15 +4141,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Awer Mabil",
+          "scorer": "Mohamed Salah",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Mohamed Salah",
-          "side": "away",
+          "scorer": "Awer Mabil",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4876,11 +4876,40 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
-        "status": "scheduled"
+        "home": 3,
+        "away": 1,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 10,
+          "scorer": "A. Mac Allister",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 67,
+          "scorer": "Dan Ndoye",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 112,
+          "scorer": "J. Alvarez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 121,
+          "scorer": "Lautaro Martínez",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m84682",
