@@ -1,5 +1,5 @@
 {
-  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-07-12T06:46:51.817Z",
+  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-07-12T09:16:06.273Z",
   "fallback": {
     "free": null,
     "stream": [
@@ -399,6 +399,12 @@
       "exclusive": true
     },
     "frankreich-spanien": {
+      "free": "ZDF",
+      "stream": [
+        "MagentaTV"
+      ]
+    },
+    "england-argentinien": {
       "free": "ARD",
       "stream": [
         "MagentaTV"

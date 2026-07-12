@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T06:46:50.893Z",
+  "updatedAt": "2026-07-12T09:16:05.559Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4940,7 +4940,7 @@
     {
       "id": "m84684",
       "oldbId": 84684,
-      "slug": "england-arg-sui",
+      "slug": "england-argentinien",
       "round": "Halbfinale",
       "kickoffUtc": "2026-07-15T19:00:00Z",
       "home": {
@@ -4948,8 +4948,8 @@
         "code": "gb-eng"
       },
       "away": {
-        "name": "ARG/SUI",
-        "code": null
+        "name": "Argentinien",
+        "code": "ar"
       },
       "venue": {
         "stadium": "Mercedes-Benz Stadium",
