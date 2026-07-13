@@ -1,11 +1,11 @@
 {
   "frankreich-spanien": {
     "tempC": 29,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "Dallas"
   },
   "england-argentinien": {
-    "tempC": 24,
+    "tempC": 25,
     "text": "bewölkt",
     "city": "Atlanta"
   }
