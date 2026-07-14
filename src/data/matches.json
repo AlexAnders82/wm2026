@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T06:24:36.568Z",
+  "updatedAt": "2026-07-14T09:17:22.416Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4954,6 +4954,58 @@
       "venue": {
         "stadium": "Mercedes-Benz Stadium",
         "city": "Atlanta",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m85182",
+      "oldbId": 85182,
+      "slug": "fra-esp-eng-arg",
+      "round": "Finale",
+      "kickoffUtc": "2026-07-18T21:00:00Z",
+      "home": {
+        "name": "FRA/ESP",
+        "code": null
+      },
+      "away": {
+        "name": "ENG/ARG",
+        "code": null
+      },
+      "venue": {
+        "stadium": "Hard Rock Stadium",
+        "city": "Miami (Miami Gardens)",
+        "country": ""
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "status": "scheduled"
+      },
+      "goals": []
+    },
+    {
+      "id": "m85183",
+      "oldbId": 85183,
+      "slug": "fra-esp-eng-arg",
+      "round": "Finale",
+      "kickoffUtc": "2026-07-19T19:00:00Z",
+      "home": {
+        "name": "FRA/ESP",
+        "code": null
+      },
+      "away": {
+        "name": "ENG/ARG",
+        "code": null
+      },
+      "venue": {
+        "stadium": "MetLife Stadium",
+        "city": "New York/New Jersey (East Rutherford)",
         "country": ""
       },
       "score": {
