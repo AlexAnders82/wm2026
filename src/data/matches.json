@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:34:16.805Z",
+  "updatedAt": "2026-07-14T19:42:38.543Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1260,15 +1260,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
+          "scorer": "Johan Manzambi",
           "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
-          "side": null,
+          "scorer": "Ermin Mahmic",
+          "side": "away",
           "own": false,
           "pen": false
         },
@@ -3557,8 +3557,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Kimmich",
+          "scorer": "J. Canale",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Kimmich",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3593,13 +3600,6 @@
         {
           "minute": null,
           "scorer": "Matias Galarza",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "J. Canale",
           "side": "home",
           "own": false,
           "pen": true
@@ -3647,15 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
+          "scorer": "Ismael Saibari",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
+          "scorer": "Soufiane Rahimi",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4931,11 +4931,19 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "status": "scheduled"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 22,
+          "scorer": "Mikel Oyarzabal",
+          "side": "away",
+          "own": false,
+          "pen": true
+        }
+      ]
     },
     {
       "id": "m84684",
