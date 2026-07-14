@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T19:42:38.543Z",
+  "updatedAt": "2026-07-14T21:15:22.172Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -4932,8 +4932,8 @@
       },
       "score": {
         "home": 0,
-        "away": 1,
-        "status": "scheduled"
+        "away": 2,
+        "status": "finished"
       },
       "goals": [
         {
@@ -4942,6 +4942,13 @@
           "side": "away",
           "own": false,
           "pen": true
+        },
+        {
+          "minute": 58,
+          "scorer": "Pedro Porro",
+          "side": "away",
+          "own": false,
+          "pen": false
         }
       ]
     },
@@ -4974,12 +4981,12 @@
     {
       "id": "m85182",
       "oldbId": 85182,
-      "slug": "fra-esp-eng-arg",
+      "slug": "frankreich-eng-arg",
       "round": "Finale",
       "kickoffUtc": "2026-07-18T21:00:00Z",
       "home": {
-        "name": "FRA/ESP",
-        "code": null
+        "name": "Frankreich",
+        "code": "fr"
       },
       "away": {
         "name": "ENG/ARG",
@@ -5000,12 +5007,12 @@
     {
       "id": "m85183",
       "oldbId": 85183,
-      "slug": "fra-esp-eng-arg",
+      "slug": "spanien-eng-arg",
       "round": "Finale",
       "kickoffUtc": "2026-07-19T19:00:00Z",
       "home": {
-        "name": "FRA/ESP",
-        "code": null
+        "name": "Spanien",
+        "code": "es"
       },
       "away": {
         "name": "ENG/ARG",
