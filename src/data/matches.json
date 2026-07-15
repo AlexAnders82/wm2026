@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T19:36:28.360Z",
+  "updatedAt": "2026-07-15T21:14:53.178Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -1260,15 +1260,15 @@
         },
         {
           "minute": 90,
-          "scorer": "Johan Manzambi",
+          "scorer": "Ermin Mahmic",
           "side": "home",
           "own": false,
           "pen": false
         },
         {
           "minute": 90,
-          "scorer": "Ermin Mahmic",
-          "side": "away",
+          "scorer": "Johan Manzambi",
+          "side": null,
           "own": false,
           "pen": false
         },
@@ -3571,6 +3571,13 @@
         },
         {
           "minute": null,
+          "scorer": "Gustavo Gómez",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "N. Amiri",
           "side": "home",
           "own": false,
@@ -3579,13 +3586,6 @@
         {
           "minute": null,
           "scorer": "J. Musiala",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Gustavo Gómez",
           "side": null,
           "own": false,
           "pen": true
@@ -3647,15 +3647,15 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
+          "scorer": "Soufiane Rahimi",
           "side": "home",
           "own": false,
           "pen": true
         },
         {
           "minute": null,
-          "scorer": "Soufiane Rahimi",
-          "side": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4141,6 +4141,13 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Mahmoud Saber",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Mohamed Salah",
           "side": "home",
           "own": false,
@@ -4171,13 +4178,6 @@
           "minute": null,
           "scorer": "Hossam Abdelmaguid",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Mahmoud Saber",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -4972,16 +4972,38 @@
         "country": ""
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "status": "scheduled"
+        "home": 1,
+        "away": 2,
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 55,
+          "scorer": "Anthony Gordon",
+          "side": "home",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 85,
+          "scorer": "Enzo Fernandez",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 92,
+          "scorer": "Lautaro Martínez",
+          "side": "away",
+          "own": false,
+          "pen": false
+        }
+      ]
     },
     {
       "id": "m85182",
       "oldbId": 85182,
-      "slug": "frankreich-eng-arg",
+      "slug": "frankreich-england",
       "round": "Finale",
       "kickoffUtc": "2026-07-18T21:00:00Z",
       "home": {
@@ -4989,8 +5011,8 @@
         "code": "fr"
       },
       "away": {
-        "name": "ENG/ARG",
-        "code": null
+        "name": "England",
+        "code": "gb-eng"
       },
       "venue": {
         "stadium": "Hard Rock Stadium",
@@ -5007,7 +5029,7 @@
     {
       "id": "m85183",
       "oldbId": 85183,
-      "slug": "spanien-eng-arg",
+      "slug": "spanien-argentinien",
       "round": "Finale",
       "kickoffUtc": "2026-07-19T19:00:00Z",
       "home": {
@@ -5015,8 +5037,8 @@
         "code": "es"
       },
       "away": {
-        "name": "ENG/ARG",
-        "code": null
+        "name": "Argentinien",
+        "code": "ar"
       },
       "venue": {
         "stadium": "MetLife Stadium",
