@@ -1,11 +1,11 @@
 {
   "frankreich-england": {
     "tempC": 32,
-    "text": "überwiegend klar",
+    "text": "teils bewölkt",
     "city": "Miami"
   },
   "spanien-argentinien": {
-    "tempC": 27,
+    "tempC": 25,
     "text": "bewölkt",
     "city": "New York/New Jersey"
   }
