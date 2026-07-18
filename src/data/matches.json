@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T21:06:32.870Z",
+  "updatedAt": "2026-07-18T22:07:30.107Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3557,7 +3557,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Canale",
+          "scorer": "J. Kimmich",
           "side": "home",
           "own": false,
           "pen": true
@@ -3565,7 +3565,7 @@
         {
           "minute": null,
           "scorer": "Gustavo Gómez",
-          "side": null,
+          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3599,8 +3599,8 @@
         },
         {
           "minute": null,
-          "scorer": "J. Kimmich",
-          "side": null,
+          "scorer": "J. Canale",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3647,6 +3647,27 @@
       "goals": [
         {
           "minute": null,
+          "scorer": "Chemsdine Talbi",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ismael Saibari",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Teun Koopmeiners",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
           "scorer": "Wout Weghorst",
           "side": "home",
           "own": false,
@@ -3654,28 +3675,7 @@
         },
         {
           "minute": null,
-          "scorer": "Chemsdine Talbi",
-          "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Soufiane Rahimi",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Teun Koopmeiners",
           "side": null,
           "own": false,
           "pen": true
@@ -4141,13 +4141,6 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Mahmoud Saber",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Mohamed Salah",
           "side": "home",
           "own": false,
@@ -4162,8 +4155,15 @@
         },
         {
           "minute": null,
-          "scorer": "Jackson Irvine",
+          "scorer": "Mahmoud Saber",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Jackson Irvine",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4670,14 +4670,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Juan Quintero",
-          "side": "away",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Granit Xhaka",
+          "scorer": "Ruben Vargas",
           "side": "home",
           "own": false,
           "pen": true
@@ -4685,7 +4678,7 @@
         {
           "minute": null,
           "scorer": "Jaminton Campaz",
-          "side": "home",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -4712,7 +4705,14 @@
         },
         {
           "minute": null,
-          "scorer": "Ruben Vargas",
+          "scorer": "Juan Quintero",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Granit Xhaka",
           "side": "home",
           "own": false,
           "pen": true
@@ -5021,13 +5021,34 @@
       },
       "score": {
         "home": 0,
-        "away": 1,
+        "away": 4,
         "status": "scheduled"
       },
       "goals": [
         {
           "minute": 3,
           "scorer": "Declan Rice",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 18,
+          "scorer": "Ezri Konsa",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 37,
+          "scorer": "Bukayo Saka",
+          "side": "away",
+          "own": false,
+          "pen": false
+        },
+        {
+          "minute": 46,
+          "scorer": "Bukayo Saka",
           "side": "away",
           "own": false,
           "pen": false
