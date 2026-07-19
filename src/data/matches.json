@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T18:10:22.720Z",
+  "updatedAt": "2026-07-19T19:32:01.623Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -5079,7 +5079,7 @@
           "scorer": "Bukayo Saka",
           "side": "away",
           "own": false,
-          "pen": false
+          "pen": true
         },
         {
           "minute": 96,
@@ -5117,8 +5117,8 @@
         "country": ""
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "status": "scheduled"
       },
       "goals": []
