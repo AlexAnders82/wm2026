@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T21:07:16.536Z",
+  "updatedAt": "2026-07-19T22:08:58.315Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -5117,11 +5117,19 @@
         "country": ""
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "status": "scheduled"
+        "status": "finished"
       },
-      "goals": []
+      "goals": [
+        {
+          "minute": 106,
+          "scorer": "Ferran Torres",
+          "side": "home",
+          "own": false,
+          "pen": false
+        }
+      ]
     }
   ]
 }
