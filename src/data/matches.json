@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T09:47:23.432Z",
+  "updatedAt": "2026-07-28T12:13:34.747Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -358,12 +358,12 @@
     {
       "id": "m80107",
       "oldbId": 80107,
-      "slug": "deutschland-curacao",
+      "slug": "deutschland-u21-curacao",
       "round": "Gruppenphase 1",
       "kickoffUtc": "2026-06-14T17:00:00Z",
       "home": {
-        "name": "Deutschland",
-        "code": "de"
+        "name": "Deutschland U21",
+        "code": null
       },
       "away": {
         "name": "Curaçao",
@@ -1613,12 +1613,12 @@
     {
       "id": "m80134",
       "oldbId": 80134,
-      "slug": "deutschland-elfenbeinkuste",
+      "slug": "deutschland-u21-elfenbeinkuste",
       "round": "Gruppenphase 2",
       "kickoffUtc": "2026-06-20T20:00:00Z",
       "home": {
-        "name": "Deutschland",
-        "code": "de"
+        "name": "Deutschland U21",
+        "code": null
       },
       "away": {
         "name": "Elfenbeinküste",
@@ -2631,7 +2631,7 @@
     {
       "id": "m80155",
       "oldbId": 80155,
-      "slug": "ecuador-deutschland",
+      "slug": "ecuador-deutschland-u21",
       "round": "Gruppenphase 3",
       "kickoffUtc": "2026-06-25T20:00:00Z",
       "home": {
@@ -2639,8 +2639,8 @@
         "code": "ec"
       },
       "away": {
-        "name": "Deutschland",
-        "code": "de"
+        "name": "Deutschland U21",
+        "code": null
       },
       "venue": {
         "stadium": "MetLife Stadium",
@@ -3533,12 +3533,12 @@
     {
       "id": "m82101",
       "oldbId": 82101,
-      "slug": "deutschland-paraguay",
+      "slug": "deutschland-u21-paraguay",
       "round": "Sechzehntelfinale",
       "kickoffUtc": "2026-06-29T20:30:00Z",
       "home": {
-        "name": "Deutschland",
-        "code": "de"
+        "name": "Deutschland U21",
+        "code": null
       },
       "away": {
         "name": "Paraguay",
