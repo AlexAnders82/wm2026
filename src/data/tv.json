@@ -1,5 +1,5 @@
 {
-  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-09-21T00:16:45.875Z",
+  "_note": "Senderrechte automatisch aus sportschau.de übernommen (fetch-tv.mjs) + manuell ergänzt. free=ARD/ZDF (Free-TV), exclusive=true => nur MagentaTV. Stand: 2026-09-21T05:05:07.196Z",
   "fallback": {
     "free": null,
     "stream": [
