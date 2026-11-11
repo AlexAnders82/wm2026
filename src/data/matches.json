@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T06:19:58.007Z",
+  "updatedAt": "2026-11-11T15:11:32.705Z",
   "source": {
     "provider": "openligadb",
     "shortcut": "wm26",
@@ -3557,7 +3557,7 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "J. Canale",
+          "scorer": "Matias Galarza",
           "side": "home",
           "own": false,
           "pen": true
@@ -3566,13 +3566,6 @@
           "minute": null,
           "scorer": "J. Kimmich",
           "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Gustavo Gómez",
-          "side": "away",
           "own": false,
           "pen": true
         },
@@ -3592,8 +3585,8 @@
         },
         {
           "minute": null,
-          "scorer": "Matias Galarza",
-          "side": "away",
+          "scorer": "Gustavo Gómez",
+          "side": null,
           "own": false,
           "pen": true
         },
@@ -3601,6 +3594,13 @@
           "minute": null,
           "scorer": "Mauricio",
           "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "J. Canale",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3654,15 +3654,15 @@
         },
         {
           "minute": null,
-          "scorer": "Ismael Saibari",
-          "side": "away",
+          "scorer": "Teun Koopmeiners",
+          "side": null,
           "own": false,
           "pen": true
         },
         {
           "minute": null,
           "scorer": "Wout Weghorst",
-          "side": null,
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -3675,8 +3675,8 @@
         },
         {
           "minute": null,
-          "scorer": "Teun Koopmeiners",
-          "side": null,
+          "scorer": "Ismael Saibari",
+          "side": "home",
           "own": false,
           "pen": true
         },
@@ -4670,36 +4670,8 @@
       "goals": [
         {
           "minute": null,
-          "scorer": "Ruben Vargas",
-          "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
           "scorer": "Jaminton Campaz",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Zeki Amdouni",
-          "side": null,
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Luis Díaz",
           "side": "home",
-          "own": false,
-          "pen": true
-        },
-        {
-          "minute": null,
-          "scorer": "Cedric Itten",
-          "side": null,
           "own": false,
           "pen": true
         },
@@ -4714,6 +4686,34 @@
           "minute": null,
           "scorer": "Granit Xhaka",
           "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Ruben Vargas",
+          "side": "home",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Cedric Itten",
+          "side": null,
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Luis Díaz",
+          "side": "away",
+          "own": false,
+          "pen": true
+        },
+        {
+          "minute": null,
+          "scorer": "Zeki Amdouni",
+          "side": null,
           "own": false,
           "pen": true
         }
